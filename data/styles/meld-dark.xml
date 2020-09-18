@@ -3,9 +3,9 @@
   <_description>Dark color scheme for Meld highlighting</_description>
 
   <!-- Meld -->
-  <style name="meld:insert" background="#227000" foreground="#4e9a06" line-background="#309900"/>
-  <style name="meld:replace" background="#00458c" foreground="#2d6cfc" line-background="#0066cc"/>
-  <style name="meld:conflict" background="#7a2a28" foreground="#ff0000" line-background="#ac3b39"/>
+  <style name="meld:insert" background="#174d00" foreground="#4e9a06" line-background="#237300"/>
+  <style name="meld:replace" background="#00264d" foreground="#2d6cfc" line-background="#00468D"/>
+  <style name="meld:conflict" background="#662322" foreground="#ff0000" line-background="#8d302e"/>
   <!-- FIXME: delete background should be @theme_bg_color; line should be shaded of that -->
   <style name="meld:delete" background="#ffffff" foreground="#a40000" line-background="#cccccc"/>
   <style name="meld:error" background="#fce94f" foreground="#faad3d" line-background="#fdf8cd"/>
