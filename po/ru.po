@@ -300,6 +300,10 @@ msgstr ""
 "времени. Может пригодиться при сравнении файлов между файловыми системами, с "
 "разным разрешением отметки времени."
 
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr "Применить текстовые фильтры при сравнении папок"
+
 #: ../data/org.gnome.meld.gschema.xml.h:40
 msgid "File status filters"
 msgstr "Фильтры статуса файлов"
@@ -737,16 +741,14 @@ msgid "Left is local, right is remote"
 msgstr "Слева на локальной машине, справа на удалённой"
 
 #: ../data/ui/preferences.ui.h:3
-#, fuzzy
 #| msgid "Left is remote, right is local"
 msgid "Remote, merge, local"
-msgstr "Слева на удалённой машине, справа на локальной"
+msgstr "Удалённый, объединенный, локальный"
 
 #: ../data/ui/preferences.ui.h:4
-#, fuzzy
 #| msgid "Left is local, right is remote"
 msgid "Local, merge, remote"
-msgstr "Слева на локальной машине, справа на удалённой"
+msgstr "Локальный, объединенный, удалённый"
 
 #: ../data/ui/preferences.ui.h:5
 msgid "1ns (ext4)"
@@ -816,6 +818,10 @@ msgstr "Показывать _пробелы"
 msgid "Use s_yntax highlighting"
 msgstr "Включить подсветку _синтаксиса"
 
+#: ../data/ui/preferences.ui.h:14
+msgid "Syntax highlighting color scheme:"
+msgstr "Цветовая схема подсветки синтаксиса:"
+
 #: ../data/ui/preferences.ui.h:22
 msgid "External Editor"
 msgstr "Внешний редактор"
@@ -834,7 +840,7 @@ msgstr "Редактор"
 
 #: ../data/ui/preferences.ui.h:26
 msgid "Shallow Comparison"
-msgstr "Поверхностное _сравнение"
+msgstr "Поверхностное сравнение"
 
 #: ../data/ui/preferences.ui.h:27
 msgid "C_ompare files based only on size and timestamp"
@@ -843,6 +849,12 @@ msgstr "С_равнение файлов только на основе разм
 #: ../data/ui/preferences.ui.h:28
 msgid "_Timestamp resolution:"
 msgstr "_Разрешение отметки времени :"
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+"Примечание: включение текстовых фильтров может значительно замедлить "
+"сравнение больших файлов"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "Symbolic Links"
@@ -861,10 +873,9 @@ msgid "Version Comparisons"
 msgstr "Сравнения версий"
 
 #: ../data/ui/preferences.ui.h:34
-#, fuzzy
 #| msgid "_When comparing file revisions:"
 msgid "_Order when comparing file revisions:"
-msgstr "_Сравнение изменений файла:"
+msgstr "_Порядок при сравнении файлов:"
 
 #: ../data/ui/preferences.ui.h:35
 msgid "Order when _merging files:"
@@ -886,6 +897,10 @@ msgstr "Автоматически _разбивать строки на пра�
 msgid "Version Control"
 msgstr "Контроль версий"
 
+#: ../data/ui/preferences.ui.h:35
+msgid "Filename filters"
+msgstr "Фильтры по имени файлов/каталогов"
+
 #: ../data/ui/preferences.ui.h:40
 msgid ""
 "When performing directory comparisons, you may filter out files and "
@@ -898,6 +913,18 @@ msgstr ""
 #: ../data/ui/preferences.ui.h:41 ../meld/meldwindow.py:103
 msgid "File Filters"
 msgstr "Фильтры файлов"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr "Настройка обрезки (trimming)"
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr "При сравнении игнорировать различия по количеству пустых строк"
+
+#: ../data/ui/preferences.ui.h:40
+msgid "Text filters"
+msgstr "Текстовые фильтры"
 
 #: ../data/ui/preferences.ui.h:42
 msgid ""
