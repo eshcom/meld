@@ -1314,7 +1314,9 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
                     to_pane, c)
                 self._cached_match.match(text1, textn, match_cb)
 
-        self._cached_match.clean(self.linediffer.diff_count())
+        # ~ esh: fixed error "AttributeError: _cached_match"
+        if hasattr(self, "_cached_match"):
+            self._cached_match.clean(self.linediffer.diff_count())
 
         self._set_merge_action_sensitivity()
         if self.linediffer.sequences_identical():
