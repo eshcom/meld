@@ -30,7 +30,7 @@
 
   <definitions>
 
-    <!--regexs-->
+    <!--regexs2-->
     <define-regex id="preproc-start">^\s*#\s*</define-regex>
     <define-regex id="escaped-character" extended="true">
       \\(                   # leading backslash

@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
- This file is part of GtkSourceView
-
- Authors: Marco Barisione, Emanuele Aina
- Copyright (C) 2005-2007 Marco Barisione <barisione@gmail.com>
- Copyright (C) 2005-2007 Emanuele Aina
-
- You should have received a copy of the GNU Lesser General Public
- License along with this library; if not, write to the Free Software
- Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
--->
+<!-- This file is part of GtkSourceView -->
 
 <language id="c" _name="C" version="2.0" _section="Source">
   <metadata>
@@ -33,7 +21,7 @@
 
   <definitions>
 
-    <!--regexs-->
+    <!--regexs1-->
     <define-regex id="preproc-start">^\s*#\s*</define-regex>
     <define-regex id="escaped-character" extended="true">
       \\(                   # leading backslash
