@@ -64,7 +64,7 @@ class MeldWindow(gnomeglade.Component):
             ("Undo", Gtk.STOCK_UNDO, None, "<Primary>Z",
                 _("Undo the last action"),
                 self.on_menu_undo_activate),
-            ("Redo", Gtk.STOCK_REDO, None, "<Primary><shift>Z",
+            ("Redo", Gtk.STOCK_REDO, None, "<Primary>Y",
                 _("Redo the last undone action"),
                 self.on_menu_redo_activate),
             ("Cut", Gtk.STOCK_CUT, None, None, _("Cut the selection"),
@@ -75,10 +75,10 @@ class MeldWindow(gnomeglade.Component):
                 self.on_menu_paste_activate),
             ("Find", Gtk.STOCK_FIND, _("Find..."), None, _("Search for text"),
                 self.on_menu_find_activate),
-            ("FindNext", None, _("Find Ne_xt"), "<Primary>G",
+            ("FindNext", None, _("Find Ne_xt"), "F3",
                 _("Search forwards for the same text"),
                 self.on_menu_find_next_activate),
-            ("FindPrevious", None, _("Find _Previous"), "<Primary><shift>G",
+            ("FindPrevious", None, _("Find _Previous"), "<Alt>F3",
                 _("Search backwards for the same text"),
                 self.on_menu_find_previous_activate),
             ("Replace", Gtk.STOCK_FIND_AND_REPLACE,
@@ -192,6 +192,10 @@ class MeldWindow(gnomeglade.Component):
         accels.connect(keyval, mask, 0, self.on_menu_edit_up_activate)
         (keyval, mask) = Gtk.accelerator_parse("F5")
         accels.connect(keyval, mask, 0, self.on_menu_refresh_activate)
+
+        # esh: added preferences window hotkey
+        (keyval, mask) = Gtk.accelerator_parse("<Primary><shift>P")
+        accels.connect(keyval, mask, 0, self.on_menu_preferences_activate)
 
         # Initialise sensitivity for important actions
         self.actiongroup.get_action("Stop").set_sensitive(False)
@@ -448,6 +452,10 @@ class MeldWindow(gnomeglade.Component):
 
     def on_menu_refresh_activate(self, *extra):
         self.current_doc().on_refresh_activate()
+
+    def on_menu_preferences_activate(self, *extra):
+        from meld.meldapp import app
+        app.lookup_action('preferences').activate(None)
 
     def on_menu_find_activate(self, *extra):
         self.current_doc().on_find_activate()
