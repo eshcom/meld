@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import logging
 
 from gi.repository import Gdk
 from gi.repository import Gio
@@ -38,6 +39,7 @@ from meld.recent import recent_comparisons
 from meld.settings import interface_settings, settings
 from meld.windowstate import SavedWindowState
 
+log = logging.getLogger(__name__)
 
 class MeldWindow(gnomeglade.Component):
 
