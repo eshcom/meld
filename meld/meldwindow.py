@@ -38,6 +38,7 @@ from meld.conf import _
 from meld.recent import recent_comparisons
 from meld.settings import interface_settings, settings
 from meld.windowstate import SavedWindowState
+from meld.meldapp import app
 
 log = logging.getLogger(__name__)
 
@@ -141,8 +142,6 @@ class MeldWindow(gnomeglade.Component):
         # Manually handle shells that don't show an application menu
         gtk_settings = Gtk.Settings.get_default()
         if not gtk_settings.props.gtk_shell_shows_app_menu:
-            from meld.meldapp import app
-
             def make_app_action(name):
                 def app_action(*args):
                     app.lookup_action(name).activate(None)
@@ -198,6 +197,15 @@ class MeldWindow(gnomeglade.Component):
         # esh: added preferences window hotkey
         (keyval, mask) = Gtk.accelerator_parse("<Primary><shift>P")
         accels.connect(keyval, mask, 0, self.on_menu_preferences_activate)
+        # esh: added DirDiff->ShowNew hotkey
+        (keyval, mask) = Gtk.accelerator_parse("<Primary><shift>N")
+        accels.connect(keyval, mask, 0, self.on_dirdiff_shownew_activate)
+        # esh: added DirDiff->ShowSame hotkey
+        (keyval, mask) = Gtk.accelerator_parse("<Primary><shift>E")
+        accels.connect(keyval, mask, 0, self.on_dirdiff_showsame_activate)
+        # esh: added DirDiff->ShowModified hotkey
+        (keyval, mask) = Gtk.accelerator_parse("<Primary><shift>M")
+        accels.connect(keyval, mask, 0, self.on_dirdiff_showmodified_activate)
 
         # Initialise sensitivity for important actions
         self.actiongroup.get_action("Stop").set_sensitive(False)
@@ -456,8 +464,16 @@ class MeldWindow(gnomeglade.Component):
         self.current_doc().on_refresh_activate()
 
     def on_menu_preferences_activate(self, *extra):
-        from meld.meldapp import app
         app.lookup_action('preferences').activate(None)
+
+    def on_dirdiff_shownew_activate(self, *extra):
+        pass
+
+    def on_dirdiff_showsame_activate(self, *extra):
+        pass
+
+    def on_dirdiff_showmodified_activate(self, *extra):
+        pass
 
     def on_menu_find_activate(self, *extra):
         self.current_doc().on_find_activate()
