@@ -463,17 +463,39 @@ class MeldWindow(gnomeglade.Component):
     def on_menu_refresh_activate(self, *extra):
         self.current_doc().on_refresh_activate()
 
+    # esh: hotkey handler preferences menu
     def on_menu_preferences_activate(self, *extra):
         app.lookup_action('preferences').activate(None)
 
+    # esh: hotkey handler action ShowNew
     def on_dirdiff_shownew_activate(self, *extra):
-        pass
+        current_doc = self.current_doc()
+        if isinstance(current_doc, dirdiff.DirDiff):
+            action = current_doc.actiongroup.get_action("ShowNew")
+            if action and action.get_sensitive():
+                active = not action.get_active()
+                action.set_active(active)
+                current_doc.on_filter_state_toggled(None)
 
+    # esh: hotkey handler action ShowSame
     def on_dirdiff_showsame_activate(self, *extra):
-        pass
+        current_doc = self.current_doc()
+        if isinstance(current_doc, dirdiff.DirDiff):
+            action = current_doc.actiongroup.get_action("ShowSame")
+            if action and action.get_sensitive():
+                active = not action.get_active()
+                action.set_active(active)
+                current_doc.on_filter_state_toggled(None)
 
+    # esh: hotkey handler action ShowModified
     def on_dirdiff_showmodified_activate(self, *extra):
-        pass
+        current_doc = self.current_doc()
+        if isinstance(current_doc, dirdiff.DirDiff):
+            action = current_doc.actiongroup.get_action("ShowModified")
+            if action and action.get_sensitive():
+                active = not action.get_active()
+                action.set_active(active)
+                current_doc.on_filter_state_toggled(None)
 
     def on_menu_find_activate(self, *extra):
         self.current_doc().on_find_activate()
