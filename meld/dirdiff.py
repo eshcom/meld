@@ -26,6 +26,7 @@ import re
 import shutil
 import stat
 import sys
+import logging
 
 from gi.repository import GLib
 from gi.repository import Gio
@@ -47,6 +48,7 @@ from meld.conf import _
 from meld.misc import all_same
 from meld.settings import bind_settings, meldsettings, settings
 
+log = logging.getLogger(__name__)
 
 ################################################################################
 #
