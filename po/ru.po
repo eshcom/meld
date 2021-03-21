@@ -488,16 +488,16 @@ msgid "Compare selected files"
 msgstr "Сравнить выбранные файлы"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
-msgstr "Копировать в_лево"
+msgid "Copy to _Left"
+msgstr "Коп.в_лево"
 
 #: ../data/ui/dirdiff.ui.h:4
 msgid "Copy to left"
 msgstr "Копировать влево"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
-msgstr "Копировать в_право"
+msgid "Copy to _Right"
+msgstr "Коп.в_право"
 
 #: ../data/ui/dirdiff.ui.h:6
 msgid "Copy to right"
@@ -529,7 +529,7 @@ msgstr ""
 
 #: ../data/ui/dirdiff.ui.h:12
 msgid "Same"
-msgstr "Одинаковые"
+msgstr "Одинак."
 
 #: ../data/ui/dirdiff.ui.h:13
 msgid "Show identical"
@@ -545,7 +545,7 @@ msgstr "Показывать новые"
 
 #: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:71
 msgid "Modified"
-msgstr "Изменённые"
+msgstr "Изменён."
 
 #: ../data/ui/dirdiff.ui.h:17
 msgid "Show modified"
@@ -553,7 +553,7 @@ msgstr "Показывать изменённые"
 
 #: ../data/ui/dirdiff.ui.h:18
 msgid "Filters"
-msgstr "Фильтры"
+msgstr "Файл.фильтры"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active filters"
