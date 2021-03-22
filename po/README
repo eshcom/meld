@@ -1,0 +1,8 @@
+How to create a translation
+--------------------------
+
+Update RabbitVCS.pot:
+$ make update-pot
+
+Update <lang>.po files:
+$ make update-po
