@@ -52,7 +52,7 @@
     <menuitem action="OpenExternal" />
   </popup>
 
-  <popup name="CustomPopup">
+  <popup name="FileFilterPopup">
   </popup>
 </ui>
 

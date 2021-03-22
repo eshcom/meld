@@ -500,7 +500,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         for x in self.filter_ui:
             ui.add_ui(self.custom_merge_id, *x)
         self.popup_deactivate_id = self.popup_menu.connect("deactivate", self.on_popup_deactivate_event)
-        self.custom_popup = ui.get_widget("/CustomPopup")
+        self.custom_popup = ui.get_widget("/FileFilterPopup")
         self.filter_menu_button = ui.get_widget("/Toolbar/FilterActions/FileFilterMenu")
         label = misc.make_tool_button_widget(self.filter_menu_button.props.label)
         self.filter_menu_button.set_label_widget(label)
@@ -538,7 +538,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             name = "Hide%d" % i
             callback = lambda b, i=i: self._update_name_filter(b, i)
             actions.append((name, None, f.label, None, _("Hide %s") % f.label, callback, f.active))
-            self.filter_ui.append(["/CustomPopup" , name, name, Gtk.UIManagerItemType.MENUITEM, False])
+            self.filter_ui.append(["/FileFilterPopup" , name, name, Gtk.UIManagerItemType.MENUITEM, False])
             self.filter_ui.append(["/Menubar/ViewMenu/FileFilters" , name, name, Gtk.UIManagerItemType.MENUITEM, False])
             if f.filter is None:
                 disabled_actions.append(name)
