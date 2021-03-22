@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld cvs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-09-23 20:37+0200\n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2005-09-24 01:54+0200\n"
 "Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.li.org>\n"
@@ -15,1047 +15,1061 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../meld.desktop.in.h:1
-msgid "Compare and merge your files."
-msgstr "Vergelijken en samenvoegen van uw bestanden."
+#: ../bin/meld:186
+#, fuzzy
+msgid "Cannot import: "
+msgstr "Kan niet openen "
 
-#: ../meld.desktop.in.h:2
-msgid "Meld Diff Viewer"
-msgstr "Meld diff-weergave"
-
-#. These are the possible states of files. Be sure to get the colons correct.
-#: ../cvsview.py:41
-msgid ""
-"Ignored:Non CVS:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
-msgstr "Genegeerd:Niet CVS:::Fout::Nieuw toegevoegd:Gewijzigd:<b>Conflict</b>:Verwijderd:Ontbrekend"
-
-#: ../cvsview.py:169
-#, python-format
-msgid ""
-"Error converting to a regular expression\n"
-"The pattern was '%s'\n"
-"The error was '%s'"
-msgstr ""
-"Fout bij het converteren naar een reguliere expressie\n"
-"Het patroon is '%s'\n"
-"De fout is '%s'"
-
-#: ../cvsview.py:353 ../svnview.py:292
-msgid "Name"
-msgstr "Naam"
-
-#: ../cvsview.py:370 ../svnview.py:309
-msgid "Location"
-msgstr "Locatie"
-
-#: ../cvsview.py:371 ../svnview.py:310
-msgid "Status"
-msgstr "Status"
-
-#: ../cvsview.py:372 ../svnview.py:311
-msgid "Rev"
-msgstr "Rev"
-
-#: ../cvsview.py:373 ../svnview.py:312 ../glade2/cvsview.glade.h:21
-msgid "Tag"
-msgstr "Label"
-
-#: ../cvsview.py:374 ../svnview.py:313
-msgid "Options"
-msgstr "Opties"
-
-#: ../cvsview.py:411 ../dirdiff.py:364 ../svnview.py:350
-#, python-format
-msgid "[%s] Scanning"
-msgstr "[%s] Zoeken"
-
-#: ../cvsview.py:438 ../dirdiff.py:373 ../svnview.py:377
-#, python-format
-msgid "[%s] Scanning %s"
-msgstr "[%s] Zoeken %s"
-
-#: ../cvsview.py:454 ../svnview.py:393
-msgid "(Empty)"
-msgstr "(Leeg)"
-
-#: ../cvsview.py:490 ../svnview.py:429
-#, python-format
-msgid "[%s] Fetching differences"
-msgstr "[%s] Ophalen verschillen"
-
-#: ../cvsview.py:497 ../svnview.py:437
-#, python-format
-msgid "[%s] Applying patch"
-msgstr "[%s] Verwerken wijzigingen"
-
-#: ../cvsview.py:501 ../svnview.py:441
-msgid "No differences found."
-msgstr "Geen verschillen gevonden."
-
-#: ../cvsview.py:575 ../svnview.py:515
-msgid "Select some files first."
-msgstr "Selecteer eerst een aantal bestanden."
-
-#: ../cvsview.py:596 ../dirdiff.py:552 ../svnview.py:536
-#, python-format
-msgid ""
-"'%s' is a directory.\n"
-"Remove recusively?"
-msgstr ""
-"'%s' is een map.\n"
-"Recursief verwijderen?"
-
-#: ../cvsview.py:601 ../dirdiff.py:559 ../svnview.py:541
-#, python-format
-msgid ""
-"Error removing %s\n"
-"\n"
-"%s."
-msgstr ""
-"Fout bij verwijdern %s\n"
-"\n"
-"%s."
-
-#: ../dirdiff.py:253 ../dirdiff.py:268
-#, python-format
-msgid "Error converting pattern '%s' to regular expression"
-msgstr "Fout bij het converteren van patroon '%s' naar reguliere expressie"
-
-#: ../dirdiff.py:284
-#, python-format
-msgid "Hide %s"
-msgstr "%s verbergen"
-
-#: ../dirdiff.py:406
-#, python-format
-msgid "'%s' hidden by '%s'"
-msgstr "'%s' verborgen door '%s'"
-
-#: ../dirdiff.py:412
-#, python-format
-msgid ""
-"You are running a case insensitive comparison on a case sensitive "
-"filesystem. Some files are not visible:\n"
-"%s"
-msgstr ""
-"U gebruikt een hoofdletterongevoelige vergelijking op een "
-"hoofdlettergevoelig bestandssysteem. Sommige bestanden zijn niet zichtbaar:\n"
-"%s"
-
-#: ../dirdiff.py:481
-#, python-format
-msgid "[%s] Done"
-msgstr "[%s] Gedaan"
-
-#: ../dirdiff.py:527
-#, python-format
-msgid ""
-"'%s' exists.\n"
-"Overwrite?"
-msgstr ""
-"'%s' bestaat.\n"
-"Overschrijven?"
-
-#: ../dirdiff.py:534
-#, python-format
-msgid ""
-"Error copying '%s' to '%s'\n"
-"\n"
-"%s."
-msgstr ""
-"Fout bij kopieëren van '%s' naar '%s'\n"
-"\n"
-"%s."
-
-#: ../dirdiff.py:570
-#, python-format
-msgid "%i second"
-msgid_plural "%i seconds"
-msgstr[0] "%i seconde"
-msgstr[1] "%i seconden"
-
-#: ../dirdiff.py:571
-#, python-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i minuut"
-msgstr[1] "%i minuten"
-
-#: ../dirdiff.py:572
-#, python-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i uur"
-msgstr[1] "%i uur"
-
-#: ../dirdiff.py:573
-#, python-format
-msgid "%i day"
-msgid_plural "%i days"
-msgstr[0] "%i dag"
-msgstr[1] "%i dagen"
-
-#: ../dirdiff.py:574
-#, python-format
-msgid "%i week"
-msgid_plural "%i weeks"
-msgstr[0] "%i week"
-msgstr[1] "%i weken"
-
-#: ../dirdiff.py:575
-#, python-format
-msgid "%i month"
-msgid_plural "%i months"
-msgstr[0] "%i maand"
-msgstr[1] "%i maanden"
-
-#: ../dirdiff.py:576
-#, python-format
-msgid "%i year"
-msgid_plural "%i years"
-msgstr[0] "%i jaar"
-msgstr[1] "%i jaren"
-
-#. Abbreviation for insert,overwrite so that it will fit in the status bar
-#: ../filediff.py:224
-msgid "INS,OVR"
-msgstr "INS,OVR"
-
-#. Abbreviation for line, column so that it will fit in the status bar
-#: ../filediff.py:226
-#, python-format
-msgid "Ln %i, Col %i"
-msgstr "Ln %i, Kol %i"
-
-#: ../filediff.py:284
-#, python-format
-msgid ""
-"Regular expression '%s' changed the number of lines in the file. Comparison "
-"will be incorrect. See the user manual for more details."
-msgstr "Reguliere expressie '%s' heeft het aantal regels in het bestand gewijzigd. De vergelijking zal onjuist zijn. Zie de gebruikshandleiding voor meer details."
-
-#: ../filediff.py:529
-#, python-format
-msgid ""
-"Regular expression error\n"
-"'%s'"
-msgstr ""
-"Reguliere expressie fout\n"
-"'%s'"
-
-#: ../filediff.py:541
-#, python-format
-msgid "The regular expression '%s' was not found."
-msgstr "De reguliere expressie '%s' is niet gevonden."
-
-#: ../filediff.py:543
-#, python-format
-msgid "The text '%s' was not found."
-msgstr "De tekst '%s' is niet gevonden."
-
-#: ../filediff.py:582
-#, python-format
-msgid "[%s] Set num panes"
-msgstr "[%s] Instellen num panes"
-
-#: ../filediff.py:589
-#, python-format
-msgid "[%s] Opening files"
-msgstr "[%s] Openen bestanden"
-
-#: ../filediff.py:606 ../filediff.py:620 ../filediff.py:636 ../filediff.py:643
-#, python-format
-msgid "Could not read from '%s'"
-msgstr "Kan niet lezen vanuit '%s'."
-
-#: ../filediff.py:607 ../filediff.py:644
-msgid "The error was:"
-msgstr "De fout was:"
-
-#: ../filediff.py:612
-#, python-format
-msgid "[%s] Reading files"
-msgstr "[%s] Lezen bestanden"
-
-# Mogelijkerwijs/Misschien
-#: ../filediff.py:621
-msgid ""
-"It contains ascii nulls.\n"
-"Perhaps it is a binary file."
-msgstr ""
-"Het bevat ascii-nullen.\n"
-"Misschien is het een binair bestand."
-
-#: ../filediff.py:637
-#, python-format
-msgid "I tried encodings %s."
-msgstr "Geprobeerd met tekensets %s."
-
-#: ../filediff.py:665
-#, python-format
-msgid "[%s] Computing differences"
-msgstr "[%s] Berekenen verschillen"
-
-#: ../filediff.py:754
-#, python-format
-msgid ""
-"\"%s\" exists!\n"
-"Overwrite?"
-msgstr ""
-"\"%s\" bestaat!\n"
-"Overschrijven?"
-
-#: ../filediff.py:766
-#, python-format
-msgid ""
-"Error writing to %s\n"
-"\n"
-"%s."
-msgstr ""
-"Fout bij schrijven naar %s\n"
-"\n"
-"%s."
-
-#: ../filediff.py:775
-#, python-format
-msgid "Choose a name for buffer %i."
-msgstr "Kies een naam voor buffer %i"
-
-#: ../filediff.py:788
-#, python-format
-msgid ""
-"This file '%s' contains a mixture of line endings.\n"
-"\n"
-"Which format would you like to use?"
-msgstr ""
-"Dit bestand '%s' bevat een mix van regeleindes.\n"
-"\n"
-"Welk formaat wilt u gebruiken?"
-
-#: ../filediff.py:804
-#, python-format
-msgid ""
-"'%s' contains characters not encodable with '%s'\n"
-"Would you like to save as UTF-8?"
-msgstr ""
-"'%s' bevat tekens die niet in '%s' zijn uit te drukken\n"
-"Wilt u opslaan als UTF-8"
-
-#. save as
-#: ../filediff.py:839
-msgid "Save patch as..."
-msgstr "Patch opslaan als..."
-
-#: ../filediff.py:893
-#, python-format
-msgid ""
-"Refreshing will discard changes in:\n"
-"%s\n"
-"\n"
-"You cannot undo this operation."
-msgstr ""
-"Bij het vernieuwen zullen wijzigingen verloren gaan in:\n"
-"%s\n"
-"\n"
-"U kan deze operatie niet ongedaan maken."
-
-#: ../meld:57 ../meld:67 ../meld:77
+#: ../bin/meld:189
 #, c-format
 msgid "Meld requires %s or higher."
 msgstr "Meld vereist %s of hoger."
 
-#: ../meld:78
+#: ../bin/meld:241
+#, c-format
 msgid ""
-"Due to incompatible API changes some functions may not operate as expected."
+"Couldn't load Meld-specific CSS (%s)\n"
+"%s"
 msgstr ""
-"Door incompatibiliteit in API wijzigingen kunnen sommige functies niet "
-"werken zoals verwacht."
 
-#: ../meldapp.py:294
-msgid "Line numbers are only available if you have gnome-python-desktop installed."
-msgstr ""
-"Regel nummers zijn enkel beschikbaar als u gnome-python-desktop heeft geinstalleerd."
-
-#: ../meldapp.py:298
-msgid ""
-"Syntax highlighting is only available if you have gnome-python-desktop installed."
-msgstr ""
-"Syntax highlighting is enkel beschibaar als u gnome-python-desktop heeft "
-"geinstalleerd."
-
-#: ../meldapp.py:745
-msgid "Cannot compare a mixture of files and directories.\n"
-msgstr "Kan een mix van bestanden en mappen niet vergelijken.\n"
-
-# bespreek/bediscussieer
-#. ###############################################################################
-#.
-#. usage
-#.
-#. ###############################################################################
-#: ../meldapp.py:798
-msgid ""
-"Meld is a file and directory comparison tool. Usage:\n"
-"\n"
-"    meld                        Start with no windows open\n"
-"    meld <dir>                  Start with CVS browser in 'dir'\n"
-"    meld <file>                 Start with CVS diff of 'file'\n"
-"    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
-"    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory comparison\n"
-"\n"
-"Options:\n"
-"    -h, --help                  Show this help text and exit\n"
-"    -v, --version               Display the version and exit\n"
-"\n"
-"For more information choose help -> contents.\n"
-"Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
-"Discuss meld at http://mail.gnome.org/mailman/listinfo/meld-list\n"
-msgstr ""
-"Meld is een programma voor het vergelijken van bestanden en mappen.\n"
-"Gebruik:\n"
-"\n"
-"    meld                           Begin zonder geopende vensters\n"
-"    meld <map>                     Begin met CVS browser in 'map'\n"
-"    meld <bestand>                 Begin met CVS diff van 'bestand'\n"
-"    meld <bestand> <bestand> [bestand]         Begin met 2 of 3-weg bestandsvergelijking\n"
-"    meld <map>  <map>  [map]       Begin met 2 of 3-weg mappenvergelijking\n"
-"\n"
-"Opties:\n"
-"    -h, --help                     Toon deze helptekst en sluit af\n"
-"    -v, --version                  Toon de versie en sluit af\n"
-"\n"
-"Voor mee informatie kies hulp -> inhoud.\n"
-"Reporteer bugs op http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
-"Bediscussieer meld op:  http://mail.gnome.org/mailman/listinfo/meld-list\n"
-
-#: ../meldapp.py:815
-#, python-format
-msgid ""
-"Meld %s\n"
-"Written by Stephen Kennedy <stevek@gnome.org>"
-msgstr ""
-"Meld %s\n"
-"Geschreven door Stephen Kennedy <stevek@gnome.org>"
-
-#: ../meldapp.py:871
-#, python-format
-msgid "Wrong number of arguments (Got %i)"
-msgstr "Ongeldig aantal argumenten (Was %i)"
-
-#: ../melddoc.py:45
-msgid "untitled"
-msgstr "naamloos"
-
-#. no common path. empty names get changed to "[None]"
-#: ../misc.py:120
-msgid "[None]"
-msgstr "[Geen]"
-
-#: ../svnview.py:42
-msgid ""
-"Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
-msgstr "Genegeerd:Niet SVN:::Fout::Nieuw toegevoegd:Gewijzigd:<b>Conflict</b>:Verwijderd:Ontbrekend"
-
-#: ../glade2/cvsview.glade.h:1
-msgid "Add _Binary"
-msgstr "Toevoegen _binair"
-
-#: ../glade2/cvsview.glade.h:2
-msgid "Add to CVS"
-msgstr "Toevoegen aan CVS"
-
-#: ../glade2/cvsview.glade.h:3
-msgid "CVS Log"
-msgstr "CVS Log"
-
-#: ../glade2/cvsview.glade.h:4
-msgid "Commit"
-msgstr "Doorvoeren"
-
-#: ../glade2/cvsview.glade.h:5
-msgid "Commit Files"
-msgstr "Doorvoeren bestanden"
-
-#: ../glade2/cvsview.glade.h:6
-msgid "Date"
-msgstr "Datum"
-
-#: ../glade2/cvsview.glade.h:7
-msgid "Delete locally"
-msgstr "Lokaal verwijderen"
-
-#: ../glade2/cvsview.glade.h:8
-msgid "Diff Options"
-msgstr "Diff Opties"
-
-#: ../glade2/cvsview.glade.h:9
-msgid "Diff selected"
-msgstr "Diff geselecteerd"
-
-#: ../glade2/cvsview.glade.h:10
-msgid "Flatten directories"
-msgstr "Vervlakken mappen"
-
-#: ../glade2/cvsview.glade.h:11
-msgid "Ignored"
-msgstr "Genegeerd"
-
-#: ../glade2/cvsview.glade.h:12
-msgid "Local copy against other remote revision"
-msgstr "Lokale kopie tegen remote revisie"
-
-#: ../glade2/cvsview.glade.h:13
-msgid "Local copy against same remote revision"
-msgstr "Lokale kopie tegen gelijke remote revisie"
-
-#: ../glade2/cvsview.glade.h:14
-msgid "Log Message"
-msgstr "Log bericht"
-
-#: ../glade2/cvsview.glade.h:15
-msgid "Non _CVS"
-msgstr "Niet _CVS"
-
-#: ../glade2/cvsview.glade.h:16
-msgid "Previous Logs"
-msgstr "Vorige logs"
-
-#: ../glade2/cvsview.glade.h:17
-msgid "Remove _Locally"
-msgstr "_Lokaal verwijderen"
-
-#: ../glade2/cvsview.glade.h:18
-msgid "Remove from CVS"
-msgstr "Verwijderen van CVS"
-
-#: ../glade2/cvsview.glade.h:19 ../glade2/dirdiff.glade.h:20
-msgid "Show modified"
-msgstr "Laat veranderde zien"
-
-#: ../glade2/cvsview.glade.h:20
-msgid "Show non-CVS"
-msgstr "Weergeven niet-CVS"
-
-#: ../glade2/cvsview.glade.h:22
-msgid "Update"
-msgstr "Verversen"
-
-#: ../glade2/cvsview.glade.h:23
-msgid "_Add"
-msgstr "_Toevoegen"
-
-#: ../glade2/cvsview.glade.h:24
-msgid "_Commit"
-msgstr "Doorvoeren"
-
-#: ../glade2/cvsview.glade.h:25 ../glade2/meldapp.glade.h:88
-msgid "_Diff"
-msgstr "_Diff"
-
-#: ../glade2/cvsview.glade.h:26
-msgid "_Edit"
-msgstr "Be_werken"
-
-#: ../glade2/cvsview.glade.h:27
-msgid "_Flatten"
-msgstr "Vervlakken"
-
-#: ../glade2/cvsview.glade.h:28
-msgid "_Modified"
-msgstr "Gewijzigd"
-
-#: ../glade2/cvsview.glade.h:29
-msgid "_Normal"
-msgstr "_Normaal"
-
-#: ../glade2/cvsview.glade.h:30
-msgid "_Remove"
-msgstr "_Verwijderen"
-
-#: ../glade2/cvsview.glade.h:31
-msgid "_Update"
-msgstr "_Verversen"
-
-#: ../glade2/filediff.glade.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
-"Which ones would you like to save?</span>"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">Sommige bestanden zijn gewijzigd.\n"
-"Welke wilt u opslaan?</span>"
-
-#: ../glade2/filediff.glade.h:3
-msgid "Copy All _Left"
-msgstr "Alles naar links kopieëren"
-
-#: ../glade2/filediff.glade.h:4
-msgid "Copy All _Right"
-msgstr "Alles naar _rechts kopieëren"
-
-#: ../glade2/filediff.glade.h:5
-msgid "Copy to Clipboard"
-msgstr "Kopiëren naar klembord"
-
-#: ../glade2/filediff.glade.h:6
-msgid "Create Patch"
-msgstr "Patch aanmaken"
-
-#: ../glade2/filediff.glade.h:7 ../glade2/dirdiff.glade.h:9
-msgid "Edit"
-msgstr "Bewerken"
-
-#: ../glade2/filediff.glade.h:8
-msgid "Find"
-msgstr "Zoeken"
-
-#: ../glade2/filediff.glade.h:9
-msgid "Make Patch"
-msgstr "Patch maken"
-
-#: ../glade2/filediff.glade.h:10
-msgid "Match _entire word only"
-msgstr "_Enkel complete woorden"
-
-#: ../glade2/filediff.glade.h:11
-msgid "Regular e_xpression"
-msgstr "Reguliere e_xpressie"
-
-#: ../glade2/filediff.glade.h:12
-msgid "Save modified files?"
-msgstr "Gewijzigde bestanden opslaan?"
-
-#: ../glade2/filediff.glade.h:13
-msgid "Search for:"
-msgstr "Zoeken naar:"
-
-#: ../glade2/filediff.glade.h:14
-msgid "_Match case"
-msgstr "Hoofdlettergevoelig"
-
-#: ../glade2/filediff.glade.h:15
-msgid "_Wrap around"
-msgstr "_Woordafbraak"
-
-#: ../glade2/dirdiff.glade.h:1
-msgid "Case"
-msgstr "Hoofdlettergebruik"
-
-#: ../glade2/dirdiff.glade.h:2
-msgid "Copy Left"
-msgstr "Naar links kopieëren"
-
-#: ../glade2/dirdiff.glade.h:3
-msgid "Copy Right"
-msgstr "Naar rechts kopieëren"
-
-#: ../glade2/dirdiff.glade.h:4
-msgid "Copy left"
-msgstr "Naar links kopieëren"
-
-#: ../glade2/dirdiff.glade.h:5
-msgid "Copy right"
-msgstr "Naar rechts kopieëren"
-
-#: ../glade2/dirdiff.glade.h:6
-msgid "Delete selected"
-msgstr "Verwijderen geselecteerde"
-
-#: ../glade2/dirdiff.glade.h:7
-msgid "Diff"
-msgstr "Diff"
-
-#: ../glade2/dirdiff.glade.h:8
-msgid "Diff selection"
-msgstr "Diff selectie"
-
-#: ../glade2/dirdiff.glade.h:10
-msgid "Hide selected"
-msgstr "Verbergen geselecteerde"
-
-#: ../glade2/dirdiff.glade.h:11
-msgid "Hide..."
-msgstr "Verbergen..."
-
-#: ../glade2/dirdiff.glade.h:12
-msgid "Ignore case of entries"
-msgstr "Negeer hoofdlettergebruik van ingangen"
-
-#: ../glade2/dirdiff.glade.h:13
-msgid "Launch _Comparison"
-msgstr "Starten vergelijking"
-
-#: ../glade2/dirdiff.glade.h:14
-msgid "Left"
-msgstr "Links"
-
-#: ../glade2/dirdiff.glade.h:15
-msgid "Modified"
-msgstr "Bewerkt"
-
-#: ../glade2/dirdiff.glade.h:16
-msgid "New"
-msgstr "Nieuw"
-
-#: ../glade2/dirdiff.glade.h:17
-msgid "Right"
-msgstr "Rechts"
-
-#: ../glade2/dirdiff.glade.h:18
-msgid "Same"
-msgstr "Zelfde"
-
-#: ../glade2/dirdiff.glade.h:19
-msgid "Show identical"
-msgstr "Laat gelijke zien"
-
-#: ../glade2/dirdiff.glade.h:21
-msgid "Show new"
-msgstr "Laat nieuwe zien"
-
-#: ../glade2/dirdiff.glade.h:22
-msgid "_Delete Selected"
-msgstr "Verwijderen geselecteerde"
-
-#: ../glade2/meldapp.glade.h:1
-msgid "(gnome-default-editor)"
-msgstr "(gnome standaard editor)"
-
-#: ../glade2/meldapp.glade.h:2
-msgid "<b>Drawing Style</b>"
-msgstr "<b>Teken stijl</b>"
-
-#: ../glade2/meldapp.glade.h:3
-msgid "<b>Edit Menu</b>"
-msgstr "<b>Menu bewerken</b>"
-
-#: ../glade2/meldapp.glade.h:4
-msgid "<b>Font</b>"
-msgstr "<b>Lettertype</b>"
-
-#: ../glade2/meldapp.glade.h:5
-msgid "<b>Global options</b>"
-msgstr "<b>Globale opties</b>"
-
-#: ../glade2/meldapp.glade.h:6
-msgid "<b>Loading</b>"
-msgstr "<b>Laden</b>"
-
-#: ../glade2/meldapp.glade.h:7
-msgid "<b>Misc</b>"
-msgstr "<b>Overig</b>"
-
-#: ../glade2/meldapp.glade.h:8
-msgid "<b>Saving</b>"
-msgstr "<b>Opslaan</b>"
-
-#: ../glade2/meldapp.glade.h:9
-msgid "<b>Toolbar Appearance</b>"
-msgstr "<b>Werkbalk weergave</b>"
-
-#: ../glade2/meldapp.glade.h:10
-msgid "<b>Update Options</b>"
-msgstr "<b>Vernieuwen Opties</b>"
-
-#: ../glade2/meldapp.glade.h:11
-msgid "<b>Whitespace</b>"
-msgstr "<b>Witruimtes</b>"
-
-#: ../glade2/meldapp.glade.h:12
-msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-
-#: ../glade2/meldapp.glade.h:13
-msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Diff</span>"
-
-#: ../glade2/meldapp.glade.h:14
-msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Weergave</span>"
-
-#: ../glade2/meldapp.glade.h:15
-msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Editor</span>"
-
-#: ../glade2/meldapp.glade.h:16
-msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Codering</span>"
-
-#: ../glade2/meldapp.glade.h:17
-msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Bestands Filters</span>"
-
-#: ../glade2/meldapp.glade.h:18
-msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filters</span>"
-
-#: ../glade2/meldapp.glade.h:19
-msgid "Automatically supply missing newline at end of file."
-msgstr ""
-"Automatisch toevoegen ontbrekende nieuwregel aan het einde van het bestand."
-
-#: ../glade2/meldapp.glade.h:20
-msgid "CVS"
-msgstr "CVS"
-
-#: ../glade2/meldapp.glade.h:21
-msgid "CVS Directory"
-msgstr "CVS map"
-
-#: ../glade2/meldapp.glade.h:22
-msgid "CVS binary"
-msgstr "CVS programma"
-
-#: ../glade2/meldapp.glade.h:23
-msgid "CVS view"
-msgstr "CVS weergave"
-
-#: ../glade2/meldapp.glade.h:24
-msgid "C_VS Browser"
-msgstr "C_VS verkenner"
-
-#: ../glade2/meldapp.glade.h:25
-msgid "Choose Files"
-msgstr "Kies bestanden"
-
-#: ../glade2/meldapp.glade.h:26
-msgid ""
-"Choose how the central bar of the diff viewer is drawn. You may wish to "
-"choose a simpler mode if you find scrolling is slow."
-msgstr ""
-"Kies hoe de centrale balk van de diff weergave getekent wordt. U kunt "
-"eensimpelere mode kiezen voor als het verschuiven langzaam gaat."
-
-#: ../glade2/meldapp.glade.h:27
-msgid "Copyright (C) 2002 Stephen Kennedy"
-msgstr "Copyright (C) 2002 Stephen Kennedy"
-
-#: ../glade2/meldapp.glade.h:28
-msgid "Create missing directories (-d)"
-msgstr "Aanmaken ontbrekende mappen (-d)"
-
-#: ../glade2/meldapp.glade.h:29
-msgid "Curved : Filled Curves"
-msgstr "Curves : Gevulde curves"
-
-#: ../glade2/meldapp.glade.h:30
-msgid "Custom command"
-msgstr "Aangepast commando"
-
-#: ../glade2/meldapp.glade.h:31
-msgid "Display"
-msgstr "Weergave"
-
-#: ../glade2/meldapp.glade.h:32
-msgid "Edit menu popup invokes"
-msgstr "Bewerken menu popup start"
-
-#: ../glade2/meldapp.glade.h:33
-msgid "Editor"
-msgstr "Editor"
-
-#: ../glade2/meldapp.glade.h:34
-msgid "Encoding"
-msgstr "Codering"
-
-#: ../glade2/meldapp.glade.h:35
-msgid "File Filters"
-msgstr "Bestands filters"
-
-#: ../glade2/meldapp.glade.h:36
-msgid "Gnome Default"
-msgstr "Gnome standaard"
-
-#: ../glade2/meldapp.glade.h:37
-msgid "Gnome default editor"
-msgstr "Gnome standaard editor"
-
-#: ../glade2/meldapp.glade.h:38
-msgid "Icons Only"
-msgstr "Enkel pictogrammen"
-
-#: ../glade2/meldapp.glade.h:39
-msgid "Ignore .cvsrc (-f)"
-msgstr "Negeren .cvsrc (-f)"
-
-#: ../glade2/meldapp.glade.h:40
-msgid "Ignore changes in amount of white space"
-msgstr "Negeer veranderingen in het aantal witruimtes"
-
-#: ../glade2/meldapp.glade.h:41
-msgid ""
-"Ignore changes in case; consider upper and lower-case letters equivalent"
-msgstr ""
-"Negeer veranderingen in hoofdlettergebruik; beschouw hoofdletters en kleine "
-"letters gelijk"
-
-#: ../glade2/meldapp.glade.h:42
-msgid "Ignore changes that just insert or delete blank lines"
-msgstr "Negeer veranderingen in het aantal witregels"
-
-#: ../glade2/meldapp.glade.h:43
-msgid "Ignore changes which insert or delete blank lines"
-msgstr "Negeer veranderingen in het aantal witregels"
-
-#: ../glade2/meldapp.glade.h:44
-msgid "Internal editor"
-msgstr "Interne editor"
-
-#: ../glade2/meldapp.glade.h:45
-msgid "Line Wrapping "
-msgstr "Regelafbraak "
-
-#: ../glade2/meldapp.glade.h:46
-msgid "Locate CVS binary : Meld"
-msgstr "Localiseer CVS programma : Meld"
-
-#: ../glade2/meldapp.glade.h:47
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
 msgid "Meld"
 msgstr "Meld"
 
-#: ../glade2/meldapp.glade.h:48
-msgid "Mine"
-msgstr "Mijn"
+#: ../data/meld.desktop.in.h:2
+#, fuzzy
+msgid "Diff Viewer"
+msgstr "Meld diff-weergave"
 
-#: ../glade2/meldapp.glade.h:49
-msgid "My Directory"
-msgstr "Mijn Map"
+#: ../data/meld.desktop.in.h:3
+msgid "Meld Diff Viewer"
+msgstr "Meld diff-weergave"
 
-#: ../glade2/meldapp.glade.h:50
-msgid "My File"
-msgstr "Mijn bestand"
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
+#, fuzzy
+msgid "Compare and merge your files"
+msgstr "Vergelijken en samenvoegen van uw bestanden."
 
-#: ../glade2/meldapp.glade.h:51
-msgid "New..."
-msgstr "Nieuw..."
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:52
-msgid "Original"
-msgstr "Orgineel"
+#: ../data/meld.appdata.xml.in.h:3
+msgid ""
+"Meld is a visual diff and merge tool targeted at developers. Meld helps you "
+"compare files, directories, and version controlled projects. It provides "
+"two- and three-way comparison of both files and directories, and supports "
+"many version control systems including Git, Mercurial, Bazaar and Subversion."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:53
-msgid "Original Directory"
-msgstr "Bron map"
+#: ../data/meld.appdata.xml.in.h:4
+msgid ""
+"Meld helps you review code changes, understand patches, and makes enormous "
+"merge conflicts slightly less painful."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:54
-msgid "Original File"
-msgstr "Bron Bestand"
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:55
-msgid "Other"
-msgstr "Andere"
+#: ../data/mime/meld.xml.in.h:1
+msgid "Meld comparison description"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:56
-msgid "Other Directory"
-msgstr "Andere map"
+#: ../data/org.gnome.meld.gschema.xml.h:1
+msgid "Default window width"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:57
-msgid "Other File"
-msgstr "Ander bestand"
+#: ../data/org.gnome.meld.gschema.xml.h:2
+msgid "Default window height"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:58
-msgid "Preferences : Meld"
-msgstr "Voorkeuren : Meld"
+#: ../data/org.gnome.meld.gschema.xml.h:3
+msgid "Default window maximised state"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:59
-msgid "Prune empty directories (-P)"
-msgstr "Verwijderen lege mappen (-P)"
+#: ../data/org.gnome.meld.gschema.xml.h:4
+msgid "Default window fullscreen state"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:60
-msgid "Quiet mode (-q)"
-msgstr "Stille mode (-q)"
+#: ../data/org.gnome.meld.gschema.xml.h:5
+msgid "Show toolbar"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:61
-msgid "Report _Bug"
-msgstr "_Bug reporteren"
+#: ../data/org.gnome.meld.gschema.xml.h:6
+msgid "If true, the window toolbar is visible."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:62
-msgid "SVN Directory"
-msgstr "SVN map"
+#: ../data/org.gnome.meld.gschema.xml.h:7
+#, fuzzy
+msgid "Show statusbar"
+msgstr "Status"
 
-#: ../glade2/meldapp.glade.h:63
-msgid "SVN view"
-msgstr "SVN weergave"
+#: ../data/org.gnome.meld.gschema.xml.h:8
+msgid "If true, the window statusbar is visible."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:64
-msgid "Save in UTF-8 encoding"
-msgstr "Opslaan in UTF-8 codering"
+#: ../data/org.gnome.meld.gschema.xml.h:9
+msgid "Additional automatically detected text encodings"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:65
-msgid "Save in the files original encoding"
-msgstr "Sla bestanden op in orgineele codering"
+#: ../data/org.gnome.meld.gschema.xml.h:10
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:66
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Width of an indentation step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "The number of spaces to use for a single indent step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:13
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:14
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Show line numbers"
 msgstr "Toon regelnummers"
 
-#: ../glade2/meldapp.glade.h:67
-msgid "Simple : Lines only"
-msgstr "Simpel : Enkel lijnen"
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:68
-msgid "Solid : Filled Quadilaterals"
-msgstr "Vast : Gevulde Quadilaterals"
+#: ../data/org.gnome.meld.gschema.xml.h:17
+msgid "Highlight syntax"
+msgstr ""
 
-# breedte tab/tabbreedte
-#: ../glade2/meldapp.glade.h:69
-msgid "Tab width"
-msgstr "Tabbreedte"
+#: ../data/org.gnome.meld.gschema.xml.h:18
+msgid ""
+"Whether to highlight syntax in comparisons. Because of Meld's own color "
+"highlighting, this is off by default."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:70
-msgid "Text Beside Icons"
-msgstr "Tekst naast pictogrammen"
-
-#: ../glade2/meldapp.glade.h:71
-msgid "Text Filters"
-msgstr "Tekstfilters"
-
-#: ../glade2/meldapp.glade.h:72
-msgid "Text Only"
-msgstr "Enkel tekst"
-
-#: ../glade2/meldapp.glade.h:73
-msgid "Text Under Icons"
-msgstr "Text onder pictogrammen"
-
-#: ../glade2/meldapp.glade.h:74
-msgid "Three way directory"
-msgstr "Drie weg bestand"
-
-#: ../glade2/meldapp.glade.h:75
-msgid "Three way file"
-msgstr "Drie weg bestand"
-
-#: ../glade2/meldapp.glade.h:76
-msgid "Two way directory"
-msgstr "Twee weg map"
-
-#: ../glade2/meldapp.glade.h:77
-msgid "Two way file"
-msgstr "Twee weg bestand"
-
-#: ../glade2/meldapp.glade.h:78
-msgid "Use Compression (-z)"
-msgstr "Gebruik compressie (-z)"
-
-#: ../glade2/meldapp.glade.h:79
-msgid "Use GNOME monospace font."
-msgstr "Gebruik GNOME monospace lettertype."
-
-#: ../glade2/meldapp.glade.h:80
-msgid "Use custom font."
-msgstr "Gebruik aangepast lettertype."
-
-#: ../glade2/meldapp.glade.h:81
-msgid "Use syntax highlighting"
+#: ../data/org.gnome.meld.gschema.xml.h:19
+#, fuzzy
+msgid "Color scheme to use for syntax highlighting"
 msgstr "Gebruik syntax highlighting"
 
-#: ../glade2/meldapp.glade.h:82
-msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-msgstr "Probeer deze coderingen in volgorde bij het laden (b.v. utf8, iso8859)"
+#: ../data/org.gnome.meld.gschema.xml.h:20
+msgid "Used by GtkSourceView to determine colors for syntax highlighting"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:83
+#: ../data/org.gnome.meld.gschema.xml.h:21
+msgid "Displayed whitespace"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:22
+msgid ""
+"Selector for individual whitespace character types to be shown. Possible "
+"values are 'space', 'tab', 'newline' and 'nbsp'."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:23
+#, fuzzy
+msgid "Wrap mode"
+msgstr "_Woordafbraak"
+
+#: ../data/org.gnome.meld.gschema.xml.h:24
+msgid ""
+"Lines in file comparisons will be wrapped according to this setting, either "
+"not at all ('none'), at any character ('char') or only at the end of words "
+"('word')."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:25
+msgid "Highlight current line"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:26
+msgid ""
+"If true, the line containing the cursor will be highlighted in file "
+"comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:27
+#, fuzzy
+msgid "Use the system default monospace font"
+msgstr "Gebruik GNOME monospace lettertype."
+
+#: ../data/org.gnome.meld.gschema.xml.h:28
+msgid ""
+"If false, custom-font will be used instead of the system monospace font."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:29
+#, fuzzy
+msgid "Custom font"
+msgstr "Gebruik aangepast lettertype."
+
+#: ../data/org.gnome.meld.gschema.xml.h:30
+msgid ""
+"The custom font to use, stored as a string and parsed as a Pango font "
+"description."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:31
+msgid "Ignore blank lines when comparing files"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:32
+msgid ""
+"If true, blank lines will be trimmed when highlighting changes between files."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:33
+#, fuzzy
+msgid "Use the system default editor"
+msgstr "Gnome standaard editor"
+
+#: ../data/org.gnome.meld.gschema.xml.h:34
+msgid ""
+"If false, custom-editor-command will be used instead of the system editor "
+"when opening files externally."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:35
+msgid "The custom editor launch command"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:36
+msgid ""
+"The command used to launch a custom editor. Some limited templating is "
+"supported here; at the moment '{file}' and '{line}' are recognised tokens."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:37
+msgid "Columns to display"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:38
+msgid ""
+"List of column names in folder comparison and whether they should be "
+"displayed."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
+msgid "Ignore symbolic links"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:40
+msgid ""
+"If true, folder comparisons do not follow symbolic links when traversing the "
+"folder tree."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:41
+msgid "Use shallow comparison"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:42
+msgid ""
+"If true, folder comparisons compare files based solely on size and mtime, "
+"considering files to be identical if their size and mtime match, and "
+"different otherwise."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:43
+msgid "File timestamp resolution"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:44
+msgid ""
+"When comparing based on mtime, this is the minimum difference in nanoseconds "
+"between two files before they're considered to have different mtimes. This "
+"is useful when comparing files between filesystems with different timestamp "
+"resolution."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:46
+msgid ""
+"If true, folder comparisons that compare file contents also apply active "
+"text filters and the blank line trimming option, and ignore newline "
+"differences."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:47
+#, fuzzy
+msgid "File status filters"
+msgstr "Bestands filters"
+
+#: ../data/org.gnome.meld.gschema.xml.h:48
+msgid "List of statuses used to filter visible files in folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:49
+msgid "Show the version control console output"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:50
+msgid ""
+"If true, a console output section will be shown in version control views, "
+"showing the commands run for version control operations."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:51
+msgid "Version control pane position"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:52
+msgid ""
+"This is the height of the main version control tree when the console pane is "
+"shown."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:53
+msgid "Present version comparisons as left-local/right-remote"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:54
+msgid ""
+"If true, version control comparisons will use a left-is-local, right-is-"
+"remote scheme to determine what order to present files in panes. Otherwise, "
+"a left-is-theirs, right-is-mine scheme is used."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:55
+msgid "Order for files in three-way version control merge comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:56
+msgid ""
+"Choices for file order are remote/merged/local and local/merged/remote. This "
+"preference only affects three-way comparisons launched from the version "
+"control view, so is used solely for merges/conflict resolution within Meld."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:57
+msgid "Show margin in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:58
+msgid ""
+"If true, a guide will be displayed to show what column the margin is at in "
+"the version control commit message editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:59
+msgid "Margin column in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:60
+msgid ""
+"The column at which to show the margin in the version control commit message "
+"editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:61
+msgid "Automatically hard-wrap commit messages"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:62
+msgid ""
+"If true, the version control commit message editor will hard-wrap (i.e., "
+"insert line breaks) at the commit margin before commit."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:63
+msgid "Version control status filters"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:64
+msgid ""
+"List of statuses used to filter visible files in version control comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:65
+#, fuzzy
+msgid "Filename-based filters"
+msgstr "Bestands filters"
+
+#: ../data/org.gnome.meld.gschema.xml.h:66
+msgid ""
+"List of predefined filename-based filters that, if active, will remove "
+"matching files from a folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:67
+#, fuzzy
+msgid "Text-based filters"
+msgstr "Tekstfilters"
+
+#: ../data/org.gnome.meld.gschema.xml.h:68
+msgid ""
+"List of predefined text-based regex filters that, if active, will remove "
+"text from being used in a file comparison. The text will still be displayed, "
+"but won't contribute to the comparison itself."
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+msgid "Base color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+msgid "Dark color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/ui/application.ui.h:1
+msgid "About Meld"
+msgstr ""
+
+#: ../data/ui/application.ui.h:2
+msgid ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
+msgstr ""
+
+#: ../data/ui/application.ui.h:4
+msgid "Website"
+msgstr ""
+
+#: ../data/ui/application.ui.h:5
+msgid "translator-credits"
+msgstr ""
+
+#: ../data/ui/application.ui.h:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "Voorkeuren : Meld"
+
+#: ../data/ui/application.ui.h:7
+msgid "_Help"
+msgstr ""
+
+#: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/application.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
+#, fuzzy
+msgid "_Compare"
+msgstr "_Drie weg bestands vergelijking"
+
+#: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
+#, fuzzy
+msgid "Compare selected files"
+msgstr "Vergelijken en samenvoegen van uw bestanden."
+
+#: ../data/ui/dirdiff.ui.h:3
+#, fuzzy
+msgid "Copy to _Left"
+msgstr "Naar links kopieëren"
+
+#: ../data/ui/dirdiff.ui.h:4
+#, fuzzy
+msgid "Copy to left"
+msgstr "Naar links kopieëren"
+
+#: ../data/ui/dirdiff.ui.h:5
+#, fuzzy
+msgid "Copy to _Right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/dirdiff.ui.h:6
+#, fuzzy
+msgid "Copy to right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/dirdiff.ui.h:7
+msgid "Delete selected"
+msgstr "Verwijderen geselecteerde"
+
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#, fuzzy
+msgid "Hide"
+msgstr "%s verbergen"
+
+#: ../data/ui/dirdiff.ui.h:9
+msgid "Hide selected"
+msgstr "Verbergen geselecteerde"
+
+#: ../data/ui/dirdiff.ui.h:10
+msgid "Ignore Filename Case"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:11
+msgid ""
+"Consider differently-cased filenames that are otherwise-identical to be the "
+"same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:12
+msgid "Same"
+msgstr "Zelfde"
+
+#: ../data/ui/dirdiff.ui.h:13
+msgid "Show identical"
+msgstr "Laat gelijke zien"
+
+#: ../data/ui/dirdiff.ui.h:14
+msgid "New"
+msgstr "Nieuw"
+
+#: ../data/ui/dirdiff.ui.h:15
+msgid "Show new"
+msgstr "Laat nieuwe zien"
+
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
+msgid "Modified"
+msgstr "Bewerkt"
+
+#: ../data/ui/dirdiff.ui.h:17
+msgid "Show modified"
+msgstr "Laat veranderde zien"
+
+#: ../data/ui/dirdiff.ui.h:18
+#, fuzzy
+msgid "Filters"
+msgstr "Bestands filters"
+
+#: ../data/ui/dirdiff.ui.h:19
+#, fuzzy
+msgid "Set active filters"
+msgstr "Bestands filters"
+
+#: ../data/ui/EditableList.ui.h:1
+msgid "Editable List"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:2
+msgid "Active"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:3
+msgid "Column Name"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
+msgid "_Add"
+msgstr "_Toevoegen"
+
+#: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+#: ../meld/vcview.py:644
+msgid "_Remove"
+msgstr "_Verwijderen"
+
+#: ../data/ui/EditableList.ui.h:6
+msgid "Move item up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:7
+msgid "Move _Up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:8
+msgid "Move item down"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:9
+#, fuzzy
+msgid "Move _Down"
+msgstr "_Beneden"
+
+#. Create icon and filename CellRenderer
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
+msgid "Name"
+msgstr "Naam"
+
+#: ../data/ui/EditableList.ui.h:11
+#, fuzzy
+msgid "Pattern"
+msgstr "Vervlakken"
+
+#: ../data/ui/EditableList.ui.h:12
+msgid "Add new filter"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:13
+msgid "Remove selected filter"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:1
+#, fuzzy
+msgid "Format as Patch..."
+msgstr "Patch aanmaken"
+
+#: ../data/ui/filediff.ui.h:2
+msgid "Create a patch using differences between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:3
+#, fuzzy
+msgid "Save A_ll"
+msgstr "Opslaan bestand 1"
+
+#: ../data/ui/filediff.ui.h:4
+msgid "Save all files in the current comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:5
+msgid "Revert files to their saved versions"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:6
+msgid "Add Synchronization Point"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:7
+msgid "Add a synchronization point for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:8
+msgid "Clear Synchronization Points"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:9
+msgid "Clear sychronization points for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:10
+#, fuzzy
+msgid "Previous Conflict"
+msgstr "Vorige logs"
+
+#: ../data/ui/filediff.ui.h:11
+msgid "Go to the previous conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:12
+msgid "Next Conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:13
+msgid "Go to the next conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:14
+msgid "Push to Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:15
+msgid "Push current change to the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:16
+#, fuzzy
+msgid "Push to Right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/filediff.ui.h:17
+msgid "Push current change to the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:18
+msgid "Pull from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:19
+msgid "Pull change from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:20
+msgid "Pull from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:21
+msgid "Pull change from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:22
+#, fuzzy
+msgid "Copy Above Left"
+msgstr "Alles naar links kopieëren"
+
+#: ../data/ui/filediff.ui.h:23
+msgid "Copy change above the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:24
+#, fuzzy
+msgid "Copy Below Left"
+msgstr "Alles naar links kopieëren"
+
+#: ../data/ui/filediff.ui.h:25
+msgid "Copy change below the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:26
+#, fuzzy
+msgid "Copy Above Right"
+msgstr "Alles naar _rechts kopieëren"
+
+#: ../data/ui/filediff.ui.h:27
+msgid "Copy change above the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:28
+#, fuzzy
+msgid "Copy Below Right"
+msgstr "Alles naar _rechts kopieëren"
+
+#: ../data/ui/filediff.ui.h:29
+msgid "Copy change below the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:30
+#, fuzzy
+msgid "Delete"
+msgstr "Lokaal verwijderen"
+
+#: ../data/ui/filediff.ui.h:31
+#, fuzzy
+msgid "Delete change"
+msgstr "Lokaal verwijderen"
+
+#: ../data/ui/filediff.ui.h:32
+msgid "Merge All from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:33
+msgid "Merge all non-conflicting changes from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:34
+msgid "Merge All from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:35
+msgid "Merge all non-conflicting changes from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:36
+msgid "Merge All"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:37
+msgid "Merge all non-conflicting changes from left and right panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:38
+#, fuzzy
+msgid "Previous Pane"
+msgstr "Vorige logs"
+
+#: ../data/ui/filediff.ui.h:39
+msgid "Move keyboard focus to the previous document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:40
+msgid "Next Pane"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:41
+msgid "Move keyboard focus to the next document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:42
+msgid "Lock Scrolling"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:43
+msgid "Lock scrolling of all panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:44
+msgid "Save changes to documents before closing?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:45
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:46
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:48
+msgid "_Save"
+msgstr "Op_slaan"
+
+#: ../data/ui/filediff.ui.h:49
+msgid ""
+"This file can not be written to. You may click here to unlock this file and "
+"make changes anyway, but these changes must be saved to a new file."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:50
+#, fuzzy
+msgid "File 3"
+msgstr "Opslaan bestand 3"
+
+#: ../data/ui/filediff.ui.h:51
+#, fuzzy
+msgid "File 2"
+msgstr "Opslaan bestand 2"
+
+#: ../data/ui/filediff.ui.h:52
+#, fuzzy
+msgid "File 1"
+msgstr "Opslaan bestand 1"
+
+#: ../data/ui/filediff.ui.h:53
+msgid "Revert unsaved changes to documents?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:54
+msgid "Changes made to the following documents will be permanently lost:\n"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+msgid "_Replace"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:2
+msgid "Replace _All"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:3
+#, fuzzy
+msgid "_Previous"
+msgstr "Vorige logs"
+
+#: ../data/ui/findbar.ui.h:4
+msgid "_Next"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:5
+#, fuzzy
+msgid "Find:"
+msgstr "Zoeken"
+
+#: ../data/ui/findbar.ui.h:6
+msgid "Replace _with:"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:7
+msgid "_Match case"
+msgstr "Hoofdlettergevoelig"
+
+#: ../data/ui/findbar.ui.h:8
+msgid "Who_le word"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:9
+msgid "Regular e_xpression"
+msgstr "Reguliere e_xpressie"
+
+#: ../data/ui/findbar.ui.h:10
+msgid "Wrapped"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:1
+#, fuzzy
+msgid "Format as Patch"
+msgstr "Patch aanmaken"
+
+#: ../data/ui/patch-dialog.ui.h:2
+msgid "Copy to Clipboard"
+msgstr "Kopiëren naar klembord"
+
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
+#, fuzzy
+msgid "Save Patch"
+msgstr "Patch maken"
+
+#: ../data/ui/patch-dialog.ui.h:4
+#, fuzzy
+msgid "Use differences between:"
+msgstr "Geen verschillen gevonden."
+
+#: ../data/ui/patch-dialog.ui.h:5
+msgid "Left and middle panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:6
+msgid "Middle and right panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:7
+msgid "_Reverse patch direction"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:1
+#, fuzzy
+msgid "Meld Preferences"
+msgstr "Voorkeuren : Meld"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:4
+#, fuzzy
+msgid "_Editor font:"
+msgstr "Editor"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Display"
+msgstr "Weergave"
+
+# breedte tab/tabbreedte
+#: ../data/ui/preferences.ui.h:6
+#, fuzzy
+msgid "_Tab width:"
+msgstr "Tabbreedte"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "_Insert spaces instead of tabs"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Enable text _wrapping"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Do not _split words over two lines"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Highlight _current line"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:11
+#, fuzzy
+msgid "Show _line numbers"
+msgstr "Toon regelnummers"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Show w_hitespace"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:13
+#, fuzzy
+msgid "Use s_yntax highlighting"
+msgstr "Gebruik syntax highlighting"
+
+#: ../data/ui/preferences.ui.h:14
+#, fuzzy
+msgid "Syntax highlighting color scheme:"
+msgstr "Gebruik syntax highlighting"
+
+#: ../data/ui/preferences.ui.h:15
+#, fuzzy
+msgid "External Editor"
+msgstr "Interne editor"
+
+#: ../data/ui/preferences.ui.h:16
+#, fuzzy
+msgid "Use _default system editor"
+msgstr "Gnome standaard editor"
+
+#: ../data/ui/preferences.ui.h:17
+#, fuzzy
+msgid "Edito_r command:"
+msgstr "Aangepast commando"
+
+#: ../data/ui/preferences.ui.h:18
+msgid "Editor"
+msgstr "Editor"
+
+#: ../data/ui/preferences.ui.h:19
+#, fuzzy
+msgid "Shallow Comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/preferences.ui.h:20
+msgid "C_ompare files based only on size and timestamp"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:21
+msgid "_Timestamp resolution:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
+msgid "Symbolic Links"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:26
+msgid "Visible Columns"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:27
+#, fuzzy
+msgid "Folder Comparisons"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/preferences.ui.h:28
+#, fuzzy
+msgid "Version Comparisons"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/preferences.ui.h:29
+msgid "_Order when comparing file revisions:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:30
+msgid "Order when _merging files:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:31
+#, fuzzy
+msgid "Commit Messages"
+msgstr "Log bericht"
+
+#: ../data/ui/preferences.ui.h:32
+msgid "Show _right margin at:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:33
+msgid "Automatically _break lines at right margin on commit"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:34
+msgid "Version Control"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:35
+#, fuzzy
+msgid "Filename filters"
+msgstr "Bestands filters"
+
+#: ../data/ui/preferences.ui.h:36
 msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
@@ -1065,70 +1079,1992 @@ msgstr ""
 "op naam. Elk patrooon is een lijst met shell stijl wildcards gescheiden door "
 "spaties."
 
-#: ../glade2/meldapp.glade.h:84
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
+msgid "File Filters"
+msgstr "Bestands filters"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:40
+#, fuzzy
+msgid "Text filters"
+msgstr "Tekstfilters"
+
+#: ../data/ui/preferences.ui.h:41
 msgid ""
 "When performing file comparisons, you may ignore certain types of changes. "
 "Each pattern here is a python regular expression which replaces matching "
 "text with the empty string before comparison is performed. If the expression "
 "contains groups, only the groups are replaced. See the user manual for more "
 "details."
-msgstr "Bij het uitvoeren van bestandsvergelijkingen kunt u sommige wijzigingen negeren. Elk patroon is een python reguliere expressie die overeenkomende tekst vervangt met lege tekst voordat wordt vergeleken. Indien de expressie groepen bevat worden alleen de groepen vervangen. Zie de gebruikshandleiding voor meer details."
+msgstr ""
+"Bij het uitvoeren van bestandsvergelijkingen kunt u sommige wijzigingen "
+"negeren. Elk patroon is een python reguliere expressie die overeenkomende "
+"tekst vervangt met lege tekst voordat wordt vergeleken. Indien de expressie "
+"groepen bevat worden alleen de groepen vervangen. Zie de gebruikshandleiding "
+"voor meer details."
 
-#: ../glade2/meldapp.glade.h:85
-msgid "Whitespace is significant"
-msgstr "Witruimte is signifikant"
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
+msgid "Text Filters"
+msgstr "Tekstfilters"
 
-#: ../glade2/meldapp.glade.h:86
-msgid "_Character"
-msgstr "_Karakter"
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:87
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:45
+msgid "Remote, merge, local"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:4
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr "Meld"
+
+#: ../data/ui/shortcuts.ui.h:5
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:7
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:8
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:9
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:10
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:11
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:12
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:13
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr "Andere wijzigingen"
+
+#: ../data/ui/shortcuts.ui.h:15
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:16
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "Bewerken"
+
+#: ../data/ui/shortcuts.ui.h:18
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:19
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:20
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "Naar links kopieëren"
+
+#: ../data/ui/shortcuts.ui.h:22
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:23
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "Zoeken"
+
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "Zoeken"
+
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
+msgstr "Vorige logs"
+
+#: ../data/ui/shortcuts.ui.h:26
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:28
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:29
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "Sla bestanden op in orgineele codering"
+
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "Vorige logs"
+
+#: ../data/ui/shortcuts.ui.h:32
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:33
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:34
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:35
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:36
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:37
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:38
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:39
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/shortcuts.ui.h:40
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "Lokaal verwijderen"
+
+#: ../data/ui/shortcuts.ui.h:42
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to left"
+msgstr "Naar links kopieëren"
+
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to right"
+msgstr "Naar rechts kopieëren"
+
+#: ../data/ui/shortcuts.ui.h:47
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:48
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:49
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
+#, fuzzy
+msgid "New comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/tab-placeholder.ui.h:2
+#, fuzzy
+msgid "File comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/tab-placeholder.ui.h:3
+#, fuzzy
+msgid "Directory comparison"
+msgstr "_Map vergelijking"
+
+#: ../data/ui/tab-placeholder.ui.h:4
+msgid "Version control view"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:5
+#, fuzzy
+msgid "_3-way comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/tab-placeholder.ui.h:6
+msgid "Select Third File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:7
+msgid "Select Second File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:8
+msgid "Select First File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:9
+msgid "Select First Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:10
+msgid "Select Second Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:11
+msgid "Select Third Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:12
+msgid "Select A Version-Controlled Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:13
+#, fuzzy
+msgid "_Blank comparison"
+msgstr "_Bestands vergelijking"
+
+#: ../data/ui/tab-placeholder.ui.h:14
+msgid "C_ompare"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:3
+#, fuzzy
+msgid "Co_mmit..."
+msgstr "Doorvoeren"
+
+#: ../data/ui/vcview.ui.h:4
+msgid "Commit changes to version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:5
+msgid "_Update"
+msgstr "_Verversen"
+
+#: ../data/ui/vcview.ui.h:6
+msgid "Update working copy from version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:7
+msgid "_Push"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:8
+msgid "Push local changes to remote"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:10
+msgid "Add to version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:12
+msgid "Remove from version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:13
+msgid "Mar_k as Resolved"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:14
+msgid "Mark as resolved in version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:15
+msgid "Re_vert"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:16
+msgid "Revert working copy to original state"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:17
+msgid "Delete from working copy"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:18
+msgid "Console"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:19
+msgid "Show or hide the version control console output pane"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:20
+msgid "_Flatten"
+msgstr "Vervlakken"
+
+#: ../data/ui/vcview.ui.h:21
+msgid "Flatten directories"
+msgstr "Vervlakken mappen"
+
+#: ../data/ui/vcview.ui.h:22
+msgid "_Modified"
+msgstr "Gewijzigd"
+
+#: ../data/ui/vcview.ui.h:23
+#, fuzzy
+msgid "Show modified files"
+msgstr "Gewijzigde bestanden opslaan?"
+
+#: ../data/ui/vcview.ui.h:24
+msgid "_Normal"
+msgstr "_Normaal"
+
+#: ../data/ui/vcview.ui.h:25
+#, fuzzy
+msgid "Show normal files"
+msgstr "Laat veranderde zien"
+
+#: ../data/ui/vcview.ui.h:26
+msgid "Un_versioned"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:27
+msgid "Show unversioned files"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
+msgid "Ignored"
+msgstr "Genegeerd"
+
+#: ../data/ui/vcview.ui.h:29
+#, fuzzy
+msgid "Show ignored files"
+msgstr "Laat veranderde zien"
+
+#: ../data/ui/vcview.ui.h:30
+msgid "Commit"
+msgstr "Doorvoeren"
+
+#: ../data/ui/vcview.ui.h:31
+msgid "Commit Files"
+msgstr "Doorvoeren bestanden"
+
+#: ../data/ui/vcview.ui.h:32
+msgid "Log Message"
+msgstr "Log bericht"
+
+#: ../data/ui/vcview.ui.h:33
+#, fuzzy
+msgid "Previous logs:"
+msgstr "Vorige logs"
+
+#: ../data/ui/vcview.ui.h:34
+#, fuzzy
+msgid "Co_mmit"
+msgstr "Doorvoeren"
+
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
+msgid "Location"
+msgstr "Locatie"
+
+#: ../data/ui/vcview.ui.h:37
+msgid "Status"
+msgstr "Status"
+
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:39
+msgid "Console output"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:40
+msgid "Push local commits to remote?"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:41
+msgid "The commits to be pushed are determined by your version control system."
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:42
+#, fuzzy
+msgid "_Push commits"
+msgstr "Doorvoeren"
+
+#: ../meld/const.py:12
+msgid "UNIX (LF)"
+msgstr ""
+
+#: ../meld/const.py:13
+msgid "DOS/Windows (CR-LF)"
+msgstr ""
+
+#: ../meld/const.py:14
+msgid "Mac OS (CR)"
+msgstr ""
+
+#. Create file size CellRenderer
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+msgid "Size"
+msgstr ""
+
+#. Create date-time CellRenderer
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+#, fuzzy
+msgid "Modification time"
+msgstr "Gewijzigd bestand"
+
+#. Create permissions CellRenderer
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+msgid "Permissions"
+msgstr ""
+
+#: ../meld/dirdiff.py:540
+#, python-format
+msgid "Hide %s"
+msgstr "%s verbergen"
+
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#, python-format
+msgid "[%s] Scanning %s"
+msgstr "[%s] Zoeken %s"
+
+#: ../meld/dirdiff.py:828
+#, python-format
+msgid "[%s] Done"
+msgstr "[%s] Gedaan"
+
+#: ../meld/dirdiff.py:836
+#, fuzzy
+msgid "Folders have no differences"
+msgstr "[%s] Ophalen verschillen"
+
+#: ../meld/dirdiff.py:838
+msgid "Contents of scanned files in folders are identical."
+msgstr ""
+
+#: ../meld/dirdiff.py:840
+msgid ""
+"Scanned files in folders appear identical, but contents have not been "
+"scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:843
+msgid "File filters are in use, so not all files have been scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:845
+msgid "Text filters are in use and may be masking content differences."
+msgstr ""
+
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+msgid "Hi_de"
+msgstr ""
+
+#: ../meld/dirdiff.py:873
+msgid "Multiple errors occurred while scanning this folder"
+msgstr ""
+
+#: ../meld/dirdiff.py:874
+msgid "Files with invalid encodings found"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:876
+msgid "Some files were in an incorrect encoding. The names are something like:"
+msgstr ""
+
+#: ../meld/dirdiff.py:878
+msgid "Files hidden by case insensitive comparison"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:880
+#, fuzzy
+msgid ""
+"You are running a case insensitive comparison on a case sensitive "
+"filesystem. The following files in this folder are hidden:"
+msgstr ""
+"U gebruikt een hoofdletterongevoelige vergelijking op een "
+"hoofdlettergevoelig bestandssysteem. Sommige bestanden zijn niet zichtbaar:\n"
+"%s"
+
+#: ../meld/dirdiff.py:891
+#, python-format
+msgid "'%s' hidden by '%s'"
+msgstr "'%s' verborgen door '%s'"
+
+#: ../meld/dirdiff.py:947
+#, python-format
+msgid "Replace folder “%s”?"
+msgstr ""
+
+#: ../meld/dirdiff.py:949
+#, python-format
+msgid ""
+"Another folder with the same name already exists in “%s”.\n"
+"If you replace the existing folder, all files in it will be lost."
+msgstr ""
+
+#: ../meld/dirdiff.py:962
+msgid "Error copying file"
+msgstr ""
+
+#: ../meld/dirdiff.py:963
+#, fuzzy, python-format
+msgid ""
+"Couldn't copy %s\n"
+"to %s.\n"
+"\n"
+"%s"
+msgstr ""
+"Fout bij kopieëren van '%s' naar '%s'\n"
+"\n"
+"%s."
+
+#: ../meld/dirdiff.py:986
+#, fuzzy, python-format
+msgid "Error deleting %s"
+msgstr ""
+"Fout bij verwijdern %s\n"
+"\n"
+"%s."
+
+#: ../meld/dirdiff.py:1499
+#, fuzzy
+msgid "No folder"
+msgstr "map"
+
+#. Abbreviations for insert and overwrite that fit in the status bar
+#: ../meld/filediff.py:335
+#, fuzzy
+msgid "INS"
+msgstr "INS,OVR"
+
+#: ../meld/filediff.py:335
+#, fuzzy
+msgid "OVR"
+msgstr "INS,OVR"
+
+#. Abbreviation for line, column so that it will fit in the status bar
+#: ../meld/filediff.py:337
+#, python-format
+msgid "Ln %i, Col %i"
+msgstr "Ln %i, Kol %i"
+
+#: ../meld/filediff.py:762
+msgid "Comparison results will be inaccurate"
+msgstr ""
+
+#: ../meld/filediff.py:764
+msgid ""
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
+msgstr ""
+
+#: ../meld/filediff.py:820
+msgid "Mark conflict as resolved?"
+msgstr ""
+
+#: ../meld/filediff.py:822
+msgid ""
+"If the conflict was resolved successfully, you may mark it as resolved now."
+msgstr ""
+
+#: ../meld/filediff.py:824
+msgid "Cancel"
+msgstr ""
+
+#: ../meld/filediff.py:825
+msgid "Mark _Resolved"
+msgstr ""
+
+#: ../meld/filediff.py:1076
+#, python-format
+msgid "There was a problem opening the file “%s”."
+msgstr ""
+
+#: ../meld/filediff.py:1084
+#, python-format
+msgid "File %s appears to be a binary file."
+msgstr ""
+
+#: ../meld/filediff.py:1086
+msgid "Do you want to open the file using the default application?"
+msgstr ""
+
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
+#, python-format
+msgid "[%s] Computing differences"
+msgstr "[%s] Berekenen verschillen"
+
+#: ../meld/filediff.py:1166
+#, python-format
+msgid "File %s has changed on disk"
+msgstr ""
+
+#: ../meld/filediff.py:1167
+msgid "Do you want to reload the file?"
+msgstr ""
+
+#: ../meld/filediff.py:1169
+msgid "_Reload"
+msgstr ""
+
+#: ../meld/filediff.py:1327
+#, fuzzy
+msgid "Files are identical"
+msgstr "Laat gelijke zien"
+
+#: ../meld/filediff.py:1340
+msgid ""
+"Text filters are being used, and may be masking differences between files. "
+"Would you like to compare the unfiltered files?"
+msgstr ""
+
+#: ../meld/filediff.py:1345
+msgid "Files differ in line endings only"
+msgstr ""
+
+#: ../meld/filediff.py:1347
+#, python-format
+msgid ""
+"Files are identical except for differing line endings:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1367
+msgid "Show without filters"
+msgstr ""
+
+#: ../meld/filediff.py:1389
+msgid "Change highlighting incomplete"
+msgstr ""
+
+#: ../meld/filediff.py:1390
+msgid ""
+"Some changes were not highlighted because they were too large. You can force "
+"Meld to take longer to highlight larger changes, though this may be slow."
+msgstr ""
+
+#: ../meld/filediff.py:1398
+#, fuzzy
+msgid "Keep highlighting"
+msgstr "Gebruik syntax highlighting"
+
+#: ../meld/filediff.py:1400
+#, fuzzy
+msgid "_Keep highlighting"
+msgstr "Gebruik syntax highlighting"
+
+#: ../meld/filediff.py:1432
+#, python-format
+msgid "Replace file “%s”?"
+msgstr ""
+
+#: ../meld/filediff.py:1434
+#, python-format
+msgid ""
+"A file with this name already exists in “%s”.\n"
+"If you replace the existing file, its contents will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1451
+msgid "Save Left Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1453
+#, fuzzy
+msgid "Save Middle Pane As"
+msgstr "Opslaan bestand 1"
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr ""
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1474
+msgid "Save Anyway"
+msgstr ""
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr ""
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#, fuzzy, python-format
+msgid "Could not save file %s."
+msgstr "Kan niet lezen vanuit '%s'."
+
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#, python-format
+msgid ""
+"Couldn't save file due to:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1879
+msgid "Live comparison updating disabled"
+msgstr ""
+
+#: ../meld/filediff.py:1880
+msgid ""
+"Live updating of comparisons is disabled when synchronization points are "
+"active. You can still manually refresh the comparison, and live updates will "
+"resume when synchronization points are cleared."
+msgstr ""
+
+#: ../meld/filemerge.py:37
+#, fuzzy, python-format
+msgid "[%s] Merging files"
+msgstr "[%s] Openen bestanden"
+
+#: ../meld/gutterrendererchunk.py:210
+msgid "Copy _up"
+msgstr ""
+
+#: ../meld/gutterrendererchunk.py:211
+msgid "Copy _down"
+msgstr ""
+
+#: ../meld/meldapp.py:175
+#, fuzzy
+msgid "wrong number of arguments supplied to --diff"
+msgstr "Ongeldig aantal argumenten (Was %i)"
+
+#: ../meld/meldapp.py:180
+msgid "Start with an empty window"
+msgstr ""
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
+msgid "file"
+msgstr "bestand"
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
+msgid "folder"
+msgstr "map"
+
+#: ../meld/meldapp.py:182
+msgid "Start a version control comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:184
+msgid "Start a 2- or 3-way file comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:186
+msgid "Start a 2- or 3-way folder comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:229
+#, python-format
+msgid "Error: %s\n"
+msgstr ""
+
+#: ../meld/meldapp.py:236
+msgid "Meld is a file and directory comparison tool."
+msgstr ""
+
+#: ../meld/meldapp.py:240
+msgid "Set label to use instead of file name"
+msgstr ""
+
+#: ../meld/meldapp.py:243
+msgid "Open a new tab in an already running instance"
+msgstr ""
+
+#: ../meld/meldapp.py:246
+msgid "Automatically compare all differing files on startup"
+msgstr ""
+
+#: ../meld/meldapp.py:249
+msgid "Ignored for compatibility"
+msgstr ""
+
+#: ../meld/meldapp.py:253
+msgid "Set the target file for saving a merge result"
+msgstr ""
+
+#: ../meld/meldapp.py:256
+msgid "Automatically merge files"
+msgstr ""
+
+#: ../meld/meldapp.py:260
+msgid "Load a saved comparison from a Meld comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:264
+msgid "Create a diff tab for the supplied files or folders"
+msgstr ""
+
+#: ../meld/meldapp.py:284
+#, python-format
+msgid "too many arguments (wanted 0-3, got %d)"
+msgstr ""
+
+#: ../meld/meldapp.py:287
+msgid "can't auto-merge less than 3 files"
+msgstr ""
+
+#: ../meld/meldapp.py:289
+#, fuzzy
+msgid "can't auto-merge directories"
+msgstr "Vervlakken mappen"
+
+#: ../meld/meldapp.py:303
+msgid "Error reading saved comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:330
+#, python-format
+msgid "invalid path or URI \"%s\""
+msgstr ""
+
+#. TRANSLATORS: This is the label of a new, currently-unnamed file.
+#: ../meld/meldbuffer.py:131
+msgid "<unnamed>"
+msgstr ""
+
+#: ../meld/melddoc.py:64
+msgid "untitled"
+msgstr "naamloos"
+
+#: ../meld/meldwindow.py:52
+#, fuzzy
+msgid "_File"
+msgstr "Mijn bestand"
+
+#: ../meld/meldwindow.py:53
+#, fuzzy
+msgid "_New Comparison..."
+msgstr "_Bestands vergelijking"
+
+#: ../meld/meldwindow.py:54
+#, fuzzy
+msgid "Start a new comparison"
+msgstr "Starten vergelijking"
+
+#: ../meld/meldwindow.py:57
+msgid "Save the current file"
+msgstr ""
+
+#: ../meld/meldwindow.py:59
+#, fuzzy
+msgid "Save As..."
+msgstr "Patch opslaan als..."
+
+#: ../meld/meldwindow.py:60
+msgid "Save the current file with a different name"
+msgstr ""
+
+#: ../meld/meldwindow.py:63
+msgid "Close the current file"
+msgstr ""
+
+#: ../meld/meldwindow.py:66
+msgid "_Edit"
+msgstr "Be_werken"
+
+#: ../meld/meldwindow.py:68
+msgid "Undo the last action"
+msgstr ""
+
+#: ../meld/meldwindow.py:71
+msgid "Redo the last undone action"
+msgstr ""
+
+#: ../meld/meldwindow.py:73
+#, fuzzy
+msgid "Cut the selection"
+msgstr "Diff selectie"
+
+#: ../meld/meldwindow.py:75
+#, fuzzy
+msgid "Copy the selection"
+msgstr "Diff selectie"
+
+#: ../meld/meldwindow.py:77
+#, fuzzy
+msgid "Paste the clipboard"
+msgstr "Kopiëren naar klembord"
+
+#: ../meld/meldwindow.py:79
+#, fuzzy
+msgid "Find..."
+msgstr "Zoeken"
+
+#: ../meld/meldwindow.py:79
+#, fuzzy
+msgid "Search for text"
+msgstr "Zoeken naar:"
+
+#: ../meld/meldwindow.py:81
+msgid "Find Ne_xt"
+msgstr ""
+
+#: ../meld/meldwindow.py:82
+msgid "Search forwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:84
+msgid "Find _Previous"
+msgstr ""
+
+#: ../meld/meldwindow.py:85
+msgid "Search backwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:88
+msgid "_Replace..."
+msgstr ""
+
+#: ../meld/meldwindow.py:89
+msgid "Find and replace text"
+msgstr ""
+
+#: ../meld/meldwindow.py:92
+#, fuzzy
+msgid "_Changes"
+msgstr "Andere wijzigingen"
+
+#: ../meld/meldwindow.py:93
+#, fuzzy
+msgid "Next Change"
+msgstr "Andere wijzigingen"
+
+#: ../meld/meldwindow.py:94
+msgid "Go to the next change"
+msgstr ""
+
+#: ../meld/meldwindow.py:96
+#, fuzzy
+msgid "Previous Change"
+msgstr "Vorige logs"
+
+#: ../meld/meldwindow.py:97
+msgid "Go to the previous change"
+msgstr ""
+
+#: ../meld/meldwindow.py:99
+msgid "Open Externally"
+msgstr ""
+
+#: ../meld/meldwindow.py:100
+msgid "Open selected file or directory in the default external application"
+msgstr ""
+
+#: ../meld/meldwindow.py:104
+msgid "_View"
+msgstr ""
+
+#: ../meld/meldwindow.py:105
+#, fuzzy
+msgid "File Status"
+msgstr "Status"
+
+#: ../meld/meldwindow.py:106
+#, fuzzy
+msgid "Version Status"
+msgstr "Status"
+
+#: ../meld/meldwindow.py:110
+msgid "Stop the current action"
+msgstr ""
+
+#: ../meld/meldwindow.py:113
+msgid "Refresh the view"
+msgstr ""
+
+#: ../meld/meldwindow.py:117
+msgid "Fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:118
+msgid "View the comparison in fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:120
+msgid "_Toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:121
+msgid "Show or hide the toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:131
+msgid "Open Recent"
+msgstr ""
+
+#: ../meld/meldwindow.py:132
+#, fuzzy
+msgid "Open recent files"
+msgstr "[%s] Openen bestanden"
+
+#: ../meld/meldwindow.py:152
+#, fuzzy
+msgid "_Meld"
+msgstr "Meld"
+
+#: ../meld/meldwindow.py:153
+msgid "Quit the program"
+msgstr ""
+
+#: ../meld/meldwindow.py:155
+#, fuzzy
+msgid "Prefere_nces"
+msgstr "Voorkeuren : Meld"
+
+#: ../meld/meldwindow.py:156
+msgid "Configure the application"
+msgstr ""
+
+#: ../meld/meldwindow.py:158
 msgid "_Contents"
 msgstr "_Inhoud"
 
-#: ../glade2/meldapp.glade.h:89
-msgid "_Directory Comparison"
-msgstr "_Map vergelijking"
+#: ../meld/meldwindow.py:159
+msgid "Open the Meld manual"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:90
-msgid "_Down"
-msgstr "_Beneden"
+#: ../meld/meldwindow.py:161
+msgid "About this application"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:91
-msgid "_File Comparison"
-msgstr "_Bestands vergelijking"
+#: ../meld/meldwindow.py:650
+#, python-format
+msgid "Need three files to auto-merge, got: %r"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:92
-msgid "_Logo"
-msgstr "_Logo"
+#: ../meld/meldwindow.py:664
+#, fuzzy
+msgid "Cannot compare a mixture of files and directories"
+msgstr "Kan een mix van bestanden en mappen niet vergelijken.\n"
 
-#: ../glade2/meldapp.glade.h:93
-msgid "_New..."
-msgstr "_Nieuw..."
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:94
-msgid "_None"
+#. no common path. empty names get changed to "[None]"
+#: ../meld/misc.py:259
+msgid "[None]"
+msgstr "[Geen]"
+
+#: ../meld/preferences.py:33
+msgid "label"
+msgstr ""
+
+#: ../meld/preferences.py:33
+#, fuzzy
+msgid "pattern"
+msgstr "Vervlakken"
+
+#: ../meld/recent.py:114
+msgid "Version control:"
+msgstr ""
+
+#: ../meld/ui/notebooklabel.py:63
+msgid "Close tab"
+msgstr ""
+
+#: ../meld/ui/vcdialogs.py:48
+msgid "No files will be committed"
+msgstr ""
+
+#. Translators: First %s is replaced by translated "%d unpushed
+#. commits", second %s is replaced by translated "%d branches"
+#: ../meld/vc/git.py:94
+#, python-format
+msgid "%s in %s"
+msgstr ""
+
+#. Translators: These messages cover the case where there is
+#. only one branch, and are not part of another message.
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
+#, python-format
+msgid "%d unpushed commit"
+msgid_plural "%d unpushed commits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:97
+#, python-format
+msgid "%d branch"
+msgid_plural "%d branches"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:336
+#, python-format
+msgid "Mode changed from %s to %s"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
+
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
+#, fuzzy
+msgid "None"
 msgstr "_Geen"
 
-#: ../glade2/meldapp.glade.h:95
-msgid "_SVN Browser"
-msgstr "_SVN verkenner"
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:96
-msgid "_Save"
-msgstr "Op_slaan"
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:97
-msgid "_Three Way Compare"
-msgstr "_Drie weg bestands vergelijking"
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:98
-msgid "_Up"
-msgstr "_Omhoog"
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Local"
+msgstr "Locatie"
 
-#: ../glade2/meldapp.glade.h:99
-msgid "_Word"
-msgstr "_Woord"
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Remote"
+msgstr "_Verwijderen"
+
+#: ../meld/vc/_vc.py:71
+msgid "Unversioned"
+msgstr ""
+
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr ""
+
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr ""
+
+#: ../meld/vc/_vc.py:78
+msgid "Renamed"
+msgstr ""
+
+#: ../meld/vc/_vc.py:79
+msgid "Conflict"
+msgstr ""
+
+#: ../meld/vc/_vc.py:80
+#, fuzzy
+msgid "Removed"
+msgstr "_Verwijderen"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr ""
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
+#, python-format
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, python-format
+msgid "%(name)s (Invalid repository)"
+msgstr ""
+
+#: ../meld/vcview.py:276
+msgid "No valid version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:278
+msgid "Only one version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:280
+msgid "Choose which version control system to use"
+msgstr ""
+
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
+#, python-format
+msgid "%s: %s"
+msgstr ""
+
+#: ../meld/vcview.py:352
+#, fuzzy, python-format
+msgid "Scanning %s"
+msgstr "[%s] Zoeken %s"
+
+#: ../meld/vcview.py:391
+msgid "(Empty)"
+msgstr "(Leeg)"
+
+#: ../meld/vcview.py:435
+#, python-format
+msgid "%s — local"
+msgstr ""
+
+#: ../meld/vcview.py:436
+#, python-format
+msgid "%s — remote"
+msgstr ""
+
+#: ../meld/vcview.py:444
+#, python-format
+msgid "%s (local, merge, remote)"
+msgstr ""
+
+#: ../meld/vcview.py:449
+#, python-format
+msgid "%s (remote, merge, local)"
+msgstr ""
+
+#: ../meld/vcview.py:460
+#, python-format
+msgid "%s — repository"
+msgstr ""
+
+#: ../meld/vcview.py:466
+#, python-format
+msgid "%s (working, repository)"
+msgstr ""
+
+#: ../meld/vcview.py:470
+#, python-format
+msgid "%s (repository, working)"
+msgstr ""
+
+#: ../meld/vcview.py:638
+msgid "Remove folder and all its files?"
+msgstr ""
+
+#: ../meld/vcview.py:640
+msgid ""
+"This will remove all selected files and folders, and all files within any "
+"selected folders, from version control."
+msgstr ""
+
+#: ../meld/vcview.py:665
+#, fuzzy, python-format
+msgid "Error removing %s"
+msgstr ""
+"Fout bij verwijdern %s\n"
+"\n"
+"%s."
+
+#: ../meld/vcview.py:746
+msgid "Clear"
+msgstr ""
+
+#~ msgid ""
+#~ "Ignored:Non CVS:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+#~ "Missing"
+#~ msgstr ""
+#~ "Genegeerd:Niet CVS:::Fout::Nieuw toegevoegd:Gewijzigd:<b>Conflict</b>:"
+#~ "Verwijderd:Ontbrekend"
+
+#~ msgid ""
+#~ "Error converting to a regular expression\n"
+#~ "The pattern was '%s'\n"
+#~ "The error was '%s'"
+#~ msgstr ""
+#~ "Fout bij het converteren naar een reguliere expressie\n"
+#~ "Het patroon is '%s'\n"
+#~ "De fout is '%s'"
+
+#~ msgid "Rev"
+#~ msgstr "Rev"
+
+#~ msgid "Tag"
+#~ msgstr "Label"
+
+#~ msgid "Options"
+#~ msgstr "Opties"
+
+#~ msgid "[%s] Scanning"
+#~ msgstr "[%s] Zoeken"
+
+#~ msgid "[%s] Applying patch"
+#~ msgstr "[%s] Verwerken wijzigingen"
+
+#~ msgid "Select some files first."
+#~ msgstr "Selecteer eerst een aantal bestanden."
+
+#~ msgid ""
+#~ "'%s' is a directory.\n"
+#~ "Remove recusively?"
+#~ msgstr ""
+#~ "'%s' is een map.\n"
+#~ "Recursief verwijderen?"
+
+#~ msgid "Error converting pattern '%s' to regular expression"
+#~ msgstr "Fout bij het converteren van patroon '%s' naar reguliere expressie"
+
+#~ msgid ""
+#~ "'%s' exists.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "'%s' bestaat.\n"
+#~ "Overschrijven?"
+
+#~ msgid "%i second"
+#~ msgid_plural "%i seconds"
+#~ msgstr[0] "%i seconde"
+#~ msgstr[1] "%i seconden"
+
+#~ msgid "%i minute"
+#~ msgid_plural "%i minutes"
+#~ msgstr[0] "%i minuut"
+#~ msgstr[1] "%i minuten"
+
+#~ msgid "%i hour"
+#~ msgid_plural "%i hours"
+#~ msgstr[0] "%i uur"
+#~ msgstr[1] "%i uur"
+
+#~ msgid "%i day"
+#~ msgid_plural "%i days"
+#~ msgstr[0] "%i dag"
+#~ msgstr[1] "%i dagen"
+
+#~ msgid "%i week"
+#~ msgid_plural "%i weeks"
+#~ msgstr[0] "%i week"
+#~ msgstr[1] "%i weken"
+
+#~ msgid "%i month"
+#~ msgid_plural "%i months"
+#~ msgstr[0] "%i maand"
+#~ msgstr[1] "%i maanden"
+
+#~ msgid "%i year"
+#~ msgid_plural "%i years"
+#~ msgstr[0] "%i jaar"
+#~ msgstr[1] "%i jaren"
+
+#~ msgid ""
+#~ "Regular expression '%s' changed the number of lines in the file. "
+#~ "Comparison will be incorrect. See the user manual for more details."
+#~ msgstr ""
+#~ "Reguliere expressie '%s' heeft het aantal regels in het bestand "
+#~ "gewijzigd. De vergelijking zal onjuist zijn. Zie de gebruikshandleiding "
+#~ "voor meer details."
+
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "Reguliere expressie fout\n"
+#~ "'%s'"
+
+#~ msgid "The regular expression '%s' was not found."
+#~ msgstr "De reguliere expressie '%s' is niet gevonden."
+
+#~ msgid "The text '%s' was not found."
+#~ msgstr "De tekst '%s' is niet gevonden."
+
+#~ msgid "[%s] Set num panes"
+#~ msgstr "[%s] Instellen num panes"
+
+#~ msgid "The error was:"
+#~ msgstr "De fout was:"
+
+#~ msgid "[%s] Reading files"
+#~ msgstr "[%s] Lezen bestanden"
+
+# Mogelijkerwijs/Misschien
+#~ msgid ""
+#~ "It contains ascii nulls.\n"
+#~ "Perhaps it is a binary file."
+#~ msgstr ""
+#~ "Het bevat ascii-nullen.\n"
+#~ "Misschien is het een binair bestand."
+
+#~ msgid "I tried encodings %s."
+#~ msgstr "Geprobeerd met tekensets %s."
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "\"%s\" bestaat!\n"
+#~ "Overschrijven?"
+
+#~ msgid ""
+#~ "Error writing to %s\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr ""
+#~ "Fout bij schrijven naar %s\n"
+#~ "\n"
+#~ "%s."
+
+#~ msgid "Choose a name for buffer %i."
+#~ msgstr "Kies een naam voor buffer %i"
+
+#~ msgid ""
+#~ "This file '%s' contains a mixture of line endings.\n"
+#~ "\n"
+#~ "Which format would you like to use?"
+#~ msgstr ""
+#~ "Dit bestand '%s' bevat een mix van regeleindes.\n"
+#~ "\n"
+#~ "Welk formaat wilt u gebruiken?"
+
+#~ msgid ""
+#~ "'%s' contains characters not encodable with '%s'\n"
+#~ "Would you like to save as UTF-8?"
+#~ msgstr ""
+#~ "'%s' bevat tekens die niet in '%s' zijn uit te drukken\n"
+#~ "Wilt u opslaan als UTF-8"
+
+#~ msgid ""
+#~ "Refreshing will discard changes in:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "You cannot undo this operation."
+#~ msgstr ""
+#~ "Bij het vernieuwen zullen wijzigingen verloren gaan in:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "U kan deze operatie niet ongedaan maken."
+
+#~ msgid ""
+#~ "Due to incompatible API changes some functions may not operate as "
+#~ "expected."
+#~ msgstr ""
+#~ "Door incompatibiliteit in API wijzigingen kunnen sommige functies niet "
+#~ "werken zoals verwacht."
+
+#~ msgid ""
+#~ "Line numbers are only available if you have gnome-python-desktop "
+#~ "installed."
+#~ msgstr ""
+#~ "Regel nummers zijn enkel beschikbaar als u gnome-python-desktop heeft "
+#~ "geinstalleerd."
+
+#~ msgid ""
+#~ "Syntax highlighting is only available if you have gnome-python-desktop "
+#~ "installed."
+#~ msgstr ""
+#~ "Syntax highlighting is enkel beschibaar als u gnome-python-desktop heeft "
+#~ "geinstalleerd."
+
+# bespreek/bediscussieer
+#~ msgid ""
+#~ "Meld is a file and directory comparison tool. Usage:\n"
+#~ "\n"
+#~ "    meld                        Start with no windows open\n"
+#~ "    meld <dir>                  Start with CVS browser in 'dir'\n"
+#~ "    meld <file>                 Start with CVS diff of 'file'\n"
+#~ "    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
+#~ "    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory "
+#~ "comparison\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "    -h, --help                  Show this help text and exit\n"
+#~ "    -v, --version               Display the version and exit\n"
+#~ "\n"
+#~ "For more information choose help -> contents.\n"
+#~ "Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
+#~ "Discuss meld at http://mail.gnome.org/mailman/listinfo/meld-list\n"
+#~ msgstr ""
+#~ "Meld is een programma voor het vergelijken van bestanden en mappen.\n"
+#~ "Gebruik:\n"
+#~ "\n"
+#~ "    meld                           Begin zonder geopende vensters\n"
+#~ "    meld <map>                     Begin met CVS browser in 'map'\n"
+#~ "    meld <bestand>                 Begin met CVS diff van 'bestand'\n"
+#~ "    meld <bestand> <bestand> [bestand]         Begin met 2 of 3-weg "
+#~ "bestandsvergelijking\n"
+#~ "    meld <map>  <map>  [map]       Begin met 2 of 3-weg "
+#~ "mappenvergelijking\n"
+#~ "\n"
+#~ "Opties:\n"
+#~ "    -h, --help                     Toon deze helptekst en sluit af\n"
+#~ "    -v, --version                  Toon de versie en sluit af\n"
+#~ "\n"
+#~ "Voor mee informatie kies hulp -> inhoud.\n"
+#~ "Reporteer bugs op http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
+#~ "Bediscussieer meld op:  http://mail.gnome.org/mailman/listinfo/meld-list\n"
+
+#~ msgid ""
+#~ "Meld %s\n"
+#~ "Written by Stephen Kennedy <stevek@gnome.org>"
+#~ msgstr ""
+#~ "Meld %s\n"
+#~ "Geschreven door Stephen Kennedy <stevek@gnome.org>"
+
+#~ msgid ""
+#~ "Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+#~ "Missing"
+#~ msgstr ""
+#~ "Genegeerd:Niet SVN:::Fout::Nieuw toegevoegd:Gewijzigd:<b>Conflict</b>:"
+#~ "Verwijderd:Ontbrekend"
+
+#~ msgid "Add _Binary"
+#~ msgstr "Toevoegen _binair"
+
+#~ msgid "Add to CVS"
+#~ msgstr "Toevoegen aan CVS"
+
+#~ msgid "CVS Log"
+#~ msgstr "CVS Log"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Diff Options"
+#~ msgstr "Diff Opties"
+
+#~ msgid "Diff selected"
+#~ msgstr "Diff geselecteerd"
+
+#~ msgid "Local copy against other remote revision"
+#~ msgstr "Lokale kopie tegen remote revisie"
+
+#~ msgid "Local copy against same remote revision"
+#~ msgstr "Lokale kopie tegen gelijke remote revisie"
+
+#~ msgid "Non _CVS"
+#~ msgstr "Niet _CVS"
+
+#~ msgid "Remove _Locally"
+#~ msgstr "_Lokaal verwijderen"
+
+#~ msgid "Remove from CVS"
+#~ msgstr "Verwijderen van CVS"
+
+#~ msgid "Show non-CVS"
+#~ msgstr "Weergeven niet-CVS"
+
+#~ msgid "Update"
+#~ msgstr "Verversen"
+
+#~ msgid "_Diff"
+#~ msgstr "_Diff"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+#~ "Which ones would you like to save?</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Sommige bestanden zijn gewijzigd.\n"
+#~ "Welke wilt u opslaan?</span>"
+
+#~ msgid "Match _entire word only"
+#~ msgstr "_Enkel complete woorden"
+
+#~ msgid "Case"
+#~ msgstr "Hoofdlettergebruik"
+
+#~ msgid "Diff"
+#~ msgstr "Diff"
+
+#~ msgid "Hide..."
+#~ msgstr "Verbergen..."
+
+#~ msgid "Ignore case of entries"
+#~ msgstr "Negeer hoofdlettergebruik van ingangen"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgid "_Delete Selected"
+#~ msgstr "Verwijderen geselecteerde"
+
+#~ msgid "(gnome-default-editor)"
+#~ msgstr "(gnome standaard editor)"
+
+#~ msgid "<b>Drawing Style</b>"
+#~ msgstr "<b>Teken stijl</b>"
+
+#~ msgid "<b>Edit Menu</b>"
+#~ msgstr "<b>Menu bewerken</b>"
+
+#~ msgid "<b>Font</b>"
+#~ msgstr "<b>Lettertype</b>"
+
+#~ msgid "<b>Global options</b>"
+#~ msgstr "<b>Globale opties</b>"
+
+#~ msgid "<b>Loading</b>"
+#~ msgstr "<b>Laden</b>"
+
+#~ msgid "<b>Misc</b>"
+#~ msgstr "<b>Overig</b>"
+
+#~ msgid "<b>Saving</b>"
+#~ msgstr "<b>Opslaan</b>"
+
+#~ msgid "<b>Toolbar Appearance</b>"
+#~ msgstr "<b>Werkbalk weergave</b>"
+
+#~ msgid "<b>Update Options</b>"
+#~ msgstr "<b>Vernieuwen Opties</b>"
+
+#~ msgid "<b>Whitespace</b>"
+#~ msgstr "<b>Witruimtes</b>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Weergave</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Codering</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Bestands Filters</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filters</span>"
+
+#~ msgid "Automatically supply missing newline at end of file."
+#~ msgstr ""
+#~ "Automatisch toevoegen ontbrekende nieuwregel aan het einde van het "
+#~ "bestand."
+
+#~ msgid "CVS"
+#~ msgstr "CVS"
+
+#~ msgid "CVS Directory"
+#~ msgstr "CVS map"
+
+#~ msgid "CVS binary"
+#~ msgstr "CVS programma"
+
+#~ msgid "CVS view"
+#~ msgstr "CVS weergave"
+
+#~ msgid "C_VS Browser"
+#~ msgstr "C_VS verkenner"
+
+#~ msgid "Choose Files"
+#~ msgstr "Kies bestanden"
+
+#~ msgid ""
+#~ "Choose how the central bar of the diff viewer is drawn. You may wish to "
+#~ "choose a simpler mode if you find scrolling is slow."
+#~ msgstr ""
+#~ "Kies hoe de centrale balk van de diff weergave getekent wordt. U kunt "
+#~ "eensimpelere mode kiezen voor als het verschuiven langzaam gaat."
+
+#~ msgid "Copyright (C) 2002 Stephen Kennedy"
+#~ msgstr "Copyright (C) 2002 Stephen Kennedy"
+
+#~ msgid "Create missing directories (-d)"
+#~ msgstr "Aanmaken ontbrekende mappen (-d)"
+
+#~ msgid "Curved : Filled Curves"
+#~ msgstr "Curves : Gevulde curves"
+
+#~ msgid "Edit menu popup invokes"
+#~ msgstr "Bewerken menu popup start"
+
+#~ msgid "Encoding"
+#~ msgstr "Codering"
+
+#~ msgid "Gnome Default"
+#~ msgstr "Gnome standaard"
+
+#~ msgid "Icons Only"
+#~ msgstr "Enkel pictogrammen"
+
+#~ msgid "Ignore .cvsrc (-f)"
+#~ msgstr "Negeren .cvsrc (-f)"
+
+#~ msgid "Ignore changes in amount of white space"
+#~ msgstr "Negeer veranderingen in het aantal witruimtes"
+
+#~ msgid ""
+#~ "Ignore changes in case; consider upper and lower-case letters equivalent"
+#~ msgstr ""
+#~ "Negeer veranderingen in hoofdlettergebruik; beschouw hoofdletters en "
+#~ "kleine letters gelijk"
+
+#~ msgid "Ignore changes that just insert or delete blank lines"
+#~ msgstr "Negeer veranderingen in het aantal witregels"
+
+#~ msgid "Ignore changes which insert or delete blank lines"
+#~ msgstr "Negeer veranderingen in het aantal witregels"
+
+#~ msgid "Line Wrapping "
+#~ msgstr "Regelafbraak "
+
+#~ msgid "Locate CVS binary : Meld"
+#~ msgstr "Localiseer CVS programma : Meld"
+
+#~ msgid "Mine"
+#~ msgstr "Mijn"
+
+#~ msgid "My Directory"
+#~ msgstr "Mijn Map"
+
+#~ msgid "New..."
+#~ msgstr "Nieuw..."
+
+#~ msgid "Original"
+#~ msgstr "Orgineel"
+
+#~ msgid "Original Directory"
+#~ msgstr "Bron map"
+
+#~ msgid "Original File"
+#~ msgstr "Bron Bestand"
+
+#~ msgid "Other"
+#~ msgstr "Andere"
+
+#~ msgid "Other Directory"
+#~ msgstr "Andere map"
+
+#~ msgid "Other File"
+#~ msgstr "Ander bestand"
+
+#~ msgid "Prune empty directories (-P)"
+#~ msgstr "Verwijderen lege mappen (-P)"
+
+#~ msgid "Quiet mode (-q)"
+#~ msgstr "Stille mode (-q)"
+
+#~ msgid "Report _Bug"
+#~ msgstr "_Bug reporteren"
+
+#~ msgid "SVN Directory"
+#~ msgstr "SVN map"
+
+#~ msgid "SVN view"
+#~ msgstr "SVN weergave"
+
+#~ msgid "Save in UTF-8 encoding"
+#~ msgstr "Opslaan in UTF-8 codering"
+
+#~ msgid "Simple : Lines only"
+#~ msgstr "Simpel : Enkel lijnen"
+
+#~ msgid "Solid : Filled Quadilaterals"
+#~ msgstr "Vast : Gevulde Quadilaterals"
+
+#~ msgid "Text Beside Icons"
+#~ msgstr "Tekst naast pictogrammen"
+
+#~ msgid "Text Only"
+#~ msgstr "Enkel tekst"
+
+#~ msgid "Text Under Icons"
+#~ msgstr "Text onder pictogrammen"
+
+#~ msgid "Three way directory"
+#~ msgstr "Drie weg bestand"
+
+#~ msgid "Three way file"
+#~ msgstr "Drie weg bestand"
+
+#~ msgid "Two way directory"
+#~ msgstr "Twee weg map"
+
+#~ msgid "Two way file"
+#~ msgstr "Twee weg bestand"
+
+#~ msgid "Use Compression (-z)"
+#~ msgstr "Gebruik compressie (-z)"
+
+#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+#~ msgstr ""
+#~ "Probeer deze coderingen in volgorde bij het laden (b.v. utf8, iso8859)"
+
+#~ msgid "Whitespace is significant"
+#~ msgstr "Witruimte is signifikant"
+
+#~ msgid "_Character"
+#~ msgstr "_Karakter"
+
+#~ msgid "_Logo"
+#~ msgstr "_Logo"
+
+#~ msgid "_New..."
+#~ msgstr "_Nieuw..."
+
+#~ msgid "_SVN Browser"
+#~ msgstr "_SVN verkenner"
+
+#~ msgid "_Up"
+#~ msgstr "_Omhoog"
+
+#~ msgid "_Word"
+#~ msgstr "_Woord"
 
 #~ msgid ""
 #~ "Could not open '%s' for reading.\n"
@@ -1149,12 +3085,6 @@ msgstr "_Woord"
 
 #~ msgid "Meld works best with pygtk-%s or higher. (found %s)"
 #~ msgstr "Meld zal beter werken met pygtk %s of hoger. (gevonden %s)"
-
-#~ msgid "folder"
-#~ msgstr "map"
-
-#~ msgid "file"
-#~ msgstr "bestand"
 
 #~ msgid "nonexistant"
 #~ msgstr "nietbestaand"
@@ -1177,9 +3107,6 @@ msgstr "_Woord"
 #~ msgid "`%s' is not a directory or file, cannot open cvs view"
 #~ msgstr "`%s' is niet een map of bestand, kan cvs weergave niet openen"
 
-#~ msgid "Cannot open "
-#~ msgstr "Kan niet openen "
-
 #~ msgid "<span weight=\"bold\" size=\"x-large\">Binary Files</span>"
 #~ msgstr "<span weight=\"bold\" size=\"x-large\">Binaire bestanden</span>"
 
@@ -1188,23 +3115,8 @@ msgstr "_Woord"
 #~ msgstr ""
 #~ "Binaire bestanden maken geen gebruik van tekst filters bij vergelijkingen."
 
-#~ msgid "Save File 1"
-#~ msgstr "Opslaan bestand 1"
-
-#~ msgid "Save File 2"
-#~ msgstr "Opslaan bestand 2"
-
-#~ msgid "Save File 3"
-#~ msgstr "Opslaan bestand 3"
-
 #~ msgid "_Binary Files"
 #~ msgstr "_Binaire bestanden"
-
-#~ msgid "Modified File"
-#~ msgstr "Gewijzigd bestand"
-
-#~ msgid "Other Changes"
-#~ msgstr "Andere wijzigingen"
 
 #~ msgid "Common Ancestor"
 #~ msgstr "Gelijke bron"

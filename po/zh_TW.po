@@ -12,9 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=meld&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-10 23:05+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2015-03-13 20:32+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
@@ -27,20 +26,16 @@ msgstr ""
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
-#: ../bin/meld:144
+#: ../bin/meld:186
 msgid "Cannot import: "
 msgstr "無法匯入："
 
-#: ../bin/meld:147
+#: ../bin/meld:189
 #, c-format
 msgid "Meld requires %s or higher."
 msgstr "Meld 需要 %s 或以上的版本。"
 
-#: ../bin/meld:151
-msgid "Meld does not support Python 3."
-msgstr "Meld 並未支援 Python 3。"
-
-#: ../bin/meld:201
+#: ../bin/meld:241
 #, c-format
 msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
@@ -49,7 +44,8 @@ msgstr ""
 "無法載入與 Meld 的特定 CSS (%s)\n"
 "%s"
 
-#: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
 msgid "Meld"
 msgstr "Meld"
 
@@ -61,11 +57,16 @@ msgstr "Diff 檢視程式"
 msgid "Meld Diff Viewer"
 msgstr "Meld Diff 檢視程式"
 
-#: ../data/meld.desktop.in.h:4
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
 msgid "Compare and merge your files"
 msgstr "比對及合併您的檔案"
 
-#: ../data/meld.appdata.xml.in.h:1
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
+msgstr ""
+
+#: ../data/meld.appdata.xml.in.h:3
 msgid ""
 "Meld is a visual diff and merge tool targeted at developers. Meld helps you "
 "compare files, directories, and version controlled projects. It provides "
@@ -73,10 +74,14 @@ msgid ""
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
 
-#: ../data/meld.appdata.xml.in.h:2
+#: ../data/meld.appdata.xml.in.h:4
 msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
+msgstr ""
+
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
 msgstr ""
 
 #: ../data/mime/meld.xml.in.h:1
@@ -84,196 +89,211 @@ msgid "Meld comparison description"
 msgstr "Meld 比對描述"
 
 #: ../data/org.gnome.meld.gschema.xml.h:1
-msgid "Default window size"
+#, fuzzy
+msgid "Default window width"
 msgstr "預設視窗大小"
 
 #: ../data/org.gnome.meld.gschema.xml.h:2
-msgid "Default window state"
-msgstr "預設視窗狀態"
+#, fuzzy
+msgid "Default window height"
+msgstr "預設視窗大小"
 
 #: ../data/org.gnome.meld.gschema.xml.h:3
+#, fuzzy
+msgid "Default window maximised state"
+msgstr "預設視窗狀態"
+
+#: ../data/org.gnome.meld.gschema.xml.h:4
+#, fuzzy
+msgid "Default window fullscreen state"
+msgstr "預設視窗狀態"
+
+#: ../data/org.gnome.meld.gschema.xml.h:5
 msgid "Show toolbar"
 msgstr "顯示工具列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:4
+#: ../data/org.gnome.meld.gschema.xml.h:6
 msgid "If true, the window toolbar is visible."
 msgstr "選取表示視窗會顯示工具列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:5
+#: ../data/org.gnome.meld.gschema.xml.h:7
 msgid "Show statusbar"
 msgstr "顯示狀態列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:6
+#: ../data/org.gnome.meld.gschema.xml.h:8
 msgid "If true, the window statusbar is visible."
 msgstr "選取表示視窗會顯示狀態列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:7
-msgid "Automatically detected text encodings"
+#: ../data/org.gnome.meld.gschema.xml.h:9
+#, fuzzy
+msgid "Additional automatically detected text encodings"
 msgstr "自動偵測到的文字編碼"
 
-#: ../data/org.gnome.meld.gschema.xml.h:8
-msgid ""
-"These text encodings will be automatically used (in order) to try to decode "
-"loaded text files."
-msgstr "這些文字編碼將自動（按順序）使用，以試圖解碼已經載入的文字檔案。"
-
-#: ../data/org.gnome.meld.gschema.xml.h:9
-msgid "Width of an indentation step"
-msgstr "縮排的每步寬度"
-
 #: ../data/org.gnome.meld.gschema.xml.h:10
-msgid "The number of spaces to use for a single indent step"
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:11
-msgid "Whether to indent using spaces or tabs"
-msgstr ""
+msgid "Width of an indentation step"
+msgstr "縮排的每步寬度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:12
-msgid "If true, any new indentation will use spaces instead of tabs."
+msgid "The number of spaces to use for a single indent step"
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
-msgid "Show line numbers"
-msgstr "顯示列號"
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:14
-msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgid "If true, any new indentation will use spaces instead of tabs."
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
+msgid "Show line numbers"
+msgstr "顯示列號"
+
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Highlight syntax"
 msgstr "語法標明"
 
-#: ../data/org.gnome.meld.gschema.xml.h:16
+#: ../data/org.gnome.meld.gschema.xml.h:18
 msgid ""
 "Whether to highlight syntax in comparisons. Because of Meld's own color "
 "highlighting, this is off by default."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:17
+#: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Color scheme to use for syntax highlighting"
 msgstr "使用語法標明功能"
 
-#: ../data/org.gnome.meld.gschema.xml.h:18
+#: ../data/org.gnome.meld.gschema.xml.h:20
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
 msgstr "GtkSourceView 用來判斷語法標明的顏色"
 
-#: ../data/org.gnome.meld.gschema.xml.h:19
+#: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Displayed whitespace"
 msgstr "空白字元會顯示"
 
-#: ../data/org.gnome.meld.gschema.xml.h:20
+#: ../data/org.gnome.meld.gschema.xml.h:22
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:21
+#: ../data/org.gnome.meld.gschema.xml.h:23
 msgid "Wrap mode"
 msgstr "換列模式"
 
-#: ../data/org.gnome.meld.gschema.xml.h:22
+#: ../data/org.gnome.meld.gschema.xml.h:24
 msgid ""
 "Lines in file comparisons will be wrapped according to this setting, either "
 "not at all ('none'), at any character ('char') or only at the end of words "
 "('word')."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:23
+#: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Highlight current line"
 msgstr "標明目前的列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:24
+#: ../data/org.gnome.meld.gschema.xml.h:26
 msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:25
+#: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Use the system default monospace font"
 msgstr "使用系統預設等寬字型"
 
-#: ../data/org.gnome.meld.gschema.xml.h:26
+#: ../data/org.gnome.meld.gschema.xml.h:28
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:27
+#: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Custom font"
 msgstr "使用自訂字型"
 
-#: ../data/org.gnome.meld.gschema.xml.h:28
+#: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
 "The custom font to use, stored as a string and parsed as a Pango font "
 "description."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:29
+#: ../data/org.gnome.meld.gschema.xml.h:31
 msgid "Ignore blank lines when comparing files"
 msgstr "比較檔案時忽略空列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:30
+#: ../data/org.gnome.meld.gschema.xml.h:32
 msgid ""
 "If true, blank lines will be trimmed when highlighting changes between files."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:31
+#: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "Use the system default editor"
 msgstr "使用系統預設編輯器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:32
+#: ../data/org.gnome.meld.gschema.xml.h:34
 msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:33
+#: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "The custom editor launch command"
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:34
+#: ../data/org.gnome.meld.gschema.xml.h:36
 msgid ""
 "The command used to launch a custom editor. Some limited templating is "
 "supported here; at the moment '{file}' and '{line}' are recognised tokens."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:35
+#: ../data/org.gnome.meld.gschema.xml.h:37
 msgid "Columns to display"
 msgstr "要顯示的欄位"
 
-#: ../data/org.gnome.meld.gschema.xml.h:36
+#: ../data/org.gnome.meld.gschema.xml.h:38
 msgid ""
 "List of column names in folder comparison and whether they should be "
 "displayed."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:32
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
 msgid "Ignore symbolic links"
 msgstr "忽略符號連結"
 
-#: ../data/org.gnome.meld.gschema.xml.h:38
+#: ../data/org.gnome.meld.gschema.xml.h:40
 msgid ""
 "If true, folder comparisons do not follow symbolic links when traversing the "
 "folder tree."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:39
+#: ../data/org.gnome.meld.gschema.xml.h:41
 msgid "Use shallow comparison"
 msgstr "使用粗淺比對"
 
-#: ../data/org.gnome.meld.gschema.xml.h:40
+#: ../data/org.gnome.meld.gschema.xml.h:42
 msgid ""
 "If true, folder comparisons compare files based solely on size and mtime, "
 "considering files to be identical if their size and mtime match, and "
 "different otherwise."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:41
+#: ../data/org.gnome.meld.gschema.xml.h:43
 msgid "File timestamp resolution"
 msgstr "檔案時間戳記精細度"
 
-#: ../data/org.gnome.meld.gschema.xml.h:42
+#: ../data/org.gnome.meld.gschema.xml.h:44
 msgid ""
 "When comparing based on mtime, this is the minimum difference in nanoseconds "
 "between two files before they're considered to have different mtimes. This "
@@ -281,126 +301,144 @@ msgid ""
 "resolution."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:43 ../data/ui/preferences.ui.h:30
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
 msgid "Apply text filters during folder comparisons"
 msgstr "在資料夾比對使用文字過濾器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:44
+#: ../data/org.gnome.meld.gschema.xml.h:46
 msgid ""
 "If true, folder comparisons that compare file contents also apply active "
 "text filters and the blank line trimming option, and ignore newline "
 "differences."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:45
+#: ../data/org.gnome.meld.gschema.xml.h:47
 msgid "File status filters"
 msgstr "檔案狀態過濾器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:46
+#: ../data/org.gnome.meld.gschema.xml.h:48
 msgid "List of statuses used to filter visible files in folder comparison."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:47
+#: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Show the version control console output"
 msgstr "選擇版本控制主控台輸出"
 
-#: ../data/org.gnome.meld.gschema.xml.h:48
+#: ../data/org.gnome.meld.gschema.xml.h:50
 msgid ""
 "If true, a console output section will be shown in version control views, "
 "showing the commands run for version control operations."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:49
+#: ../data/org.gnome.meld.gschema.xml.h:51
 msgid "Version control pane position"
 msgstr "版本控制狀態窗格位置"
 
-#: ../data/org.gnome.meld.gschema.xml.h:50
+#: ../data/org.gnome.meld.gschema.xml.h:52
 msgid ""
 "This is the height of the main version control tree when the console pane is "
 "shown."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:51
+#: ../data/org.gnome.meld.gschema.xml.h:53
 msgid "Present version comparisons as left-local/right-remote"
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:52
+#: ../data/org.gnome.meld.gschema.xml.h:54
 msgid ""
 "If true, version control comparisons will use a left-is-local, right-is-"
 "remote scheme to determine what order to present files in panes. Otherwise, "
 "a left-is-theirs, right-is-mine scheme is used."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:53
+#: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Order for files in three-way version control merge comparisons"
 msgstr "在三方版本控制合併比對的文件次序"
 
-#: ../data/org.gnome.meld.gschema.xml.h:54
+#: ../data/org.gnome.meld.gschema.xml.h:56
 msgid ""
 "Choices for file order are remote/merged/local and local/merged/remote. This "
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:55
+#: ../data/org.gnome.meld.gschema.xml.h:57
 msgid "Show margin in commit message editor"
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:56
+#: ../data/org.gnome.meld.gschema.xml.h:58
 msgid ""
 "If true, a guide will be displayed to show what column the margin is at in "
 "the version control commit message editor."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:57
+#: ../data/org.gnome.meld.gschema.xml.h:59
 msgid "Margin column in commit message editor"
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:58
+#: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
 "The column at which to show the margin in the version control commit message "
 "editor."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:59
+#: ../data/org.gnome.meld.gschema.xml.h:61
 msgid "Automatically hard-wrap commit messages"
 msgstr "提交時自動強制實體換列"
 
-#: ../data/org.gnome.meld.gschema.xml.h:60
+#: ../data/org.gnome.meld.gschema.xml.h:62
 msgid ""
 "If true, the version control commit message editor will hard-wrap (i.e., "
 "insert line breaks) at the commit margin before commit."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:61
+#: ../data/org.gnome.meld.gschema.xml.h:63
 msgid "Version control status filters"
 msgstr "版本控制狀態過濾器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:62
+#: ../data/org.gnome.meld.gschema.xml.h:64
 msgid ""
 "List of statuses used to filter visible files in version control comparison."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:63
+#: ../data/org.gnome.meld.gschema.xml.h:65
 msgid "Filename-based filters"
 msgstr "基於檔案名稱的過濾器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:64
+#: ../data/org.gnome.meld.gschema.xml.h:66
 msgid ""
 "List of predefined filename-based filters that, if active, will remove "
 "matching files from a folder comparison."
 msgstr ""
 
-#: ../data/org.gnome.meld.gschema.xml.h:65
+#: ../data/org.gnome.meld.gschema.xml.h:67
 msgid "Text-based filters"
 msgstr "基於文字的過濾器"
 
-#: ../data/org.gnome.meld.gschema.xml.h:66
+#: ../data/org.gnome.meld.gschema.xml.h:68
 msgid ""
 "List of predefined text-based regex filters that, if active, will remove "
 "text from being used in a file comparison. The text will still be displayed, "
 "but won't contribute to the comparison itself."
 msgstr ""
+
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+#, fuzzy
+msgid "Base color scheme for Meld highlighting"
+msgstr "使用語法標明功能"
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+#, fuzzy
+msgid "Dark color scheme for Meld highlighting"
+msgstr "使用語法標明功能"
 
 #: ../data/ui/application.ui.h:1
 msgid "About Meld"
@@ -439,10 +477,14 @@ msgid "_Help"
 msgstr "求助(_H)"
 
 #: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
 msgid "_About"
 msgstr "有關(_A)"
 
-#: ../data/ui/application.ui.h:9
+#: ../data/ui/application.ui.h:10
 msgid "_Quit"
 msgstr "退出(_Q)"
 
@@ -474,7 +516,7 @@ msgstr "複製到右側"
 msgid "Delete selected"
 msgstr "刪除所選內容"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:876 ../meld/filediff.py:1460
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "隱藏"
 
@@ -508,7 +550,7 @@ msgstr "新增"
 msgid "Show new"
 msgstr "顯示新增處"
 
-#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:71
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
 msgid "Modified"
 msgstr "修改"
 
@@ -541,7 +583,7 @@ msgid "_Add"
 msgstr "加入(_A)"
 
 #: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
-#: ../meld/vcview.py:747
+#: ../meld/vcview.py:644
 msgid "_Remove"
 msgstr "移除(_R)"
 
@@ -562,8 +604,8 @@ msgid "Move _Down"
 msgstr "下移(_D)"
 
 #. Create icon and filename CellRenderer
-#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:374
-#: ../meld/vcview.py:203
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
 msgid "Name"
 msgstr "過濾器名稱"
 
@@ -763,8 +805,7 @@ msgstr "如果您不儲存，變更將永久遺失。"
 msgid "Close _without Saving"
 msgstr "關閉但不儲存(_W)"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:967 ../meld/filediff.py:1629
-#: ../meld/filediff.py:1713 ../meld/filediff.py:1738
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr "取消(_C)"
 
@@ -800,7 +841,7 @@ msgstr "還原對文件未儲存的更改？"
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr "對下列文件的更改將永久遺失：\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:968 ../meld/filediff.py:1630
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "取代(_R)"
 
@@ -848,7 +889,7 @@ msgstr "格式化為修正檔"
 msgid "Copy to Clipboard"
 msgstr "複製到剪貼薄"
 
-#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:119
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
 msgid "Save Patch"
 msgstr "保存修正檔"
 
@@ -869,166 +910,138 @@ msgid "_Reverse patch direction"
 msgstr "反轉修正方向(_R)"
 
 #: ../data/ui/preferences.ui.h:1
-msgid "Left is remote, right is local"
-msgstr "左側為遠端，右側為本地"
-
-#: ../data/ui/preferences.ui.h:2
-msgid "Left is local, right is remote"
-msgstr "左側為本地，右側為遠端"
-
-#: ../data/ui/preferences.ui.h:3
-msgid "Remote, merge, local"
-msgstr "遠端、合併、本地"
-
-#: ../data/ui/preferences.ui.h:4
-msgid "Local, merge, remote"
-msgstr "本地、合併、遠端"
-
-#: ../data/ui/preferences.ui.h:5
-msgid "1ns (ext4)"
-msgstr "1奈秒 (ext4)"
-
-#: ../data/ui/preferences.ui.h:6
-msgid "100ns (NTFS)"
-msgstr "100奈秒 (NTFS)"
-
-#: ../data/ui/preferences.ui.h:7
-msgid "1s (ext2/ext3)"
-msgstr "1秒 (ext2/ext3)"
-
-#: ../data/ui/preferences.ui.h:8
-msgid "2s (VFAT)"
-msgstr "2秒 (VFAT標準)"
-
-#: ../data/ui/preferences.ui.h:9
 msgid "Meld Preferences"
 msgstr "Meld 偏好設定"
 
-#: ../data/ui/preferences.ui.h:10
+#: ../data/ui/preferences.ui.h:2
 msgid "Font"
 msgstr "字型"
 
-#: ../data/ui/preferences.ui.h:11
+#: ../data/ui/preferences.ui.h:3
 msgid "_Use the system fixed width font"
 msgstr "使用系統固定寬度字型(_U)"
 
-#: ../data/ui/preferences.ui.h:12
+#: ../data/ui/preferences.ui.h:4
 msgid "_Editor font:"
 msgstr "編輯器字型(_E)："
 
-#: ../data/ui/preferences.ui.h:13
+#: ../data/ui/preferences.ui.h:5
 msgid "Display"
 msgstr "顯示"
 
-#: ../data/ui/preferences.ui.h:14
+#: ../data/ui/preferences.ui.h:6
 msgid "_Tab width:"
 msgstr "Tab 寬度(_T)："
 
-#: ../data/ui/preferences.ui.h:15
+#: ../data/ui/preferences.ui.h:7
 msgid "_Insert spaces instead of tabs"
 msgstr "用空格替換 Tab(_I)"
 
-#: ../data/ui/preferences.ui.h:16
+#: ../data/ui/preferences.ui.h:8
 msgid "Enable text _wrapping"
 msgstr "啟用文件自動換列(_W)"
 
-#: ../data/ui/preferences.ui.h:17
+#: ../data/ui/preferences.ui.h:9
 msgid "Do not _split words over two lines"
 msgstr "不要將一個詞拆成兩列(_S)"
 
-#: ../data/ui/preferences.ui.h:18
+#: ../data/ui/preferences.ui.h:10
 msgid "Highlight _current line"
 msgstr "標明目前的列(_C)"
 
-#: ../data/ui/preferences.ui.h:19
+#: ../data/ui/preferences.ui.h:11
 msgid "Show _line numbers"
 msgstr "顯示列號(_L)"
 
-#: ../data/ui/preferences.ui.h:20
+#: ../data/ui/preferences.ui.h:12
 msgid "Show w_hitespace"
 msgstr "顯示空白字元(_H)"
 
-#: ../data/ui/preferences.ui.h:21
+#: ../data/ui/preferences.ui.h:13
 msgid "Use s_yntax highlighting"
 msgstr "使用語法標明(_Y)"
 
-#: ../data/ui/preferences.ui.h:22
+#: ../data/ui/preferences.ui.h:14
 msgid "Syntax highlighting color scheme:"
 msgstr "語法標明功能的配色方案："
 
-#: ../data/ui/preferences.ui.h:23
+#: ../data/ui/preferences.ui.h:15
 msgid "External Editor"
 msgstr "外部編輯器"
 
-#: ../data/ui/preferences.ui.h:24
+#: ../data/ui/preferences.ui.h:16
 msgid "Use _default system editor"
 msgstr "使用預設系統編輯器(_D)"
 
-#: ../data/ui/preferences.ui.h:25
+#: ../data/ui/preferences.ui.h:17
 msgid "Edito_r command:"
 msgstr "編輯器指令(_R)："
 
-#: ../data/ui/preferences.ui.h:26
+#: ../data/ui/preferences.ui.h:18
 msgid "Editor"
 msgstr "編輯器"
 
-#: ../data/ui/preferences.ui.h:27
+#: ../data/ui/preferences.ui.h:19
 msgid "Shallow Comparison"
 msgstr "粗淺比較"
 
-#: ../data/ui/preferences.ui.h:28
+#: ../data/ui/preferences.ui.h:20
 msgid "C_ompare files based only on size and timestamp"
 msgstr "只按照大小和時間戳記比對檔案(_O)"
 
-#: ../data/ui/preferences.ui.h:29
+#: ../data/ui/preferences.ui.h:21
 msgid "_Timestamp resolution:"
 msgstr "時間戳精細度(_T)："
 
-#: ../data/ui/preferences.ui.h:31
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
 msgid "Symbolic Links"
 msgstr "符號連結"
 
-#: ../data/ui/preferences.ui.h:33
+#: ../data/ui/preferences.ui.h:26
 msgid "Visible Columns"
 msgstr "可見欄位"
 
-#: ../data/ui/preferences.ui.h:34
+#: ../data/ui/preferences.ui.h:27
 msgid "Folder Comparisons"
 msgstr "資料夾比對"
 
-#: ../data/ui/preferences.ui.h:35
+#: ../data/ui/preferences.ui.h:28
 msgid "Version Comparisons"
 msgstr "版本比對"
 
-#: ../data/ui/preferences.ui.h:36
+#: ../data/ui/preferences.ui.h:29
 msgid "_Order when comparing file revisions:"
 msgstr "比對檔案時的次序(_O)："
 
-#: ../data/ui/preferences.ui.h:37
+#: ../data/ui/preferences.ui.h:30
 msgid "Order when _merging files:"
 msgstr "合併檔案時的次序："
 
-#: ../data/ui/preferences.ui.h:38
+#: ../data/ui/preferences.ui.h:31
 msgid "Commit Messages"
 msgstr "提交訊息"
 
-#: ../data/ui/preferences.ui.h:39
+#: ../data/ui/preferences.ui.h:32
 msgid "Show _right margin at:"
 msgstr "顯示右側邊界的位置(_R)："
 
-#: ../data/ui/preferences.ui.h:40
+#: ../data/ui/preferences.ui.h:33
 msgid "Automatically _break lines at right margin on commit"
 msgstr "提交時自動在右側邊界處斷列處理(_B)"
 
-#: ../data/ui/preferences.ui.h:41
+#: ../data/ui/preferences.ui.h:34
 msgid "Version Control"
 msgstr "版本控制"
 
-#: ../data/ui/preferences.ui.h:42
+#: ../data/ui/preferences.ui.h:35
 msgid "Filename filters"
 msgstr "檔案名稱過濾器"
 
-#: ../data/ui/preferences.ui.h:43
+#: ../data/ui/preferences.ui.h:36
 msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
@@ -1037,23 +1050,23 @@ msgstr ""
 "當進行比對，您可以把某些檔案及資料夾過濾掉。每個比對式樣都是以空格分開，"
 "shell 形式的萬用字元。"
 
-#: ../data/ui/preferences.ui.h:44 ../meld/meldwindow.py:103
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
 msgid "File Filters"
 msgstr "檔案過濾器"
 
-#: ../data/ui/preferences.ui.h:45
+#: ../data/ui/preferences.ui.h:38
 msgid "Change trimming"
 msgstr "更改修剪"
 
-#: ../data/ui/preferences.ui.h:46
+#: ../data/ui/preferences.ui.h:39
 msgid "Trim blank line differences from the start and end of changes"
 msgstr ""
 
-#: ../data/ui/preferences.ui.h:47
+#: ../data/ui/preferences.ui.h:40
 msgid "Text filters"
 msgstr "文字過濾器"
 
-#: ../data/ui/preferences.ui.h:48
+#: ../data/ui/preferences.ui.h:41
 msgid ""
 "When performing file comparisons, you may ignore certain types of changes. "
 "Each pattern here is a python regular expression which replaces matching "
@@ -1065,11 +1078,333 @@ msgstr ""
 "語言的正規表達式，用在進行比對前取代符合的字串。如果表達式包含群組，那麼只有"
 "群組會被取代。請參閱使用說明以取得更多資訊。"
 
-#: ../data/ui/preferences.ui.h:49
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
 msgid "Text Filters"
 msgstr "文字過濾器"
 
-#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:625
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
+msgstr "左側為遠端，右側為本地"
+
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
+msgstr "左側為本地，右側為遠端"
+
+#: ../data/ui/preferences.ui.h:45
+msgid "Remote, merge, local"
+msgstr "遠端、合併、本地"
+
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr "本地、合併、遠端"
+
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr "1奈秒 (ext4)"
+
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr "100奈秒 (NTFS)"
+
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr "1秒 (ext2/ext3)"
+
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr "2秒 (VFAT標準)"
+
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
+msgstr "新的比對"
+
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "檔案比對"
+
+#: ../data/ui/shortcuts.ui.h:4
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr "有關 Meld"
+
+#: ../data/ui/shortcuts.ui.h:5
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr "停止目前的動作"
+
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "新的比對"
+
+#: ../data/ui/shortcuts.ui.h:7
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "全螢幕"
+
+#: ../data/ui/shortcuts.ui.h:8
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr "分頁(_T)"
+
+#: ../data/ui/shortcuts.ui.h:9
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr "前往上一個變更"
+
+#: ../data/ui/shortcuts.ui.h:10
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr "跳到下一個變更"
+
+#: ../data/ui/shortcuts.ui.h:11
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr "切換到此分頁"
+
+#: ../data/ui/shortcuts.ui.h:12
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr "左移分頁(_L)"
+
+#: ../data/ui/shortcuts.ui.h:13
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr "右移分頁(_R)"
+
+#: ../data/ui/shortcuts.ui.h:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr "變更(_C)"
+
+#: ../data/ui/shortcuts.ui.h:15
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr "前往上一個變更"
+
+#: ../data/ui/shortcuts.ui.h:16
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr "跳到下一個變更"
+
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "編輯(_E)"
+
+#: ../data/ui/shortcuts.ui.h:18
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:19
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:20
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "複製到上邊(_U)"
+
+#: ../data/ui/shortcuts.ui.h:22
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:23
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "尋找："
+
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "尋找下一個(_X)"
+
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
+msgstr "尋找上一個(_P)"
+
+#: ../data/ui/shortcuts.ui.h:26
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr "取代(_R)"
+
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "檔案比對"
+
+#: ../data/ui/shortcuts.ui.h:28
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr "儲存目前的檔案"
+
+#: ../data/ui/shortcuts.ui.h:29
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr "儲存目前的檔案"
+
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "保存目前比較中的所有檔案"
+
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "上一個衝突"
+
+#: ../data/ui/shortcuts.ui.h:32
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr "下一個衝突"
+
+#: ../data/ui/shortcuts.ui.h:33
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr "推送目前的更改到左側"
+
+#: ../data/ui/shortcuts.ui.h:34
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr "推送目前的更改到右側"
+
+#: ../data/ui/shortcuts.ui.h:35
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr "從左側拉取更改"
+
+#: ../data/ui/shortcuts.ui.h:36
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr "從右側拉取更改"
+
+#: ../data/ui/shortcuts.ui.h:37
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr "從左側塊上方複製更改"
+
+#: ../data/ui/shortcuts.ui.h:38
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr "從左側塊下方複製更改"
+
+#: ../data/ui/shortcuts.ui.h:39
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr "從右側塊上方複製更改"
+
+#: ../data/ui/shortcuts.ui.h:40
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr "從右側塊下方複製更改"
+
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "刪除變更"
+
+#: ../data/ui/shortcuts.ui.h:42
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr "上一個窗格"
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "新的比對"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "資料夾比對"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to left"
+msgstr "複製到左側"
+
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to right"
+msgstr "複製到右側"
+
+#: ../data/ui/shortcuts.ui.h:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr "開始版本控制比較"
+
+#: ../data/ui/shortcuts.ui.h:48
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr "提交變更至版本控制"
+
+#: ../data/ui/shortcuts.ui.h:49
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr "主控台輸出"
+
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
 msgid "New comparison"
 msgstr "新的比對"
 
@@ -1217,7 +1552,7 @@ msgstr "未版本控制(_V)"
 msgid "Show unversioned files"
 msgstr "顯示未加入版本控制的檔案"
 
-#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:64
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
 msgid "Ignored"
 msgstr "已忽略"
 
@@ -1245,112 +1580,123 @@ msgstr "前一個日誌："
 msgid "Co_mmit"
 msgstr "提交(_M)"
 
-#: ../data/ui/vcview.ui.h:35
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
+msgid "Location"
+msgstr "位置"
+
+#: ../data/ui/vcview.ui.h:37
+msgid "Status"
+msgstr "狀態"
+
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:39
 msgid "Console output"
 msgstr "主控台輸出"
 
-#: ../data/ui/vcview.ui.h:36
+#: ../data/ui/vcview.ui.h:40
 msgid "Push local commits to remote?"
 msgstr "推送 (push) 本地提交到遠端？"
 
-#: ../data/ui/vcview.ui.h:37
+#: ../data/ui/vcview.ui.h:41
 #, fuzzy
 msgid "The commits to be pushed are determined by your version control system."
 msgstr "要推送的提交由您的版本控制系統決定。"
 
-#: ../data/ui/vcview.ui.h:38
+#: ../data/ui/vcview.ui.h:42
 msgid "_Push commits"
 msgstr "推送提交(_P)"
 
-#: ../meld/const.py:10
+#: ../meld/const.py:12
 msgid "UNIX (LF)"
 msgstr "UNIX (LF)"
 
-#: ../meld/const.py:11
+#: ../meld/const.py:13
 msgid "DOS/Windows (CR-LF)"
 msgstr "DOS/Windows (CR-LF)"
 
-#: ../meld/const.py:12
+#: ../meld/const.py:14
 msgid "Mac OS (CR)"
 msgstr "Mac OS (CR)"
 
 #. Create file size CellRenderer
-#: ../meld/dirdiff.py:392 ../meld/preferences.py:82
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
 msgid "Size"
 msgstr "大小"
 
 #. Create date-time CellRenderer
-#: ../meld/dirdiff.py:400 ../meld/preferences.py:83
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
 msgid "Modification time"
 msgstr "修改時間"
 
 #. Create permissions CellRenderer
-#: ../meld/dirdiff.py:408 ../meld/preferences.py:84
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
 msgid "Permissions"
 msgstr "權限"
 
-#: ../meld/dirdiff.py:558
+#: ../meld/dirdiff.py:540
 #, python-format
 msgid "Hide %s"
 msgstr "隱藏 %s"
 
-#: ../meld/dirdiff.py:688 ../meld/dirdiff.py:710
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] 正在掃描 %s"
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:828
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] 完成"
 
-#: ../meld/dirdiff.py:851
+#: ../meld/dirdiff.py:836
 msgid "Folders have no differences"
 msgstr "資料夾沒有差異"
 
-#: ../meld/dirdiff.py:853
+#: ../meld/dirdiff.py:838
 msgid "Contents of scanned files in folders are identical."
 msgstr ""
 
-#: ../meld/dirdiff.py:855
+#: ../meld/dirdiff.py:840
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:858
+#: ../meld/dirdiff.py:843
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:860
+#: ../meld/dirdiff.py:845
 msgid "Text filters are in use and may be masking content differences."
 msgstr ""
 
-#: ../meld/dirdiff.py:878 ../meld/dirdiff.py:931 ../meld/filediff.py:1115
-#: ../meld/filediff.py:1267 ../meld/filediff.py:1462 ../meld/filediff.py:1492
-#: ../meld/filediff.py:1494
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "隱藏(_D)"
 
-#: ../meld/dirdiff.py:888
+#: ../meld/dirdiff.py:873
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "掃描此資料夾時出現多個錯誤"
 
-#: ../meld/dirdiff.py:889
+#: ../meld/dirdiff.py:874
 msgid "Files with invalid encodings found"
 msgstr "發現檔案使用的編碼不正確"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:876
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "某些檔案編碼不正確。名稱是這樣的："
 
-#: ../meld/dirdiff.py:893
+#: ../meld/dirdiff.py:878
 msgid "Files hidden by case insensitive comparison"
 msgstr "因比對區分大小寫而隱藏的文件"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:895
+#: ../meld/dirdiff.py:880
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1358,28 +1704,28 @@ msgstr ""
 "您在區分大小寫的檔案系統上運行不區分大小寫的比對。此資料夾中的以下檔案是隱藏"
 "的："
 
-#: ../meld/dirdiff.py:906
+#: ../meld/dirdiff.py:891
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "「%s」被「%s」隱藏"
 
-#: ../meld/dirdiff.py:971
+#: ../meld/dirdiff.py:947
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr "取代「%s」資料夾？"
 
-#: ../meld/dirdiff.py:973
+#: ../meld/dirdiff.py:949
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:962
 msgid "Error copying file"
 msgstr "複製檔案時發生錯誤"
 
-#: ../meld/dirdiff.py:987
+#: ../meld/dirdiff.py:963
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1392,121 +1738,110 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../meld/dirdiff.py:1010
+#: ../meld/dirdiff.py:986
 #, python-format
 msgid "Error deleting %s"
 msgstr "刪除 %s 出錯"
 
-#: ../meld/dirdiff.py:1515
+#: ../meld/dirdiff.py:1499
 msgid "No folder"
 msgstr "無資料夾"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
-#: ../meld/filediff.py:406
+#: ../meld/filediff.py:335
 msgid "INS"
 msgstr "INS"
 
-#: ../meld/filediff.py:406
+#: ../meld/filediff.py:335
 msgid "OVR"
 msgstr "OVR"
 
 #. Abbreviation for line, column so that it will fit in the status bar
-#: ../meld/filediff.py:408
+#: ../meld/filediff.py:337
 #, python-format
 msgid "Ln %i, Col %i"
 msgstr "列  %i，行 %i"
 
-#: ../meld/filediff.py:821
+#: ../meld/filediff.py:762
 msgid "Comparison results will be inaccurate"
 msgstr "比較結果可能不準確"
 
-#: ../meld/filediff.py:823
-#, python-format
+#: ../meld/filediff.py:764
+#, fuzzy
 msgid ""
-"Filter “%s” changed the number of lines in the file, which is unsupported. "
-"The comparison will not be accurate."
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
 msgstr "「%s」過濾器更改了檔案的列數，但還尚未支援。比較結果可能不準確。"
 
-#: ../meld/filediff.py:894
+#: ../meld/filediff.py:820
 msgid "Mark conflict as resolved?"
 msgstr "要把衝突標記為「已解決」嗎？"
 
-#: ../meld/filediff.py:896
+#: ../meld/filediff.py:822
 msgid ""
 "If the conflict was resolved successfully, you may mark it as resolved now."
 msgstr "如果衝突已成功解決，您現在可以將其標記為已解決。"
 
-#: ../meld/filediff.py:898
+#: ../meld/filediff.py:824
 msgid "Cancel"
 msgstr "取消"
 
-#: ../meld/filediff.py:899
+#: ../meld/filediff.py:825
 msgid "Mark _Resolved"
 msgstr "標記為「已解決」(_R)"
 
-#: ../meld/filediff.py:1102
+#: ../meld/filediff.py:1076
 #, python-format
-msgid "[%s] Set num panes"
-msgstr "[%s] 設定數目窗格"
+msgid "There was a problem opening the file “%s”."
+msgstr ""
 
-#: ../meld/filediff.py:1109
-#, python-format
-msgid "[%s] Opening files"
-msgstr "[%s] 正在開啟檔案"
-
-#: ../meld/filediff.py:1132 ../meld/filediff.py:1142 ../meld/filediff.py:1155
-#: ../meld/filediff.py:1161
-msgid "Could not read file"
-msgstr "無法讀取檔案"
-
-#: ../meld/filediff.py:1133
-#, python-format
-msgid "[%s] Reading files"
-msgstr "[%s] 正在讀取檔案"
-
-#: ../meld/filediff.py:1143
-#, python-format
-msgid "%s appears to be a binary file."
+#: ../meld/filediff.py:1084
+#, fuzzy, python-format
+msgid "File %s appears to be a binary file."
 msgstr "%s 似乎是二進位檔案。"
 
-#: ../meld/filediff.py:1156
-#, python-format
-msgid "%s is not in encodings: %s"
-msgstr "%s 不是使用 %s 進行編碼的。"
+#: ../meld/filediff.py:1086
+#, fuzzy
+msgid "Do you want to open the file using the default application?"
+msgstr "使用預設的外部程式開啟選取的檔案或目錄"
 
-#: ../meld/filediff.py:1194
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
 #, python-format
 msgid "[%s] Computing differences"
 msgstr "[%s] 正在計算差異"
 
-#: ../meld/filediff.py:1262
+#: ../meld/filediff.py:1166
 #, python-format
 msgid "File %s has changed on disk"
 msgstr "在碟上的%s檔案已變更"
 
-#: ../meld/filediff.py:1263
+#: ../meld/filediff.py:1167
 msgid "Do you want to reload the file?"
 msgstr "你要重新讀取該檔案嗎？"
 
-#: ../meld/filediff.py:1266
+#: ../meld/filediff.py:1169
 msgid "_Reload"
 msgstr "重新讀取(_R)"
 
-#: ../meld/filediff.py:1425
+#: ../meld/filediff.py:1327
 msgid "Files are identical"
 msgstr "檔案完全相同"
 
-#: ../meld/filediff.py:1438
+#: ../meld/filediff.py:1340
 msgid ""
 "Text filters are being used, and may be masking differences between files. "
 "Would you like to compare the unfiltered files?"
 msgstr "正在使用文字過濾器，可能會屏蔽文件之間的不同。您想比較未過濾的文件嗎？"
 
-#: ../meld/filediff.py:1443
+#: ../meld/filediff.py:1345
 msgid "Files differ in line endings only"
 msgstr "檔案只有斷列字元有分別"
 
-#: ../meld/filediff.py:1445
+#: ../meld/filediff.py:1347
 #, python-format
 msgid ""
 "Files are identical except for differing line endings:\n"
@@ -1515,15 +1850,15 @@ msgstr ""
 "這些檔案只有斷列字元有分別：\n"
 "%s"
 
-#: ../meld/filediff.py:1465
+#: ../meld/filediff.py:1367
 msgid "Show without filters"
 msgstr "顯示不過濾的結果"
 
-#: ../meld/filediff.py:1487
+#: ../meld/filediff.py:1389
 msgid "Change highlighting incomplete"
 msgstr "更改標明不完整"
 
-#: ../meld/filediff.py:1488
+#: ../meld/filediff.py:1390
 msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
@@ -1531,20 +1866,20 @@ msgstr ""
 "某些更改沒有標明，因為太大。您可以強制標明顯示大幅更改，盡管這可能會變得很"
 "慢。"
 
-#: ../meld/filediff.py:1496
+#: ../meld/filediff.py:1398
 msgid "Keep highlighting"
 msgstr "保持語法標明"
 
-#: ../meld/filediff.py:1498
+#: ../meld/filediff.py:1400
 msgid "_Keep highlighting"
 msgstr "保持語法標明(_K)"
 
-#: ../meld/filediff.py:1633
+#: ../meld/filediff.py:1432
 #, python-format
 msgid "Replace file “%s”?"
 msgstr "取代「%s」檔案？"
 
-#: ../meld/filediff.py:1635
+#: ../meld/filediff.py:1434
 #, python-format
 msgid ""
 "A file with this name already exists in “%s”.\n"
@@ -1553,12 +1888,41 @@ msgstr ""
 "「%s」中已有相同名稱的檔案。\n"
 "若您取代既有的檔案，其內容將會流失。"
 
-#: ../meld/filediff.py:1653
+#: ../meld/filediff.py:1451
+msgid "Save Left Pane As"
+msgstr "左側窗格另存為"
+
+#: ../meld/filediff.py:1453
+msgid "Save Middle Pane As"
+msgstr "中間窗格另存為"
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr "右側窗格另存為"
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr "在磁碟上的 %s 檔案在開啟之後已變更"
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr "如果你儲存它，外部的更改將遺失。"
+
+#: ../meld/filediff.py:1474
+msgid "Save Anyway"
+msgstr "依然儲存"
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr "不要儲存"
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
 #, python-format
 msgid "Could not save file %s."
 msgstr "無法儲存檔案 %s。"
 
-#: ../meld/filediff.py:1654
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
 #, python-format
 msgid ""
 "Couldn't save file due to:\n"
@@ -1567,69 +1931,11 @@ msgstr ""
 "無法儲存檔案，因為：\n"
 "%s"
 
-#: ../meld/filediff.py:1666
-msgid "Save Left Pane As"
-msgstr "左側窗格另存為"
-
-#: ../meld/filediff.py:1668
-msgid "Save Middle Pane As"
-msgstr "中間窗格另存為"
-
-#: ../meld/filediff.py:1670
-msgid "Save Right Pane As"
-msgstr "右側窗格另存為"
-
-#: ../meld/filediff.py:1684
-#, python-format
-msgid "File %s has changed on disk since it was opened"
-msgstr "在磁碟上的 %s 檔案在開啟之後已變更"
-
-#: ../meld/filediff.py:1686
-msgid "If you save it, any external changes will be lost."
-msgstr "如果你儲存它，外部的更改將遺失。"
-
-#: ../meld/filediff.py:1689
-msgid "Save Anyway"
-msgstr "依然儲存"
-
-#: ../meld/filediff.py:1690
-msgid "Don't Save"
-msgstr "不要儲存"
-
-#: ../meld/filediff.py:1716
-msgid "Inconsistent line endings found"
-msgstr "檔案使用了多種斷列字元"
-
-#: ../meld/filediff.py:1718
-#, python-format
-msgid ""
-"'%s' contains a mixture of line endings. Select the line ending format to "
-"use."
-msgstr "「%s」檔案混合了不同的斷列字元使用。請選擇要統一使用的斷列字元。"
-
-#: ../meld/filediff.py:1739
-msgid "_Save as UTF-8"
-msgstr "以 UTF-8 編碼儲存(_S)"
-
-#: ../meld/filediff.py:1742
-#, python-format
-msgid "Couldn't encode text as “%s”"
-msgstr "無法以「%s」編碼文字"
-
-#: ../meld/filediff.py:1744
-#, python-format
-msgid ""
-"File “%s” contains characters that can't be encoded using encoding “%s”.\n"
-"Would you like to save as UTF-8?"
-msgstr ""
-"「%s」檔案包含無法以「%s」編碼的字元。\n"
-"您是否要將其另存為 UTF-8？"
-
-#: ../meld/filediff.py:2096
+#: ../meld/filediff.py:1879
 msgid "Live comparison updating disabled"
 msgstr "實時比較更新已禁用"
 
-#: ../meld/filediff.py:2097
+#: ../meld/filediff.py:1880
 msgid ""
 "Live updating of comparisons is disabled when synchronization points are "
 "active. You can still manually refresh the comparison, and live updates will "
@@ -1638,354 +1944,319 @@ msgstr ""
 "同步點活動時實時比較更新會禁用。您仍然可以手動刷新比較。實時更新會在同步點清"
 "除後恢覆啟用。"
 
-#: ../meld/filemerge.py:48
+#: ../meld/filemerge.py:37
 #, python-format
 msgid "[%s] Merging files"
 msgstr "[%s] 正在合併檔案"
 
-#: ../meld/gutterrendererchunk.py:93
+#: ../meld/gutterrendererchunk.py:210
 msgid "Copy _up"
 msgstr "複製到上邊(_U)"
 
-#: ../meld/gutterrendererchunk.py:94
+#: ../meld/gutterrendererchunk.py:211
 msgid "Copy _down"
 msgstr "複製到下邊(_D)"
 
-#: ../meld/meldapp.py:170
+#: ../meld/meldapp.py:175
 msgid "wrong number of arguments supplied to --diff"
 msgstr "提供給 --diff 的參數個數錯誤"
 
-#: ../meld/meldapp.py:175
+#: ../meld/meldapp.py:180
 msgid "Start with an empty window"
 msgstr "啟動時開啟空白視窗"
 
-#: ../meld/meldapp.py:176 ../meld/meldapp.py:178
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
 msgid "file"
 msgstr "檔案"
 
-#: ../meld/meldapp.py:176 ../meld/meldapp.py:180
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
 msgid "folder"
 msgstr "資料夾"
 
-#: ../meld/meldapp.py:177
+#: ../meld/meldapp.py:182
 msgid "Start a version control comparison"
 msgstr "開始版本控制比較"
 
-#: ../meld/meldapp.py:179
+#: ../meld/meldapp.py:184
 msgid "Start a 2- or 3-way file comparison"
 msgstr "開始雙向或三向檔案比較"
 
-#: ../meld/meldapp.py:181
+#: ../meld/meldapp.py:186
 msgid "Start a 2- or 3-way folder comparison"
 msgstr "開始雙向或三向資料夾比較"
 
-#: ../meld/meldapp.py:224
+#: ../meld/meldapp.py:229
 #, python-format
 msgid "Error: %s\n"
 msgstr "錯誤：%s\n"
 
-#: ../meld/meldapp.py:231
+#: ../meld/meldapp.py:236
 msgid "Meld is a file and directory comparison tool."
 msgstr "Meld 是一個檔案和資料夾比較工具。"
 
-#: ../meld/meldapp.py:235
+#: ../meld/meldapp.py:240
 msgid "Set label to use instead of file name"
 msgstr "設置標籤來代替檔名"
 
-#: ../meld/meldapp.py:238
+#: ../meld/meldapp.py:243
 msgid "Open a new tab in an already running instance"
 msgstr "在已經運行的實體中打開一個新分頁"
 
-#: ../meld/meldapp.py:241
+#: ../meld/meldapp.py:246
 msgid "Automatically compare all differing files on startup"
 msgstr "啟動時自動比較所有不同的檔案"
 
-#: ../meld/meldapp.py:244
+#: ../meld/meldapp.py:249
 msgid "Ignored for compatibility"
 msgstr "為相容性而忽略"
 
-#: ../meld/meldapp.py:248
+#: ../meld/meldapp.py:253
 msgid "Set the target file for saving a merge result"
 msgstr "設置用於保存合並結果的目標文件"
 
-#: ../meld/meldapp.py:251
+#: ../meld/meldapp.py:256
 msgid "Automatically merge files"
 msgstr "自動合併檔案"
 
-#: ../meld/meldapp.py:255
+#: ../meld/meldapp.py:260
 msgid "Load a saved comparison from a Meld comparison file"
 msgstr "從 Meld 比較檔案載入儲存的比較"
 
-#: ../meld/meldapp.py:259
+#: ../meld/meldapp.py:264
 msgid "Create a diff tab for the supplied files or folders"
 msgstr "為提供的文件或資料夾創建 diff 分頁"
 
-#: ../meld/meldapp.py:279
+#: ../meld/meldapp.py:284
 #, python-format
 msgid "too many arguments (wanted 0-3, got %d)"
 msgstr "參數過多 (需要 0-3 個，已有 %d 個)"
 
-#: ../meld/meldapp.py:282
+#: ../meld/meldapp.py:287
 msgid "can't auto-merge less than 3 files"
 msgstr "少於 3 個檔案無法自動合併"
 
-#: ../meld/meldapp.py:284
+#: ../meld/meldapp.py:289
 msgid "can't auto-merge directories"
 msgstr "無法自動合併資料夾"
 
-#: ../meld/meldapp.py:298
+#: ../meld/meldapp.py:303
 msgid "Error reading saved comparison file"
 msgstr "讀取已儲存比對檔案時發生錯誤"
 
-#: ../meld/meldapp.py:326
+#: ../meld/meldapp.py:330
 #, python-format
 msgid "invalid path or URI \"%s\""
 msgstr "無效的路徑或 URI「%s」"
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
-#: ../meld/meldbuffer.py:137
+#: ../meld/meldbuffer.py:131
 msgid "<unnamed>"
 msgstr "<無名>"
 
-#: ../meld/melddoc.py:78 ../meld/melddoc.py:79
+#: ../meld/melddoc.py:64
 msgid "untitled"
 msgstr "無題"
 
-#: ../meld/meldwindow.py:48
+#: ../meld/meldwindow.py:52
 msgid "_File"
 msgstr "檔案(_F)"
 
-#: ../meld/meldwindow.py:49
+#: ../meld/meldwindow.py:53
 msgid "_New Comparison..."
 msgstr "新的比對(_N)..."
 
-#: ../meld/meldwindow.py:50
+#: ../meld/meldwindow.py:54
 msgid "Start a new comparison"
 msgstr "開始新的比對"
 
-#: ../meld/meldwindow.py:53
+#: ../meld/meldwindow.py:57
 msgid "Save the current file"
 msgstr "儲存目前的檔案"
 
-#: ../meld/meldwindow.py:55
+#: ../meld/meldwindow.py:59
 msgid "Save As..."
 msgstr "另存為..."
 
-#: ../meld/meldwindow.py:56
+#: ../meld/meldwindow.py:60
 msgid "Save the current file with a different name"
 msgstr "以其他名稱儲存目前的檔案"
 
-#: ../meld/meldwindow.py:59
+#: ../meld/meldwindow.py:63
 msgid "Close the current file"
 msgstr "關閉目前的檔案"
 
-#: ../meld/meldwindow.py:62
+#: ../meld/meldwindow.py:66
 msgid "_Edit"
 msgstr "編輯(_E)"
 
-#: ../meld/meldwindow.py:64
+#: ../meld/meldwindow.py:68
 msgid "Undo the last action"
 msgstr "復原上一次的動作"
 
-#: ../meld/meldwindow.py:67
+#: ../meld/meldwindow.py:71
 msgid "Redo the last undone action"
 msgstr "重做最後撤消的操作"
 
-#: ../meld/meldwindow.py:69
+#: ../meld/meldwindow.py:73
 msgid "Cut the selection"
 msgstr "剪下選取內容"
 
-#: ../meld/meldwindow.py:71
+#: ../meld/meldwindow.py:75
 msgid "Copy the selection"
 msgstr "複製選取內容"
 
-#: ../meld/meldwindow.py:73
+#: ../meld/meldwindow.py:77
 msgid "Paste the clipboard"
 msgstr "貼上剪貼簿內容"
 
-#: ../meld/meldwindow.py:75
+#: ../meld/meldwindow.py:79
 msgid "Find..."
 msgstr "尋找..."
 
-#: ../meld/meldwindow.py:75
+#: ../meld/meldwindow.py:79
 msgid "Search for text"
 msgstr "搜尋文字"
 
-#: ../meld/meldwindow.py:77
+#: ../meld/meldwindow.py:81
 msgid "Find Ne_xt"
 msgstr "尋找下一個(_X)"
 
-#: ../meld/meldwindow.py:78
+#: ../meld/meldwindow.py:82
 msgid "Search forwards for the same text"
 msgstr "向下尋找相同的文字"
 
-#: ../meld/meldwindow.py:80
+#: ../meld/meldwindow.py:84
 msgid "Find _Previous"
 msgstr "尋找上一個(_P)"
 
-#: ../meld/meldwindow.py:81
+#: ../meld/meldwindow.py:85
 msgid "Search backwards for the same text"
 msgstr "向上尋找相同的文字"
 
-#: ../meld/meldwindow.py:84
+#: ../meld/meldwindow.py:88
 msgid "_Replace..."
 msgstr "取代(_R)..."
 
-#: ../meld/meldwindow.py:85
+#: ../meld/meldwindow.py:89
 msgid "Find and replace text"
 msgstr "尋找並取代文字"
 
-#: ../meld/meldwindow.py:88
+#: ../meld/meldwindow.py:92
 msgid "_Changes"
 msgstr "變更(_C)"
 
-#: ../meld/meldwindow.py:89
+#: ../meld/meldwindow.py:93
 msgid "Next Change"
 msgstr "下一個變更"
 
-#: ../meld/meldwindow.py:90
+#: ../meld/meldwindow.py:94
 msgid "Go to the next change"
 msgstr "跳到下一個變更"
 
-#: ../meld/meldwindow.py:92
+#: ../meld/meldwindow.py:96
 msgid "Previous Change"
 msgstr "上一個變更"
 
-#: ../meld/meldwindow.py:93
+#: ../meld/meldwindow.py:97
 msgid "Go to the previous change"
 msgstr "前往上一個變更"
 
-#: ../meld/meldwindow.py:95
+#: ../meld/meldwindow.py:99
 msgid "Open Externally"
 msgstr "使用外部工具開啟"
 
-#: ../meld/meldwindow.py:96
+#: ../meld/meldwindow.py:100
 msgid "Open selected file or directory in the default external application"
 msgstr "使用預設的外部程式開啟選取的檔案或目錄"
 
-#: ../meld/meldwindow.py:100
+#: ../meld/meldwindow.py:104
 msgid "_View"
 msgstr "檢視(_V)"
 
-#: ../meld/meldwindow.py:101
+#: ../meld/meldwindow.py:105
 msgid "File Status"
 msgstr "檔案狀態"
 
-#: ../meld/meldwindow.py:102
+#: ../meld/meldwindow.py:106
 msgid "Version Status"
 msgstr "版本狀態"
 
-#: ../meld/meldwindow.py:105
+#: ../meld/meldwindow.py:110
 msgid "Stop the current action"
 msgstr "停止目前的動作"
 
-#: ../meld/meldwindow.py:108
+#: ../meld/meldwindow.py:113
 msgid "Refresh the view"
 msgstr "重整檢視"
 
-#: ../meld/meldwindow.py:111
-msgid "_Tabs"
-msgstr "分頁(_T)"
-
-#: ../meld/meldwindow.py:112
-msgid "_Previous Tab"
-msgstr "上一分頁(_P)"
-
-#: ../meld/meldwindow.py:113
-msgid "Activate previous tab"
-msgstr "啟用上一分頁"
-
-#: ../meld/meldwindow.py:115
-msgid "_Next Tab"
-msgstr "下一分頁(_N)"
-
-#: ../meld/meldwindow.py:116
-msgid "Activate next tab"
-msgstr "啟用下一分頁"
-
-#: ../meld/meldwindow.py:119
-msgid "Move Tab _Left"
-msgstr "左移分頁(_L)"
-
-#: ../meld/meldwindow.py:120
-msgid "Move current tab to left"
-msgstr "將目前的分頁移到左側"
-
-#: ../meld/meldwindow.py:123
-msgid "Move Tab _Right"
-msgstr "右移分頁(_R)"
-
-#: ../meld/meldwindow.py:124
-msgid "Move current tab to right"
-msgstr "將目前的分頁移到右側"
-
-#: ../meld/meldwindow.py:128
+#: ../meld/meldwindow.py:117
 msgid "Fullscreen"
 msgstr "全螢幕"
 
-#: ../meld/meldwindow.py:129
+#: ../meld/meldwindow.py:118
 msgid "View the comparison in fullscreen"
 msgstr "以全螢幕模式查看比較"
 
-#: ../meld/meldwindow.py:131
+#: ../meld/meldwindow.py:120
 msgid "_Toolbar"
 msgstr "工具列(_T)"
 
-#: ../meld/meldwindow.py:132
+#: ../meld/meldwindow.py:121
 msgid "Show or hide the toolbar"
 msgstr "顯示或隱藏工具列"
 
-#: ../meld/meldwindow.py:141
+#: ../meld/meldwindow.py:131
 msgid "Open Recent"
 msgstr "最近使用"
 
-#: ../meld/meldwindow.py:142
+#: ../meld/meldwindow.py:132
 msgid "Open recent files"
 msgstr "打開最近使用的檔案"
 
-#: ../meld/meldwindow.py:164
+#: ../meld/meldwindow.py:152
 msgid "_Meld"
 msgstr "_Meld"
 
-#: ../meld/meldwindow.py:165
+#: ../meld/meldwindow.py:153
 msgid "Quit the program"
 msgstr "退出程式"
 
-#: ../meld/meldwindow.py:167
+#: ../meld/meldwindow.py:155
 msgid "Prefere_nces"
 msgstr "偏好設定(_N)"
 
-#: ../meld/meldwindow.py:168
+#: ../meld/meldwindow.py:156
 msgid "Configure the application"
 msgstr "設定程式"
 
-#: ../meld/meldwindow.py:170
+#: ../meld/meldwindow.py:158
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: ../meld/meldwindow.py:171
+#: ../meld/meldwindow.py:159
 msgid "Open the Meld manual"
 msgstr "打開 Meld 幫助手冊"
 
-#: ../meld/meldwindow.py:173
+#: ../meld/meldwindow.py:161
 msgid "About this application"
 msgstr "關於這個應用程式"
 
-#: ../meld/meldwindow.py:548
-msgid "Switch to this tab"
-msgstr "切換到此分頁"
-
-#: ../meld/meldwindow.py:659
+#: ../meld/meldwindow.py:650
 #, python-format
 msgid "Need three files to auto-merge, got: %r"
 msgstr "需要三個檔案來自動合併，已有：%r"
 
-#: ../meld/meldwindow.py:673
+#: ../meld/meldwindow.py:664
 msgid "Cannot compare a mixture of files and directories"
 msgstr "無法對文件和目錄混合比較"
 
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
+msgstr ""
+
 #. no common path. empty names get changed to "[None]"
-#: ../meld/misc.py:178
+#: ../meld/misc.py:259
 msgid "[None]"
 msgstr "[沒有]"
 
@@ -2001,207 +2272,277 @@ msgstr "式樣"
 msgid "Version control:"
 msgstr "版本控制："
 
-#: ../meld/ui/notebooklabel.py:65
+#: ../meld/ui/notebooklabel.py:63
 msgid "Close tab"
 msgstr "關閉分頁"
 
-#: ../meld/ui/vcdialogs.py:61
+#: ../meld/ui/vcdialogs.py:48
 msgid "No files will be committed"
 msgstr "沒有檔案會提交"
 
 #. Translators: First %s is replaced by translated "%d unpushed
 #. commits", second %s is replaced by translated "%d branches"
-#: ../meld/vc/git.py:129
+#: ../meld/vc/git.py:94
 #, python-format
 msgid "%s in %s"
 msgstr "%s，位於 %s"
 
 #. Translators: These messages cover the case where there is
 #. only one branch, and are not part of another message.
-#: ../meld/vc/git.py:130 ../meld/vc/git.py:137
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
 #, python-format
 msgid "%d unpushed commit"
 msgid_plural "%d unpushed commits"
 msgstr[0] "%d 項未推送的提交"
 
-#: ../meld/vc/git.py:132
+#: ../meld/vc/git.py:97
 #, python-format
 msgid "%d branch"
 msgid_plural "%d branches"
 msgstr[0] "%d 個分支"
 
-#: ../meld/vc/git.py:360
+#: ../meld/vc/git.py:336
 #, python-format
 msgid "Mode changed from %s to %s"
 msgstr "模式已從 %s 更改為 %s"
 
-#: ../meld/vc/_vc.py:47
-msgid "Merged"
-msgstr "已合併"
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
 
-#: ../meld/vc/_vc.py:47
-msgid "Base"
-msgstr "基礎"
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
 
-#: ../meld/vc/_vc.py:47
-msgid "Local"
-msgstr "本地"
-
-#: ../meld/vc/_vc.py:47
-msgid "Remote"
-msgstr "遠端"
-
-#: ../meld/vc/_vc.py:65
-msgid "Unversioned"
-msgstr "未版本控制"
-
-#: ../meld/vc/_vc.py:68
-msgid "Error"
-msgstr "錯誤"
-
-#: ../meld/vc/_vc.py:70
-msgid "Newly added"
-msgstr "已新增"
-
-#: ../meld/vc/_vc.py:72
-msgid "Renamed"
-msgstr "已改名"
-
-#: ../meld/vc/_vc.py:73
-msgid "Conflict"
-msgstr "衝突"
-
-#: ../meld/vc/_vc.py:74
-msgid "Removed"
-msgstr "已移除"
-
-#: ../meld/vc/_vc.py:75
-msgid "Missing"
-msgstr "欠缺"
-
-#: ../meld/vc/_vc.py:76
-msgid "Not present"
-msgstr "沒有"
-
-#: ../meld/vcview.py:233 ../meld/vcview.py:417
-msgid "Location"
-msgstr "位置"
-
-#: ../meld/vcview.py:234
-msgid "Status"
-msgstr "狀態"
-
-#: ../meld/vcview.py:235
-msgid "Revision"
-msgstr "修訂"
-
-#: ../meld/vcview.py:236
-msgid "Options"
-msgstr "選項"
-
-#. TRANSLATORS: this is an error message when a version control
-#. application isn't installed or can't be found
-#: ../meld/vcview.py:324
-#, python-format
-msgid "%s not installed"
-msgstr "%s 未安裝"
-
-#. TRANSLATORS: this is an error message when a version
-#. controlled repository is invalid or corrupted
-#: ../meld/vcview.py:328
-msgid "Invalid repository"
-msgstr "無效的倉儲"
-
-#: ../meld/vcview.py:337
-#, python-format
-msgid "%s (%s)"
-msgstr "%s (%s)"
-
-#: ../meld/vcview.py:339 ../meld/vcview.py:347
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
 msgid "None"
 msgstr "無"
 
-#: ../meld/vcview.py:358
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr "已合併"
+
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr "基礎"
+
+#: ../meld/vc/_vc.py:55
+msgid "Local"
+msgstr "本地"
+
+#: ../meld/vc/_vc.py:55
+msgid "Remote"
+msgstr "遠端"
+
+#: ../meld/vc/_vc.py:71
+msgid "Unversioned"
+msgstr "未版本控制"
+
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr "錯誤"
+
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr "已新增"
+
+#: ../meld/vc/_vc.py:78
+msgid "Renamed"
+msgstr "已改名"
+
+#: ../meld/vc/_vc.py:79
+msgid "Conflict"
+msgstr "衝突"
+
+#: ../meld/vc/_vc.py:80
+msgid "Removed"
+msgstr "已移除"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr "欠缺"
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr "沒有"
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
+#, fuzzy, python-format
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr "%s 未安裝"
+
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, fuzzy, python-format
+msgid "%(name)s (Invalid repository)"
+msgstr "無效的倉儲"
+
+#: ../meld/vcview.py:276
 msgid "No valid version control system found in this folder"
 msgstr "此資料夾中未找到有效的版本控制系統"
 
-#: ../meld/vcview.py:360
+#: ../meld/vcview.py:278
 msgid "Only one version control system found in this folder"
 msgstr "此資料夾中只找到一個版本控制系統"
 
-#: ../meld/vcview.py:362
+#: ../meld/vcview.py:280
 msgid "Choose which version control system to use"
 msgstr "選擇要使用的版本控制系統"
 
-#. TRANSLATORS: This is the location of the directory the user is diffing
-#: ../meld/vcview.py:417
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
 #, python-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: ../meld/vcview.py:431 ../meld/vcview.py:439
+#: ../meld/vcview.py:352
 #, python-format
 msgid "Scanning %s"
 msgstr "正在掃描 %s"
 
-#: ../meld/vcview.py:479
+#: ../meld/vcview.py:391
 msgid "(Empty)"
 msgstr "（空白）"
 
-#: ../meld/vcview.py:522
+#: ../meld/vcview.py:435
 #, python-format
 msgid "%s — local"
 msgstr "%s — 本地"
 
-#: ../meld/vcview.py:523
+#: ../meld/vcview.py:436
 #, python-format
 msgid "%s — remote"
 msgstr "%s — 遠端"
 
-#: ../meld/vcview.py:531
+#: ../meld/vcview.py:444
 #, python-format
 msgid "%s (local, merge, remote)"
 msgstr "%s (本地、合併、遠端)"
 
-#: ../meld/vcview.py:536
+#: ../meld/vcview.py:449
 #, python-format
 msgid "%s (remote, merge, local)"
 msgstr "%s (遠端、合併、本地)"
 
-#: ../meld/vcview.py:547
+#: ../meld/vcview.py:460
 #, python-format
 msgid "%s — repository"
 msgstr "%s — 倉儲"
 
-#: ../meld/vcview.py:553
+#: ../meld/vcview.py:466
 #, python-format
 msgid "%s (working, repository)"
 msgstr "%s (作業中、倉儲)"
 
-#: ../meld/vcview.py:557
+#: ../meld/vcview.py:470
 #, python-format
 msgid "%s (repository, working)"
 msgstr "%s (倉儲、作業中)"
 
-#: ../meld/vcview.py:741
+#: ../meld/vcview.py:638
 msgid "Remove folder and all its files?"
 msgstr "移除資料夾及所有包含的檔案？"
 
-#: ../meld/vcview.py:743
+#: ../meld/vcview.py:640
 msgid ""
 "This will remove all selected files and folders, and all files within any "
 "selected folders, from version control."
 msgstr "這將從版本控制中移除所有選中的文件及資料夾，及選中資料夾中的所有文件。"
 
-#: ../meld/vcview.py:777
+#: ../meld/vcview.py:665
 #, python-format
 msgid "Error removing %s"
 msgstr "移除 %s 時發生錯誤"
 
-#~ msgid "Copy to _Left"
+#: ../meld/vcview.py:746
+msgid "Clear"
+msgstr ""
+
+#~ msgid "Meld does not support Python 3."
+#~ msgstr "Meld 並未支援 Python 3。"
+
+#~ msgid ""
+#~ "These text encodings will be automatically used (in order) to try to "
+#~ "decode loaded text files."
+#~ msgstr "這些文字編碼將自動（按順序）使用，以試圖解碼已經載入的文字檔案。"
+
+#~ msgid "[%s] Set num panes"
+#~ msgstr "[%s] 設定數目窗格"
+
+#~ msgid "[%s] Opening files"
+#~ msgstr "[%s] 正在開啟檔案"
+
+#~ msgid "Could not read file"
+#~ msgstr "無法讀取檔案"
+
+#~ msgid "[%s] Reading files"
+#~ msgstr "[%s] 正在讀取檔案"
+
+#~ msgid "%s is not in encodings: %s"
+#~ msgstr "%s 不是使用 %s 進行編碼的。"
+
+#~ msgid "Inconsistent line endings found"
+#~ msgstr "檔案使用了多種斷列字元"
+
+#~ msgid ""
+#~ "'%s' contains a mixture of line endings. Select the line ending format to "
+#~ "use."
+#~ msgstr "「%s」檔案混合了不同的斷列字元使用。請選擇要統一使用的斷列字元。"
+
+#~ msgid "_Save as UTF-8"
+#~ msgstr "以 UTF-8 編碼儲存(_S)"
+
+#~ msgid "Couldn't encode text as “%s”"
+#~ msgstr "無法以「%s」編碼文字"
+
+#~ msgid ""
+#~ "File “%s” contains characters that can't be encoded using encoding “%s”.\n"
+#~ "Would you like to save as UTF-8?"
+#~ msgstr ""
+#~ "「%s」檔案包含無法以「%s」編碼的字元。\n"
+#~ "您是否要將其另存為 UTF-8？"
+
+#~ msgid "_Previous Tab"
+#~ msgstr "上一分頁(_P)"
+
+#~ msgid "Activate previous tab"
+#~ msgstr "啟用上一分頁"
+
+#~ msgid "_Next Tab"
+#~ msgstr "下一分頁(_N)"
+
+#~ msgid "Activate next tab"
+#~ msgstr "啟用下一分頁"
+
+#~ msgid "Move current tab to left"
+#~ msgstr "將目前的分頁移到左側"
+
+#~ msgid "Move current tab to right"
+#~ msgstr "將目前的分頁移到右側"
+
+#~ msgid "Revision"
+#~ msgstr "修訂"
+
+#~ msgid "Options"
+#~ msgstr "選項"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "Copy _Left"
 #~ msgstr "複製到左側(_L)"
 
-#~ msgid "Copy to _Right"
+#~ msgid "Copy _Right"
 #~ msgstr "複製到右側(_R)"
 
 #~ msgid ""

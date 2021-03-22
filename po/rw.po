@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-04-01 16:05-0700\n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2005-03-31 20:55-0700\n"
 "Last-Translator: Steve Murphy <murf@e-tools.com>\n"
 "Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
@@ -24,124 +24,599 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: meld.desktop.in.h:1
-#, fuzzy
-msgid "Compare and merge your files."
-msgstr "Na Gukomatanya Idosiye"
+#: ../bin/meld:186
+msgid "Cannot import: "
+msgstr ""
 
-#: meld.desktop.in.h:2
+#: ../bin/meld:189
+#, fuzzy, c-format
+msgid "Meld requires %s or higher."
+msgstr "Cyangwa"
+
+#: ../bin/meld:241
+#, c-format
+msgid ""
+"Couldn't load Meld-specific CSS (%s)\n"
+"%s"
+msgstr ""
+
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
+msgid "Meld"
+msgstr ""
+
+#: ../data/meld.desktop.in.h:2
+msgid "Diff Viewer"
+msgstr ""
+
+#: ../data/meld.desktop.in.h:3
 msgid "Meld Diff Viewer"
 msgstr ""
 
-#: cvsview.py:39
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
 #, fuzzy
-msgid ""
-"Ignored:Unknown:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
-msgstr "Kyongewe B B"
+msgid "Compare and merge your files"
+msgstr "Na Gukomatanya Idosiye"
 
-#: cvsview.py:166
-#, fuzzy, python-format
-msgid ""
-"Error converting to a regular expression\n"
-"The pattern was '%s'\n"
-"The error was '%s'"
-msgstr "Guhindura.... Kuri a Ibisanzwe Ishusho Ikosa"
-
-# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
-#: cvsview.py:394
-#, fuzzy
-msgid "_Version"
-msgstr "Verisiyo"
-
-#: cvsview.py:396 glade2/cvsview.glade.h:15 glade2/meldapp.glade.h:79
-msgid "_Diff"
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
 msgstr ""
 
-#: cvsview.py:396
-#, fuzzy
-msgid "Compare versions"
-msgstr "Uburyo"
-
-#: cvsview.py:398 glade2/cvsview.glade.h:18
-#, fuzzy
-msgid "_Update"
-msgstr "Kuvugurura"
-
-#: cvsview.py:398
-#, fuzzy
-msgid "Update the local copy"
-msgstr "i Gukoporora"
-
-#: cvsview.py:400 glade2/cvsview.glade.h:14
-msgid "_Commit"
+#: ../data/meld.appdata.xml.in.h:3
+msgid ""
+"Meld is a visual diff and merge tool targeted at developers. Meld helps you "
+"compare files, directories, and version controlled projects. It provides "
+"two- and three-way comparison of both files and directories, and supports "
+"many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
 
-#: cvsview.py:400
-#, fuzzy
-msgid "Commit changes"
-msgstr "Amahinduka"
+#: ../data/meld.appdata.xml.in.h:4
+msgid ""
+"Meld helps you review code changes, understand patches, and makes enormous "
+"merge conflicts slightly less painful."
+msgstr ""
 
-#: cvsview.py:402 glade2/cvsview.glade.h:13
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr ""
+
+#: ../data/mime/meld.xml.in.h:1
+msgid "Meld comparison description"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:1
+msgid "Default window width"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:2
+msgid "Default window height"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:3
+msgid "Default window maximised state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:4
+msgid "Default window fullscreen state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:5
+msgid "Show toolbar"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:6
+msgid "If true, the window toolbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:7
+#, fuzzy
+msgid "Show statusbar"
+msgstr "Imimerere"
+
+#: ../data/org.gnome.meld.gschema.xml.h:8
+msgid "If true, the window statusbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:9
+msgid "Additional automatically detected text encodings"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:10
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Width of an indentation step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "The number of spaces to use for a single indent step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:13
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:14
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:15
+#, fuzzy
+msgid "Show line numbers"
+msgstr "Umurongo Imibare"
+
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:17
+msgid "Highlight syntax"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:18
+msgid ""
+"Whether to highlight syntax in comparisons. Because of Meld's own color "
+"highlighting, this is off by default."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:19
+#, fuzzy
+msgid "Color scheme to use for syntax highlighting"
+msgstr "Igaragaza cyane"
+
+#: ../data/org.gnome.meld.gschema.xml.h:20
+msgid "Used by GtkSourceView to determine colors for syntax highlighting"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:21
+msgid "Displayed whitespace"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:22
+msgid ""
+"Selector for individual whitespace character types to be shown. Possible "
+"values are 'space', 'tab', 'newline' and 'nbsp'."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:23
+#, fuzzy
+msgid "Wrap mode"
+msgstr "Gufunika kumpande"
+
+#: ../data/org.gnome.meld.gschema.xml.h:24
+msgid ""
+"Lines in file comparisons will be wrapped according to this setting, either "
+"not at all ('none'), at any character ('char') or only at the end of words "
+"('word')."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:25
+msgid "Highlight current line"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:26
+msgid ""
+"If true, the line containing the cursor will be highlighted in file "
+"comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:27
+#, fuzzy
+msgid "Use the system default monospace font"
+msgstr "Monospace: Intego- nyuguti"
+
+#: ../data/org.gnome.meld.gschema.xml.h:28
+msgid ""
+"If false, custom-font will be used instead of the system monospace font."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:29
+#, fuzzy
+msgid "Custom font"
+msgstr "Kunoza Intego- nyuguti"
+
+#: ../data/org.gnome.meld.gschema.xml.h:30
+msgid ""
+"The custom font to use, stored as a string and parsed as a Pango font "
+"description."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:31
+msgid "Ignore blank lines when comparing files"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:32
+msgid ""
+"If true, blank lines will be trimmed when highlighting changes between files."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:33
+#, fuzzy
+msgid "Use the system default editor"
+msgstr "Mburabuzi Muhinduzi"
+
+#: ../data/org.gnome.meld.gschema.xml.h:34
+msgid ""
+"If false, custom-editor-command will be used instead of the system editor "
+"when opening files externally."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:35
+msgid "The custom editor launch command"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:36
+msgid ""
+"The command used to launch a custom editor. Some limited templating is "
+"supported here; at the moment '{file}' and '{line}' are recognised tokens."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:37
+msgid "Columns to display"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:38
+msgid ""
+"List of column names in folder comparison and whether they should be "
+"displayed."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
+msgid "Ignore symbolic links"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:40
+msgid ""
+"If true, folder comparisons do not follow symbolic links when traversing the "
+"folder tree."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:41
+#, fuzzy
+msgid "Use shallow comparison"
+msgstr "iyi"
+
+#: ../data/org.gnome.meld.gschema.xml.h:42
+msgid ""
+"If true, folder comparisons compare files based solely on size and mtime, "
+"considering files to be identical if their size and mtime match, and "
+"different otherwise."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:43
+msgid "File timestamp resolution"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:44
+msgid ""
+"When comparing based on mtime, this is the minimum difference in nanoseconds "
+"between two files before they're considered to have different mtimes. This "
+"is useful when comparing files between filesystems with different timestamp "
+"resolution."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:46
+msgid ""
+"If true, folder comparisons that compare file contents also apply active "
+"text filters and the blank line trimming option, and ignore newline "
+"differences."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:47
+#, fuzzy
+msgid "File status filters"
+msgstr "Idosiye"
+
+#: ../data/org.gnome.meld.gschema.xml.h:48
+msgid "List of statuses used to filter visible files in folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:49
+msgid "Show the version control console output"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:50
+msgid ""
+"If true, a console output section will be shown in version control views, "
+"showing the commands run for version control operations."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:51
+msgid "Version control pane position"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:52
+msgid ""
+"This is the height of the main version control tree when the console pane is "
+"shown."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:53
+msgid "Present version comparisons as left-local/right-remote"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:54
+msgid ""
+"If true, version control comparisons will use a left-is-local, right-is-"
+"remote scheme to determine what order to present files in panes. Otherwise, "
+"a left-is-theirs, right-is-mine scheme is used."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:55
+msgid "Order for files in three-way version control merge comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:56
+msgid ""
+"Choices for file order are remote/merged/local and local/merged/remote. This "
+"preference only affects three-way comparisons launched from the version "
+"control view, so is used solely for merges/conflict resolution within Meld."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:57
+msgid "Show margin in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:58
+msgid ""
+"If true, a guide will be displayed to show what column the margin is at in "
+"the version control commit message editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:59
+msgid "Margin column in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:60
+msgid ""
+"The column at which to show the margin in the version control commit message "
+"editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:61
+msgid "Automatically hard-wrap commit messages"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:62
+msgid ""
+"If true, the version control commit message editor will hard-wrap (i.e., "
+"insert line breaks) at the commit margin before commit."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:63
+#, fuzzy
+msgid "Version control status filters"
+msgstr "Verisiyo Idosiye"
+
+#: ../data/org.gnome.meld.gschema.xml.h:64
+msgid ""
+"List of statuses used to filter visible files in version control comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:65
+#, fuzzy
+msgid "Filename-based filters"
+msgstr "Idosiye"
+
+#: ../data/org.gnome.meld.gschema.xml.h:66
+msgid ""
+"List of predefined filename-based filters that, if active, will remove "
+"matching files from a folder comparison."
+msgstr ""
+
+# 6216
+#: ../data/org.gnome.meld.gschema.xml.h:67
+#, fuzzy
+msgid "Text-based filters"
+msgstr "inyungururamagambo"
+
+#: ../data/org.gnome.meld.gschema.xml.h:68
+msgid ""
+"List of predefined text-based regex filters that, if active, will remove "
+"text from being used in a file comparison. The text will still be displayed, "
+"but won't contribute to the comparison itself."
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+msgid "Base color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+msgid "Dark color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/ui/application.ui.h:1
+#, fuzzy
+msgid "About Meld"
+msgstr "Bigyanye"
+
+#: ../data/ui/application.ui.h:2
+msgid ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
+msgstr ""
+
+#: ../data/ui/application.ui.h:4
+msgid "Website"
+msgstr ""
+
+#: ../data/ui/application.ui.h:5
+msgid "translator-credits"
+msgstr ""
+
+#: ../data/ui/application.ui.h:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "Ibyahiswemo"
+
+#: ../data/ui/application.ui.h:7
+#, fuzzy
+msgid "_Help"
+msgstr "Ifashayobora"
+
+#: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
+#, fuzzy
+msgid "_About"
+msgstr "Bigyanye"
+
+#: ../data/ui/application.ui.h:10
+#, fuzzy
+msgid "_Quit"
+msgstr "Kuvamo"
+
+#: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
+msgid "_Compare"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
+#, fuzzy
+msgid "Compare selected files"
+msgstr "Byahiswemo Umwandiko"
+
+#: ../data/ui/dirdiff.ui.h:3
+#, fuzzy
+msgid "Copy to _Left"
+msgstr "Ibumoso:"
+
+#: ../data/ui/dirdiff.ui.h:4
+#, fuzzy
+msgid "Copy to left"
+msgstr "Ibumoso:"
+
+#: ../data/ui/dirdiff.ui.h:5
+#, fuzzy
+msgid "Copy to _Right"
+msgstr "Iburyo:"
+
+#: ../data/ui/dirdiff.ui.h:6
+#, fuzzy
+msgid "Copy to right"
+msgstr "Iburyo:"
+
+#: ../data/ui/dirdiff.ui.h:7
+#, fuzzy
+msgid "Delete selected"
+msgstr "Byahiswemo"
+
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#, fuzzy
+msgid "Hide"
+msgstr "Hisha"
+
+#: ../data/ui/dirdiff.ui.h:9
+#, fuzzy
+msgid "Hide selected"
+msgstr "Byahiswemo"
+
+#: ../data/ui/dirdiff.ui.h:10
+msgid "Ignore Filename Case"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:11
+msgid ""
+"Consider differently-cased filenames that are otherwise-identical to be the "
+"same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:12
+msgid "Same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:13
+#, fuzzy
+msgid "Show identical"
+msgstr "birasa"
+
+# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.text
+#: ../data/ui/dirdiff.ui.h:14
+msgid "New"
+msgstr "Gishya"
+
+#: ../data/ui/dirdiff.ui.h:15
+#, fuzzy
+msgid "Show new"
+msgstr "Gishya"
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_DOC_MODIFIED.text
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
+msgid "Modified"
+msgstr "Byahinduwe"
+
+#: ../data/ui/dirdiff.ui.h:17
+#, fuzzy
+msgid "Show modified"
+msgstr "Byahinduwe"
+
+#: ../data/ui/dirdiff.ui.h:18
+#, fuzzy
+msgid "Filters"
+msgstr "Idosiye"
+
+#: ../data/ui/dirdiff.ui.h:19
+#, fuzzy
+msgid "Set active filters"
+msgstr "Kubika Byose Idosiye"
+
+#: ../data/ui/EditableList.ui.h:1
+msgid "Editable List"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:2
+msgid "Active"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:3
+msgid "Column Name"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
 #, fuzzy
 msgid "_Add"
 msgstr "Kongeramo"
-
-#: cvsview.py:402
-#, fuzzy
-msgid "Add to control"
-msgstr "Kuri Igenzura"
 
 # #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
 # padmin/source\rtsetup.src:RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.text
 # #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
 # padmin/source\rtsetup.src:RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.text
-#: cvsview.py:404 glade2/cvsview.glade.h:17
+#: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+#: ../meld/vcview.py:644
 #, fuzzy
 msgid "_Remove"
 msgstr "Gukuraho"
 
-#: cvsview.py:404
-#, fuzzy
-msgid "Remove from control"
-msgstr "Bivuye Igenzura"
-
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.text
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.text
-#: cvsview.py:406
-#, fuzzy
-msgid "_Delete"
-msgstr "Gusiba"
-
-#: cvsview.py:406
-msgid "Remove locally"
+#: ../data/ui/EditableList.ui.h:6
+msgid "Move item up"
 msgstr ""
 
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_VIEW.text
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLVIEW.text
-#: cvsview.py:408
-#, fuzzy
-msgid "_View"
-msgstr "Kureba"
+#: ../data/ui/EditableList.ui.h:7
+msgid "Move _Up"
+msgstr ""
 
-# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
-# sc/source\ui\src\menue.src:SCCFG_PLUGINMENU.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_TOP.text
-# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
-# sc/source\ui\src\menue.src:SCCFG_MENUBAR.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_TOP.text
-# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
-# sc/source\ui\src\miscdlgs.src:RID_SCDLG_FILLSERIES.BTN_TOP.text
-#: cvsview.py:410
-#, fuzzy
-msgid "_Up"
-msgstr "Hejuru"
-
-#: cvsview.py:410
-#, fuzzy
-msgid "Previous change"
-msgstr "Guhindura>>"
+#: ../data/ui/EditableList.ui.h:8
+msgid "Move item down"
+msgstr ""
 
 # #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
 # sc/source\ui\src\menue.src:SCCFG_PLUGINMENU.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_BOTTOM.text
@@ -149,77 +624,1082 @@ msgstr "Guhindura>>"
 # sc/source\ui\src\menue.src:SCCFG_MENUBAR.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_BOTTOM.text
 # #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
 # sc/source\ui\src\miscdlgs.src:RID_SCDLG_FILLSERIES.BTN_BOTTOM.text
-#: cvsview.py:412
+#: ../data/ui/EditableList.ui.h:9
 #, fuzzy
-msgid "_Down"
+msgid "Move _Down"
 msgstr "Hasi"
 
-#: cvsview.py:412
+#. Create icon and filename CellRenderer
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
+msgid "Name"
+msgstr "Izina"
+
+#: ../data/ui/EditableList.ui.h:11
+msgid "Pattern"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:12
+msgid "Add new filter"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:13
 #, fuzzy
-msgid "Next change"
+msgid "Remove selected filter"
+msgstr "Byahiswemo Umwandiko"
+
+#: ../data/ui/filediff.ui.h:1
+msgid "Format as Patch..."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:2
+msgid "Create a patch using differences between files"
+msgstr ""
+
+# sfx2/sdi\sfxslots.src:SID_SAVEDOCS.text
+#: ../data/ui/filediff.ui.h:3
+#, fuzzy
+msgid "Save A_ll"
+msgstr "Gushyingura Byose"
+
+#: ../data/ui/filediff.ui.h:4
+msgid "Save all files in the current comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:5
+msgid "Revert files to their saved versions"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:6
+msgid "Add Synchronization Point"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:7
+msgid "Add a synchronization point for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:8
+msgid "Clear Synchronization Points"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:9
+msgid "Clear sychronization points for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:10
+#, fuzzy
+msgid "Previous Conflict"
 msgstr "Guhindura>>"
 
-#: cvsview.py:414
+#: ../data/ui/filediff.ui.h:11
+msgid "Go to the previous conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:12
+msgid "Next Conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:13
+msgid "Go to the next conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:14
+msgid "Push to Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:15
+msgid "Push current change to the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:16
+msgid "Push to Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:17
+msgid "Push current change to the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:18
+msgid "Pull from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:19
+msgid "Pull change from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:20
+msgid "Pull from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:21
+msgid "Pull change from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:22
+#, fuzzy
+msgid "Copy Above Left"
+msgstr "Ibigize Ibumoso:"
+
+#: ../data/ui/filediff.ui.h:23
+msgid "Copy change above the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:24
+#, fuzzy
+msgid "Copy Below Left"
+msgstr "Ibumoso:"
+
+#: ../data/ui/filediff.ui.h:25
+msgid "Copy change below the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:26
+#, fuzzy
+msgid "Copy Above Right"
+msgstr "Iburyo:"
+
+#: ../data/ui/filediff.ui.h:27
+msgid "Copy change above the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:28
+#, fuzzy
+msgid "Copy Below Right"
+msgstr "Iburyo:"
+
+#: ../data/ui/filediff.ui.h:29
+msgid "Copy change below the right chunk"
+msgstr ""
+
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.text
+#: ../data/ui/filediff.ui.h:30
+#, fuzzy
+msgid "Delete"
+msgstr "Gusiba"
+
+#: ../data/ui/filediff.ui.h:31
+#, fuzzy
+msgid "Delete change"
+msgstr "Guhindura>>"
+
+#: ../data/ui/filediff.ui.h:32
+msgid "Merge All from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:33
+msgid "Merge all non-conflicting changes from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:34
+msgid "Merge All from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:35
+msgid "Merge all non-conflicting changes from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:36
+msgid "Merge All"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:37
+msgid "Merge all non-conflicting changes from left and right panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:38
+#, fuzzy
+msgid "Previous Pane"
+msgstr "Guhindura>>"
+
+#: ../data/ui/filediff.ui.h:39
+msgid "Move keyboard focus to the previous document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:40
+#, fuzzy
+msgid "Next Pane"
+msgstr "Guhindura>>"
+
+#: ../data/ui/filediff.ui.h:41
+msgid "Move keyboard focus to the next document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:42
+msgid "Lock Scrolling"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:43
+msgid "Lock scrolling of all panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:44
+msgid "Save changes to documents before closing?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:45
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:46
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+msgid "_Cancel"
+msgstr ""
+
+# basctl/source\basicide\basidesh.src:RID_STR_SAVE.text
+#: ../data/ui/filediff.ui.h:48
+#, fuzzy
+msgid "_Save"
+msgstr "Kubika"
+
+#: ../data/ui/filediff.ui.h:49
+msgid ""
+"This file can not be written to. You may click here to unlock this file and "
+"make changes anyway, but these changes must be saved to a new file."
+msgstr ""
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
+#: ../data/ui/filediff.ui.h:50
+#, fuzzy
+msgid "File 3"
+msgstr "IDOSIYE"
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
+#: ../data/ui/filediff.ui.h:51
+#, fuzzy
+msgid "File 2"
+msgstr "IDOSIYE"
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
+#: ../data/ui/filediff.ui.h:52
+#, fuzzy
+msgid "File 1"
+msgstr "IDOSIYE"
+
+#: ../data/ui/filediff.ui.h:53
+msgid "Revert unsaved changes to documents?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:54
+msgid "Changes made to the following documents will be permanently lost:\n"
+msgstr ""
+
+# offmgr/source\offapp\dialog\autocdlg.src:RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.text
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#, fuzzy
+msgid "_Replace"
+msgstr "Gusimbura"
+
+# setup2/source\ui\dialog\dialog.src:RESID_DLG_OVERWRITE.12.text
+#: ../data/ui/findbar.ui.h:2
+#, fuzzy
+msgid "Replace _All"
+msgstr "Hindura byose"
+
+#: ../data/ui/findbar.ui.h:3
+#, fuzzy
+msgid "_Previous"
+msgstr "Guhindura>>"
+
+#: ../data/ui/findbar.ui.h:4
+#, fuzzy
+msgid "_Next"
+msgstr "Bikurikira"
+
+# offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.BTN_INET_SEARCH.text
+#: ../data/ui/findbar.ui.h:5
+#, fuzzy
+msgid "Find:"
+msgstr "Gushaka"
+
+# svx/source\dialog\bmpmask.src:RID_SVXDLG_BMPMASK.FT_3.text
+#: ../data/ui/findbar.ui.h:6
+#, fuzzy
+msgid "Replace _with:"
+msgstr "Gusimbuza na..."
+
+# svx/source\dialog\srchdlg.src:RID_SVXDLG_SEARCH.CB_MATCH_CASE.text
+#: ../data/ui/findbar.ui.h:7
+#, fuzzy
+msgid "_Match case"
+msgstr "Guhuza inyandiko"
+
+#: ../data/ui/findbar.ui.h:8
+msgid "Who_le word"
+msgstr ""
+
+# sc/source\ui\src\filter.src:RID_SCDLG_FILTER.BTN_REGEXP.text
+#: ../data/ui/findbar.ui.h:9
+#, fuzzy
+msgid "Regular e_xpression"
+msgstr "Imvugo ndahinduka"
+
+#: ../data/ui/findbar.ui.h:10
+msgid "Wrapped"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:1
+msgid "Format as Patch"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:2
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
+msgid "Save Patch"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:4
+#, fuzzy
+msgid "Use differences between:"
+msgstr "Byabonetse"
+
+#: ../data/ui/patch-dialog.ui.h:5
+msgid "Left and middle panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:6
+msgid "Middle and right panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:7
+msgid "_Reverse patch direction"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:1
+#, fuzzy
+msgid "Meld Preferences"
+msgstr "Ibyahiswemo"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:4
+#, fuzzy
+msgid "_Editor font:"
+msgstr "Muhinduzi"
+
+# offmgr/source\offapp\dialog\optgdlg.src:OFA_TP_VIEW.GB_APPEARANCE.text
+#: ../data/ui/preferences.ui.h:5
+msgid "Display"
+msgstr "Kugaragaza"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "_Tab width:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:7
+msgid "_Insert spaces instead of tabs"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Enable text _wrapping"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Do not _split words over two lines"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Highlight _current line"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:11
+#, fuzzy
+msgid "Show _line numbers"
+msgstr "Umurongo Imibare"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Show w_hitespace"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:13
+#, fuzzy
+msgid "Use s_yntax highlighting"
+msgstr "Igaragaza cyane"
+
+#: ../data/ui/preferences.ui.h:14
+#, fuzzy
+msgid "Syntax highlighting color scheme:"
+msgstr "Igaragaza cyane"
+
+#: ../data/ui/preferences.ui.h:15
+#, fuzzy
+msgid "External Editor"
+msgstr "Muhinduzi"
+
+#: ../data/ui/preferences.ui.h:16
+#, fuzzy
+msgid "Use _default system editor"
+msgstr "Mburabuzi Muhinduzi"
+
+#: ../data/ui/preferences.ui.h:17
+#, fuzzy
+msgid "Edito_r command:"
+msgstr "Kugena Komandi:"
+
+#: ../data/ui/preferences.ui.h:18
+msgid "Editor"
+msgstr "Muhinduzi"
+
+#: ../data/ui/preferences.ui.h:19
+#, fuzzy
+msgid "Shallow Comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/preferences.ui.h:20
+msgid "C_ompare files based only on size and timestamp"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:21
+msgid "_Timestamp resolution:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
+msgid "Symbolic Links"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:26
+msgid "Visible Columns"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:27
+#, fuzzy
+msgid "Folder Comparisons"
+msgstr "Idosiye"
+
+#: ../data/ui/preferences.ui.h:28
+#, fuzzy
+msgid "Version Comparisons"
+msgstr "Idosiye"
+
+#: ../data/ui/preferences.ui.h:29
+msgid "_Order when comparing file revisions:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:30
+msgid "Order when _merging files:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:31
+#, fuzzy
+msgid "Commit Messages"
+msgstr "Amahinduka"
+
+#: ../data/ui/preferences.ui.h:32
+msgid "Show _right margin at:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:33
+msgid "Automatically _break lines at right margin on commit"
+msgstr ""
+
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
+#: ../data/ui/preferences.ui.h:34
+#, fuzzy
+msgid "Version Control"
+msgstr "Verisiyo"
+
+#: ../data/ui/preferences.ui.h:35
+#, fuzzy
+msgid "Filename filters"
+msgstr "Idosiye"
+
+#: ../data/ui/preferences.ui.h:36
+#, fuzzy
+msgid ""
+"When performing directory comparisons, you may filter out files and "
+"directories by name. Each pattern is a list of shell style wildcards "
+"separated by spaces."
+msgstr ""
+"bushyinguro Gicurasi Muyunguruzi... Inyuma Idosiye Na ububiko bw'amaderese "
+"ku Izina: Ishusho ni a Urutonde Bya Igikonoshwa IMISUSIRE ku Imyanya"
+
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
+#, fuzzy
+msgid "File Filters"
+msgstr "Idosiye"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr ""
+
+# 6216
+#: ../data/ui/preferences.ui.h:40
+#, fuzzy
+msgid "Text filters"
+msgstr "inyungururamagambo"
+
+#: ../data/ui/preferences.ui.h:41
+#, fuzzy
+msgid ""
+"When performing file comparisons, you may ignore certain types of changes. "
+"Each pattern here is a python regular expression which replaces matching "
+"text with the empty string before comparison is performed. If the expression "
+"contains groups, only the groups are replaced. See the user manual for more "
+"details."
+msgstr ""
+"IDOSIYE Gicurasi Kwirengagiza Bya Amahinduka Ishusho ni a Ibisanzwe imvugo "
+"Byashyizweho in Kuri Umurongo Bya i Iyinjiza Umwandiko"
+
+# 6216
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
+msgid "Text Filters"
+msgstr "inyungururamagambo"
+
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:45
+msgid "Remote, merge, local"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:4
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:5
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
+
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "iyi"
+
+#: ../data/ui/shortcuts.ui.h:7
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:8
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:9
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:10
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:11
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:12
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:13
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr "Amahinduka"
+
+#: ../data/ui/shortcuts.ui.h:15
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr "Guhindura>>"
+
+#: ../data/ui/shortcuts.ui.h:16
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr "Guhindura>>"
+
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "Kwandika"
+
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# dbaccess/source/ui/inc/toolbox.hrc:MID_UNDO.text
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+#: ../data/ui/shortcuts.ui.h:18
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr "Isubiranyuma"
+
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# dbaccess/source/ui/inc/toolbox.hrc:MID_REDO.text
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+#: ../data/ui/shortcuts.ui.h:19
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr "Isubiramo"
+
+# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_CUT.text
+#: ../data/ui/shortcuts.ui.h:20
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr "Gukata"
+
+# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_COPY.text
+#: ../data/ui/shortcuts.ui.h:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "Gukoporora"
+
+# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_PASTE.text
+#: ../data/ui/shortcuts.ui.h:22
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr "Komeka"
+
+# offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.BTN_INET_SEARCH.text
+#: ../data/ui/shortcuts.ui.h:23
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "Gushaka"
+
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "Shaka ibikurikira"
+
+# sc/source\ui\src\scstring.src:SCSTR_PREVIEWSHELL.text
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
+msgstr "Igaragazambere ryo Gucapa"
+
+# offmgr/source\offapp\dialog\autocdlg.src:RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.text
+#: ../data/ui/shortcuts.ui.h:26
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr "Gusimbura"
+
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:28
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
+
+#: ../data/ui/shortcuts.ui.h:29
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
+
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "Kubika Byose Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "Guhindura>>"
+
+#: ../data/ui/shortcuts.ui.h:32
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:33
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:34
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:35
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:36
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:37
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr "Ibigize Ibumoso:"
+
+#: ../data/ui/shortcuts.ui.h:38
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr "Ibigize Ibumoso:"
+
+#: ../data/ui/shortcuts.ui.h:39
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr "Ibigize Iburyo:"
+
+#: ../data/ui/shortcuts.ui.h:40
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr "Ibigize Iburyo:"
+
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "Guhindura>>"
+
+#: ../data/ui/shortcuts.ui.h:42
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr "iyi"
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to left"
+msgstr "Ibumoso:"
+
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to right"
+msgstr "Iburyo:"
+
+#: ../data/ui/shortcuts.ui.h:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr "iyi"
+
+#: ../data/ui/shortcuts.ui.h:48
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr "Verisiyo Idosiye"
+
+#: ../data/ui/shortcuts.ui.h:49
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr "Komandi: Umurongo Ibisohoka"
+
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
+#, fuzzy
+msgid "New comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:2
+#, fuzzy
+msgid "File comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:3
+#, fuzzy
+msgid "Directory comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:4
+#, fuzzy
+msgid "Version control view"
+msgstr "Verisiyo Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:5
+#, fuzzy
+msgid "_3-way comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:6
+msgid "Select Third File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:7
+msgid "Select Second File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:8
+msgid "Select First File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:9
+msgid "Select First Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:10
+msgid "Select Second Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:11
+msgid "Select Third Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:12
+#, fuzzy
+msgid "Select A Version-Controlled Folder"
+msgstr "Verisiyo Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:13
+#, fuzzy
+msgid "_Blank comparison"
+msgstr "Idosiye"
+
+#: ../data/ui/tab-placeholder.ui.h:14
+msgid "C_ompare"
+msgstr ""
+
+# sfx2/source\appl\newhelp.src:STR_HELP_BUTTON_PRINT.text
+#: ../data/ui/vcview.ui.h:3
+#, fuzzy
+msgid "Co_mmit..."
+msgstr "Gucapa..."
+
+#: ../data/ui/vcview.ui.h:4
+#, fuzzy
+msgid "Commit changes to version control"
+msgstr "Verisiyo Idosiye"
+
+#: ../data/ui/vcview.ui.h:5
+#, fuzzy
+msgid "_Update"
+msgstr "Kuvugurura"
+
+#: ../data/ui/vcview.ui.h:6
+msgid "Update working copy from version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:7
+msgid "_Push"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:8
+msgid "Push local changes to remote"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:10
+#, fuzzy
+msgid "Add to version control"
+msgstr "Kuri Igenzura"
+
+#: ../data/ui/vcview.ui.h:12
+#, fuzzy
+msgid "Remove from version control"
+msgstr "Bivuye Igenzura"
+
+#: ../data/ui/vcview.ui.h:13
+msgid "Mar_k as Resolved"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:14
+msgid "Mark as resolved in version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:15
+msgid "Re_vert"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:16
+msgid "Revert working copy to original state"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:17
+msgid "Delete from working copy"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:18
+msgid "Console"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:19
+msgid "Show or hide the version control console output pane"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"
 msgstr ""
 
-#: cvsview.py:414
-msgid "Flatten tree"
-msgstr ""
+#: ../data/ui/vcview.ui.h:21
+#, fuzzy
+msgid "Flatten directories"
+msgstr "Ibuze ububiko bw'amaderese D"
 
 # sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_DOC_MODIFIED.text
-#: cvsview.py:416
+#: ../data/ui/vcview.ui.h:22
 #, fuzzy
 msgid "_Modified"
 msgstr "Byahinduwe"
 
-#: cvsview.py:416
+#: ../data/ui/vcview.ui.h:23
 #, fuzzy
-msgid "View modified files"
+msgid "Show modified files"
 msgstr "Byahinduwe Idosiye"
 
 # officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Save.Graphic.Format..0.text
-#: cvsview.py:418
+#: ../data/ui/vcview.ui.h:24
 #, fuzzy
 msgid "_Normal"
 msgstr "Bisanzwe"
 
-#: cvsview.py:418
+#: ../data/ui/vcview.ui.h:25
 #, fuzzy
-msgid "View normal files"
+msgid "Show normal files"
 msgstr "Bisanzwe Idosiye"
 
-# filter/source\xsltdialog\xmlfilterdialogstrings.src:STR_UNKNOWN_APPLICATION.text
-#: cvsview.py:420
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
+#: ../data/ui/vcview.ui.h:26
 #, fuzzy
-msgid "Un_known"
-msgstr "Kitazwi"
+msgid "Un_versioned"
+msgstr "Verisiyo"
 
-#: cvsview.py:420
+#: ../data/ui/vcview.ui.h:27
 #, fuzzy
-msgid "View non version controlled files"
+msgid "Show unversioned files"
 msgstr "Verisiyo Idosiye"
 
-#: cvsview.py:422
-msgid "_Ignored"
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
+msgid "Ignored"
 msgstr ""
 
-#: cvsview.py:422
-msgid "View ignored items"
-msgstr ""
-
-#: cvsview.py:424
-msgid "_Console"
-msgstr ""
-
-#: cvsview.py:424
+#: ../data/ui/vcview.ui.h:29
 #, fuzzy
-msgid "View command line output"
-msgstr "Komandi: Umurongo Ibisohoka"
+msgid "Show ignored files"
+msgstr "Byahinduwe"
 
-#: cvsview.py:439 svnview.py:289
-msgid "Name"
-msgstr "Izina"
+#: ../data/ui/vcview.ui.h:30
+#, fuzzy
+msgid "Commit"
+msgstr "Amahinduka"
+
+#: ../data/ui/vcview.ui.h:31
+msgid "Commit Files"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:32
+msgid "Log Message"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:33
+#, fuzzy
+msgid "Previous logs:"
+msgstr "Guhindura>>"
+
+#: ../data/ui/vcview.ui.h:34
+msgid "Co_mmit"
+msgstr ""
 
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Agenda.Elements.Location.text
@@ -227,191 +1707,521 @@ msgstr "Izina"
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Fax.Save.AutoPath.text
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Memo.Save.AutoDocName.text
-#: cvsview.py:456 svnview.py:306
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
 msgid "Location"
 msgstr "Ahantu"
 
-#: cvsview.py:457 svnview.py:307
+#: ../data/ui/vcview.ui.h:37
 msgid "Status"
 msgstr "Imimerere"
 
-#: cvsview.py:458 svnview.py:308
-msgid "Rev"
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
 msgstr ""
 
-#: cvsview.py:459 svnview.py:309 glade2/cvsview.glade.h:12
-msgid "Tag"
-msgstr "Itagi"
-
-# basctl/source\basicide\moduldlg.src:RID_DLG_LIBS.RID_FL_OPTIONS.text
-#: cvsview.py:460 svnview.py:310
-msgid "Options"
-msgstr "Amahitamo"
-
-#: cvsview.py:497 dirdiff.py:356 svnview.py:347
-#, python-format
-msgid "[%s] Scanning"
+#: ../data/ui/vcview.ui.h:39
+msgid "Console output"
 msgstr ""
 
-#: cvsview.py:524 dirdiff.py:365 svnview.py:374
-#, python-format
-msgid "[%s] Scanning %s"
+#: ../data/ui/vcview.ui.h:40
+msgid "Push local commits to remote?"
 msgstr ""
 
-#: cvsview.py:540 svnview.py:390
-msgid "(Empty)"
-msgstr "(Kirimo ubusa)"
-
-#: cvsview.py:572 svnview.py:426
-#, python-format
-msgid "[%s] Fetching differences"
+#: ../data/ui/vcview.ui.h:41
+msgid "The commits to be pushed are determined by your version control system."
 msgstr ""
 
-#: cvsview.py:579 svnview.py:434
-#, python-format
-msgid "[%s] Applying patch"
+#: ../data/ui/vcview.ui.h:42
+msgid "_Push commits"
 msgstr ""
 
-#: cvsview.py:583 svnview.py:438
+#: ../meld/const.py:12
+msgid "UNIX (LF)"
+msgstr ""
+
+#: ../meld/const.py:13
+msgid "DOS/Windows (CR-LF)"
+msgstr ""
+
+#: ../meld/const.py:14
+msgid "Mac OS (CR)"
+msgstr ""
+
+#. Create file size CellRenderer
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+msgid "Size"
+msgstr ""
+
+#. Create date-time CellRenderer
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+msgid "Modification time"
+msgstr ""
+
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
+#. Create permissions CellRenderer
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
 #, fuzzy
-msgid "No differences found."
-msgstr "Byabonetse"
+msgid "Permissions"
+msgstr "Verisiyo"
 
-#: cvsview.py:659 svnview.py:512
-#, fuzzy
-msgid "Select some files first."
-msgstr "Idosiye Itangira"
-
-#: cvsview.py:693 dirdiff.py:540 svnview.py:533
-#, fuzzy, python-format
-msgid ""
-"'%s' is a directory.\n"
-"Remove recusively?"
-msgstr "'%s'ni a bushyinguro"
-
-#: cvsview.py:698 dirdiff.py:547 svnview.py:538
-#, python-format
-msgid ""
-"Error removing %s\n"
-"\n"
-"%s."
-msgstr ""
-
-#: dirdiff.py:251 dirdiff.py:266
-#, fuzzy, python-format
-msgid "Error converting pattern '%s' to regular expression"
-msgstr "Guhindura.... Ishusho Kuri Ibisanzwe imvugo"
-
-#: dirdiff.py:276
+#: ../meld/dirdiff.py:540
 #, fuzzy, python-format
 msgid "Hide %s"
 msgstr "Hisha"
 
-#: dirdiff.py:398
-#, fuzzy, python-format
-msgid "'%s' hidden by '%s'"
-msgstr "'%s'gihishwe ku"
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#, python-format
+msgid "[%s] Scanning %s"
+msgstr ""
 
-#: dirdiff.py:404
-#, fuzzy, python-format
-msgid ""
-"You are running a case insensitive comparison on a case sensitive "
-"filesystem. Some files are not visible:\n"
-"%s"
-msgstr "a ku a Idosiye OYA Kigaragara"
-
-#: dirdiff.py:470
+#: ../meld/dirdiff.py:828
 #, python-format
 msgid "[%s] Done"
 msgstr ""
 
-#: dirdiff.py:515
-#, fuzzy, python-format
-msgid ""
-"'%s' exists.\n"
-"Overwrite?"
-msgstr "'%s'Gusimbuza."
+#: ../meld/dirdiff.py:836
+#, fuzzy
+msgid "Folders have no differences"
+msgstr "Ikinyuranyo/ Itandukaniro"
 
-#: dirdiff.py:522
-#, fuzzy, python-format
-msgid ""
-"Error copying '%s' to '%s'\n"
-"\n"
-"%s."
-msgstr "Kuri"
+#: ../meld/dirdiff.py:838
+msgid "Contents of scanned files in folders are identical."
+msgstr ""
 
-#. singular,plural
-#: dirdiff.py:558
+#: ../meld/dirdiff.py:840
+msgid ""
+"Scanned files in folders appear identical, but contents have not been "
+"scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:843
+msgid "File filters are in use, so not all files have been scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:845
+msgid "Text filters are in use and may be masking content differences."
+msgstr ""
+
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+msgid "Hi_de"
+msgstr ""
+
+#: ../meld/dirdiff.py:873
+msgid "Multiple errors occurred while scanning this folder"
+msgstr ""
+
+#: ../meld/dirdiff.py:874
+msgid "Files with invalid encodings found"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:876
+msgid "Some files were in an incorrect encoding. The names are something like:"
+msgstr ""
+
+#: ../meld/dirdiff.py:878
+msgid "Files hidden by case insensitive comparison"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:880
 #, fuzzy
 msgid ""
-"second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
-"year,years"
+"You are running a case insensitive comparison on a case sensitive "
+"filesystem. The following files in this folder are hidden:"
+msgstr "a ku a Idosiye OYA Kigaragara"
+
+#: ../meld/dirdiff.py:891
+#, fuzzy, python-format
+msgid "'%s' hidden by '%s'"
+msgstr "'%s'gihishwe ku"
+
+#: ../meld/dirdiff.py:947
+#, python-format
+msgid "Replace folder “%s”?"
 msgstr ""
-"ISEGONDA amasogonda UMUNOTA Iminota ISAHA amasaha UMUNSI Iminsi Icyumweru "
-"IBYUMWERU Ukwezi Amezi Umwaka IMYAKA"
+
+#: ../meld/dirdiff.py:949
+#, python-format
+msgid ""
+"Another folder with the same name already exists in “%s”.\n"
+"If you replace the existing folder, all files in it will be lost."
+msgstr ""
+
+#: ../meld/dirdiff.py:962
+msgid "Error copying file"
+msgstr ""
+
+#: ../meld/dirdiff.py:963
+#, fuzzy, python-format
+msgid ""
+"Couldn't copy %s\n"
+"to %s.\n"
+"\n"
+"%s"
+msgstr "OYA Gufungura"
+
+#: ../meld/dirdiff.py:986
+#, fuzzy, python-format
+msgid "Error deleting %s"
+msgstr "Kuri"
+
+# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
+#: ../meld/dirdiff.py:1499
+#, fuzzy
+msgid "No folder"
+msgstr "Ububiko"
+
+#. Abbreviations for insert and overwrite that fit in the status bar
+#: ../meld/filediff.py:335
+msgid "INS"
+msgstr ""
+
+#: ../meld/filediff.py:335
+msgid "OVR"
+msgstr ""
+
+#. Abbreviation for line, column so that it will fit in the status bar
+#: ../meld/filediff.py:337
+#, python-format
+msgid "Ln %i, Col %i"
+msgstr ""
+
+#: ../meld/filediff.py:762
+msgid "Comparison results will be inaccurate"
+msgstr ""
+
+#: ../meld/filediff.py:764
+msgid ""
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
+msgstr ""
+
+#: ../meld/filediff.py:820
+msgid "Mark conflict as resolved?"
+msgstr ""
+
+#: ../meld/filediff.py:822
+msgid ""
+"If the conflict was resolved successfully, you may mark it as resolved now."
+msgstr ""
+
+#: ../meld/filediff.py:824
+msgid "Cancel"
+msgstr ""
+
+#: ../meld/filediff.py:825
+msgid "Mark _Resolved"
+msgstr ""
+
+#: ../meld/filediff.py:1076
+#, python-format
+msgid "There was a problem opening the file “%s”."
+msgstr ""
+
+#: ../meld/filediff.py:1084
+#, python-format
+msgid "File %s appears to be a binary file."
+msgstr ""
+
+#: ../meld/filediff.py:1086
+msgid "Do you want to open the file using the default application?"
+msgstr ""
+
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
+#, python-format
+msgid "[%s] Computing differences"
+msgstr ""
+
+#: ../meld/filediff.py:1166
+#, python-format
+msgid "File %s has changed on disk"
+msgstr ""
+
+#: ../meld/filediff.py:1167
+msgid "Do you want to reload the file?"
+msgstr ""
+
+#: ../meld/filediff.py:1169
+msgid "_Reload"
+msgstr ""
+
+#: ../meld/filediff.py:1327
+#, fuzzy
+msgid "Files are identical"
+msgstr "birasa"
+
+#: ../meld/filediff.py:1340
+msgid ""
+"Text filters are being used, and may be masking differences between files. "
+"Would you like to compare the unfiltered files?"
+msgstr ""
+
+#: ../meld/filediff.py:1345
+msgid "Files differ in line endings only"
+msgstr ""
+
+#: ../meld/filediff.py:1347
+#, python-format
+msgid ""
+"Files are identical except for differing line endings:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1367
+msgid "Show without filters"
+msgstr ""
+
+#: ../meld/filediff.py:1389
+msgid "Change highlighting incomplete"
+msgstr ""
+
+#: ../meld/filediff.py:1390
+msgid ""
+"Some changes were not highlighted because they were too large. You can force "
+"Meld to take longer to highlight larger changes, though this may be slow."
+msgstr ""
+
+#: ../meld/filediff.py:1398
+#, fuzzy
+msgid "Keep highlighting"
+msgstr "Igaragaza cyane"
+
+#: ../meld/filediff.py:1400
+#, fuzzy
+msgid "_Keep highlighting"
+msgstr "Igaragaza cyane"
+
+#: ../meld/filediff.py:1432
+#, python-format
+msgid "Replace file “%s”?"
+msgstr ""
+
+#: ../meld/filediff.py:1434
+#, python-format
+msgid ""
+"A file with this name already exists in “%s”.\n"
+"If you replace the existing file, its contents will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1451
+msgid "Save Left Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1453
+msgid "Save Middle Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr ""
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr ""
+
+# sfx2/sdi\sfxslots.src:SID_SAVEDOCS.text
+#: ../meld/filediff.py:1474
+#, fuzzy
+msgid "Save Anyway"
+msgstr "Gushyingura Byose"
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr ""
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#, fuzzy, python-format
+msgid "Could not save file %s."
+msgstr "OYA Gufungura"
+
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#, python-format
+msgid ""
+"Couldn't save file due to:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1879
+msgid "Live comparison updating disabled"
+msgstr ""
+
+#: ../meld/filediff.py:1880
+msgid ""
+"Live updating of comparisons is disabled when synchronization points are "
+"active. You can still manually refresh the comparison, and live updates will "
+"resume when synchronization points are cleared."
+msgstr ""
+
+#: ../meld/filemerge.py:37
+#, fuzzy, python-format
+msgid "[%s] Merging files"
+msgstr "[%s]Idosiye"
+
+# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_COPY.text
+#: ../meld/gutterrendererchunk.py:210
+#, fuzzy
+msgid "Copy _up"
+msgstr "Gukoporora"
+
+#: ../meld/gutterrendererchunk.py:211
+msgid "Copy _down"
+msgstr ""
+
+#: ../meld/meldapp.py:175
+#, fuzzy
+msgid "wrong number of arguments supplied to --diff"
+msgstr "Umubare Bya ingingo"
+
+#: ../meld/meldapp.py:180
+msgid "Start with an empty window"
+msgstr ""
 
 # sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
-#: filediff.py:107 meldapp.py:75
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
+#, fuzzy
+msgid "file"
+msgstr "IDOSIYE"
+
+# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
+#, fuzzy
+msgid "folder"
+msgstr "Ububiko"
+
+#: ../meld/meldapp.py:182
+msgid "Start a version control comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:184
+msgid "Start a 2- or 3-way file comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:186
+msgid "Start a 2- or 3-way folder comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:229
+#, python-format
+msgid "Error: %s\n"
+msgstr ""
+
+#: ../meld/meldapp.py:236
+msgid "Meld is a file and directory comparison tool."
+msgstr ""
+
+#: ../meld/meldapp.py:240
+msgid "Set label to use instead of file name"
+msgstr ""
+
+#: ../meld/meldapp.py:243
+msgid "Open a new tab in an already running instance"
+msgstr ""
+
+#: ../meld/meldapp.py:246
+msgid "Automatically compare all differing files on startup"
+msgstr ""
+
+#: ../meld/meldapp.py:249
+#, fuzzy
+msgid "Ignored for compatibility"
+msgstr "kugirango Bihuye neza"
+
+#: ../meld/meldapp.py:253
+msgid "Set the target file for saving a merge result"
+msgstr ""
+
+#: ../meld/meldapp.py:256
+msgid "Automatically merge files"
+msgstr ""
+
+#: ../meld/meldapp.py:260
+msgid "Load a saved comparison from a Meld comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:264
+msgid "Create a diff tab for the supplied files or folders"
+msgstr ""
+
+#: ../meld/meldapp.py:284
+#, python-format
+msgid "too many arguments (wanted 0-3, got %d)"
+msgstr ""
+
+#: ../meld/meldapp.py:287
+msgid "can't auto-merge less than 3 files"
+msgstr ""
+
+#: ../meld/meldapp.py:289
+msgid "can't auto-merge directories"
+msgstr ""
+
+#: ../meld/meldapp.py:303
+msgid "Error reading saved comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:330
+#, python-format
+msgid "invalid path or URI \"%s\""
+msgstr ""
+
+#. TRANSLATORS: This is the label of a new, currently-unnamed file.
+#: ../meld/meldbuffer.py:131
+msgid "<unnamed>"
+msgstr ""
+
+# filter/source\xsltdialog\xmlfilterdialogstrings.src:STR_DEFAULT_UI_NAME.text
+#: ../meld/melddoc.py:64
+#, fuzzy
+msgid "untitled"
+msgstr "Nta mutwe"
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
+#: ../meld/meldwindow.py:52
 #, fuzzy
 msgid "_File"
 msgstr "IDOSIYE"
 
-# basctl/source\basicide\basidesh.src:RID_STR_SAVE.text
-#: filediff.py:109
+#: ../meld/meldwindow.py:53
 #, fuzzy
-msgid "_Save"
-msgstr "Kubika"
+msgid "_New Comparison..."
+msgstr "Idosiye"
 
-#: filediff.py:109 filediff.py:111
+#: ../meld/meldwindow.py:54
+#, fuzzy
+msgid "Start a new comparison"
+msgstr "iyi"
+
+#: ../meld/meldwindow.py:57
 #, fuzzy
 msgid "Save the current file"
 msgstr "Kubika i KIGEZWEHO IDOSIYE"
 
 # sfx2/source\doc\doc.src:STR_SAVEASDOC.text
-#: filediff.py:111
+#: ../meld/meldwindow.py:59
 #, fuzzy
-msgid "_Save As..."
+msgid "Save As..."
 msgstr "Gushyingura muri..."
 
-# sfx2/sdi\sfxslots.src:SID_SAVEDOCS.text
-#: filediff.py:113
+#: ../meld/meldwindow.py:60
 #, fuzzy
-msgid "_Save All"
-msgstr "Gushyingura Byose"
+msgid "Save the current file with a different name"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
 
-#: filediff.py:113
+#: ../meld/meldwindow.py:63
 #, fuzzy
-msgid "Save all files"
-msgstr "Kubika Byose Idosiye"
-
-# sfx2/source\appl\newhelp.src:STR_HELP_BUTTON_PRINT.text
-#: filediff.py:115
-#, fuzzy
-msgid "_Print..."
-msgstr "Gucapa..."
-
-#: filediff.py:115
-#, fuzzy
-msgid "Print this comparison"
-msgstr "iyi"
-
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\macrodlg.src:RID_MACROCHOOSER.RID_PB_CLOSE.text
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\macrodlg.src:RID_STR_CLOSE.text
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_CLOSE.text
-# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
-# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_CLOSE.text
-#: filediff.py:117
-#, fuzzy
-msgid "_Close"
-msgstr "Gufunga"
-
-#: filediff.py:117
-#, fuzzy
-msgid "Close this tab"
-msgstr "Funga iyi Isunika"
+msgid "Close the current file"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
 
 # #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
 # basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_EDIT.text
@@ -423,345 +2233,178 @@ msgstr "Funga iyi Isunika"
 # basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_EDIT.text
 # #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
 # basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_EDIT.text
-#: filediff.py:118 glade2/cvsview.glade.h:16
+#: ../meld/meldwindow.py:66
 #, fuzzy
 msgid "_Edit"
 msgstr "Guhindura"
 
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# dbaccess/source/ui/inc/toolbox.hrc:MID_UNDO.text
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-#: filediff.py:120
+#: ../meld/meldwindow.py:68
 #, fuzzy
-msgid "_Undo"
-msgstr "Isubiranyuma"
-
-#: filediff.py:120
-#, fuzzy
-msgid "Undo last change"
+msgid "Undo the last action"
 msgstr "Iheruka Guhindura>>"
 
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# dbaccess/source/ui/inc/toolbox.hrc:MID_REDO.text
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-#: filediff.py:122
-#, fuzzy
-msgid "_Redo"
-msgstr "Isubiramo"
+#: ../meld/meldwindow.py:71
+msgid "Redo the last undone action"
+msgstr ""
 
-#: filediff.py:122
+#: ../meld/meldwindow.py:73
 #, fuzzy
-msgid "Redo last change"
-msgstr "Iheruka Guhindura>>"
+msgid "Cut the selection"
+msgstr "i Porogaramu"
+
+#: ../meld/meldwindow.py:75
+#, fuzzy
+msgid "Copy the selection"
+msgstr "Ihitamo"
+
+#: ../meld/meldwindow.py:77
+msgid "Paste the clipboard"
+msgstr ""
 
 # offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.BTN_INET_SEARCH.text
-#: filediff.py:124
+#: ../meld/meldwindow.py:79
 #, fuzzy
-msgid "_Find"
+msgid "Find..."
 msgstr "Gushaka"
 
-#: filediff.py:124
+#: ../meld/meldwindow.py:79
 #, fuzzy
-msgid "Search the document"
-msgstr "i Inyandiko"
+msgid "Search for text"
+msgstr "Gushakisha:"
 
-#: filediff.py:126
+#: ../meld/meldwindow.py:81
 #, fuzzy
-msgid "_Find Next"
+msgid "Find Ne_xt"
 msgstr "Shaka ibikurikira"
 
-#: filediff.py:126
-#, fuzzy
-msgid "Repeat the last find"
-msgstr "i Iheruka Gushaka"
+#: ../meld/meldwindow.py:82
+msgid "Search forwards for the same text"
+msgstr ""
 
-# offmgr/source\offapp\dialog\autocdlg.src:RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.text
-#: filediff.py:128 glade2/filediff.glade.h:14
-#, fuzzy
-msgid "_Replace"
-msgstr "Gusimbura"
+#: ../meld/meldwindow.py:84
+msgid "Find _Previous"
+msgstr ""
 
-#: filediff.py:128
+#: ../meld/meldwindow.py:85
+msgid "Search backwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:88
+#, fuzzy
+msgid "_Replace..."
+msgstr "Gusimbura:"
+
+#: ../meld/meldwindow.py:89
 #, fuzzy
 msgid "Find and replace text"
 msgstr "Na Gusimbura Umwandiko"
 
-# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_CUT.text
-#: filediff.py:130
-#, fuzzy
-msgid "Cu_t"
-msgstr "Gukata"
-
-#: filediff.py:130 filediff.py:132
-#, fuzzy
-msgid "Copy selected text"
-msgstr "Byahiswemo Umwandiko"
-
-# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_COPY.text
-#: filediff.py:132
-#, fuzzy
-msgid "_Copy"
-msgstr "Gukoporora"
-
-# dbaccess/source/ui/inc/toolbox.hrc:MID_SBA_QRY_PASTE.text
-#: filediff.py:134
-#, fuzzy
-msgid "_Paste"
-msgstr "Komeka"
-
-#: filediff.py:134
-#, fuzzy
-msgid "Paste selected text"
-msgstr "Byahiswemo Umwandiko"
-
-#: filediff.py:135 glade2/dirdiff.glade.h:8
-msgid "Diff"
-msgstr ""
-
-#: filediff.py:137
-#, fuzzy
-msgid "_Next"
-msgstr "Bikurikira"
-
-#: filediff.py:137
-#, fuzzy
-msgid "Next difference"
-msgstr "Ikinyuranyo/ Itandukaniro"
-
-#: filediff.py:139
-msgid "Pr_ev"
-msgstr ""
-
-#: filediff.py:139
-#, fuzzy
-msgid "Previous difference"
-msgstr "Ikinyuranyo/ Itandukaniro"
-
-#: filediff.py:141
-#, fuzzy
-msgid "Copy contents left"
-msgstr "Ibigize Ibumoso:"
-
-#: filediff.py:143
-#, fuzzy
-msgid "Copy contents right"
-msgstr "Ibigize Iburyo:"
-
-#: filediff.py:267
-msgid "INS,OVR"
-msgstr ""
-
-#. insert/overwrite
-#: filediff.py:268
-#, python-format
-msgid "Ln %i, Col %i"
-msgstr ""
-
-#: filediff.py:516
-#, fuzzy, python-format
-msgid ""
-"Regular expression error\n"
-"'%s'"
-msgstr "imvugo"
-
-#: filediff.py:531
-#, fuzzy, python-format
-msgid "The regular expression '%s' was not found."
-msgstr "Ibisanzwe imvugo OYA Byabonetse"
-
-#: filediff.py:533
-#, fuzzy, python-format
-msgid "The text '%s' was not found."
-msgstr "Umwandiko OYA Byabonetse"
-
-#: filediff.py:574
-#, python-format
-msgid "[%s] Set num panes"
-msgstr ""
-
-#: filediff.py:581
-#, fuzzy, python-format
-msgid "[%s] Opening files"
-msgstr "[%s]Idosiye"
-
-#: filediff.py:597
-#, fuzzy, python-format
-msgid ""
-"Could not open '%s' for reading.\n"
-"\n"
-"The error was:\n"
-"%s"
-msgstr "OYA Gufungura kugirango Ikosa"
-
-#: filediff.py:601
-#, fuzzy, python-format
-msgid "[%s] Reading files"
-msgstr "[%s]Idosiye"
-
-#: filediff.py:616
-#, fuzzy, python-format
-msgid ""
-"Could not read from '%s'.\n"
-"\n"
-"I tried encodings %s."
-msgstr "OYA Gusoma Bivuye"
-
-#: filediff.py:621
-#, fuzzy, python-format
-msgid ""
-"Could not read from '%s'.\n"
-"\n"
-"The error was:\n"
-"%s"
-msgstr "OYA Gusoma Bivuye Ikosa"
-
-#: filediff.py:641
-#, python-format
-msgid "[%s] Computing differences"
-msgstr ""
-
-#: filediff.py:733
-#, fuzzy, python-format
-msgid "Choose a name for buffer %i."
-msgstr "a Izina: kugirango"
-
-#: filediff.py:744
-#, fuzzy, python-format
-msgid ""
-"\"%s\" exists!\n"
-"Overwrite?"
-msgstr "\"%s\"Gusimbuza"
-
-#: filediff.py:758
-#, fuzzy, python-format
-msgid ""
-"This file '%s' contains a mixture of line endings.\n"
-"\n"
-"Which format would you like to use?"
-msgstr "IDOSIYE Kirimo a Bya Umurongo Imiterere nka Kuri Gukoresha"
-
-#: filediff.py:775
-#, fuzzy, python-format
-msgid ""
-"Error writing to %s\n"
-"\n"
-"%s."
-msgstr "Kuri"
-
-#: filediff.py:814
-#, fuzzy, python-format
-msgid ""
-"Refreshing will discard changes in:\n"
-"%s\n"
-"\n"
-"You cannot undo this operation."
-msgstr "Kwanga Amahinduka in Isubiranyuma iyi"
-
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-#: filediff.py:1251
-#, fuzzy, python-format
-msgid "Print... %s"
-msgstr "Gucapa"
-
-# sc/source\core\src\compiler.src:RID_SC_FUNCTION_NAMES.SC_OPCODE_CURRENT.text
-#: filediff.py:1255
-#, fuzzy
-msgid "_Current"
-msgstr "KIGEZWEHO"
-
 # filter/source\pdf\impdialog.src:RID_PDF_EXPORT_DLG.RB_RANGE.text
-#: filediff.py:1255
+#: ../meld/meldwindow.py:92
 #, fuzzy
-msgid "_Range"
+msgid "_Changes"
 msgstr "Urutonde"
 
-# sc/source\ui\src\scstring.src:SCSTR_PREVIEWSHELL.text
-#: filediff.py:1275
-msgid "Print Preview"
-msgstr "Igaragazambere ryo Gucapa"
-
-# basctl/source\basicide\basidesh.src:RID_IMGBTN_REMOVEWATCH.text
-#: filediff.py:1334 findreplace.py:106
-#, fuzzy, python-format
-msgid "%s"
-msgstr "%s"
-
-#: glade.py:247
+#: ../meld/meldwindow.py:93
 #, fuzzy
-msgid "_Browse..."
-msgstr "Gushakisha..."
+msgid "Next Change"
+msgstr "Guhindura>>"
 
-#: glade.py:360
-#, fuzzy, python-format
-msgid ""
-"Could not open '%s'.\n"
-"%s"
-msgstr "OYA Gufungura"
-
-#: meld:49
-#, fuzzy, c-format
-msgid "Meld requires python%s or higher."
-msgstr "Cyangwa"
-
-#: meld:59
+#: ../meld/meldwindow.py:94
 #, fuzzy
-msgid "Meld requires a recent version of pygtk."
-msgstr "a Verisiyo Bya"
+msgid "Go to the next change"
+msgstr "Guhindura>>"
 
-#: meld:60
-#, fuzzy, c-format
-msgid "pygtk-%s or higher is recommended."
-msgstr "Cyangwa ni"
-
-#: meld:70
-#, fuzzy, c-format
-msgid "Meld requires pygtk-%s or higher. (found %s)"
-msgstr "Cyangwa Byabonetse"
-
-# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_NEWLIB.text
-#: meldapp.py:77
+#: ../meld/meldwindow.py:96
 #, fuzzy
-msgid "_New..."
-msgstr "Gishya..."
+msgid "Previous Change"
+msgstr "Guhindura>>"
 
-#: meldapp.py:77
-msgid "Open a new tab"
-msgstr "Fungura isimbuka nshya"
-
-#: meldapp.py:79
+#: ../meld/meldwindow.py:97
 #, fuzzy
-msgid "_Quit"
-msgstr "Kuvamo"
+msgid "Go to the previous change"
+msgstr "Guhindura>>"
 
-#: meldapp.py:79
+#: ../meld/meldwindow.py:99
+msgid "Open Externally"
+msgstr ""
+
+#: ../meld/meldwindow.py:100
+msgid "Open selected file or directory in the default external application"
+msgstr ""
+
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_VIEW.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLVIEW.text
+#: ../meld/meldwindow.py:104
 #, fuzzy
-msgid "Quit the application"
+msgid "_View"
+msgstr "Kureba"
+
+#: ../meld/meldwindow.py:105
+#, fuzzy
+msgid "File Status"
+msgstr "Imimerere"
+
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
+#: ../meld/meldwindow.py:106
+#, fuzzy
+msgid "Version Status"
+msgstr "Verisiyo"
+
+#: ../meld/meldwindow.py:110
+#, fuzzy
+msgid "Stop the current action"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
+
+#: ../meld/meldwindow.py:113
+msgid "Refresh the view"
+msgstr ""
+
+#: ../meld/meldwindow.py:117
+msgid "Fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:118
+msgid "View the comparison in fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:120
+msgid "_Toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:121
+msgid "Show or hide the toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:131
+msgid "Open Recent"
+msgstr ""
+
+#: ../meld/meldwindow.py:132
+#, fuzzy
+msgid "Open recent files"
+msgstr "Kubika i KIGEZWEHO IDOSIYE"
+
+#: ../meld/meldwindow.py:152
+msgid "_Meld"
+msgstr ""
+
+#: ../meld/meldwindow.py:153
+#, fuzzy
+msgid "Quit the program"
 msgstr "i Porogaramu"
 
-#: meldapp.py:81
+#: ../meld/meldwindow.py:155
 #, fuzzy
-msgid "_Settings"
-msgstr "Amagenamiterere"
-
-#: meldapp.py:83
-#, fuzzy
-msgid "_Preferences"
+msgid "Prefere_nces"
 msgstr "Ibyahiswemo"
 
-#: meldapp.py:83
+#: ../meld/meldwindow.py:156
 #, fuzzy
-msgid "Configure preferences"
-msgstr "Ibyahiswemo"
-
-#: meldapp.py:85
-#, fuzzy
-msgid "_Help"
-msgstr "Ifashayobora"
+msgid "Configure the application"
+msgstr "i Porogaramu"
 
 # #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
 # sc/source\ui\dbgui\validate.src:TP_VALIDATION_INPUTHELP.FL_CONTENT.text
@@ -771,155 +2414,578 @@ msgstr "Ifashayobora"
 # sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
 # #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
 # sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
-#: meldapp.py:87
+#: ../meld/meldwindow.py:158
 #, fuzzy
 msgid "_Contents"
 msgstr "Ibigize"
 
-#: meldapp.py:87
-#, fuzzy
-msgid "Users manual"
-msgstr "Bikorwa"
-
-#: meldapp.py:89
-msgid "_Report Bug"
+#: ../meld/meldwindow.py:159
+msgid "Open the Meld manual"
 msgstr ""
 
-#: meldapp.py:89
+#: ../meld/meldwindow.py:161
 #, fuzzy
-msgid "Report a bug"
-msgstr "a"
-
-#: meldapp.py:91
-#, fuzzy
-msgid "_About"
-msgstr "Bigyanye"
-
-#: meldapp.py:91
-#, fuzzy
-msgid "About the application"
+msgid "About this application"
 msgstr "i Porogaramu"
 
-#: meldapp.py:303
+#: ../meld/meldwindow.py:650
+#, python-format
+msgid "Need three files to auto-merge, got: %r"
+msgstr ""
+
+#: ../meld/meldwindow.py:664
 #, fuzzy
-msgid "Cannot compare a mixture of files and directories.\n"
+msgid "Cannot compare a mixture of files and directories"
 msgstr "Kugereranya# a Bya Idosiye Na ububiko bw'amaderese"
 
-# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
-#: meldapp.py:306
-#, fuzzy
-msgid "folder"
-msgstr "Ububiko"
-
-# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
-#: meldapp.py:307
-#, fuzzy
-msgid "file"
-msgstr "IDOSIYE"
-
-#: meldapp.py:308
-msgid "nonexistant"
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
 msgstr ""
-
-#: meldapp.py:335
-#, fuzzy
-msgid "Run meld --help for help"
-msgstr "Ifashayobora kugirango Ifashayobora"
-
-#. ###############################################################################
-#.
-#. usage
-#.
-#. ###############################################################################
-#: meldapp.py:394
-#, fuzzy
-msgid ""
-"Meld is a file and directory comparison tool. Usage:\n"
-"\n"
-"    meld                        Start with no windows open\n"
-"    meld <dir>                  Start with CVS browser in 'dir'\n"
-"    meld <file>                 Start with CVS diff of 'file'\n"
-"    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
-"    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory comparison\n"
-"\n"
-"Options:\n"
-"    -h, --help                  Show this help text and exit\n"
-"    -v, --version               Display the version and exit\n"
-"\n"
-"For more information choose help -> contents.\n"
-"Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
-"Discuss meld at http://mail.gnome.org/mailman/listinfo/gnome-devtools\n"
-msgstr ""
-"ni a IDOSIYE Na bushyinguro Gutangira Na: Oya Gutangira Na: Mucukumbuzi in "
-"IDOSIYE Gutangira Na: Bya IDOSIYE IDOSIYE IDOSIYE Gutangira Na: 2. Cyangwa "
-"3. IDOSIYE Gutangira Na: 2. Cyangwa 3. bushyinguro h Ifashayobora iyi "
-"Ifashayobora Umwandiko Na v Verisiyo i Verisiyo Na Birenzeho Ibisobanuro "
-"Guhitamo Ifashayobora Ibigize ku HTTP org IGIKUBO ku HTTP Ubutumwa org"
-
-#: meldapp.py:411
-#, fuzzy, python-format
-msgid ""
-"Meld %s\n"
-"Written by Stephen Kennedy <stevek@gnome.org>"
-msgstr "ku org"
-
-#: meldapp.py:432
-#, fuzzy
-msgid "Usage: meld [options] [arguments]"
-msgstr "Amahitamo ingingo"
-
-#: meldapp.py:433
-#, fuzzy
-msgid "Use label instead of filename. This option may be used several times."
-msgstr "Akarango Bya Izina ry'idosiye: Ihitamo Gicurasi Times"
-
-#: meldapp.py:434
-#, fuzzy
-msgid "Use an existing instance"
-msgstr "Urugero"
-
-#: meldapp.py:435
-#, fuzzy
-msgid "Ignored for compatibility"
-msgstr "kugirango Bihuye neza"
-
-#: meldapp.py:476
-#, fuzzy, python-format
-msgid "Wrong number of arguments (Got %i)"
-msgstr "Umubare Bya ingingo"
-
-# filter/source\xsltdialog\xmlfilterdialogstrings.src:STR_DEFAULT_UI_NAME.text
-#: melddoc.py:42
-#, fuzzy
-msgid "untitled"
-msgstr "Nta mutwe"
 
 # svx/source\dialog\langtab.src:RID_SVXSTR_LANGUAGE_TABLE.1.text
 #. no common path. empty names get changed to "[None]"
-#: misc.py:95
+#: ../meld/misc.py:259
 msgid "[None]"
 msgstr "[Ntacyo]"
 
-#: prefsui.py:215
-#, fuzzy
-msgid "Line numbers are only available if you have pygtksourceview installed."
-msgstr "Imibare Bihari NIBA"
+#: ../meld/preferences.py:33
+msgid "label"
+msgstr ""
 
-#: prefsui.py:219
+#: ../meld/preferences.py:33
+msgid "pattern"
+msgstr ""
+
+#: ../meld/recent.py:114
 #, fuzzy
+msgid "Version control:"
+msgstr "Bivuye Igenzura"
+
+#: ../meld/ui/notebooklabel.py:63
+#, fuzzy
+msgid "Close tab"
+msgstr "Funga iyi Isunika"
+
+#: ../meld/ui/vcdialogs.py:48
+msgid "No files will be committed"
+msgstr ""
+
+#. Translators: First %s is replaced by translated "%d unpushed
+#. commits", second %s is replaced by translated "%d branches"
+#: ../meld/vc/git.py:94
+#, python-format
+msgid "%s in %s"
+msgstr ""
+
+#. Translators: These messages cover the case where there is
+#. only one branch, and are not part of another message.
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
+#, python-format
+msgid "%d unpushed commit"
+msgid_plural "%d unpushed commits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:97
+#, python-format
+msgid "%d branch"
+msgid_plural "%d branches"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:336
+#, python-format
+msgid "Mode changed from %s to %s"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
+
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
+#, fuzzy
+msgid "None"
+msgstr "Ntacyo"
+
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr ""
+
+# #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Agenda.Elements.Location.text
+# #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Fax.Save.AutoPath.text
+# #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Memo.Save.AutoDocName.text
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Local"
+msgstr "Ahantu"
+
+# #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
+# padmin/source\rtsetup.src:RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.text
+# #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
+# padmin/source\rtsetup.src:RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.text
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Remote"
+msgstr "Gukuraho"
+
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.GRP_VERSION.text
+#: ../meld/vc/_vc.py:71
+#, fuzzy
+msgid "Unversioned"
+msgstr "Verisiyo"
+
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr ""
+
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr ""
+
+#: ../meld/vc/_vc.py:78
+msgid "Renamed"
+msgstr ""
+
+#: ../meld/vc/_vc.py:79
+msgid "Conflict"
+msgstr ""
+
+# #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
+# padmin/source\rtsetup.src:RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.text
+# #-#-#-#-#  padmin.pot (PACKAGE VERSION)  #-#-#-#-#
+# padmin/source\rtsetup.src:RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.text
+#: ../meld/vc/_vc.py:80
+#, fuzzy
+msgid "Removed"
+msgstr "Gukuraho"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr ""
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
+#, python-format
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, python-format
+msgid "%(name)s (Invalid repository)"
+msgstr ""
+
+#: ../meld/vcview.py:276
+msgid "No valid version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:278
+msgid "Only one version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:280
+msgid "Choose which version control system to use"
+msgstr ""
+
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
+#, python-format
+msgid "%s: %s"
+msgstr ""
+
+#: ../meld/vcview.py:352
+#, python-format
+msgid "Scanning %s"
+msgstr ""
+
+#: ../meld/vcview.py:391
+msgid "(Empty)"
+msgstr "(Kirimo ubusa)"
+
+#: ../meld/vcview.py:435
+#, python-format
+msgid "%s — local"
+msgstr ""
+
+#: ../meld/vcview.py:436
+#, python-format
+msgid "%s — remote"
+msgstr ""
+
+#: ../meld/vcview.py:444
+#, python-format
+msgid "%s (local, merge, remote)"
+msgstr ""
+
+#: ../meld/vcview.py:449
+#, python-format
+msgid "%s (remote, merge, local)"
+msgstr ""
+
+#: ../meld/vcview.py:460
+#, python-format
+msgid "%s — repository"
+msgstr ""
+
+#: ../meld/vcview.py:466
+#, python-format
+msgid "%s (working, repository)"
+msgstr ""
+
+#: ../meld/vcview.py:470
+#, python-format
+msgid "%s (repository, working)"
+msgstr ""
+
+#: ../meld/vcview.py:638
+msgid "Remove folder and all its files?"
+msgstr ""
+
+#: ../meld/vcview.py:640
 msgid ""
-"Syntax highlighting is only available if you have pygtksourceview installed."
-msgstr "Igaragaza cyane ni Bihari NIBA"
+"This will remove all selected files and folders, and all files within any "
+"selected folders, from version control."
+msgstr ""
 
-#: svnview.py:40
+#: ../meld/vcview.py:665
+#, fuzzy, python-format
+msgid "Error removing %s"
+msgstr "Kuri"
+
+#: ../meld/vcview.py:746
+msgid "Clear"
+msgstr ""
+
 #, fuzzy
-msgid ""
-"Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
-msgstr "Kyongewe B B"
+#~ msgid ""
+#~ "Ignored:Unknown:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+#~ "Missing"
+#~ msgstr "Kyongewe B B"
 
-#: glade2/cvsview.glade.h:1 glade2/dirdiff.glade.h:1 glade2/meldapp.glade.h:3
-msgid "*"
-msgstr "*"
+#, fuzzy
+#~ msgid ""
+#~ "Error converting to a regular expression\n"
+#~ "The pattern was '%s'\n"
+#~ "The error was '%s'"
+#~ msgstr "Guhindura.... Kuri a Ibisanzwe Ishusho Ikosa"
+
+#, fuzzy
+#~ msgid "Compare versions"
+#~ msgstr "Uburyo"
+
+#, fuzzy
+#~ msgid "Update the local copy"
+#~ msgstr "i Gukoporora"
+
+# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
+# sc/source\ui\src\menue.src:SCCFG_PLUGINMENU.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_TOP.text
+# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
+# sc/source\ui\src\menue.src:SCCFG_MENUBAR.SUBMENU_EDIT.SUBMENU_FILL.FID_FILL_TO_TOP.text
+# #-#-#-#-#  sc.pot (PACKAGE VERSION)  #-#-#-#-#
+# sc/source\ui\src\miscdlgs.src:RID_SCDLG_FILLSERIES.BTN_TOP.text
+#, fuzzy
+#~ msgid "_Up"
+#~ msgstr "Hejuru"
+
+# filter/source\xsltdialog\xmlfilterdialogstrings.src:STR_UNKNOWN_APPLICATION.text
+#, fuzzy
+#~ msgid "Un_known"
+#~ msgstr "Kitazwi"
+
+#~ msgid "Tag"
+#~ msgstr "Itagi"
+
+# basctl/source\basicide\moduldlg.src:RID_DLG_LIBS.RID_FL_OPTIONS.text
+#~ msgid "Options"
+#~ msgstr "Amahitamo"
+
+#, fuzzy
+#~ msgid "Select some files first."
+#~ msgstr "Idosiye Itangira"
+
+#, fuzzy
+#~ msgid ""
+#~ "'%s' is a directory.\n"
+#~ "Remove recusively?"
+#~ msgstr "'%s'ni a bushyinguro"
+
+#, fuzzy
+#~ msgid "Error converting pattern '%s' to regular expression"
+#~ msgstr "Guhindura.... Ishusho Kuri Ibisanzwe imvugo"
+
+#, fuzzy
+#~ msgid ""
+#~ "'%s' exists.\n"
+#~ "Overwrite?"
+#~ msgstr "'%s'Gusimbuza."
+
+#, fuzzy
+#~ msgid ""
+#~ "Error copying '%s' to '%s'\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr "Kuri"
+
+#, fuzzy
+#~ msgid ""
+#~ "second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
+#~ "year,years"
+#~ msgstr ""
+#~ "ISEGONDA amasogonda UMUNOTA Iminota ISAHA amasaha UMUNSI Iminsi Icyumweru "
+#~ "IBYUMWERU Ukwezi Amezi Umwaka IMYAKA"
+
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\macrodlg.src:RID_MACROCHOOSER.RID_PB_CLOSE.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\macrodlg.src:RID_STR_CLOSE.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_CLOSE.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_CLOSE.text
+#, fuzzy
+#~ msgid "_Close"
+#~ msgstr "Gufunga"
+
+#, fuzzy
+#~ msgid "Redo last change"
+#~ msgstr "Iheruka Guhindura>>"
+
+# offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.BTN_INET_SEARCH.text
+#, fuzzy
+#~ msgid "_Find"
+#~ msgstr "Gushaka"
+
+#, fuzzy
+#~ msgid "Search the document"
+#~ msgstr "i Inyandiko"
+
+#, fuzzy
+#~ msgid "Repeat the last find"
+#~ msgstr "i Iheruka Gushaka"
+
+#, fuzzy
+#~ msgid "Paste selected text"
+#~ msgstr "Byahiswemo Umwandiko"
+
+#, fuzzy
+#~ msgid "Next difference"
+#~ msgstr "Ikinyuranyo/ Itandukaniro"
+
+#, fuzzy
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr "imvugo"
+
+#, fuzzy
+#~ msgid "The regular expression '%s' was not found."
+#~ msgstr "Ibisanzwe imvugo OYA Byabonetse"
+
+#, fuzzy
+#~ msgid "The text '%s' was not found."
+#~ msgstr "Umwandiko OYA Byabonetse"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open '%s' for reading.\n"
+#~ "\n"
+#~ "The error was:\n"
+#~ "%s"
+#~ msgstr "OYA Gufungura kugirango Ikosa"
+
+#, fuzzy
+#~ msgid "[%s] Reading files"
+#~ msgstr "[%s]Idosiye"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not read from '%s'.\n"
+#~ "\n"
+#~ "I tried encodings %s."
+#~ msgstr "OYA Gusoma Bivuye"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not read from '%s'.\n"
+#~ "\n"
+#~ "The error was:\n"
+#~ "%s"
+#~ msgstr "OYA Gusoma Bivuye Ikosa"
+
+#, fuzzy
+#~ msgid "Choose a name for buffer %i."
+#~ msgstr "a Izina: kugirango"
+
+#, fuzzy
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr "\"%s\"Gusimbuza"
+
+#, fuzzy
+#~ msgid ""
+#~ "This file '%s' contains a mixture of line endings.\n"
+#~ "\n"
+#~ "Which format would you like to use?"
+#~ msgstr "IDOSIYE Kirimo a Bya Umurongo Imiterere nka Kuri Gukoresha"
+
+#, fuzzy
+#~ msgid ""
+#~ "Refreshing will discard changes in:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "You cannot undo this operation."
+#~ msgstr "Kwanga Amahinduka in Isubiranyuma iyi"
+
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+#, fuzzy
+#~ msgid "Print... %s"
+#~ msgstr "Gucapa"
+
+# sc/source\core\src\compiler.src:RID_SC_FUNCTION_NAMES.SC_OPCODE_CURRENT.text
+#, fuzzy
+#~ msgid "_Current"
+#~ msgstr "KIGEZWEHO"
+
+# basctl/source\basicide\basidesh.src:RID_IMGBTN_REMOVEWATCH.text
+#, fuzzy
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#, fuzzy
+#~ msgid "_Browse..."
+#~ msgstr "Gushakisha..."
+
+#, fuzzy
+#~ msgid "Meld requires a recent version of pygtk."
+#~ msgstr "a Verisiyo Bya"
+
+#, fuzzy
+#~ msgid "pygtk-%s or higher is recommended."
+#~ msgstr "Cyangwa ni"
+
+#, fuzzy
+#~ msgid "Meld requires pygtk-%s or higher. (found %s)"
+#~ msgstr "Cyangwa Byabonetse"
+
+# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_NEWLIB.text
+#, fuzzy
+#~ msgid "_New..."
+#~ msgstr "Gishya..."
+
+#~ msgid "Open a new tab"
+#~ msgstr "Fungura isimbuka nshya"
+
+#, fuzzy
+#~ msgid "_Settings"
+#~ msgstr "Amagenamiterere"
+
+#, fuzzy
+#~ msgid "Configure preferences"
+#~ msgstr "Ibyahiswemo"
+
+#, fuzzy
+#~ msgid "Users manual"
+#~ msgstr "Bikorwa"
+
+#, fuzzy
+#~ msgid "Report a bug"
+#~ msgstr "a"
+
+#, fuzzy
+#~ msgid "Run meld --help for help"
+#~ msgstr "Ifashayobora kugirango Ifashayobora"
+
+#, fuzzy
+#~ msgid ""
+#~ "Meld is a file and directory comparison tool. Usage:\n"
+#~ "\n"
+#~ "    meld                        Start with no windows open\n"
+#~ "    meld <dir>                  Start with CVS browser in 'dir'\n"
+#~ "    meld <file>                 Start with CVS diff of 'file'\n"
+#~ "    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
+#~ "    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory "
+#~ "comparison\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "    -h, --help                  Show this help text and exit\n"
+#~ "    -v, --version               Display the version and exit\n"
+#~ "\n"
+#~ "For more information choose help -> contents.\n"
+#~ "Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
+#~ "Discuss meld at http://mail.gnome.org/mailman/listinfo/gnome-devtools\n"
+#~ msgstr ""
+#~ "ni a IDOSIYE Na bushyinguro Gutangira Na: Oya Gutangira Na: Mucukumbuzi "
+#~ "in IDOSIYE Gutangira Na: Bya IDOSIYE IDOSIYE IDOSIYE Gutangira Na: 2. "
+#~ "Cyangwa 3. IDOSIYE Gutangira Na: 2. Cyangwa 3. bushyinguro h Ifashayobora "
+#~ "iyi Ifashayobora Umwandiko Na v Verisiyo i Verisiyo Na Birenzeho "
+#~ "Ibisobanuro Guhitamo Ifashayobora Ibigize ku HTTP org IGIKUBO ku HTTP "
+#~ "Ubutumwa org"
+
+#, fuzzy
+#~ msgid ""
+#~ "Meld %s\n"
+#~ "Written by Stephen Kennedy <stevek@gnome.org>"
+#~ msgstr "ku org"
+
+#, fuzzy
+#~ msgid "Usage: meld [options] [arguments]"
+#~ msgstr "Amahitamo ingingo"
+
+#, fuzzy
+#~ msgid ""
+#~ "Use label instead of filename. This option may be used several times."
+#~ msgstr "Akarango Bya Izina ry'idosiye: Ihitamo Gicurasi Times"
+
+#, fuzzy
+#~ msgid "Use an existing instance"
+#~ msgstr "Urugero"
+
+#, fuzzy
+#~ msgid ""
+#~ "Line numbers are only available if you have pygtksourceview installed."
+#~ msgstr "Imibare Bihari NIBA"
+
+#, fuzzy
+#~ msgid ""
+#~ "Syntax highlighting is only available if you have pygtksourceview "
+#~ "installed."
+#~ msgstr "Igaragaza cyane ni Bihari NIBA"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+#~ "Missing"
+#~ msgstr "Kyongewe B B"
+
+#~ msgid "*"
+#~ msgstr "*"
 
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\dialog\ctredlin.src:SID_REDLIN_FILTER_PAGE.BTN_REF.text
@@ -927,651 +2993,264 @@ msgstr "*"
 # svx/source\form\fmsearch.src:RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.text
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\form\fmsearch.src:RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.text
-#: glade2/cvsview.glade.h:2
-msgid "..."
-msgstr "..."
+#~ msgid "..."
+#~ msgstr "..."
 
-#: glade2/cvsview.glade.h:3
-msgid "CVS Log"
-msgstr ""
+#~ msgid "Date"
+#~ msgstr "Itariki"
 
-#: glade2/cvsview.glade.h:4
-msgid "Commit Files"
-msgstr ""
-
-#: glade2/cvsview.glade.h:5
-msgid "Date"
-msgstr "Itariki"
-
-#: glade2/cvsview.glade.h:6
-msgid "Diff Options"
-msgstr ""
-
-#: glade2/cvsview.glade.h:7
 #, fuzzy
-msgid "Local copy against other remote revision"
-msgstr "Gukoporora Ikindi Isubiramo"
+#~ msgid "Local copy against other remote revision"
+#~ msgstr "Gukoporora Ikindi Isubiramo"
 
-#: glade2/cvsview.glade.h:8
 #, fuzzy
-msgid "Local copy against same remote revision"
-msgstr "Gukoporora Isubiramo"
+#~ msgid "Local copy against same remote revision"
+#~ msgstr "Gukoporora Isubiramo"
 
-#: glade2/cvsview.glade.h:9
-msgid "Log Message"
-msgstr ""
-
-#: glade2/cvsview.glade.h:10
-msgid "Previous Logs"
-msgstr ""
-
-#: glade2/cvsview.glade.h:11
-msgid "Remove _Locally"
-msgstr ""
-
-#: glade2/filediff.glade.h:1
 #, fuzzy
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
-"Which ones would you like to save?</span>"
-msgstr ""
-"<Uburemere UTSINDAGIYE Ingano Kinini Idosiye Byahinduwe nka Kuri Kubika"
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+#~ "Which ones would you like to save?</span>"
+#~ msgstr ""
+#~ "<Uburemere UTSINDAGIYE Ingano Kinini Idosiye Byahinduwe nka Kuri Kubika"
 
-#: glade2/filediff.glade.h:3
-msgid "Copy All _Left"
-msgstr ""
-
-#: glade2/filediff.glade.h:4
-msgid "Copy All _Right"
-msgstr ""
-
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
-#: glade2/filediff.glade.h:5 glade2/dirdiff.glade.h:10
-msgid "Edit"
-msgstr "Kwandika"
-
-# offmgr/source\offapp\dialog\hyprlink.src:RID_SVXDLG_HYPERLINK.BTN_INET_SEARCH.text
-#: glade2/filediff.glade.h:6
-msgid "Find"
-msgstr "Gushaka"
-
-#: glade2/filediff.glade.h:7
 #, fuzzy
-msgid "Match _entire word only"
-msgstr "ijambo"
-
-# sc/source\ui\src\filter.src:RID_SCDLG_FILTER.BTN_REGEXP.text
-#: glade2/filediff.glade.h:8
-#, fuzzy
-msgid "Regular e_xpression"
-msgstr "Imvugo ndahinduka"
-
-# setup2/source\ui\dialog\dialog.src:RESID_DLG_OVERWRITE.12.text
-#: glade2/filediff.glade.h:9
-#, fuzzy
-msgid "Replace _All"
-msgstr "Hindura byose"
-
-# svx/source\dialog\bmpmask.src:RID_SVXDLG_BMPMASK.FT_3.text
-#: glade2/filediff.glade.h:10
-#, fuzzy
-msgid "Replace _with:"
-msgstr "Gusimbuza na..."
+#~ msgid "Match _entire word only"
+#~ msgstr "ijambo"
 
 # sfx2/source\doc\doc.src:STR_SAVEASDOC.text
-#: glade2/filediff.glade.h:11
 #, fuzzy
-msgid "Save _As..."
-msgstr "Gushyingura muri..."
+#~ msgid "Save _As..."
+#~ msgstr "Gushyingura muri..."
 
-#: glade2/filediff.glade.h:12
 #, fuzzy
-msgid "Save modified files?"
-msgstr "Kubika Byahinduwe Idosiye"
+#~ msgid "Save modified files?"
+#~ msgstr "Kubika Byahinduwe Idosiye"
 
-# svx/source\dialog\srchdlg.src:RID_SVXDLG_SEARCH.CB_MATCH_CASE.text
-#: glade2/filediff.glade.h:13
 #, fuzzy
-msgid "_Match case"
-msgstr "Guhuza inyandiko"
+#~ msgid "Hide..."
+#~ msgstr "Hisha"
 
-#: glade2/filediff.glade.h:15
 #, fuzzy
-msgid "_Replace..."
-msgstr "Gusimbura:"
-
-#: glade2/filediff.glade.h:16
-#, fuzzy
-msgid "_Search for:"
-msgstr "Gushakisha:"
-
-#: glade2/filediff.glade.h:17
-#, fuzzy
-msgid "_Wrap around"
-msgstr "Gufunika kumpande"
-
-#: glade2/dirdiff.glade.h:2
-msgid "Case"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:3
-msgid "Copy Left"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:4
-msgid "Copy Right"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:5
-#, fuzzy
-msgid "Copy left"
-msgstr "Ibumoso:"
-
-#: glade2/dirdiff.glade.h:6
-#, fuzzy
-msgid "Copy right"
-msgstr "Iburyo:"
-
-#: glade2/dirdiff.glade.h:7
-#, fuzzy
-msgid "Delete selected"
-msgstr "Byahiswemo"
-
-#: glade2/dirdiff.glade.h:9
-#, fuzzy
-msgid "Diff selection"
-msgstr "Ihitamo"
-
-#: glade2/dirdiff.glade.h:11
-#, fuzzy
-msgid "Hide selected"
-msgstr "Byahiswemo"
-
-#: glade2/dirdiff.glade.h:12
-#, fuzzy
-msgid "Hide..."
-msgstr "Hisha"
-
-#: glade2/dirdiff.glade.h:13
-#, fuzzy
-msgid "Ignore case of entries"
-msgstr "Bya Ibyinjijwe"
-
-#: glade2/dirdiff.glade.h:14
-msgid "Launch _Comparison"
-msgstr ""
+#~ msgid "Ignore case of entries"
+#~ msgstr "Bya Ibyinjijwe"
 
 # sc/source\ui\src\optdlg.src:RID_SCPAGE_LAYOUT.LB_ALIGN.4.text
-#: glade2/dirdiff.glade.h:15
-msgid "Left"
-msgstr "Ibumoso"
-
-# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_DOC_MODIFIED.text
-#: glade2/dirdiff.glade.h:16
-msgid "Modified"
-msgstr "Byahinduwe"
-
-# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.text
-#: glade2/dirdiff.glade.h:17
-msgid "New"
-msgstr "Gishya"
+#~ msgid "Left"
+#~ msgstr "Ibumoso"
 
 # sc/source\ui\src\optdlg.src:RID_SCPAGE_LAYOUT.LB_ALIGN.2.text
-#: glade2/dirdiff.glade.h:18
-msgid "Right"
-msgstr "Iburyo"
-
-#: glade2/dirdiff.glade.h:19
-msgid "Same"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:20
-#, fuzzy
-msgid "Show identical"
-msgstr "birasa"
-
-#: glade2/dirdiff.glade.h:21
-#, fuzzy
-msgid "Show modified"
-msgstr "Byahinduwe"
-
-#: glade2/dirdiff.glade.h:22
-#, fuzzy
-msgid "Show new"
-msgstr "Gishya"
-
-#: glade2/dirdiff.glade.h:23
-msgid "_Delete Selected"
-msgstr ""
+#~ msgid "Right"
+#~ msgstr "Iburyo"
 
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Content.NonprintingCharacter.Space.text
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Content.NonprintingCharacter.Space.text
-#: glade2/meldapp.glade.h:1
 #, fuzzy
-msgid " spaces."
-msgstr "Imyanya"
+#~ msgid " spaces."
+#~ msgstr "Imyanya"
 
-#: glade2/meldapp.glade.h:2
 #, fuzzy
-msgid "(gnome-default-editor)"
-msgstr "(Mburabuzi Muhinduzi"
+#~ msgid "(gnome-default-editor)"
+#~ msgstr "(Mburabuzi Muhinduzi"
 
-#: glade2/meldapp.glade.h:4
 #, fuzzy
-msgid "<b>Drawing Style</b>"
-msgstr "<B B"
+#~ msgid "<b>Drawing Style</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:5
 #, fuzzy
-msgid "<b>Edit Menu</b>"
-msgstr "<B B"
+#~ msgid "<b>Edit Menu</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:6
 #, fuzzy
-msgid "<b>Font</b>"
-msgstr "<B B"
+#~ msgid "<b>Font</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:7
 #, fuzzy
-msgid "<b>Global options</b>"
-msgstr "<B Amahitamo B"
+#~ msgid "<b>Global options</b>"
+#~ msgstr "<B Amahitamo B"
 
-#: glade2/meldapp.glade.h:8
 #, fuzzy
-msgid "<b>Loading</b>"
-msgstr "<B B"
+#~ msgid "<b>Loading</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:9
 #, fuzzy
-msgid "<b>Misc</b>"
-msgstr "<B B"
+#~ msgid "<b>Misc</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:10
 #, fuzzy
-msgid "<b>Saving</b>"
-msgstr "<B B"
+#~ msgid "<b>Saving</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:11
 #, fuzzy
-msgid "<b>Toolbar Appearance</b>"
-msgstr "<B B"
+#~ msgid "<b>Toolbar Appearance</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:12
 #, fuzzy
-msgid "<b>Update Options</b>"
-msgstr "<B B"
+#~ msgid "<b>Update Options</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:13
 #, fuzzy
-msgid "<b>Whitespace</b>"
-msgstr "<B B"
+#~ msgid "<b>Whitespace</b>"
+#~ msgstr "<B B"
 
-#: glade2/meldapp.glade.h:14
 #, fuzzy
-msgid "<span size=\"smaller\">Copyright (c) 2002-2004 Stephen Kennedy</span>"
-msgstr "<Ingano Gitoya C"
+#~ msgid ""
+#~ "<span size=\"smaller\">Copyright (c) 2002-2004 Stephen Kennedy</span>"
+#~ msgstr "<Ingano Gitoya C"
 
-#: glade2/meldapp.glade.h:15
 #, fuzzy
-msgid "<span size=\"xx-large\" weight=\"bold\">Meld x.x.x</span>"
-msgstr "<X."
+#~ msgid "<span size=\"xx-large\" weight=\"bold\">Meld x.x.x</span>"
+#~ msgstr "<X."
 
-#: glade2/meldapp.glade.h:16
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:17
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:18
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:19
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:20
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:21
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini Idosiye"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini Idosiye"
 
-#: glade2/meldapp.glade.h:22
 #, fuzzy
-msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
-msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+#~ msgstr "<Uburemere UTSINDAGIYE Ingano X Binini"
 
-#: glade2/meldapp.glade.h:23
-msgid "A_rch"
-msgstr ""
-
-#: glade2/meldapp.glade.h:24
 #, fuzzy
-msgid "Automatically supply missing newline at end of file."
-msgstr "Ibuze ku Impera Bya IDOSIYE"
+#~ msgid "Automatically supply missing newline at end of file."
+#~ msgstr "Ibuze ku Impera Bya IDOSIYE"
 
-#: glade2/meldapp.glade.h:25
-msgid "CVS"
-msgstr ""
-
-#: glade2/meldapp.glade.h:26
 #, fuzzy
-msgid "CVS binary"
-msgstr "Nyabibiri"
+#~ msgid "CVS binary"
+#~ msgstr "Nyabibiri"
 
-#: glade2/meldapp.glade.h:27
-msgid "C_redits"
-msgstr ""
-
-#: glade2/meldapp.glade.h:28
-msgid "Choose Files"
-msgstr ""
-
-#: glade2/meldapp.glade.h:29
 #, fuzzy
-msgid ""
-"Choose how the central bar of the diff viewer is drawn. You may wish to "
-"choose a simpler mode if you find scrolling is slow."
-msgstr "i Bya i ni Gicurasi Kuri Guhitamo a Ubwoko NIBA Gushaka ni Buhoro"
-
-#: glade2/meldapp.glade.h:30
-#, fuzzy
-msgid "Create missing directories (-d)"
-msgstr "Ibuze ububiko bw'amaderese D"
-
-#: glade2/meldapp.glade.h:31
-msgid "Curved : Filled Curves"
-msgstr ""
-
-#: glade2/meldapp.glade.h:32
-#, fuzzy
-msgid "Custom command"
-msgstr "Kugena Komandi:"
+#~ msgid ""
+#~ "Choose how the central bar of the diff viewer is drawn. You may wish to "
+#~ "choose a simpler mode if you find scrolling is slow."
+#~ msgstr "i Bya i ni Gicurasi Kuri Guhitamo a Ubwoko NIBA Gushaka ni Buhoro"
 
 # svx/source\gallery2\gallery.src:RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.text
-#: glade2/meldapp.glade.h:33
-msgid "Directory"
-msgstr "Ububiko"
+#~ msgid "Directory"
+#~ msgstr "Ububiko"
 
-# offmgr/source\offapp\dialog\optgdlg.src:OFA_TP_VIEW.GB_APPEARANCE.text
-#: glade2/meldapp.glade.h:34
-msgid "Display"
-msgstr "Kugaragaza"
-
-#: glade2/meldapp.glade.h:35
 #, fuzzy
-msgid "Edit menu popup invokes"
-msgstr "Ibikubiyemo"
+#~ msgid "Edit menu popup invokes"
+#~ msgstr "Ibikubiyemo"
 
-#: glade2/meldapp.glade.h:36
-msgid "Editor"
-msgstr "Muhinduzi"
-
-#: glade2/meldapp.glade.h:37
 #, fuzzy
-msgid "Encoding"
-msgstr "Imisobekere:"
+#~ msgid "Encoding"
+#~ msgstr "Imisobekere:"
 
-#: glade2/meldapp.glade.h:38
+#~ msgid "Icons Only"
+#~ msgstr "Udushushondanga Gusa"
+
 #, fuzzy
-msgid "File Filters"
-msgstr "Idosiye"
+#~ msgid "Ignore .cvsrc (-f)"
+#~ msgstr "F"
 
-#: glade2/meldapp.glade.h:39
-msgid "Gnome Default"
-msgstr ""
-
-#: glade2/meldapp.glade.h:40
 #, fuzzy
-msgid "Gnome default editor"
-msgstr "Mburabuzi Muhinduzi"
+#~ msgid "Ignore changes in amount of white space"
+#~ msgstr "Amahinduka in Igiteranyo Bya Umweru Umwanya"
 
-#: glade2/meldapp.glade.h:41
-msgid "Icons Only"
-msgstr "Udushushondanga Gusa"
-
-#: glade2/meldapp.glade.h:42
 #, fuzzy
-msgid "Ignore .cvsrc (-f)"
-msgstr "F"
+#~ msgid ""
+#~ "Ignore changes in case; consider upper and lower-case letters equivalent"
+#~ msgstr "Amahinduka in Nkuru Na Ntoya"
 
-#: glade2/meldapp.glade.h:43
 #, fuzzy
-msgid "Ignore changes in amount of white space"
-msgstr "Amahinduka in Igiteranyo Bya Umweru Umwanya"
+#~ msgid "Ignore changes that just insert or delete blank lines"
+#~ msgstr "Amahinduka Kongeramo Cyangwa Gusiba Ahatanditseho Imirongo"
 
-#: glade2/meldapp.glade.h:44
 #, fuzzy
-msgid ""
-"Ignore changes in case; consider upper and lower-case letters equivalent"
-msgstr "Amahinduka in Nkuru Na Ntoya"
-
-#: glade2/meldapp.glade.h:45
-#, fuzzy
-msgid "Ignore changes that just insert or delete blank lines"
-msgstr "Amahinduka Kongeramo Cyangwa Gusiba Ahatanditseho Imirongo"
-
-#: glade2/meldapp.glade.h:46
-#, fuzzy
-msgid "Ignore changes which insert or delete blank lines"
-msgstr "Amahinduka Kongeramo Cyangwa Gusiba Ahatanditseho Imirongo"
-
-#: glade2/meldapp.glade.h:47
-#, fuzzy
-msgid "Internal editor"
-msgstr "Muhinduzi"
-
-#: glade2/meldapp.glade.h:48
-msgid "Line Wrapping "
-msgstr ""
-
-#: glade2/meldapp.glade.h:49
-msgid "Mine"
-msgstr ""
+#~ msgid "Ignore changes which insert or delete blank lines"
+#~ msgstr "Amahinduka Kongeramo Cyangwa Gusiba Ahatanditseho Imirongo"
 
 # officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Filter.Graphic.Export.BMP.Color..0.text
-#: glade2/meldapp.glade.h:50
-msgid "Original"
-msgstr "Cy'umwimerere"
+#~ msgid "Original"
+#~ msgstr "Cy'umwimerere"
 
 # framework/source\classes\fltdlg.src:STR_FILTER_OTHERS.text
-#: glade2/meldapp.glade.h:51
-msgid "Other"
-msgstr "Ikindi"
+#~ msgid "Other"
+#~ msgstr "Ikindi"
 
-#: glade2/meldapp.glade.h:52
-msgid "Preferences : Meld"
-msgstr ""
-
-#: glade2/meldapp.glade.h:53
 #, fuzzy
-msgid "Prune empty directories (-P)"
-msgstr "ubusa ububiko bw'amaderese"
+#~ msgid "Prune empty directories (-P)"
+#~ msgstr "ubusa ububiko bw'amaderese"
 
-#: glade2/meldapp.glade.h:54
 #, fuzzy
-msgid "Quiet mode (-q)"
-msgstr "Ubwoko Q"
+#~ msgid "Quiet mode (-q)"
+#~ msgstr "Ubwoko Q"
 
-#: glade2/meldapp.glade.h:55
 #, fuzzy
-msgid "Save in UTF-8 encoding"
-msgstr "Kubika in 8 Imisobekere:"
+#~ msgid "Save in UTF-8 encoding"
+#~ msgstr "Kubika in 8 Imisobekere:"
 
-#: glade2/meldapp.glade.h:56
 #, fuzzy
-msgid "Save in the files original encoding"
-msgstr "Kubika in i Idosiye Umwimerere Imisobekere:"
+#~ msgid "Save in the files original encoding"
+#~ msgstr "Kubika in i Idosiye Umwimerere Imisobekere:"
 
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\dialog\numpages.src:RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.text
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\dialog\tabline.src:RID_SVXPAGE_LINE.MB_SYMBOL_BITMAP.text
-#: glade2/meldapp.glade.h:57
-msgid "Select..."
-msgstr "Guhitamo..."
+#~ msgid "Select..."
+#~ msgstr "Guhitamo..."
 
-#: glade2/meldapp.glade.h:58
 #, fuzzy
-msgid "Show line numbers"
-msgstr "Umurongo Imibare"
+#~ msgid "Stepen Kennedy <stevek@gnome.org>"
+#~ msgstr "org"
 
-#: glade2/meldapp.glade.h:59
-msgid "Simple : Lines only"
-msgstr ""
-
-#: glade2/meldapp.glade.h:60
-msgid "Solid   Filled Quadilaterals"
-msgstr ""
-
-#: glade2/meldapp.glade.h:61
 #, fuzzy
-msgid "Stepen Kennedy <stevek@gnome.org>"
-msgstr "org"
+#~ msgid "Tabs equivalent to "
+#~ msgstr "Kuri"
 
-#: glade2/meldapp.glade.h:62
+#~ msgid "Text Only"
+#~ msgstr "umwandiko gusa"
+
 #, fuzzy
-msgid "Tabs equivalent to "
-msgstr "Kuri"
+#~ msgid "Use Compression (-z)"
+#~ msgstr "Z"
 
-#: glade2/meldapp.glade.h:63
-msgid "Text Beside Icons"
-msgstr ""
-
-# 6216
-#: glade2/meldapp.glade.h:64
-msgid "Text Filters"
-msgstr "inyungururamagambo"
-
-#: glade2/meldapp.glade.h:65
-msgid "Text Only"
-msgstr "umwandiko gusa"
-
-#: glade2/meldapp.glade.h:66
-msgid "Text Under Icons"
-msgstr ""
-
-#: glade2/meldapp.glade.h:67
 #, fuzzy
-msgid "Use Compression (-z)"
-msgstr "Z"
+#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+#~ msgstr "E. g."
 
-#: glade2/meldapp.glade.h:68
 #, fuzzy
-msgid "Use GNOME monospace font."
-msgstr "Monospace: Intego- nyuguti"
+#~ msgid "Whitespace is significant"
+#~ msgstr "ni"
 
-#: glade2/meldapp.glade.h:69
 #, fuzzy
-msgid "Use custom font."
-msgstr "Kunoza Intego- nyuguti"
-
-#: glade2/meldapp.glade.h:70
-#, fuzzy
-msgid "Use syntax highlighting"
-msgstr "Igaragaza cyane"
-
-#: glade2/meldapp.glade.h:71
-msgid "Version System"
-msgstr ""
-
-#: glade2/meldapp.glade.h:72
-#, fuzzy
-msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-msgstr "E. g."
-
-#: glade2/meldapp.glade.h:73
-#, fuzzy
-msgid ""
-"When performing directory comparisons, you may filter out files and "
-"directories by name. Each pattern is a list of shell style wildcards "
-"separated by spaces."
-msgstr ""
-"bushyinguro Gicurasi Muyunguruzi... Inyuma Idosiye Na ububiko bw'amaderese "
-"ku Izina: Ishusho ni a Urutonde Bya Igikonoshwa IMISUSIRE ku Imyanya"
-
-#: glade2/meldapp.glade.h:74
-#, fuzzy
-msgid ""
-"When performing file comparisons, you may ignore certain types of changes. "
-"Each pattern here is a python regular expression which will be applied in "
-"turn to each line of the input text."
-msgstr ""
-"IDOSIYE Gicurasi Kwirengagiza Bya Amahinduka Ishusho ni a Ibisanzwe imvugo "
-"Byashyizweho in Kuri Umurongo Bya i Iyinjiza Umwandiko"
-
-#: glade2/meldapp.glade.h:75
-#, fuzzy
-msgid "Whitespace is significant"
-msgstr "ni"
-
-#: glade2/meldapp.glade.h:76
-msgid "_Autodetect"
-msgstr ""
-
-#: glade2/meldapp.glade.h:77
-msgid "_CVS"
-msgstr ""
-
-#: glade2/meldapp.glade.h:78
-#, fuzzy
-msgid "_Character"
-msgstr "Inyuguti"
-
-#: glade2/meldapp.glade.h:80
-msgid "_Directory Comparison"
-msgstr ""
-
-#: glade2/meldapp.glade.h:81
-#, fuzzy
-msgid "_File Comparison"
-msgstr "Idosiye"
+#~ msgid "_Character"
+#~ msgstr "Inyuguti"
 
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Agenda.Logo.Visible.text
 # #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
 # officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Wizard.Letter.Print.Logo.text
-#: glade2/meldapp.glade.h:82
 #, fuzzy
-msgid "_Logo"
-msgstr "ikirango"
+#~ msgid "_Logo"
+#~ msgstr "ikirango"
 
-#: glade2/meldapp.glade.h:83
 #, fuzzy
-msgid "_None"
-msgstr "Ntacyo"
-
-#: glade2/meldapp.glade.h:84
-msgid "_Subversion"
-msgstr ""
-
-#: glade2/meldapp.glade.h:85
-msgid "_Three Way Compare"
-msgstr ""
-
-#: glade2/meldapp.glade.h:86
-#, fuzzy
-msgid "_Translated by"
-msgstr "ku"
-
-#: glade2/meldapp.glade.h:87
-msgid "_Version Browser"
-msgstr ""
+#~ msgid "_Translated by"
+#~ msgstr "ku"
 
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\dialog\commonlingui.src:RID_SVX_WND_COMMON_LINGU.FT_NEWWORD.text
@@ -1581,29 +3260,14 @@ msgstr ""
 # svx/source\dialog\thesdlg.src:RID_SVXDLG_THESAURUS.FT_WORD.text
 # #-#-#-#-#  svx.pot (PACKAGE VERSION)  #-#-#-#-#
 # svx/source\options\optdict.src:RID_SFXDLG_EDITDICT.FT_WORD.text
-#: glade2/meldapp.glade.h:88
 #, fuzzy
-msgid "_Word"
-msgstr "ijambo"
+#~ msgid "_Word"
+#~ msgstr "ijambo"
 
-#: glade2/meldapp.glade.h:89
 #, fuzzy
-msgid "_Written by"
-msgstr "ku"
+#~ msgid "_Written by"
+#~ msgstr "ku"
 
-#: glade2/meldapp.glade.h:90
-msgid "dialog1"
-msgstr ""
-
-#: glade2/meldapp.glade.h:91
-msgid "dialog2"
-msgstr ""
-
-#: glade2/meldapp.glade.h:92
 #, fuzzy
-msgid "http://meld.sourceforge.net"
-msgstr "HTTP Cyuzuye"
-
-#: glade2/meldapp.glade.h:93
-msgid "utf8 iso8859"
-msgstr ""
+#~ msgid "http://meld.sourceforge.net"
+#~ msgstr "HTTP Cyuzuye"

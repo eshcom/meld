@@ -2,13 +2,13 @@
 # Copyright (C) 2007 ORGANIZATION
 # Dongsu Jang <iolo@hellocity.net>, 2007.
 # Namhyung Kim <namhyung@gmail.com>, 2007.Dongsu Jang <iolo@hellocity.net>, 2007.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: meld 0.9.0\n"
-"Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
-"POT-Creation-Date: 2007-11-07 03:34+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2007-11-26 16:54+0900\n"
 "Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
 "Language-Team: GNOME Korean <Gnome-kr-hackers@lists.kldp.net>\n"
@@ -16,746 +16,1067 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
-"Plural-Forms:  nplurals=1; plural=0;"
+"Plural-Forms:  nplurals=1; plural=0;\n"
 
-#: ../dirdiff.py:252 ../dirdiff.py:267
-#, python-format
-msgid "Error converting pattern '%s' to regular expression"
-msgstr "패턴 '%s'을(를) 정규식으로 변환 중 오류"
+#: ../bin/meld:186
+msgid "Cannot import: "
+msgstr ""
 
-#: ../dirdiff.py:283
-#, python-format
-msgid "Hide %s"
-msgstr "%s 숨김"
+#: ../bin/meld:189
+#, c-format
+msgid "Meld requires %s or higher."
+msgstr "Meld는 %s 이상 버전이 필요합니다."
 
-#: ../dirdiff.py:364 ../dirdiff.py:373 ../vcview.py:213 ../vcview.py:241
-#, python-format
-msgid "[%s] Scanning %s"
-msgstr "[%s] 탐색 중 %s"
-
-#: ../dirdiff.py:406
-#, python-format
-msgid "'%s' hidden by '%s'"
-msgstr "'%s'이(가) '%s'에 의해 숨겨짐"
-
-#: ../dirdiff.py:412
-#, python-format
+#: ../bin/meld:241
+#, c-format
 msgid ""
-"You are running a case insensitive comparison on a case sensitive "
-"filesystem. Some files are not visible:\n"
+"Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
-"대소문자를 구별하는 파일 시스템에서 대소문자를 무시하고 비교하고 있습니다. 일"
-"부 파일들은 볼 수 없습니다:\n"
-"%s"
 
-#: ../dirdiff.py:482
-#, python-format
-msgid "[%s] Done"
-msgstr "[%s] 완료"
-
-#: ../dirdiff.py:528
-#, python-format
-msgid ""
-"'%s' exists.\n"
-"Overwrite?"
-msgstr ""
-"'%s'이(가) 존재합니다.\n"
-"덮어 쓸까요?"
-
-#: ../dirdiff.py:535
-#, python-format
-msgid ""
-"Error copying '%s' to '%s'\n"
-"\n"
-"%s."
-msgstr ""
-"'%s'을(를) '%s'(으)로 복사 중 오류\n"
-"\n"
-"%s."
-
-#: ../dirdiff.py:553 ../vcview.py:405
-#, python-format
-msgid ""
-"'%s' is a directory.\n"
-"Remove recusively?"
-msgstr ""
-"'%s'은(는) 디렉토리입니다.\n"
-"하위디렉토리도 지울까요?"
-
-#: ../dirdiff.py:560 ../vcview.py:410
-#, python-format
-msgid ""
-"Error removing %s\n"
-"\n"
-"%s."
-msgstr ""
-"%s을(를) 지우는 중 오류\n"
-"\n"
-"%s."
-
-#: ../dirdiff.py:571
-#, python-format
-msgid "%i second"
-msgid_plural "%i seconds"
-msgstr[0] "%i 초"
-
-#: ../dirdiff.py:572
-#, python-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i 분"
-
-#: ../dirdiff.py:573
-#, python-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i 시간"
-
-#: ../dirdiff.py:574
-#, python-format
-msgid "%i day"
-msgid_plural "%i days"
-msgstr[0] "%i 일"
-
-#: ../dirdiff.py:575
-#, python-format
-msgid "%i week"
-msgid_plural "%i weeks"
-msgstr[0] "%i 주"
-
-#: ../dirdiff.py:576
-#, python-format
-msgid "%i month"
-msgid_plural "%i months"
-msgstr[0] "%i 달"
-
-#: ../dirdiff.py:577
-#, python-format
-msgid "%i year"
-msgid_plural "%i years"
-msgstr[0] "%i 년"
-
-#. Abbreviation for insert,overwrite so that it will fit in the status bar
-#: ../filediff.py:200
-msgid "INS,OVR"
-msgstr "삽입,수정"
-
-#. Abbreviation for line, column so that it will fit in the status bar
-#: ../filediff.py:202
-#, python-format
-msgid "Ln %i, Col %i"
-msgstr "줄 %i, 칸 %i"
-
-#: ../filediff.py:260
-#, python-format
-msgid ""
-"Regular expression '%s' changed the number of lines in the file. Comparison "
-"will be incorrect. See the user manual for more details."
-msgstr ""
-"정규식 '%s'이(가) 파일의 줄 수를 바꾸었습니다. 비교가 올바르지 않을 것입니"
-"다. 더 자세한 내용은 사용자 설명서를 참조하세요."
-
-#: ../filediff.py:508
-#, python-format
-msgid ""
-"Regular expression error\n"
-"'%s'"
-msgstr ""
-"정규식 오류\n"
-"'%s'"
-
-#: ../filediff.py:520
-#, python-format
-msgid "The regular expression '%s' was not found."
-msgstr "정규식 '%s'을(를) 찾을 수 없습니다."
-
-#: ../filediff.py:522
-#, python-format
-msgid "The text '%s' was not found."
-msgstr "텍스트 '%s'을(를) 찾을 수 없습니다."
-
-#: ../filediff.py:574
-#, python-format
-msgid "[%s] Set num panes"
-msgstr "[%s] 분할 수 설정"
-
-#: ../filediff.py:581
-#, python-format
-msgid "[%s] Opening files"
-msgstr "[%s] 파일 여는 중"
-
-#: ../filediff.py:598 ../filediff.py:612 ../filediff.py:628 ../filediff.py:635
-#, python-format
-msgid "Could not read from '%s'"
-msgstr "'%s'(으)로 부터 읽을 수 없습니다."
-
-#: ../filediff.py:599 ../filediff.py:636
-msgid "The error was:"
-msgstr "발생한 오류:"
-
-#: ../filediff.py:604
-#, python-format
-msgid "[%s] Reading files"
-msgstr "[%s] 파일 읽는 중"
-
-#: ../filediff.py:613
-msgid ""
-"It contains ascii nulls.\n"
-"Perhaps it is a binary file."
-msgstr ""
-"아스크 NULL 문자를 포함하고 있습니다.\n"
-"아마도 이진 파일인 것 같습니다."
-
-#: ../filediff.py:629
-#, python-format
-msgid "I tried encodings %s."
-msgstr "%s 인코딩으로 시도했습니다."
-
-#: ../filediff.py:658
-#, python-format
-msgid "[%s] Computing differences"
-msgstr "[%s] 차이점 계산 중"
-
-#: ../filediff.py:763
-#, python-format
-msgid ""
-"\"%s\" exists!\n"
-"Overwrite?"
-msgstr ""
-"\"%s\"이(가) 존재합니다!\n"
-"덮어 쓸까요?"
-
-#: ../filediff.py:776
-#, python-format
-msgid ""
-"Error writing to %s\n"
-"\n"
-"%s."
-msgstr ""
-"%s에 쓰는 중 오류\n"
-"\n"
-"%s."
-
-#: ../filediff.py:785
-#, python-format
-msgid "Choose a name for buffer %i."
-msgstr "버퍼 %i의 이름을 선택하세요."
-
-#: ../filediff.py:798
-#, python-format
-msgid ""
-"This file '%s' contains a mixture of line endings.\n"
-"\n"
-"Which format would you like to use?"
-msgstr ""
-"파일 '%s'은(는) 혼합된 줄 끝을 갖고 있습니다.\n"
-"\n"
-"어느 형식을 사용하시겠습니까?"
-
-#: ../filediff.py:814
-#, python-format
-msgid ""
-"'%s' contains characters not encodable with '%s'\n"
-"Would you like to save as UTF-8?"
-msgstr ""
-"'%s'은(는) '%s'(으)로 인코딩할 수 없는 문자를 포함하고 있습니다\n"
-"UTF-8로 저장하시겠습니까?"
-
-#. save as
-#: ../filediff.py:865
-msgid "Save patch as..."
-msgstr "패치를 다른 이름으로 저장..."
-
-#: ../filediff.py:919
-#, python-format
-msgid ""
-"Reloading will discard changes in:\n"
-"%s\n"
-"\n"
-"You cannot undo this operation."
-msgstr ""
-"새로 고치면 다음의 바뀐 내용을 버리게 됩니다:\n"
-"%s\n"
-"\n"
-"이 작업은 취소할 수 없습니다."
-
-#: ../glade2/dirdiff.glade.h:1
-msgid "Case"
-msgstr "대소문자"
-
-#: ../glade2/dirdiff.glade.h:2
-msgid "Compare"
-msgstr "비교"
-
-#: ../glade2/dirdiff.glade.h:3 ../glade2/vcview.glade.h:6
-msgid "Compare selected"
-msgstr "선택된 것 비교"
-
-#: ../glade2/dirdiff.glade.h:4
-msgid "Copy To Left"
-msgstr "왼쪽으로 복사"
-
-#: ../glade2/dirdiff.glade.h:5
-msgid "Copy To Right"
-msgstr "오른쪽으로 복사"
-
-#: ../glade2/dirdiff.glade.h:6
-msgid "Delete selected"
-msgstr "선택된 것 지우기"
-
-#: ../glade2/dirdiff.glade.h:7 ../glade2/filediff.glade.h:7
-msgid "Edit"
-msgstr "편집"
-
-#: ../glade2/dirdiff.glade.h:8
-msgid "Hide selected"
-msgstr "선택된 것 숨김"
-
-#: ../glade2/dirdiff.glade.h:9
-msgid "Hide..."
-msgstr "숨김..."
-
-#: ../glade2/dirdiff.glade.h:10
-msgid "Ignore case of entries"
-msgstr "항목의 대소문자 무시"
-
-#: ../glade2/dirdiff.glade.h:11
-msgid "Left"
-msgstr "왼쪽"
-
-#: ../glade2/dirdiff.glade.h:12
-msgid "Modified"
-msgstr "고침"
-
-#: ../glade2/dirdiff.glade.h:13
-msgid "New"
-msgstr "새로"
-
-#: ../glade2/dirdiff.glade.h:14
-msgid "Right"
-msgstr "오른쪽"
-
-#: ../glade2/dirdiff.glade.h:15
-msgid "Same"
-msgstr "같음"
-
-#: ../glade2/dirdiff.glade.h:16
-msgid "Show identical"
-msgstr "동일한 것 표시"
-
-#: ../glade2/dirdiff.glade.h:17 ../glade2/vcview.glade.h:20
-msgid "Show modified"
-msgstr "고친 것 표시"
-
-#: ../glade2/dirdiff.glade.h:18
-msgid "Show new"
-msgstr "새로운 것 표시"
-
-#: ../glade2/dirdiff.glade.h:19 ../glade2/meldapp.glade.h:89
-#: ../glade2/vcview.glade.h:28
-msgid "_Compare"
-msgstr "비교(_C)"
-
-#: ../glade2/dirdiff.glade.h:20
-msgid "_Delete Selected"
-msgstr "선택된 것 지우기(_D)"
-
-#: ../glade2/filediff.glade.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
-"Which ones would you like to save?</span>"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">일부 파일(들)을 고쳤습니다.\n"
-"어떤 것(들)을 저장할까요?</span>"
-
-#: ../glade2/filediff.glade.h:3
-msgid "Copy All To _Left"
-msgstr "모두 왼쪽으로 복사(_L)"
-
-#: ../glade2/filediff.glade.h:4
-msgid "Copy All To _Right"
-msgstr "모두 오른쪽으로 복사(_R)"
-
-#: ../glade2/filediff.glade.h:5
-msgid "Copy to Clipboard"
-msgstr "클립보드로 복사"
-
-#: ../glade2/filediff.glade.h:6
-msgid "Create Patch"
-msgstr "패치 만들기"
-
-#: ../glade2/filediff.glade.h:8
-msgid "Find"
-msgstr "찾기"
-
-#: ../glade2/filediff.glade.h:9
-msgid "Match _entire word only"
-msgstr "단어 전체가 일치(_E)"
-
-#: ../glade2/filediff.glade.h:10
-msgid "Regular e_xpression"
-msgstr "정규식(_X)"
-
-#: ../glade2/filediff.glade.h:11
-msgid "Save modified files?"
-msgstr "고친 파일(들)을 저장할까요?"
-
-#: ../glade2/filediff.glade.h:12
-msgid "Search for:"
-msgstr "찾을 내용:"
-
-#: ../glade2/filediff.glade.h:13
-msgid "_Match case"
-msgstr "대소문자 일치(_M)"
-
-#: ../glade2/filediff.glade.h:14
-msgid "_Wrap around"
-msgstr "끝에가면 처음부터 시작(_W)"
-
-#: ../glade2/meldapp.glade.h:1
-msgid "(gnome-default-editor)"
-msgstr "(gnome-default-editor)"
-
-#: ../glade2/meldapp.glade.h:2
-msgid "<b>Drawing Style</b>"
-msgstr "<b>그리기 스타일</b>"
-
-#: ../glade2/meldapp.glade.h:3
-msgid "<b>Edit Menu</b>"
-msgstr "<b>편집 메뉴</b>"
-
-#: ../glade2/meldapp.glade.h:4
-msgid "<b>Font</b>"
-msgstr "<b>글꼴</b>"
-
-#: ../glade2/meldapp.glade.h:5
-msgid "<b>Global options</b>"
-msgstr "<b>전역 선택사항</b>"
-
-#: ../glade2/meldapp.glade.h:6
-msgid "<b>Loading</b>"
-msgstr "<b>불러오는 중</b>"
-
-#: ../glade2/meldapp.glade.h:7
-msgid "<b>Misc</b>"
-msgstr "<b>기타</b>"
-
-#: ../glade2/meldapp.glade.h:8
-msgid "<b>Saving</b>"
-msgstr "<b>저장 중</b>"
-
-#: ../glade2/meldapp.glade.h:9
-msgid "<b>Toolbar Appearance</b>"
-msgstr "<b>도구모음 모양</b>"
-
-#: ../glade2/meldapp.glade.h:10
-msgid "<b>Update Options</b>"
-msgstr "<b>갱신 선택사항</b>"
-
-#: ../glade2/meldapp.glade.h:11
-msgid "<b>Whitespace</b>"
-msgstr "<b>공백</b>"
-
-#: ../glade2/meldapp.glade.h:12
-msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-
-#: ../glade2/meldapp.glade.h:13
-msgid "<span weight=\"bold\" size=\"x-large\">Compare</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">비교</span>"
-
-#: ../glade2/meldapp.glade.h:14
-msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">표시</span>"
-
-#: ../glade2/meldapp.glade.h:15
-msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">편집기</span>"
-
-#: ../glade2/meldapp.glade.h:16
-msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">인코딩</span>"
-
-#: ../glade2/meldapp.glade.h:17
-msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">파일 필터</span>"
-
-#: ../glade2/meldapp.glade.h:18
-msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">텍스트 필터</span>"
-
-#: ../glade2/meldapp.glade.h:19
-msgid "Automatically supply missing newline at end of file"
-msgstr "파일 끝에 빠진 개행문자를 자동으로 추가"
-
-#: ../glade2/meldapp.glade.h:20
-msgid "CVS"
-msgstr "CVS"
-
-#: ../glade2/meldapp.glade.h:21
-msgid "CVS Directory"
-msgstr "CVS 디렉토리"
-
-#: ../glade2/meldapp.glade.h:22
-msgid "CVS binary"
-msgstr "CVS 바이너리"
-
-#: ../glade2/meldapp.glade.h:23
-msgid "Choose Files"
-msgstr "파일 선택"
-
-#: ../glade2/meldapp.glade.h:24
-msgid ""
-"Choose how the central bar of the diff viewer is drawn. You may wish to "
-"choose a simpler mode if you find scrolling is slow."
-msgstr ""
-"차이 보기의 중앙 막대를 어떻게 그릴지 선택하십시오. 스크롤링이 느리다고 생각"
-"되면 더 간단한 모드를 선택할 수 있습니다."
-
-#: ../glade2/meldapp.glade.h:25
-msgid "Copyright (C) 2002-2006 Stephen Kennedy"
-msgstr "Copyright (C) 2002-2006 Stephen Kennedy"
-
-#: ../glade2/meldapp.glade.h:26
-msgid "Create missing directories (-d)"
-msgstr "빠진 디렉토리 만들기 (-d)"
-
-#: ../glade2/meldapp.glade.h:27
-msgid "Curved: Filled Curves"
-msgstr "곡선 : 채워진 곡선"
-
-#: ../glade2/meldapp.glade.h:28
-msgid "Custom command"
-msgstr "커스텀 명령"
-
-#: ../glade2/meldapp.glade.h:29
-msgid "Directory"
-msgstr "디렉토리"
-
-#: ../glade2/meldapp.glade.h:30
-msgid "Display"
-msgstr "표시"
-
-#: ../glade2/meldapp.glade.h:31
-msgid "Edit files with:"
-msgstr "다음을 이용하여 파일 편집:"
-
-#: ../glade2/meldapp.glade.h:32
-msgid "Editor"
-msgstr "편집기"
-
-#: ../glade2/meldapp.glade.h:33
-msgid "Encoding"
-msgstr "인코딩"
-
-#: ../glade2/meldapp.glade.h:34
-msgid "File Filters"
-msgstr "파일 필터"
-
-#: ../glade2/meldapp.glade.h:35
-msgid "Gnome Default"
-msgstr "그놈 기본"
-
-#: ../glade2/meldapp.glade.h:36
-msgid "Gnome default editor"
-msgstr "그놈 기본 편집기"
-
-#: ../glade2/meldapp.glade.h:37
-msgid "Icons Only"
-msgstr "아이콘만"
-
-#: ../glade2/meldapp.glade.h:38
-msgid "Ignore .cvsrc (-f)"
-msgstr ".cvsrc 무시 (-f)"
-
-#: ../glade2/meldapp.glade.h:39
-msgid "Ignore changes in amount of white space"
-msgstr "공백 문자의 양은 무시"
-
-#: ../glade2/meldapp.glade.h:40
-msgid ""
-"Ignore changes in case; consider upper and lower-case letters equivalent"
-msgstr ""
-"대소문자의 변화 무시: 대소문자는 동일한 것으로 간주"
-
-#: ../glade2/meldapp.glade.h:41
-msgid "Ignore changes that just insert or delete blank lines"
-msgstr "빈 줄을 더하거나 지운 것은 무시"
-
-#: ../glade2/meldapp.glade.h:42
-msgid "Ignore changes which insert or delete blank lines"
-msgstr "빈 줄을 더하거나 지운 것은 무시"
-
-#: ../glade2/meldapp.glade.h:43
-msgid "Ignore symbolic links"
-msgstr "심볼릭 링크 무시"
-
-#: ../glade2/meldapp.glade.h:44
-msgid "Internal editor"
-msgstr "내부 편집기"
-
-#: ../glade2/meldapp.glade.h:45
-msgid "Line Wrapping "
-msgstr "자동 줄넘김 "
-
-#: ../glade2/meldapp.glade.h:46
-msgid "Locate CVS binary : Meld"
-msgstr "CVS 바이너리 위치 : Meld"
-
-#: ../glade2/meldapp.glade.h:47
-msgid "Mailing _List"
-msgstr "메일링 리스트(_L)"
-
-#: ../glade2/meldapp.glade.h:48
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
 msgid "Meld"
 msgstr "Meld"
 
-#: ../glade2/meldapp.glade.h:49
-msgid "Mine"
-msgstr "작업본"
+#: ../data/meld.desktop.in.h:2
+#, fuzzy
+msgid "Diff Viewer"
+msgstr "Meld 차이 보기"
 
-#: ../glade2/meldapp.glade.h:50
-msgid "My Directory"
-msgstr "작업본 디렉토리"
+#: ../data/meld.desktop.in.h:3
+msgid "Meld Diff Viewer"
+msgstr "Meld 차이 보기"
 
-#: ../glade2/meldapp.glade.h:51
-msgid "My File"
-msgstr "작업본 파일"
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
+#, fuzzy
+msgid "Compare and merge your files"
+msgstr "비교해서 병합합니다."
 
-#: ../glade2/meldapp.glade.h:52
-msgid "Original"
-msgstr "원본"
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:53
-msgid "Original Directory"
-msgstr "원본 디렉토리"
+#: ../data/meld.appdata.xml.in.h:3
+msgid ""
+"Meld is a visual diff and merge tool targeted at developers. Meld helps you "
+"compare files, directories, and version controlled projects. It provides "
+"two- and three-way comparison of both files and directories, and supports "
+"many version control systems including Git, Mercurial, Bazaar and Subversion."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:54
-msgid "Original File"
-msgstr "원본 파일"
+#: ../data/meld.appdata.xml.in.h:4
+msgid ""
+"Meld helps you review code changes, understand patches, and makes enormous "
+"merge conflicts slightly less painful."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:55
-msgid "Other"
-msgstr "기타"
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:56
-msgid "Other Directory"
-msgstr "기타 디렉토리"
+#: ../data/mime/meld.xml.in.h:1
+msgid "Meld comparison description"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:57
-msgid "Other File"
-msgstr "기타 파일"
+#: ../data/org.gnome.meld.gschema.xml.h:1
+msgid "Default window width"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:58
-msgid "Preferences : Meld"
-msgstr "기본 설정 : Meld"
+#: ../data/org.gnome.meld.gschema.xml.h:2
+msgid "Default window height"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:59
-msgid "Prune empty directories (-P)"
-msgstr "빈 디렉토리 가지치기 (-P)"
+#: ../data/org.gnome.meld.gschema.xml.h:3
+msgid "Default window maximised state"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:60
-msgid "Quiet mode (-q)"
-msgstr "조용한 모드 (-q)"
+#: ../data/org.gnome.meld.gschema.xml.h:4
+msgid "Default window fullscreen state"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:61
-msgid "Refresh"
-msgstr "새로 고침"
+#: ../data/org.gnome.meld.gschema.xml.h:5
+#, fuzzy
+msgid "Show toolbar"
+msgstr "동일한 파일 표시"
 
-#: ../glade2/meldapp.glade.h:62
-msgid "Reload"
-msgstr "다시 읽기"
+#: ../data/org.gnome.meld.gschema.xml.h:6
+msgid "If true, the window toolbar is visible."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:63
-msgid "Report _Bug"
-msgstr "버그 보고(_B)"
+#: ../data/org.gnome.meld.gschema.xml.h:7
+#, fuzzy
+msgid "Show statusbar"
+msgstr "상태"
 
-#: ../glade2/meldapp.glade.h:64
-msgid "Save _As"
-msgstr "다른 이름으로 저장(_A)"
+#: ../data/org.gnome.meld.gschema.xml.h:8
+msgid "If true, the window statusbar is visible."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:65
-msgid "Save in UTF-8 encoding"
-msgstr "파일을 UTF-8 인코딩으로 저장"
+#: ../data/org.gnome.meld.gschema.xml.h:9
+msgid "Additional automatically detected text encodings"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:66
-msgid "Save in the files original encoding"
-msgstr "파일을 원래 인코딩으로 저장"
+#: ../data/org.gnome.meld.gschema.xml.h:10
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:67
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Width of an indentation step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "The number of spaces to use for a single indent step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:13
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:14
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Show line numbers"
 msgstr "줄 번호 표시"
 
-#: ../glade2/meldapp.glade.h:68
-msgid "Simple: Lines only"
-msgstr "단순 : 선으로만"
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:69
-msgid "Solid: Filled Quadilaterals"
-msgstr "채움 : 채워진 다각형"
+#: ../data/org.gnome.meld.gschema.xml.h:17
+msgid "Highlight syntax"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:70
-msgid "Tab width"
-msgstr "탭 너비"
+#: ../data/org.gnome.meld.gschema.xml.h:18
+msgid ""
+"Whether to highlight syntax in comparisons. Because of Meld's own color "
+"highlighting, this is off by default."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:71
-msgid "Text Beside Icons"
-msgstr "아이콘 옆에 글자"
-
-#: ../glade2/meldapp.glade.h:72
-msgid "Text Filters"
-msgstr "텍스트 필터"
-
-#: ../glade2/meldapp.glade.h:73
-msgid "Text Only"
-msgstr "글자만"
-
-#: ../glade2/meldapp.glade.h:74
-msgid "Text Under Icons"
-msgstr "아이콘 아래에 글자"
-
-#: ../glade2/meldapp.glade.h:75
-msgid "Three way directory"
-msgstr "디렉토리 3개"
-
-#: ../glade2/meldapp.glade.h:76
-msgid "Three way file"
-msgstr "파일 3개"
-
-#: ../glade2/meldapp.glade.h:77
-msgid "Two way directory"
-msgstr "디렉토리 2개"
-
-#: ../glade2/meldapp.glade.h:78
-msgid "Two way file"
-msgstr "파일 2개"
-
-#: ../glade2/meldapp.glade.h:79
-msgid "Use Compression (-z)"
-msgstr "압축 사용 (-z)"
-
-#: ../glade2/meldapp.glade.h:80
-msgid "Use GNOME monospace font"
-msgstr "GNOME 고정폭 글꼴 사용"
-
-#: ../glade2/meldapp.glade.h:81
-msgid "Use custom font"
-msgstr "사용자가 지정한 글꼴 사용"
-
-#: ../glade2/meldapp.glade.h:82
-msgid "Use syntax highlighting"
+#: ../data/org.gnome.meld.gschema.xml.h:19
+#, fuzzy
+msgid "Color scheme to use for syntax highlighting"
 msgstr "문법 강조 사용"
 
-#: ../glade2/meldapp.glade.h:83
-msgid "Version control view"
+#: ../data/org.gnome.meld.gschema.xml.h:20
+msgid "Used by GtkSourceView to determine colors for syntax highlighting"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:21
+msgid "Displayed whitespace"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:22
+msgid ""
+"Selector for individual whitespace character types to be shown. Possible "
+"values are 'space', 'tab', 'newline' and 'nbsp'."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:23
+#, fuzzy
+msgid "Wrap mode"
+msgstr "끝에가면 처음부터 시작(_W)"
+
+#: ../data/org.gnome.meld.gschema.xml.h:24
+msgid ""
+"Lines in file comparisons will be wrapped according to this setting, either "
+"not at all ('none'), at any character ('char') or only at the end of words "
+"('word')."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:25
+msgid "Highlight current line"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:26
+msgid ""
+"If true, the line containing the cursor will be highlighted in file "
+"comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:27
+#, fuzzy
+msgid "Use the system default monospace font"
+msgstr "GNOME 고정폭 글꼴 사용"
+
+#: ../data/org.gnome.meld.gschema.xml.h:28
+msgid ""
+"If false, custom-font will be used instead of the system monospace font."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:29
+#, fuzzy
+msgid "Custom font"
+msgstr "사용자가 지정한 글꼴 사용"
+
+#: ../data/org.gnome.meld.gschema.xml.h:30
+msgid ""
+"The custom font to use, stored as a string and parsed as a Pango font "
+"description."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:31
+msgid "Ignore blank lines when comparing files"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:32
+msgid ""
+"If true, blank lines will be trimmed when highlighting changes between files."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:33
+#, fuzzy
+msgid "Use the system default editor"
+msgstr "그놈 기본 편집기"
+
+#: ../data/org.gnome.meld.gschema.xml.h:34
+msgid ""
+"If false, custom-editor-command will be used instead of the system editor "
+"when opening files externally."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:35
+msgid "The custom editor launch command"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:36
+msgid ""
+"The command used to launch a custom editor. Some limited templating is "
+"supported here; at the moment '{file}' and '{line}' are recognised tokens."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:37
+msgid "Columns to display"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:38
+msgid ""
+"List of column names in folder comparison and whether they should be "
+"displayed."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
+msgid "Ignore symbolic links"
+msgstr "심볼릭 링크 무시"
+
+#: ../data/org.gnome.meld.gschema.xml.h:40
+msgid ""
+"If true, folder comparisons do not follow symbolic links when traversing the "
+"folder tree."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:41
+msgid "Use shallow comparison"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:42
+msgid ""
+"If true, folder comparisons compare files based solely on size and mtime, "
+"considering files to be identical if their size and mtime match, and "
+"different otherwise."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:43
+msgid "File timestamp resolution"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:44
+msgid ""
+"When comparing based on mtime, this is the minimum difference in nanoseconds "
+"between two files before they're considered to have different mtimes. This "
+"is useful when comparing files between filesystems with different timestamp "
+"resolution."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:46
+msgid ""
+"If true, folder comparisons that compare file contents also apply active "
+"text filters and the blank line trimming option, and ignore newline "
+"differences."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:47
+#, fuzzy
+msgid "File status filters"
+msgstr "파일 필터"
+
+#: ../data/org.gnome.meld.gschema.xml.h:48
+msgid "List of statuses used to filter visible files in folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:49
+msgid "Show the version control console output"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:50
+msgid ""
+"If true, a console output section will be shown in version control views, "
+"showing the commands run for version control operations."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:51
+#, fuzzy
+msgid "Version control pane position"
 msgstr "버전 컨트롤 보기"
 
-#: ../glade2/meldapp.glade.h:84
-msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-msgstr "불러올 때, 다음 코덱을 순서대로 시도합니다. (예. utf8, iso8859)"
+#: ../data/org.gnome.meld.gschema.xml.h:52
+msgid ""
+"This is the height of the main version control tree when the console pane is "
+"shown."
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:85
+#: ../data/org.gnome.meld.gschema.xml.h:53
+msgid "Present version comparisons as left-local/right-remote"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:54
+msgid ""
+"If true, version control comparisons will use a left-is-local, right-is-"
+"remote scheme to determine what order to present files in panes. Otherwise, "
+"a left-is-theirs, right-is-mine scheme is used."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:55
+msgid "Order for files in three-way version control merge comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:56
+msgid ""
+"Choices for file order are remote/merged/local and local/merged/remote. This "
+"preference only affects three-way comparisons launched from the version "
+"control view, so is used solely for merges/conflict resolution within Meld."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:57
+msgid "Show margin in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:58
+msgid ""
+"If true, a guide will be displayed to show what column the margin is at in "
+"the version control commit message editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:59
+msgid "Margin column in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:60
+msgid ""
+"The column at which to show the margin in the version control commit message "
+"editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:61
+msgid "Automatically hard-wrap commit messages"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:62
+msgid ""
+"If true, the version control commit message editor will hard-wrap (i.e., "
+"insert line breaks) at the commit margin before commit."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:63
+#, fuzzy
+msgid "Version control status filters"
+msgstr "버전 컨트롤 보기"
+
+#: ../data/org.gnome.meld.gschema.xml.h:64
+msgid ""
+"List of statuses used to filter visible files in version control comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:65
+#, fuzzy
+msgid "Filename-based filters"
+msgstr "파일 필터"
+
+#: ../data/org.gnome.meld.gschema.xml.h:66
+msgid ""
+"List of predefined filename-based filters that, if active, will remove "
+"matching files from a folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:67
+#, fuzzy
+msgid "Text-based filters"
+msgstr "텍스트 필터"
+
+#: ../data/org.gnome.meld.gschema.xml.h:68
+msgid ""
+"List of predefined text-based regex filters that, if active, will remove "
+"text from being used in a file comparison. The text will still be displayed, "
+"but won't contribute to the comparison itself."
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+msgid "Base color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+msgid "Dark color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/ui/application.ui.h:1
+msgid "About Meld"
+msgstr ""
+
+#: ../data/ui/application.ui.h:2
+#, fuzzy
+msgid ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
+msgstr "Copyright (C) 2002-2006 Stephen Kennedy"
+
+#: ../data/ui/application.ui.h:4
+msgid "Website"
+msgstr ""
+
+#: ../data/ui/application.ui.h:5
+msgid "translator-credits"
+msgstr ""
+
+#: ../data/ui/application.ui.h:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "기본 설정 : Meld"
+
+#: ../data/ui/application.ui.h:7
+msgid "_Help"
+msgstr ""
+
+#: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/application.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
+msgid "_Compare"
+msgstr "비교(_C)"
+
+#: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
+#, fuzzy
+msgid "Compare selected files"
+msgstr "선택된 것 비교"
+
+#: ../data/ui/dirdiff.ui.h:3
+#, fuzzy
+msgid "Copy to _Left"
+msgstr "왼쪽으로 복사"
+
+#: ../data/ui/dirdiff.ui.h:4
+#, fuzzy
+msgid "Copy to left"
+msgstr "왼쪽 복사"
+
+#: ../data/ui/dirdiff.ui.h:5
+#, fuzzy
+msgid "Copy to _Right"
+msgstr "오른쪽으로 복사"
+
+#: ../data/ui/dirdiff.ui.h:6
+#, fuzzy
+msgid "Copy to right"
+msgstr "오른쪽 복사"
+
+#: ../data/ui/dirdiff.ui.h:7
+msgid "Delete selected"
+msgstr "선택된 것 지우기"
+
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#, fuzzy
+msgid "Hide"
+msgstr "%s 숨김"
+
+#: ../data/ui/dirdiff.ui.h:9
+msgid "Hide selected"
+msgstr "선택된 것 숨김"
+
+#: ../data/ui/dirdiff.ui.h:10
+msgid "Ignore Filename Case"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:11
+msgid ""
+"Consider differently-cased filenames that are otherwise-identical to be the "
+"same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:12
+msgid "Same"
+msgstr "같음"
+
+#: ../data/ui/dirdiff.ui.h:13
+msgid "Show identical"
+msgstr "동일한 것 표시"
+
+#: ../data/ui/dirdiff.ui.h:14
+msgid "New"
+msgstr "새로"
+
+#: ../data/ui/dirdiff.ui.h:15
+msgid "Show new"
+msgstr "새로운 것 표시"
+
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
+msgid "Modified"
+msgstr "고침"
+
+#: ../data/ui/dirdiff.ui.h:17
+msgid "Show modified"
+msgstr "고친 것 표시"
+
+#: ../data/ui/dirdiff.ui.h:18
+#, fuzzy
+msgid "Filters"
+msgstr "파일 필터"
+
+#: ../data/ui/dirdiff.ui.h:19
+#, fuzzy
+msgid "Set active filters"
+msgstr "파일 필터"
+
+#: ../data/ui/EditableList.ui.h:1
+#, fuzzy
+msgid "Editable List"
+msgstr "다음을 이용하여 파일 편집:"
+
+#: ../data/ui/EditableList.ui.h:2
+msgid "Active"
+msgstr "활성화"
+
+#: ../data/ui/EditableList.ui.h:3
+msgid "Column Name"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
+msgid "_Add"
+msgstr "더하기(_A)"
+
+#: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+#: ../meld/vcview.py:644
+msgid "_Remove"
+msgstr "지우기(_R)"
+
+#: ../data/ui/EditableList.ui.h:6
+msgid "Move item up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:7
+msgid "Move _Up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:8
+msgid "Move item down"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:9
+#, fuzzy
+msgid "Move _Down"
+msgstr "아래로(_D)"
+
+#. Create icon and filename CellRenderer
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
+msgid "Name"
+msgstr "이름"
+
+#: ../data/ui/EditableList.ui.h:11
+msgid "Pattern"
+msgstr "패턴"
+
+#: ../data/ui/EditableList.ui.h:12
+msgid "Add new filter"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:13
+msgid "Remove selected filter"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:1
+#, fuzzy
+msgid "Format as Patch..."
+msgstr "패치 만들기"
+
+#: ../data/ui/filediff.ui.h:2
+msgid "Create a patch using differences between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:3
+#, fuzzy
+msgid "Save A_ll"
+msgstr "다른 이름으로 저장(_A)"
+
+#: ../data/ui/filediff.ui.h:4
+msgid "Save all files in the current comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:5
+msgid "Revert files to their saved versions"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:6
+msgid "Add Synchronization Point"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:7
+msgid "Add a synchronization point for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:8
+msgid "Clear Synchronization Points"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:9
+msgid "Clear sychronization points for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:10
+#, fuzzy
+msgid "Previous Conflict"
+msgstr "이전 로그"
+
+#: ../data/ui/filediff.ui.h:11
+msgid "Go to the previous conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:12
+msgid "Next Conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:13
+msgid "Go to the next conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:14
+msgid "Push to Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:15
+msgid "Push current change to the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:16
+#, fuzzy
+msgid "Push to Right"
+msgstr "오른쪽으로 복사"
+
+#: ../data/ui/filediff.ui.h:17
+msgid "Push current change to the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:18
+msgid "Pull from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:19
+msgid "Pull change from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:20
+#, fuzzy
+msgid "Pull from Right"
+msgstr "모두 오른쪽으로 복사(_R)"
+
+#: ../data/ui/filediff.ui.h:21
+msgid "Pull change from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:22
+#, fuzzy
+msgid "Copy Above Left"
+msgstr "왼쪽으로 복사"
+
+#: ../data/ui/filediff.ui.h:23
+msgid "Copy change above the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:24
+#, fuzzy
+msgid "Copy Below Left"
+msgstr "왼쪽으로 복사"
+
+#: ../data/ui/filediff.ui.h:25
+msgid "Copy change below the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:26
+#, fuzzy
+msgid "Copy Above Right"
+msgstr "오른쪽으로 복사"
+
+#: ../data/ui/filediff.ui.h:27
+msgid "Copy change above the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:28
+#, fuzzy
+msgid "Copy Below Right"
+msgstr "오른쪽으로 복사"
+
+#: ../data/ui/filediff.ui.h:29
+msgid "Copy change below the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:30
+#, fuzzy
+msgid "Delete"
+msgstr "로컬에서 지우기"
+
+#: ../data/ui/filediff.ui.h:31
+#, fuzzy
+msgid "Delete change"
+msgstr "로컬에서 지우기"
+
+#: ../data/ui/filediff.ui.h:32
+#, fuzzy
+msgid "Merge All from Left"
+msgstr "모두 왼쪽으로 복사(_L)"
+
+#: ../data/ui/filediff.ui.h:33
+msgid "Merge all non-conflicting changes from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:34
+#, fuzzy
+msgid "Merge All from Right"
+msgstr "모두 오른쪽으로 복사(_R)"
+
+#: ../data/ui/filediff.ui.h:35
+msgid "Merge all non-conflicting changes from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:36
+msgid "Merge All"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:37
+msgid "Merge all non-conflicting changes from left and right panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:38
+#, fuzzy
+msgid "Previous Pane"
+msgstr "이전 로그"
+
+#: ../data/ui/filediff.ui.h:39
+msgid "Move keyboard focus to the previous document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:40
+msgid "Next Pane"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:41
+msgid "Move keyboard focus to the next document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:42
+msgid "Lock Scrolling"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:43
+msgid "Lock scrolling of all panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:44
+msgid "Save changes to documents before closing?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:45
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:46
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:48
+msgid "_Save"
+msgstr "저장(_S)"
+
+#: ../data/ui/filediff.ui.h:49
+msgid ""
+"This file can not be written to. You may click here to unlock this file and "
+"make changes anyway, but these changes must be saved to a new file."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:50
+#, fuzzy
+msgid "File 3"
+msgstr "작업본 파일"
+
+#: ../data/ui/filediff.ui.h:51
+#, fuzzy
+msgid "File 2"
+msgstr "작업본 파일"
+
+#: ../data/ui/filediff.ui.h:52
+#, fuzzy
+msgid "File 1"
+msgstr "작업본 파일"
+
+#: ../data/ui/filediff.ui.h:53
+msgid "Revert unsaved changes to documents?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:54
+msgid "Changes made to the following documents will be permanently lost:\n"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+msgid "_Replace"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:2
+msgid "Replace _All"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:3
+#, fuzzy
+msgid "_Previous"
+msgstr "이전 로그"
+
+#: ../data/ui/findbar.ui.h:4
+msgid "_Next"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:5
+#, fuzzy
+msgid "Find:"
+msgstr "찾기"
+
+#: ../data/ui/findbar.ui.h:6
+msgid "Replace _with:"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:7
+msgid "_Match case"
+msgstr "대소문자 일치(_M)"
+
+#: ../data/ui/findbar.ui.h:8
+msgid "Who_le word"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:9
+msgid "Regular e_xpression"
+msgstr "정규식(_X)"
+
+#: ../data/ui/findbar.ui.h:10
+msgid "Wrapped"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:1
+#, fuzzy
+msgid "Format as Patch"
+msgstr "패치 만들기"
+
+#: ../data/ui/patch-dialog.ui.h:2
+msgid "Copy to Clipboard"
+msgstr "클립보드로 복사"
+
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
+#, fuzzy
+msgid "Save Patch"
+msgstr "패치 만들기"
+
+#: ../data/ui/patch-dialog.ui.h:4
+#, fuzzy
+msgid "Use differences between:"
+msgstr "차이점이 없습니다."
+
+#: ../data/ui/patch-dialog.ui.h:5
+msgid "Left and middle panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:6
+msgid "Middle and right panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:7
+msgid "_Reverse patch direction"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:1
+#, fuzzy
+msgid "Meld Preferences"
+msgstr "기본 설정 : Meld"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:4
+#, fuzzy
+msgid "_Editor font:"
+msgstr "편집기"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Display"
+msgstr "표시"
+
+#: ../data/ui/preferences.ui.h:6
+#, fuzzy
+msgid "_Tab width:"
+msgstr "탭 너비"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "_Insert spaces instead of tabs"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Enable text _wrapping"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Do not _split words over two lines"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Highlight _current line"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:11
+#, fuzzy
+msgid "Show _line numbers"
+msgstr "줄 번호 표시"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Show w_hitespace"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:13
+#, fuzzy
+msgid "Use s_yntax highlighting"
+msgstr "문법 강조 사용"
+
+#: ../data/ui/preferences.ui.h:14
+#, fuzzy
+msgid "Syntax highlighting color scheme:"
+msgstr "문법 강조 사용"
+
+#: ../data/ui/preferences.ui.h:15
+#, fuzzy
+msgid "External Editor"
+msgstr "내부 편집기"
+
+#: ../data/ui/preferences.ui.h:16
+#, fuzzy
+msgid "Use _default system editor"
+msgstr "그놈 기본 편집기"
+
+#: ../data/ui/preferences.ui.h:17
+#, fuzzy
+msgid "Edito_r command:"
+msgstr "커스텀 명령"
+
+#: ../data/ui/preferences.ui.h:18
+msgid "Editor"
+msgstr "편집기"
+
+#: ../data/ui/preferences.ui.h:19
+#, fuzzy
+msgid "Shallow Comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/preferences.ui.h:20
+msgid "C_ompare files based only on size and timestamp"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:21
+msgid "_Timestamp resolution:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
+#, fuzzy
+msgid "Symbolic Links"
+msgstr "심볼릭 링크 무시"
+
+#: ../data/ui/preferences.ui.h:26
+msgid "Visible Columns"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:27
+#, fuzzy
+msgid "Folder Comparisons"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/preferences.ui.h:28
+#, fuzzy
+msgid "Version Comparisons"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/preferences.ui.h:29
+msgid "_Order when comparing file revisions:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:30
+msgid "Order when _merging files:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:31
+#, fuzzy
+msgid "Commit Messages"
+msgstr "로그 메시지"
+
+#: ../data/ui/preferences.ui.h:32
+msgid "Show _right margin at:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:33
+msgid "Automatically _break lines at right margin on commit"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:34
+#, fuzzy
+msgid "Version Control"
+msgstr "버전 컨트롤 보기"
+
+#: ../data/ui/preferences.ui.h:35
+#, fuzzy
+msgid "Filename filters"
+msgstr "파일 필터"
+
+#: ../data/ui/preferences.ui.h:36
 msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
@@ -764,7 +1085,24 @@ msgstr ""
 "디렉토리를 비교할 때, 파일과 디렉토리를 이름에 따라 제외할 수 있습니다. 각 패"
 "턴은 쉘 형식의 와일드 카드이며 공백으로 구분합니다."
 
-#: ../glade2/meldapp.glade.h:86
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
+msgid "File Filters"
+msgstr "파일 필터"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:40
+#, fuzzy
+msgid "Text filters"
+msgstr "텍스트 필터"
+
+#: ../data/ui/preferences.ui.h:41
 msgid ""
 "When performing file comparisons, you may ignore certain types of changes. "
 "Each pattern here is a python regular expression which replaces matching "
@@ -777,405 +1115,1913 @@ msgstr ""
 "규식이 그룹을 포함하고 있다면, 그 그룹만 바꿉니다. 더 자세한 내용은 사용자 설"
 "명서를 참조하세요."
 
-#: ../glade2/meldapp.glade.h:87
-msgid "Whitespace is significant"
-msgstr "공백은 유효함"
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
+msgid "Text Filters"
+msgstr "텍스트 필터"
 
-#: ../glade2/meldapp.glade.h:88
-msgid "_Character"
-msgstr "문자(_C)"
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:90
-msgid "_Contents"
-msgstr "내용(_C)"
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:91
-msgid "_Directory Comparison"
-msgstr "디렉토리 비교(_D)"
+#: ../data/ui/preferences.ui.h:45
+msgid "Remote, merge, local"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:92
-msgid "_Down"
-msgstr "아래로(_D)"
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:93
-msgid "_File Comparison"
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
 msgstr "파일 비교(_F)"
 
-#: ../glade2/meldapp.glade.h:94
-msgid "_Logo"
-msgstr "로고(_L)"
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "파일 비교(_F)"
 
-#: ../glade2/meldapp.glade.h:95
-msgid "_New..."
-msgstr "새로(_N)..."
+#: ../data/ui/shortcuts.ui.h:4
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr "Meld"
 
-#: ../glade2/meldapp.glade.h:96
-msgid "_None"
-msgstr "없음(_N)"
+#: ../data/ui/shortcuts.ui.h:5
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:97
-msgid "_Save"
-msgstr "저장(_S)"
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "파일 비교(_F)"
 
-#: ../glade2/meldapp.glade.h:98
-msgid "_Three Way Compare"
-msgstr "3항 비교(_T)"
+#: ../data/ui/shortcuts.ui.h:7
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:99
-msgid "_Up"
-msgstr "위로(_U)"
+#: ../data/ui/shortcuts.ui.h:8
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:100
-msgid "_Version Control Browser"
-msgstr "버전 컨트롤 탐색기(_V)"
+#: ../data/ui/shortcuts.ui.h:9
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr ""
 
-#: ../glade2/meldapp.glade.h:101
-msgid "_Word"
-msgstr "단어(_W)"
+#: ../data/ui/shortcuts.ui.h:10
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:1
-msgid "Add _Binary"
-msgstr "바이너리 더하기(_B)"
+#: ../data/ui/shortcuts.ui.h:11
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:2
-msgid "Add to VC"
-msgstr "VC에 더하기"
+#: ../data/ui/shortcuts.ui.h:12
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:3
-msgid "Commit"
-msgstr "커밋"
+#: ../data/ui/shortcuts.ui.h:13
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:4
-msgid "Commit Files"
-msgstr "파일(들) 커밋"
+#: ../data/ui/shortcuts.ui.h:14
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:5
-msgid "Compare Options"
-msgstr "비교 선택사항"
+#: ../data/ui/shortcuts.ui.h:15
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:7
-msgid "Date"
-msgstr "날짜"
+#: ../data/ui/shortcuts.ui.h:16
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:8
-msgid "Delete locally"
-msgstr "로컬에서 지우기"
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "편집"
 
-#: ../glade2/vcview.glade.h:9
-msgid "Flatten directories"
-msgstr "디렉토리 평면화"
+#: ../data/ui/shortcuts.ui.h:18
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:10
-msgid "Ignored"
-msgstr "무시함"
+#: ../data/ui/shortcuts.ui.h:19
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:11
-msgid "Local copy against other remote revision"
-msgstr "다른 원격 리비전에 대한 로컬 사본"
+#: ../data/ui/shortcuts.ui.h:20
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:12
-msgid "Local copy against same remote revision"
-msgstr "같은 원격 리비전에 대한 로컬 사본"
+#: ../data/ui/shortcuts.ui.h:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "왼쪽 복사"
 
-#: ../glade2/vcview.glade.h:13
-msgid "Log Message"
-msgstr "로그 메시지"
+#: ../data/ui/shortcuts.ui.h:22
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:14
-msgid "Non _VC"
-msgstr "비 VC(_V)"
+#: ../data/ui/shortcuts.ui.h:23
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "찾기"
 
-#: ../glade2/vcview.glade.h:15
-msgid "Previous Logs"
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "찾기"
+
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
 msgstr "이전 로그"
 
-#: ../glade2/vcview.glade.h:16
-msgid "Remove _Locally"
-msgstr "로컬에서 지우기(_L)"
+#: ../data/ui/shortcuts.ui.h:26
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:17
-msgid "Remove from VC"
-msgstr "VC에서 지우기"
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "파일 비교(_F)"
 
-#: ../glade2/vcview.glade.h:18
-msgid "Revert to original"
-msgstr "원본으로 되돌림"
+#: ../data/ui/shortcuts.ui.h:28
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:19
-msgid "Show ignored files"
-msgstr "무시된 파일 표시"
+#: ../data/ui/shortcuts.ui.h:29
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:21
-msgid "Show normal"
-msgstr "동일한 파일 표시"
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "파일을 원래 인코딩으로 저장"
 
-#: ../glade2/vcview.glade.h:22
-msgid "Show unversioned files"
-msgstr "관리되지 않는 파일 표시"
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "이전 로그"
 
-#: ../glade2/vcview.glade.h:23 ../vcview.py:173
-msgid "Tag"
-msgstr "태그"
+#: ../data/ui/shortcuts.ui.h:32
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:24
-msgid "Update"
-msgstr "갱신"
+#: ../data/ui/shortcuts.ui.h:33
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:25
-msgid "VC Log"
-msgstr "VC 로그"
+#: ../data/ui/shortcuts.ui.h:34
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:26
-msgid "_Add"
-msgstr "더하기(_A)"
+#: ../data/ui/shortcuts.ui.h:35
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:27
-msgid "_Commit"
-msgstr "커밋(_C)"
+#: ../data/ui/shortcuts.ui.h:36
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:29
-msgid "_Edit"
-msgstr "편집(_E)"
+#: ../data/ui/shortcuts.ui.h:37
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:30
-msgid "_Flatten"
-msgstr "평면화(_F)"
+#: ../data/ui/shortcuts.ui.h:38
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr ""
 
-#: ../glade2/vcview.glade.h:31
-msgid "_Modified"
-msgstr "고침(_M)"
+#: ../data/ui/shortcuts.ui.h:39
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr "오른쪽으로 복사"
 
-#: ../glade2/vcview.glade.h:32
-msgid "_Normal"
-msgstr "보통(_N)"
+#: ../data/ui/shortcuts.ui.h:40
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr "오른쪽으로 복사"
 
-#: ../glade2/vcview.glade.h:33
-msgid "_Remove"
-msgstr "지우기(_R)"
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "로컬에서 지우기"
 
-#: ../glade2/vcview.glade.h:34
+#: ../data/ui/shortcuts.ui.h:42
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to left"
+msgstr "왼쪽 복사"
+
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to right"
+msgstr "오른쪽 복사"
+
+#: ../data/ui/shortcuts.ui.h:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr "버전 컨트롤 보기"
+
+#: ../data/ui/shortcuts.ui.h:48
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr "버전 컨트롤 보기"
+
+#: ../data/ui/shortcuts.ui.h:49
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
+#, fuzzy
+msgid "New comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/tab-placeholder.ui.h:2
+#, fuzzy
+msgid "File comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/tab-placeholder.ui.h:3
+#, fuzzy
+msgid "Directory comparison"
+msgstr "디렉토리 비교(_D)"
+
+#: ../data/ui/tab-placeholder.ui.h:4
+msgid "Version control view"
+msgstr "버전 컨트롤 보기"
+
+#: ../data/ui/tab-placeholder.ui.h:5
+#, fuzzy
+msgid "_3-way comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/tab-placeholder.ui.h:6
+msgid "Select Third File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:7
+msgid "Select Second File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:8
+msgid "Select First File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:9
+msgid "Select First Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:10
+msgid "Select Second Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:11
+msgid "Select Third Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:12
+#, fuzzy
+msgid "Select A Version-Controlled Folder"
+msgstr "버전 컨트롤 탐색기(_V)"
+
+#: ../data/ui/tab-placeholder.ui.h:13
+#, fuzzy
+msgid "_Blank comparison"
+msgstr "파일 비교(_F)"
+
+#: ../data/ui/tab-placeholder.ui.h:14
+#, fuzzy
+msgid "C_ompare"
+msgstr "비교"
+
+#: ../data/ui/vcview.ui.h:3
+#, fuzzy
+msgid "Co_mmit..."
+msgstr "커밋"
+
+#: ../data/ui/vcview.ui.h:4
+msgid "Commit changes to version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:5
 msgid "_Update"
 msgstr "갱신(_U)"
 
-#: ../meld:60 ../meld:70 ../meld:80
-#, c-format
-msgid "Meld requires %s or higher."
-msgstr "Meld는 %s 이상 버전이 필요합니다."
-
-#: ../meld:81
-msgid ""
-"Due to incompatible API changes some functions may not operate as expected."
+#: ../data/ui/vcview.ui.h:6
+msgid "Update working copy from version control"
 msgstr ""
-"호환성 없는 API의 변화로 인해 몇가지 기능은 기대한 대로 동작하지 않을 수 있습"
-"니다."
 
-#: ../meld.desktop.in.h:1
-msgid "Compare and merge your files."
-msgstr "비교해서 병합합니다."
-
-#: ../meld.desktop.in.h:2
-msgid "Meld Diff Viewer"
-msgstr "Meld 차이 보기"
-
-#: ../meldapp.py:147
-msgid "label"
-msgstr "레이블"
-
-#: ../meldapp.py:148
-msgid "pattern"
-msgstr "패턴"
-
-#. file filters
-#. text filters
-#: ../meldapp.py:249 ../meldapp.py:254 ../vcview.py:153
-msgid "Name"
-msgstr "이름"
-
-#: ../meldapp.py:249 ../meldapp.py:254
-msgid "Active"
-msgstr "활성화"
-
-#: ../meldapp.py:249
-msgid "Pattern"
-msgstr "패턴"
-
-#: ../meldapp.py:254
-msgid "Regex"
-msgstr "정규식"
-
-#: ../meldapp.py:296
-msgid ""
-"Line numbers are only available if you have gnome-python-desktop installed."
+#: ../data/ui/vcview.ui.h:7
+msgid "_Push"
 msgstr ""
-"줄 번호는 gnome-python-desktop을 설치해야 사용할 수 있습니다."
 
-#: ../meldapp.py:300
-msgid ""
-"Syntax highlighting is only available if you have gnome-python-desktop "
-"installed."
+#: ../data/ui/vcview.ui.h:8
+msgid "Push local changes to remote"
 msgstr ""
-"문법 강조는 gnome-python-desktop을 설치해야 사용할 수 있습니다."
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:444
-msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-msgstr "백업\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+#: ../data/ui/vcview.ui.h:10
+#, fuzzy
+msgid "Add to version control"
+msgstr "버전 컨트롤 보기"
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:446
-msgid ""
-"Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory RCS\n"
+#: ../data/ui/vcview.ui.h:12
+msgid "Remove from version control"
 msgstr ""
-"버전 컨트롤\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory RCS\n"
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:448
-msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
-msgstr "이진 파일\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:450
-msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
-msgstr "미디어\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:452
-msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-msgstr "CVS 키워드\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:454
-msgid "C++ comment\t0\t//.*\n"
-msgstr "C++ 주석\t0\t//.*\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:456
-msgid "C comment\t0\t/\\*.*?\\*/\n"
-msgstr "C 주석\t0\t/\\*.*?\\*/\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:458
-msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
-msgstr "모든 공백문자\t0\t[ \\t\\r\\f\\v]*\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:460
-msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
-msgstr "앞 쪽의 공백문자\t0\t^[ \\t\\r\\f\\v]*\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meldapp.py:462
-msgid "Script comment\t0\t#.*"
-msgstr "스크립트 주석\t0\t#.*"
-
-#: ../meldapp.py:779
-msgid "Cannot compare a mixture of files and directories.\n"
-msgstr "파일과 디렉토리의 혼합은 비교할 수 없습니다.\n"
-
-#. ###############################################################################
-#.
-#. usage
-#.
-#. ###############################################################################
-#: ../meldapp.py:827
-#, python-format
-msgid ""
-"Meld %s\n"
-"Written by Stephen Kennedy <stevek@gnome.org>"
+#: ../data/ui/vcview.ui.h:13
+msgid "Mar_k as Resolved"
 msgstr ""
-"Meld %s\n"
-"개발자: Stephen Kennedy <stevek@gnome.org>"
 
-#: ../meldapp.py:856
-msgid "Set label to use instead of file name"
-msgstr "파일 이름 대신 사용할 레이블을 설정합니다"
+#: ../data/ui/vcview.ui.h:14
+msgid "Mark as resolved in version control"
+msgstr ""
 
-#: ../meldapp.py:857 ../meldapp.py:858 ../meldapp.py:859 ../meldapp.py:860
-msgid "Ignored for compatibility"
-msgstr "호환성을 위해 무시됩니다"
+#: ../data/ui/vcview.ui.h:15
+msgid "Re_vert"
+msgstr ""
 
-#: ../meldapp.py:886
-#, python-format
-msgid "Wrong number of arguments (Got %i)"
-msgstr "잘못된 인자의 개수(%i개를 받았습니다)"
+#: ../data/ui/vcview.ui.h:16
+#, fuzzy
+msgid "Revert working copy to original state"
+msgstr "원본으로 되돌림"
 
-#: ../melddoc.py:45
-msgid "untitled"
-msgstr "제목없음"
+#: ../data/ui/vcview.ui.h:17
+msgid "Delete from working copy"
+msgstr ""
 
-#. no common path. empty names get changed to "[None]"
-#: ../misc.py:118
-msgid "[None]"
-msgstr "[없음]"
+#: ../data/ui/vcview.ui.h:18
+msgid "Console"
+msgstr ""
 
-#: ../vcview.py:170
+#: ../data/ui/vcview.ui.h:19
+msgid "Show or hide the version control console output pane"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:20
+msgid "_Flatten"
+msgstr "평면화(_F)"
+
+#: ../data/ui/vcview.ui.h:21
+msgid "Flatten directories"
+msgstr "디렉토리 평면화"
+
+#: ../data/ui/vcview.ui.h:22
+msgid "_Modified"
+msgstr "고침(_M)"
+
+#: ../data/ui/vcview.ui.h:23
+#, fuzzy
+msgid "Show modified files"
+msgstr "고친 파일(들)을 저장할까요?"
+
+#: ../data/ui/vcview.ui.h:24
+msgid "_Normal"
+msgstr "보통(_N)"
+
+#: ../data/ui/vcview.ui.h:25
+#, fuzzy
+msgid "Show normal files"
+msgstr "무시된 파일 표시"
+
+#: ../data/ui/vcview.ui.h:26
+msgid "Un_versioned"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:27
+msgid "Show unversioned files"
+msgstr "관리되지 않는 파일 표시"
+
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
+msgid "Ignored"
+msgstr "무시함"
+
+#: ../data/ui/vcview.ui.h:29
+msgid "Show ignored files"
+msgstr "무시된 파일 표시"
+
+#: ../data/ui/vcview.ui.h:30
+msgid "Commit"
+msgstr "커밋"
+
+#: ../data/ui/vcview.ui.h:31
+msgid "Commit Files"
+msgstr "파일(들) 커밋"
+
+#: ../data/ui/vcview.ui.h:32
+msgid "Log Message"
+msgstr "로그 메시지"
+
+#: ../data/ui/vcview.ui.h:33
+#, fuzzy
+msgid "Previous logs:"
+msgstr "이전 로그"
+
+#: ../data/ui/vcview.ui.h:34
+#, fuzzy
+msgid "Co_mmit"
+msgstr "커밋"
+
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
 msgid "Location"
 msgstr "위치"
 
-#: ../vcview.py:171
+#: ../data/ui/vcview.ui.h:37
 msgid "Status"
 msgstr "상태"
 
-#: ../vcview.py:172
-msgid "Rev"
-msgstr "Rev"
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
+msgstr ""
 
-#: ../vcview.py:174
-msgid "Options"
-msgstr "선택사항"
+#: ../data/ui/vcview.ui.h:39
+msgid "Console output"
+msgstr ""
 
-#: ../vcview.py:257
+#: ../data/ui/vcview.ui.h:40
+msgid "Push local commits to remote?"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:41
+msgid "The commits to be pushed are determined by your version control system."
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:42
+#, fuzzy
+msgid "_Push commits"
+msgstr "커밋(_C)"
+
+#: ../meld/const.py:12
+msgid "UNIX (LF)"
+msgstr ""
+
+#: ../meld/const.py:13
+msgid "DOS/Windows (CR-LF)"
+msgstr ""
+
+#: ../meld/const.py:14
+msgid "Mac OS (CR)"
+msgstr ""
+
+#. Create file size CellRenderer
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+msgid "Size"
+msgstr ""
+
+#. Create date-time CellRenderer
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+msgid "Modification time"
+msgstr ""
+
+#. Create permissions CellRenderer
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+msgid "Permissions"
+msgstr ""
+
+#: ../meld/dirdiff.py:540
+#, python-format
+msgid "Hide %s"
+msgstr "%s 숨김"
+
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#, python-format
+msgid "[%s] Scanning %s"
+msgstr "[%s] 탐색 중 %s"
+
+#: ../meld/dirdiff.py:828
+#, python-format
+msgid "[%s] Done"
+msgstr "[%s] 완료"
+
+#: ../meld/dirdiff.py:836
+#, fuzzy
+msgid "Folders have no differences"
+msgstr "[%s] 차이점 추출 중"
+
+#: ../meld/dirdiff.py:838
+msgid "Contents of scanned files in folders are identical."
+msgstr ""
+
+#: ../meld/dirdiff.py:840
+msgid ""
+"Scanned files in folders appear identical, but contents have not been "
+"scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:843
+msgid "File filters are in use, so not all files have been scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:845
+msgid "Text filters are in use and may be masking content differences."
+msgstr ""
+
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+msgid "Hi_de"
+msgstr ""
+
+#: ../meld/dirdiff.py:873
+msgid "Multiple errors occurred while scanning this folder"
+msgstr ""
+
+#: ../meld/dirdiff.py:874
+msgid "Files with invalid encodings found"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:876
+msgid "Some files were in an incorrect encoding. The names are something like:"
+msgstr ""
+
+#: ../meld/dirdiff.py:878
+msgid "Files hidden by case insensitive comparison"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:880
+#, fuzzy
+msgid ""
+"You are running a case insensitive comparison on a case sensitive "
+"filesystem. The following files in this folder are hidden:"
+msgstr ""
+"대소문자를 구별하는 파일 시스템에서 대소문자를 무시하고 비교하고 있습니다. 일"
+"부 파일들은 볼 수 없습니다:\n"
+"%s"
+
+#: ../meld/dirdiff.py:891
+#, python-format
+msgid "'%s' hidden by '%s'"
+msgstr "'%s'이(가) '%s'에 의해 숨겨짐"
+
+#: ../meld/dirdiff.py:947
+#, python-format
+msgid "Replace folder “%s”?"
+msgstr ""
+
+#: ../meld/dirdiff.py:949
+#, python-format
+msgid ""
+"Another folder with the same name already exists in “%s”.\n"
+"If you replace the existing folder, all files in it will be lost."
+msgstr ""
+
+#: ../meld/dirdiff.py:962
+msgid "Error copying file"
+msgstr ""
+
+#: ../meld/dirdiff.py:963
+#, fuzzy, python-format
+msgid ""
+"Couldn't copy %s\n"
+"to %s.\n"
+"\n"
+"%s"
+msgstr ""
+"'%s'을(를) '%s'(으)로 복사 중 오류\n"
+"\n"
+"%s."
+
+#: ../meld/dirdiff.py:986
+#, fuzzy, python-format
+msgid "Error deleting %s"
+msgstr ""
+"%s을(를) 지우는 중 오류\n"
+"\n"
+"%s."
+
+#: ../meld/dirdiff.py:1499
+#, fuzzy
+msgid "No folder"
+msgstr "폴더"
+
+#. Abbreviations for insert and overwrite that fit in the status bar
+#: ../meld/filediff.py:335
+#, fuzzy
+msgid "INS"
+msgstr "삽입,수정"
+
+#: ../meld/filediff.py:335
+#, fuzzy
+msgid "OVR"
+msgstr "삽입,수정"
+
+#. Abbreviation for line, column so that it will fit in the status bar
+#: ../meld/filediff.py:337
+#, python-format
+msgid "Ln %i, Col %i"
+msgstr "줄 %i, 칸 %i"
+
+#: ../meld/filediff.py:762
+msgid "Comparison results will be inaccurate"
+msgstr ""
+
+#: ../meld/filediff.py:764
+msgid ""
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
+msgstr ""
+
+#: ../meld/filediff.py:820
+msgid "Mark conflict as resolved?"
+msgstr ""
+
+#: ../meld/filediff.py:822
+msgid ""
+"If the conflict was resolved successfully, you may mark it as resolved now."
+msgstr ""
+
+#: ../meld/filediff.py:824
+msgid "Cancel"
+msgstr ""
+
+#: ../meld/filediff.py:825
+msgid "Mark _Resolved"
+msgstr ""
+
+#: ../meld/filediff.py:1076
+#, python-format
+msgid "There was a problem opening the file “%s”."
+msgstr ""
+
+#: ../meld/filediff.py:1084
+#, python-format
+msgid "File %s appears to be a binary file."
+msgstr ""
+
+#: ../meld/filediff.py:1086
+msgid "Do you want to open the file using the default application?"
+msgstr ""
+
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
+#, python-format
+msgid "[%s] Computing differences"
+msgstr "[%s] 차이점 계산 중"
+
+#: ../meld/filediff.py:1166
+#, python-format
+msgid "File %s has changed on disk"
+msgstr ""
+
+#: ../meld/filediff.py:1167
+msgid "Do you want to reload the file?"
+msgstr ""
+
+#: ../meld/filediff.py:1169
+#, fuzzy
+msgid "_Reload"
+msgstr "다시 읽기"
+
+#: ../meld/filediff.py:1327
+#, fuzzy
+msgid "Files are identical"
+msgstr "동일한 것 표시"
+
+#: ../meld/filediff.py:1340
+msgid ""
+"Text filters are being used, and may be masking differences between files. "
+"Would you like to compare the unfiltered files?"
+msgstr ""
+
+#: ../meld/filediff.py:1345
+msgid "Files differ in line endings only"
+msgstr ""
+
+#: ../meld/filediff.py:1347
+#, python-format
+msgid ""
+"Files are identical except for differing line endings:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1367
+#, fuzzy
+msgid "Show without filters"
+msgstr "무시된 파일 표시"
+
+#: ../meld/filediff.py:1389
+msgid "Change highlighting incomplete"
+msgstr ""
+
+#: ../meld/filediff.py:1390
+msgid ""
+"Some changes were not highlighted because they were too large. You can force "
+"Meld to take longer to highlight larger changes, though this may be slow."
+msgstr ""
+
+#: ../meld/filediff.py:1398
+#, fuzzy
+msgid "Keep highlighting"
+msgstr "문법 강조 사용"
+
+#: ../meld/filediff.py:1400
+#, fuzzy
+msgid "_Keep highlighting"
+msgstr "문법 강조 사용"
+
+#: ../meld/filediff.py:1432
+#, python-format
+msgid "Replace file “%s”?"
+msgstr ""
+
+#: ../meld/filediff.py:1434
+#, python-format
+msgid ""
+"A file with this name already exists in “%s”.\n"
+"If you replace the existing file, its contents will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1451
+msgid "Save Left Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1453
+msgid "Save Middle Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr ""
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1474
+#, fuzzy
+msgid "Save Anyway"
+msgstr "다른 이름으로 저장(_A)"
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr ""
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#, fuzzy, python-format
+msgid "Could not save file %s."
+msgstr "'%s'(으)로 부터 읽을 수 없습니다."
+
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#, python-format
+msgid ""
+"Couldn't save file due to:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1879
+msgid "Live comparison updating disabled"
+msgstr ""
+
+#: ../meld/filediff.py:1880
+msgid ""
+"Live updating of comparisons is disabled when synchronization points are "
+"active. You can still manually refresh the comparison, and live updates will "
+"resume when synchronization points are cleared."
+msgstr ""
+
+#: ../meld/filemerge.py:37
+#, fuzzy, python-format
+msgid "[%s] Merging files"
+msgstr "[%s] 파일 여는 중"
+
+#: ../meld/gutterrendererchunk.py:210
+msgid "Copy _up"
+msgstr ""
+
+#: ../meld/gutterrendererchunk.py:211
+msgid "Copy _down"
+msgstr ""
+
+#: ../meld/meldapp.py:175
+#, fuzzy
+msgid "wrong number of arguments supplied to --diff"
+msgstr "잘못된 인자의 개수(%i개를 받았습니다)"
+
+#: ../meld/meldapp.py:180
+msgid "Start with an empty window"
+msgstr ""
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
+msgid "file"
+msgstr "파일"
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
+msgid "folder"
+msgstr "폴더"
+
+#: ../meld/meldapp.py:182
+msgid "Start a version control comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:184
+msgid "Start a 2- or 3-way file comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:186
+msgid "Start a 2- or 3-way folder comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:229
+#, python-format
+msgid "Error: %s\n"
+msgstr ""
+
+#: ../meld/meldapp.py:236
+msgid "Meld is a file and directory comparison tool."
+msgstr ""
+
+#: ../meld/meldapp.py:240
+msgid "Set label to use instead of file name"
+msgstr "파일 이름 대신 사용할 레이블을 설정합니다"
+
+#: ../meld/meldapp.py:243
+msgid "Open a new tab in an already running instance"
+msgstr ""
+
+#: ../meld/meldapp.py:246
+msgid "Automatically compare all differing files on startup"
+msgstr ""
+
+#: ../meld/meldapp.py:249
+msgid "Ignored for compatibility"
+msgstr "호환성을 위해 무시됩니다"
+
+#: ../meld/meldapp.py:253
+msgid "Set the target file for saving a merge result"
+msgstr ""
+
+#: ../meld/meldapp.py:256
+msgid "Automatically merge files"
+msgstr ""
+
+#: ../meld/meldapp.py:260
+msgid "Load a saved comparison from a Meld comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:264
+msgid "Create a diff tab for the supplied files or folders"
+msgstr ""
+
+#: ../meld/meldapp.py:284
+#, python-format
+msgid "too many arguments (wanted 0-3, got %d)"
+msgstr ""
+
+#: ../meld/meldapp.py:287
+msgid "can't auto-merge less than 3 files"
+msgstr ""
+
+#: ../meld/meldapp.py:289
+#, fuzzy
+msgid "can't auto-merge directories"
+msgstr "디렉토리 평면화"
+
+#: ../meld/meldapp.py:303
+msgid "Error reading saved comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:330
+#, python-format
+msgid "invalid path or URI \"%s\""
+msgstr ""
+
+#. TRANSLATORS: This is the label of a new, currently-unnamed file.
+#: ../meld/meldbuffer.py:131
+msgid "<unnamed>"
+msgstr ""
+
+#: ../meld/melddoc.py:64
+msgid "untitled"
+msgstr "제목없음"
+
+#: ../meld/meldwindow.py:52
+#, fuzzy
+msgid "_File"
+msgstr "작업본 파일"
+
+#: ../meld/meldwindow.py:53
+#, fuzzy
+msgid "_New Comparison..."
+msgstr "파일 비교(_F)"
+
+#: ../meld/meldwindow.py:54
+#, fuzzy
+msgid "Start a new comparison"
+msgstr "비교 실행(_C)"
+
+#: ../meld/meldwindow.py:57
+msgid "Save the current file"
+msgstr ""
+
+#: ../meld/meldwindow.py:59
+#, fuzzy
+msgid "Save As..."
+msgstr "다른 이름으로 저장(_A)"
+
+#: ../meld/meldwindow.py:60
+msgid "Save the current file with a different name"
+msgstr ""
+
+#: ../meld/meldwindow.py:63
+msgid "Close the current file"
+msgstr ""
+
+#: ../meld/meldwindow.py:66
+msgid "_Edit"
+msgstr "편집(_E)"
+
+#: ../meld/meldwindow.py:68
+msgid "Undo the last action"
+msgstr ""
+
+#: ../meld/meldwindow.py:71
+msgid "Redo the last undone action"
+msgstr ""
+
+#: ../meld/meldwindow.py:73
+#, fuzzy
+msgid "Cut the selection"
+msgstr "선택된 것 차이"
+
+#: ../meld/meldwindow.py:75
+#, fuzzy
+msgid "Copy the selection"
+msgstr "선택된 것 비교"
+
+#: ../meld/meldwindow.py:77
+#, fuzzy
+msgid "Paste the clipboard"
+msgstr "클립보드로 복사"
+
+#: ../meld/meldwindow.py:79
+#, fuzzy
+msgid "Find..."
+msgstr "찾기"
+
+#: ../meld/meldwindow.py:79
+#, fuzzy
+msgid "Search for text"
+msgstr "찾을 내용:"
+
+#: ../meld/meldwindow.py:81
+msgid "Find Ne_xt"
+msgstr ""
+
+#: ../meld/meldwindow.py:82
+msgid "Search forwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:84
+msgid "Find _Previous"
+msgstr ""
+
+#: ../meld/meldwindow.py:85
+msgid "Search backwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:88
+msgid "_Replace..."
+msgstr ""
+
+#: ../meld/meldwindow.py:89
+msgid "Find and replace text"
+msgstr ""
+
+#: ../meld/meldwindow.py:92
+msgid "_Changes"
+msgstr ""
+
+#: ../meld/meldwindow.py:93
+msgid "Next Change"
+msgstr ""
+
+#: ../meld/meldwindow.py:94
+msgid "Go to the next change"
+msgstr ""
+
+#: ../meld/meldwindow.py:96
+#, fuzzy
+msgid "Previous Change"
+msgstr "이전 로그"
+
+#: ../meld/meldwindow.py:97
+msgid "Go to the previous change"
+msgstr ""
+
+#: ../meld/meldwindow.py:99
+msgid "Open Externally"
+msgstr ""
+
+#: ../meld/meldwindow.py:100
+msgid "Open selected file or directory in the default external application"
+msgstr ""
+
+#: ../meld/meldwindow.py:104
+msgid "_View"
+msgstr ""
+
+#: ../meld/meldwindow.py:105
+#, fuzzy
+msgid "File Status"
+msgstr "상태"
+
+#: ../meld/meldwindow.py:106
+#, fuzzy
+msgid "Version Status"
+msgstr "상태"
+
+#: ../meld/meldwindow.py:110
+msgid "Stop the current action"
+msgstr ""
+
+#: ../meld/meldwindow.py:113
+#, fuzzy
+msgid "Refresh the view"
+msgstr "새로 고침"
+
+#: ../meld/meldwindow.py:117
+msgid "Fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:118
+msgid "View the comparison in fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:120
+msgid "_Toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:121
+msgid "Show or hide the toolbar"
+msgstr ""
+
+#: ../meld/meldwindow.py:131
+msgid "Open Recent"
+msgstr ""
+
+#: ../meld/meldwindow.py:132
+#, fuzzy
+msgid "Open recent files"
+msgstr "[%s] 파일 여는 중"
+
+#: ../meld/meldwindow.py:152
+#, fuzzy
+msgid "_Meld"
+msgstr "Meld"
+
+#: ../meld/meldwindow.py:153
+msgid "Quit the program"
+msgstr ""
+
+#: ../meld/meldwindow.py:155
+#, fuzzy
+msgid "Prefere_nces"
+msgstr "기본 설정 : Meld"
+
+#: ../meld/meldwindow.py:156
+msgid "Configure the application"
+msgstr ""
+
+#: ../meld/meldwindow.py:158
+msgid "_Contents"
+msgstr "내용(_C)"
+
+#: ../meld/meldwindow.py:159
+msgid "Open the Meld manual"
+msgstr ""
+
+#: ../meld/meldwindow.py:161
+msgid "About this application"
+msgstr ""
+
+#: ../meld/meldwindow.py:650
+#, python-format
+msgid "Need three files to auto-merge, got: %r"
+msgstr ""
+
+#: ../meld/meldwindow.py:664
+#, fuzzy
+msgid "Cannot compare a mixture of files and directories"
+msgstr "파일과 디렉토리의 혼합은 비교할 수 없습니다.\n"
+
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
+msgstr ""
+
+#. no common path. empty names get changed to "[None]"
+#: ../meld/misc.py:259
+msgid "[None]"
+msgstr "[없음]"
+
+#: ../meld/preferences.py:33
+msgid "label"
+msgstr "레이블"
+
+#: ../meld/preferences.py:33
+msgid "pattern"
+msgstr "패턴"
+
+#: ../meld/recent.py:114
+#, fuzzy
+msgid "Version control:"
+msgstr "버전 컨트롤 보기"
+
+#: ../meld/ui/notebooklabel.py:63
+msgid "Close tab"
+msgstr ""
+
+#: ../meld/ui/vcdialogs.py:48
+msgid "No files will be committed"
+msgstr ""
+
+#. Translators: First %s is replaced by translated "%d unpushed
+#. commits", second %s is replaced by translated "%d branches"
+#: ../meld/vc/git.py:94
+#, python-format
+msgid "%s in %s"
+msgstr ""
+
+#. Translators: These messages cover the case where there is
+#. only one branch, and are not part of another message.
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
+#, python-format
+msgid "%d unpushed commit"
+msgid_plural "%d unpushed commits"
+msgstr[0] ""
+
+#: ../meld/vc/git.py:97
+#, python-format
+msgid "%d branch"
+msgid_plural "%d branches"
+msgstr[0] ""
+
+#: ../meld/vc/git.py:336
+#, python-format
+msgid "Mode changed from %s to %s"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
+
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
+#, fuzzy
+msgid "None"
+msgstr "없음(_N)"
+
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Local"
+msgstr "위치"
+
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Remote"
+msgstr "지우기(_R)"
+
+#: ../meld/vc/_vc.py:71
+#, fuzzy
+msgid "Unversioned"
+msgstr "관리되지 않는 파일 표시"
+
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr ""
+
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr ""
+
+#: ../meld/vc/_vc.py:78
+msgid "Renamed"
+msgstr ""
+
+#: ../meld/vc/_vc.py:79
+msgid "Conflict"
+msgstr ""
+
+#: ../meld/vc/_vc.py:80
+#, fuzzy
+msgid "Removed"
+msgstr "지우기(_R)"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr ""
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
+#, python-format
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, python-format
+msgid "%(name)s (Invalid repository)"
+msgstr ""
+
+#: ../meld/vcview.py:276
+msgid "No valid version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:278
+msgid "Only one version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:280
+msgid "Choose which version control system to use"
+msgstr ""
+
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
+#, python-format
+msgid "%s: %s"
+msgstr ""
+
+#: ../meld/vcview.py:352
+#, fuzzy, python-format
+msgid "Scanning %s"
+msgstr "[%s] 탐색 중 %s"
+
+#: ../meld/vcview.py:391
 msgid "(Empty)"
 msgstr "(비어있음)"
 
-#: ../vcview.py:294
+#: ../meld/vcview.py:435
 #, python-format
-msgid "[%s] Fetching differences"
-msgstr "[%s] 차이점 추출 중"
-
-#: ../vcview.py:301
-#, python-format
-msgid "[%s] Applying patch"
-msgstr "[%s] 패치 적용 중"
-
-#: ../vcview.py:305
-msgid "No differences found."
-msgstr "차이점이 없습니다."
-
-#: ../vcview.py:382
-msgid "Select some files first."
-msgstr "파일(들)을 먼저 선택하십시오."
-
-#: ../vcview.py:446
-msgid "Invoking patch failed, you need GNU patch."
-msgstr "patch 실행 실패 (GNU patch가 필요합니다)."
-
-#. These are the possible states of files. Be sure to get the colons correct.
-#: ../vc/_vc.py:39
-msgid ""
-"Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
-"Missing"
-msgstr "무시함:관리되지 않음:::오류::새로 더함:고침:<b>충돌</b>:지움:없음"
-
-#: ../vc/cvs.py:160
-#, python-format
-msgid ""
-"Error converting to a regular expression\n"
-"The pattern was '%s'\n"
-"The error was '%s'"
+msgid "%s — local"
 msgstr ""
-"정규식으로 변환 중 오류\n"
-"패턴: '%s'\n"
-"오류: was '%s'"
+
+#: ../meld/vcview.py:436
+#, python-format
+msgid "%s — remote"
+msgstr ""
+
+#: ../meld/vcview.py:444
+#, python-format
+msgid "%s (local, merge, remote)"
+msgstr ""
+
+#: ../meld/vcview.py:449
+#, python-format
+msgid "%s (remote, merge, local)"
+msgstr ""
+
+#: ../meld/vcview.py:460
+#, python-format
+msgid "%s — repository"
+msgstr ""
+
+#: ../meld/vcview.py:466
+#, python-format
+msgid "%s (working, repository)"
+msgstr ""
+
+#: ../meld/vcview.py:470
+#, python-format
+msgid "%s (repository, working)"
+msgstr ""
+
+#: ../meld/vcview.py:638
+msgid "Remove folder and all its files?"
+msgstr ""
+
+#: ../meld/vcview.py:640
+msgid ""
+"This will remove all selected files and folders, and all files within any "
+"selected folders, from version control."
+msgstr ""
+
+#: ../meld/vcview.py:665
+#, fuzzy, python-format
+msgid "Error removing %s"
+msgstr ""
+"%s을(를) 지우는 중 오류\n"
+"\n"
+"%s."
+
+#: ../meld/vcview.py:746
+msgid "Clear"
+msgstr ""
+
+#~ msgid "Error converting pattern '%s' to regular expression"
+#~ msgstr "패턴 '%s'을(를) 정규식으로 변환 중 오류"
+
+#~ msgid ""
+#~ "'%s' exists.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "'%s'이(가) 존재합니다.\n"
+#~ "덮어 쓸까요?"
+
+#~ msgid ""
+#~ "'%s' is a directory.\n"
+#~ "Remove recusively?"
+#~ msgstr ""
+#~ "'%s'은(는) 디렉토리입니다.\n"
+#~ "하위디렉토리도 지울까요?"
+
+#~ msgid "%i second"
+#~ msgid_plural "%i seconds"
+#~ msgstr[0] "%i 초"
+
+#~ msgid "%i minute"
+#~ msgid_plural "%i minutes"
+#~ msgstr[0] "%i 분"
+
+#~ msgid "%i hour"
+#~ msgid_plural "%i hours"
+#~ msgstr[0] "%i 시간"
+
+#~ msgid "%i day"
+#~ msgid_plural "%i days"
+#~ msgstr[0] "%i 일"
+
+#~ msgid "%i week"
+#~ msgid_plural "%i weeks"
+#~ msgstr[0] "%i 주"
+
+#~ msgid "%i month"
+#~ msgid_plural "%i months"
+#~ msgstr[0] "%i 달"
+
+#~ msgid "%i year"
+#~ msgid_plural "%i years"
+#~ msgstr[0] "%i 년"
+
+#~ msgid ""
+#~ "Regular expression '%s' changed the number of lines in the file. "
+#~ "Comparison will be incorrect. See the user manual for more details."
+#~ msgstr ""
+#~ "정규식 '%s'이(가) 파일의 줄 수를 바꾸었습니다. 비교가 올바르지 않을 것입니"
+#~ "다. 더 자세한 내용은 사용자 설명서를 참조하세요."
+
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "정규식 오류\n"
+#~ "'%s'"
+
+#~ msgid "The regular expression '%s' was not found."
+#~ msgstr "정규식 '%s'을(를) 찾을 수 없습니다."
+
+#~ msgid "The text '%s' was not found."
+#~ msgstr "텍스트 '%s'을(를) 찾을 수 없습니다."
+
+#~ msgid "[%s] Set num panes"
+#~ msgstr "[%s] 분할 수 설정"
+
+#~ msgid "The error was:"
+#~ msgstr "발생한 오류:"
+
+#~ msgid "[%s] Reading files"
+#~ msgstr "[%s] 파일 읽는 중"
+
+#~ msgid ""
+#~ "It contains ascii nulls.\n"
+#~ "Perhaps it is a binary file."
+#~ msgstr ""
+#~ "아스크 NULL 문자를 포함하고 있습니다.\n"
+#~ "아마도 이진 파일인 것 같습니다."
+
+#~ msgid "I tried encodings %s."
+#~ msgstr "%s 인코딩으로 시도했습니다."
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "\"%s\"이(가) 존재합니다!\n"
+#~ "덮어 쓸까요?"
+
+#~ msgid ""
+#~ "Error writing to %s\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr ""
+#~ "%s에 쓰는 중 오류\n"
+#~ "\n"
+#~ "%s."
+
+#~ msgid "Choose a name for buffer %i."
+#~ msgstr "버퍼 %i의 이름을 선택하세요."
+
+#~ msgid ""
+#~ "This file '%s' contains a mixture of line endings.\n"
+#~ "\n"
+#~ "Which format would you like to use?"
+#~ msgstr ""
+#~ "파일 '%s'은(는) 혼합된 줄 끝을 갖고 있습니다.\n"
+#~ "\n"
+#~ "어느 형식을 사용하시겠습니까?"
+
+#~ msgid ""
+#~ "'%s' contains characters not encodable with '%s'\n"
+#~ "Would you like to save as UTF-8?"
+#~ msgstr ""
+#~ "'%s'은(는) '%s'(으)로 인코딩할 수 없는 문자를 포함하고 있습니다\n"
+#~ "UTF-8로 저장하시겠습니까?"
+
+#~ msgid "Save patch as..."
+#~ msgstr "패치를 다른 이름으로 저장..."
+
+#~ msgid ""
+#~ "Reloading will discard changes in:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "You cannot undo this operation."
+#~ msgstr ""
+#~ "새로 고치면 다음의 바뀐 내용을 버리게 됩니다:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "이 작업은 취소할 수 없습니다."
+
+#~ msgid "Case"
+#~ msgstr "대소문자"
+
+#~ msgid "Hide..."
+#~ msgstr "숨김..."
+
+#~ msgid "Ignore case of entries"
+#~ msgstr "항목의 대소문자 무시"
+
+#~ msgid "Left"
+#~ msgstr "왼쪽"
+
+#~ msgid "Right"
+#~ msgstr "오른쪽"
+
+#~ msgid "_Delete Selected"
+#~ msgstr "선택된 것 지우기(_D)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+#~ "Which ones would you like to save?</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">일부 파일(들)을 고쳤습니다.\n"
+#~ "어떤 것(들)을 저장할까요?</span>"
+
+#~ msgid "Match _entire word only"
+#~ msgstr "단어 전체가 일치(_E)"
+
+#~ msgid "(gnome-default-editor)"
+#~ msgstr "(gnome-default-editor)"
+
+#~ msgid "<b>Drawing Style</b>"
+#~ msgstr "<b>그리기 스타일</b>"
+
+#~ msgid "<b>Edit Menu</b>"
+#~ msgstr "<b>편집 메뉴</b>"
+
+#~ msgid "<b>Font</b>"
+#~ msgstr "<b>글꼴</b>"
+
+#~ msgid "<b>Global options</b>"
+#~ msgstr "<b>전역 선택사항</b>"
+
+#~ msgid "<b>Loading</b>"
+#~ msgstr "<b>불러오는 중</b>"
+
+#~ msgid "<b>Misc</b>"
+#~ msgstr "<b>기타</b>"
+
+#~ msgid "<b>Saving</b>"
+#~ msgstr "<b>저장 중</b>"
+
+#~ msgid "<b>Toolbar Appearance</b>"
+#~ msgstr "<b>도구모음 모양</b>"
+
+#~ msgid "<b>Update Options</b>"
+#~ msgstr "<b>갱신 선택사항</b>"
+
+#~ msgid "<b>Whitespace</b>"
+#~ msgstr "<b>공백</b>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Compare</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">비교</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">표시</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">편집기</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">인코딩</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">파일 필터</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">텍스트 필터</span>"
+
+#~ msgid "Automatically supply missing newline at end of file"
+#~ msgstr "파일 끝에 빠진 개행문자를 자동으로 추가"
+
+#~ msgid "CVS"
+#~ msgstr "CVS"
+
+#~ msgid "CVS Directory"
+#~ msgstr "CVS 디렉토리"
+
+#~ msgid "CVS binary"
+#~ msgstr "CVS 바이너리"
+
+#~ msgid "Choose Files"
+#~ msgstr "파일 선택"
+
+#~ msgid ""
+#~ "Choose how the central bar of the diff viewer is drawn. You may wish to "
+#~ "choose a simpler mode if you find scrolling is slow."
+#~ msgstr ""
+#~ "차이 보기의 중앙 막대를 어떻게 그릴지 선택하십시오. 스크롤링이 느리다고 생"
+#~ "각되면 더 간단한 모드를 선택할 수 있습니다."
+
+#~ msgid "Create missing directories (-d)"
+#~ msgstr "빠진 디렉토리 만들기 (-d)"
+
+#~ msgid "Curved: Filled Curves"
+#~ msgstr "곡선 : 채워진 곡선"
+
+#~ msgid "Directory"
+#~ msgstr "디렉토리"
+
+#~ msgid "Encoding"
+#~ msgstr "인코딩"
+
+#~ msgid "Gnome Default"
+#~ msgstr "그놈 기본"
+
+#~ msgid "Icons Only"
+#~ msgstr "아이콘만"
+
+#~ msgid "Ignore .cvsrc (-f)"
+#~ msgstr ".cvsrc 무시 (-f)"
+
+#~ msgid "Ignore changes in amount of white space"
+#~ msgstr "공백 문자의 양은 무시"
+
+#~ msgid ""
+#~ "Ignore changes in case; consider upper and lower-case letters equivalent"
+#~ msgstr "대소문자의 변화 무시: 대소문자는 동일한 것으로 간주"
+
+#~ msgid "Ignore changes that just insert or delete blank lines"
+#~ msgstr "빈 줄을 더하거나 지운 것은 무시"
+
+#~ msgid "Ignore changes which insert or delete blank lines"
+#~ msgstr "빈 줄을 더하거나 지운 것은 무시"
+
+#~ msgid "Line Wrapping "
+#~ msgstr "자동 줄넘김 "
+
+#~ msgid "Locate CVS binary : Meld"
+#~ msgstr "CVS 바이너리 위치 : Meld"
+
+#~ msgid "Mailing _List"
+#~ msgstr "메일링 리스트(_L)"
+
+#~ msgid "Mine"
+#~ msgstr "작업본"
+
+#~ msgid "My Directory"
+#~ msgstr "작업본 디렉토리"
+
+#~ msgid "Original"
+#~ msgstr "원본"
+
+#~ msgid "Original Directory"
+#~ msgstr "원본 디렉토리"
+
+#~ msgid "Original File"
+#~ msgstr "원본 파일"
+
+#~ msgid "Other"
+#~ msgstr "기타"
+
+#~ msgid "Other Directory"
+#~ msgstr "기타 디렉토리"
+
+#~ msgid "Other File"
+#~ msgstr "기타 파일"
+
+#~ msgid "Prune empty directories (-P)"
+#~ msgstr "빈 디렉토리 가지치기 (-P)"
+
+#~ msgid "Quiet mode (-q)"
+#~ msgstr "조용한 모드 (-q)"
+
+#~ msgid "Report _Bug"
+#~ msgstr "버그 보고(_B)"
+
+#~ msgid "Save in UTF-8 encoding"
+#~ msgstr "파일을 UTF-8 인코딩으로 저장"
+
+#~ msgid "Simple: Lines only"
+#~ msgstr "단순 : 선으로만"
+
+#~ msgid "Solid: Filled Quadilaterals"
+#~ msgstr "채움 : 채워진 다각형"
+
+#~ msgid "Text Beside Icons"
+#~ msgstr "아이콘 옆에 글자"
+
+#~ msgid "Text Only"
+#~ msgstr "글자만"
+
+#~ msgid "Text Under Icons"
+#~ msgstr "아이콘 아래에 글자"
+
+#~ msgid "Three way directory"
+#~ msgstr "디렉토리 3개"
+
+#~ msgid "Three way file"
+#~ msgstr "파일 3개"
+
+#~ msgid "Two way directory"
+#~ msgstr "디렉토리 2개"
+
+#~ msgid "Two way file"
+#~ msgstr "파일 2개"
+
+#~ msgid "Use Compression (-z)"
+#~ msgstr "압축 사용 (-z)"
+
+#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+#~ msgstr "불러올 때, 다음 코덱을 순서대로 시도합니다. (예. utf8, iso8859)"
+
+#~ msgid "Whitespace is significant"
+#~ msgstr "공백은 유효함"
+
+#~ msgid "_Character"
+#~ msgstr "문자(_C)"
+
+#~ msgid "_Logo"
+#~ msgstr "로고(_L)"
+
+#~ msgid "_New..."
+#~ msgstr "새로(_N)..."
+
+#~ msgid "_Three Way Compare"
+#~ msgstr "3항 비교(_T)"
+
+#~ msgid "_Up"
+#~ msgstr "위로(_U)"
+
+#~ msgid "_Word"
+#~ msgstr "단어(_W)"
+
+#~ msgid "Add _Binary"
+#~ msgstr "바이너리 더하기(_B)"
+
+#~ msgid "Add to VC"
+#~ msgstr "VC에 더하기"
+
+#~ msgid "Compare Options"
+#~ msgstr "비교 선택사항"
+
+#~ msgid "Date"
+#~ msgstr "날짜"
+
+#~ msgid "Local copy against other remote revision"
+#~ msgstr "다른 원격 리비전에 대한 로컬 사본"
+
+#~ msgid "Local copy against same remote revision"
+#~ msgstr "같은 원격 리비전에 대한 로컬 사본"
+
+#~ msgid "Non _VC"
+#~ msgstr "비 VC(_V)"
+
+#~ msgid "Remove _Locally"
+#~ msgstr "로컬에서 지우기(_L)"
+
+#~ msgid "Remove from VC"
+#~ msgstr "VC에서 지우기"
+
+#~ msgid "Tag"
+#~ msgstr "태그"
+
+#~ msgid "Update"
+#~ msgstr "갱신"
+
+#~ msgid "VC Log"
+#~ msgstr "VC 로그"
+
+#~ msgid ""
+#~ "Due to incompatible API changes some functions may not operate as "
+#~ "expected."
+#~ msgstr ""
+#~ "호환성 없는 API의 변화로 인해 몇가지 기능은 기대한 대로 동작하지 않을 수 "
+#~ "있습니다."
+
+#~ msgid "Regex"
+#~ msgstr "정규식"
+
+#~ msgid ""
+#~ "Line numbers are only available if you have gnome-python-desktop "
+#~ "installed."
+#~ msgstr "줄 번호는 gnome-python-desktop을 설치해야 사용할 수 있습니다."
+
+#~ msgid ""
+#~ "Syntax highlighting is only available if you have gnome-python-desktop "
+#~ "installed."
+#~ msgstr "문법 강조는 gnome-python-desktop을 설치해야 사용할 수 있습니다."
+
+#~ msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+#~ msgstr "백업\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+
+#~ msgid ""
+#~ "Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory RCS\n"
+#~ msgstr ""
+#~ "버전 컨트롤\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory RCS\n"
+
+#~ msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+#~ msgstr "이진 파일\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+
+#~ msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+#~ msgstr "미디어\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+
+#~ msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+#~ msgstr "CVS 키워드\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+
+#~ msgid "C++ comment\t0\t//.*\n"
+#~ msgstr "C++ 주석\t0\t//.*\n"
+
+#~ msgid "C comment\t0\t/\\*.*?\\*/\n"
+#~ msgstr "C 주석\t0\t/\\*.*?\\*/\n"
+
+#~ msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
+#~ msgstr "모든 공백문자\t0\t[ \\t\\r\\f\\v]*\n"
+
+#~ msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+#~ msgstr "앞 쪽의 공백문자\t0\t^[ \\t\\r\\f\\v]*\n"
+
+#~ msgid "Script comment\t0\t#.*"
+#~ msgstr "스크립트 주석\t0\t#.*"
+
+#~ msgid ""
+#~ "Meld %s\n"
+#~ "Written by Stephen Kennedy <stevek@gnome.org>"
+#~ msgstr ""
+#~ "Meld %s\n"
+#~ "개발자: Stephen Kennedy <stevek@gnome.org>"
+
+#~ msgid "Rev"
+#~ msgstr "Rev"
+
+#~ msgid "Options"
+#~ msgstr "선택사항"
+
+#~ msgid "[%s] Applying patch"
+#~ msgstr "[%s] 패치 적용 중"
+
+#~ msgid "Select some files first."
+#~ msgstr "파일(들)을 먼저 선택하십시오."
+
+#~ msgid "Invoking patch failed, you need GNU patch."
+#~ msgstr "patch 실행 실패 (GNU patch가 필요합니다)."
+
+#~ msgid ""
+#~ "Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+#~ "Missing"
+#~ msgstr "무시함:관리되지 않음:::오류::새로 더함:고침:<b>충돌</b>:지움:없음"
+
+#~ msgid ""
+#~ "Error converting to a regular expression\n"
+#~ "The pattern was '%s'\n"
+#~ "The error was '%s'"
+#~ msgstr ""
+#~ "정규식으로 변환 중 오류\n"
+#~ "패턴: '%s'\n"
+#~ "오류: was '%s'"
 
 #~ msgid "[%s] Scanning"
 #~ msgstr "[%s] 탐색 중"
-
-#~ msgid "folder"
-#~ msgstr "폴더"
-
-#~ msgid "file"
-#~ msgstr "파일"
 
 #~ msgid "nonexistant"
 #~ msgstr "없음"
@@ -1231,23 +3077,8 @@ msgstr ""
 #~ msgid "_Diff"
 #~ msgstr "차이(_D)"
 
-#~ msgid "Make Patch"
-#~ msgstr "패치 만들기"
-
-#~ msgid "Copy left"
-#~ msgstr "왼쪽 복사"
-
-#~ msgid "Copy right"
-#~ msgstr "오른쪽 복사"
-
 #~ msgid "Diff"
 #~ msgstr "차이"
-
-#~ msgid "Diff selection"
-#~ msgstr "선택된 것 차이"
-
-#~ msgid "Launch _Comparison"
-#~ msgstr "비교 실행(_C)"
 
 #~ msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
 #~ msgstr "<span weight=\"bold\" size=\"x-large\">차이</span>"
