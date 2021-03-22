@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld 0.9 Gnome HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 14:43+0300\n"
+"POT-Creation-Date: 2021-03-22 18:38+0300\n"
 "PO-Revision-Date: 2012-02-12 19:32+0700\n"
 "Last-Translator: Trương Ứng Minh <truongungminh@gmail.com>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -513,7 +513,7 @@ msgstr "Chép sang phải"
 msgid "Delete selected"
 msgstr "Xóa bỏ vùng chọn"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "Ẩn"
 
@@ -561,6 +561,16 @@ msgstr "Bộ lọc"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
+msgstr "Bật bộ lọc"
+
+#: ../data/ui/dirdiff.ui.h:20
+#, fuzzy
+msgid "Text filters"
+msgstr "Bộ lọc chữ"
+
+#: ../data/ui/dirdiff.ui.h:21
+#, fuzzy
+msgid "Set active text filters"
 msgstr "Bật bộ lọc"
 
 #: ../data/ui/EditableList.ui.h:1
@@ -821,7 +831,7 @@ msgstr ""
 msgid "Close _without Saving"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr ""
 
@@ -858,7 +868,7 @@ msgstr ""
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr ""
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "_Thay thế"
 
@@ -1692,71 +1702,71 @@ msgstr ""
 msgid "Permissions"
 msgstr ""
 
-#: ../meld/dirdiff.py:540
+#: ../meld/dirdiff.py:550
 #, python-format
 msgid "Hide %s"
 msgstr "Ẩn %s"
 
-#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] Đang quét %s"
 
-#: ../meld/dirdiff.py:828
+#: ../meld/dirdiff.py:840
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Đã xong."
 
-#: ../meld/dirdiff.py:836
+#: ../meld/dirdiff.py:848
 #, fuzzy
 msgid "Folders have no differences"
 msgstr "[%s] Đang tìm sự khác biệt"
 
-#: ../meld/dirdiff.py:838
+#: ../meld/dirdiff.py:850
 msgid "Contents of scanned files in folders are identical."
 msgstr ""
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:852
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:855
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:845
+#: ../meld/dirdiff.py:857
 #, fuzzy
 msgid "Text filters are in use and may be masking content differences."
 msgstr ""
 "Bộ lọc chữ đang hoạt động và có thể che giấu sự khác biệt giữa các tập tin. "
 "Bạn có muốn so sánh những tập tin chưa được lọc?"
 
-#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
 #: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "Ẩ_n"
 
-#: ../meld/dirdiff.py:873
+#: ../meld/dirdiff.py:885
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "Nhiều lỗi phát sinh trong lúc quét thư mục này"
 
-#: ../meld/dirdiff.py:874
+#: ../meld/dirdiff.py:886
 msgid "Files with invalid encodings found"
 msgstr "Đã tìm thấy nhiều tập tin bị lỗi mã hóa đã tìm thấy"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:876
+#: ../meld/dirdiff.py:888
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Một số tập tin bị lỗi mã hóa không đúng. Tên của chúng giống như:"
 
-#: ../meld/dirdiff.py:878
+#: ../meld/dirdiff.py:890
 msgid "Files hidden by case insensitive comparison"
 msgstr "Các tập tin ẩn trong trường hợp so sánh không nhạy cảm"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:880
+#: ../meld/dirdiff.py:892
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1764,28 +1774,28 @@ msgstr ""
 "Bạn đang chạy việc so sánh không phân biệt chữ hoa/thường trong hệ thống tập "
 "tin có phải phân biệt chữ hoa/thường. Những tập tin sau đây sẽ bị ẩn:"
 
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:903
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "« %s » do « %s » ẩn"
 
-#: ../meld/dirdiff.py:947
+#: ../meld/dirdiff.py:959
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr ""
 
-#: ../meld/dirdiff.py:949
+#: ../meld/dirdiff.py:961
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
 
-#: ../meld/dirdiff.py:962
+#: ../meld/dirdiff.py:974
 msgid "Error copying file"
 msgstr ""
 
-#: ../meld/dirdiff.py:963
+#: ../meld/dirdiff.py:975
 #, fuzzy, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1797,7 +1807,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:998
 #, fuzzy, python-format
 msgid "Error deleting %s"
 msgstr ""
@@ -1805,7 +1815,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../meld/dirdiff.py:1499
+#: ../meld/dirdiff.py:1511
 msgid "No folder"
 msgstr ""
 

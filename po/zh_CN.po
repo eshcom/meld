@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 14:43+0300\n"
+"POT-Creation-Date: 2021-03-22 18:38+0300\n"
 "PO-Revision-Date: 2013-12-07 17:20+0800\n"
 "Last-Translator: Tao Wang <dancefire@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
@@ -511,7 +511,7 @@ msgstr "复制到右侧"
 msgid "Delete selected"
 msgstr "删除选中的"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "隐藏"
 
@@ -559,6 +559,16 @@ msgstr "过滤器"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
+msgstr "设定启用的过滤器"
+
+#: ../data/ui/dirdiff.ui.h:20
+#, fuzzy
+msgid "Text filters"
+msgstr "文字过滤器"
+
+#: ../data/ui/dirdiff.ui.h:21
+#, fuzzy
+msgid "Set active text filters"
 msgstr "设定启用的过滤器"
 
 #: ../data/ui/EditableList.ui.h:1
@@ -805,7 +815,7 @@ msgstr "如果您不保存，更改将永久丢失。"
 msgid "Close _without Saving"
 msgstr "关闭但不保存(_W)"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr "取消(_C)"
 
@@ -844,7 +854,7 @@ msgstr "撤消对文档未保存的更改？"
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr "对以下文档的更改将永久丢失：\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "替换(_R)"
 
@@ -1645,68 +1655,68 @@ msgstr "更改时间"
 msgid "Permissions"
 msgstr "权限"
 
-#: ../meld/dirdiff.py:540
+#: ../meld/dirdiff.py:550
 #, python-format
 msgid "Hide %s"
 msgstr "隐藏 %s"
 
-#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] 正在扫描 %s"
 
-#: ../meld/dirdiff.py:828
+#: ../meld/dirdiff.py:840
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] 完成"
 
-#: ../meld/dirdiff.py:836
+#: ../meld/dirdiff.py:848
 msgid "Folders have no differences"
 msgstr ""
 
-#: ../meld/dirdiff.py:838
+#: ../meld/dirdiff.py:850
 msgid "Contents of scanned files in folders are identical."
 msgstr ""
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:852
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:855
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:845
+#: ../meld/dirdiff.py:857
 #, fuzzy
 msgid "Text filters are in use and may be masking content differences."
 msgstr "正在使用文本过滤器，可能会屏蔽文件之间的不同。您想比较未过滤的文件吗？"
 
-#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
 #: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "隐藏(_D)"
 
-#: ../meld/dirdiff.py:873
+#: ../meld/dirdiff.py:885
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "扫描此文件夹时出现了多个错误"
 
-#: ../meld/dirdiff.py:874
+#: ../meld/dirdiff.py:886
 msgid "Files with invalid encodings found"
 msgstr "发现文件使用的编码不正确"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:876
+#: ../meld/dirdiff.py:888
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "某些文件编码不正确。名称是这样的："
 
-#: ../meld/dirdiff.py:878
+#: ../meld/dirdiff.py:890
 msgid "Files hidden by case insensitive comparison"
 msgstr "因比较区分大小写而隐藏的文件"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:880
+#: ../meld/dirdiff.py:892
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1714,28 +1724,28 @@ msgstr ""
 "您正在区分大小写的文件系统上运行不区分大小写的比较。此文件夹中的以下文件是隐"
 "藏的："
 
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:903
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "'%s' 已按“%s”隐藏"
 
-#: ../meld/dirdiff.py:947
+#: ../meld/dirdiff.py:959
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr ""
 
-#: ../meld/dirdiff.py:949
+#: ../meld/dirdiff.py:961
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
 
-#: ../meld/dirdiff.py:962
+#: ../meld/dirdiff.py:974
 msgid "Error copying file"
 msgstr "复制文件出错"
 
-#: ../meld/dirdiff.py:963
+#: ../meld/dirdiff.py:975
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1748,12 +1758,12 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:998
 #, python-format
 msgid "Error deleting %s"
 msgstr "删除 %s 出错"
 
-#: ../meld/dirdiff.py:1499
+#: ../meld/dirdiff.py:1511
 msgid "No folder"
 msgstr ""
 

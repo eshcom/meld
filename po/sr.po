@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 14:43+0300\n"
+"POT-Creation-Date: 2021-03-22 18:38+0300\n"
 "PO-Revision-Date: 2017-02-25 20:12+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -570,7 +570,7 @@ msgstr "Умножите десно"
 msgid "Delete selected"
 msgstr "Обриши изабрано"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "Сакриј"
 
@@ -620,6 +620,16 @@ msgstr "Пропусници"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
+msgstr "Подесите активне филтере"
+
+#: ../data/ui/dirdiff.ui.h:20
+#, fuzzy
+msgid "Text filters"
+msgstr "Пропусници текста"
+
+#: ../data/ui/dirdiff.ui.h:21
+#, fuzzy
+msgid "Set active text filters"
 msgstr "Подесите активне филтере"
 
 #: ../data/ui/EditableList.ui.h:1
@@ -861,7 +871,7 @@ msgstr "Ако не сачувате, измене ће бити трајно и
 msgid "Close _without Saving"
 msgstr "Затвори _без чувања"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr "_Откажи"
 
@@ -898,7 +908,7 @@ msgstr "Да повратим несачуване измене у докуме�
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr "Измене начињене над следећим документима ће бити трајно изгубљене:\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "_Замени"
 
@@ -1653,30 +1663,30 @@ msgstr "Време измене"
 msgid "Permissions"
 msgstr "Овлашћења"
 
-#: ../meld/dirdiff.py:540
+#: ../meld/dirdiff.py:550
 #, python-format
 msgid "Hide %s"
 msgstr "Сакриј „%s“"
 
-#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] прегледам „%s“"
 
-#: ../meld/dirdiff.py:828
+#: ../meld/dirdiff.py:840
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Готово"
 
-#: ../meld/dirdiff.py:836
+#: ../meld/dirdiff.py:848
 msgid "Folders have no differences"
 msgstr "Фасцикле се не разликују"
 
-#: ../meld/dirdiff.py:838
+#: ../meld/dirdiff.py:850
 msgid "Contents of scanned files in folders are identical."
 msgstr "Садржаји прегледаних датотека у фасциклама су исти."
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:852
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
@@ -1684,38 +1694,38 @@ msgstr ""
 "Прегледане датотеке у фасциклама изгледа да су исте, али садржај није "
 "прегледан."
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:855
 msgid "File filters are in use, so not all files have been scanned."
 msgstr "Филтери датотека су у употреби, тако да нису све датотеке прегледане."
 
-#: ../meld/dirdiff.py:845
+#: ../meld/dirdiff.py:857
 msgid "Text filters are in use and may be masking content differences."
 msgstr "Филтери текста су у употреби и можда су замаскирали разлике садржаја."
 
-#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
 #: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "_Сакриј"
 
-#: ../meld/dirdiff.py:873
+#: ../meld/dirdiff.py:885
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "Дошло је до више грешака за време претраживања ове фасцикле"
 
-#: ../meld/dirdiff.py:874
+#: ../meld/dirdiff.py:886
 msgid "Files with invalid encodings found"
 msgstr "Пронађене су датотеке са неисправним кодирањем"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:876
+#: ../meld/dirdiff.py:888
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Неке датотеке бејаху у неисправном кодирању. Називи су нешто као:"
 
-#: ../meld/dirdiff.py:878
+#: ../meld/dirdiff.py:890
 msgid "Files hidden by case insensitive comparison"
 msgstr "Датотеке скривене поређењем неосетљивим на величину слова"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:880
+#: ../meld/dirdiff.py:892
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1723,17 +1733,17 @@ msgstr ""
 "Покренули сте поређење независно од величине слова на систему датотека где "
 "је она битна. Неке датотеке нису видљиве:"
 
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:903
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "„%s“ сакривено од стране „%s“"
 
-#: ../meld/dirdiff.py:947
+#: ../meld/dirdiff.py:959
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr "Да заменим фасциклу „%s“?"
 
-#: ../meld/dirdiff.py:949
+#: ../meld/dirdiff.py:961
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
@@ -1742,11 +1752,11 @@ msgstr ""
 "Фасцикла са истим називом већ постоји у „%s“.\n"
 "Ако замените постојећу фасциклу, све датотеке у њој биће изгубљене."
 
-#: ../meld/dirdiff.py:962
+#: ../meld/dirdiff.py:974
 msgid "Error copying file"
 msgstr "Грешка умножавања датотеке"
 
-#: ../meld/dirdiff.py:963
+#: ../meld/dirdiff.py:975
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1759,12 +1769,12 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:998
 #, python-format
 msgid "Error deleting %s"
 msgstr "Грешка брисања „%s“"
 
-#: ../meld/dirdiff.py:1499
+#: ../meld/dirdiff.py:1511
 msgid "No folder"
 msgstr "Нема фасцикле"
 

@@ -476,7 +476,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             treeview.set_headers_visible(extra_cols)
 
     # esh: handled on clicked file-filters menu-button in toolbar,
-    #      file_filter_menu_button is the "/Toolbar/FilterActions/FileFilterMenu" widget
+    #      file_filter_popup, file_filter_menu_button is created
+    #           in the _create_filter_menu_button func
     def on_file_filter_menu_toggled(self, item):
         if item.get_active():
             self.file_filter_popup.connect("deactivate",
@@ -485,6 +486,16 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                                          misc.position_menu_under_widget,
                                          self.file_filter_menu_button, 1,
                                          Gtk.get_current_event_time())
+
+    def on_text_filter_menu_toggled(self, item):
+        pass
+        # ~ if item.get_active():
+            # ~ self.test_filter_popup.connect("deactivate",
+                                           # ~ lambda popup: item.set_active(False))
+            # ~ self.test_filter_popup.popup(None, None,
+                                         # ~ misc.position_menu_under_widget,
+                                         # ~ self.text_filter_menu_button, 1,
+                                         # ~ Gtk.get_current_event_time())
 
     def _cleanup_filter_menu_button(self, ui):
         if self.popup_deactivate_id:

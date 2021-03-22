@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld 1.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 14:43+0300\n"
+"POT-Creation-Date: 2021-03-22 18:38+0300\n"
 "PO-Revision-Date: 2017-09-04 01:29+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -573,7 +573,7 @@ msgstr "Sağa kopyala"
 msgid "Delete selected"
 msgstr "Seçileni Sil"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "Gizle"
 
@@ -623,6 +623,16 @@ msgstr "Süzgeçler"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
+msgstr "Etkin süzgeçleri ayarla"
+
+#: ../data/ui/dirdiff.ui.h:20
+#, fuzzy
+msgid "Text filters"
+msgstr "Metin Süzgeçleri"
+
+#: ../data/ui/dirdiff.ui.h:21
+#, fuzzy
+msgid "Set active text filters"
 msgstr "Etkin süzgeçleri ayarla"
 
 #: ../data/ui/EditableList.ui.h:1
@@ -864,7 +874,7 @@ msgstr "Kaydetmezseniz değişiklikler kaybolacaktır."
 msgid "Close _without Saving"
 msgstr "Kaydet_meden Kapat"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr "_İptal"
 
@@ -901,7 +911,7 @@ msgstr "Belgedeki kaydedilmemiş değişiklikler geri alınsın mı?"
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr "Aşağıdaki belgelerde yapılan değişiklikler kaybolacak:\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "_Değiştir"
 
@@ -1658,68 +1668,68 @@ msgstr "Değiştirilme zamanı"
 msgid "Permissions"
 msgstr "İzinler"
 
-#: ../meld/dirdiff.py:540
+#: ../meld/dirdiff.py:550
 #, python-format
 msgid "Hide %s"
 msgstr "Sakla %s"
 
-#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] Taranıyor %s"
 
-#: ../meld/dirdiff.py:828
+#: ../meld/dirdiff.py:840
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Yapıldı"
 
-#: ../meld/dirdiff.py:836
+#: ../meld/dirdiff.py:848
 msgid "Folders have no differences"
 msgstr "Klasörlerde fark yok"
 
-#: ../meld/dirdiff.py:838
+#: ../meld/dirdiff.py:850
 msgid "Contents of scanned files in folders are identical."
 msgstr "Klasörlerdeki taranan dosyaların içerikleri aynı."
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:852
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
 msgstr ""
 "Klasördeki taranan dosyalar aynı gözüküyor fakat içerikleri taranmamış."
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:855
 msgid "File filters are in use, so not all files have been scanned."
 msgstr "Dosya süzgeçleri kullanımda, bu yüzden tüm dosyalar taranamamış."
 
-#: ../meld/dirdiff.py:845
+#: ../meld/dirdiff.py:857
 msgid "Text filters are in use and may be masking content differences."
 msgstr "Metin süzgeçleri kullanımda ve içerik farklılıklarını maskeleyebilir."
 
-#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
 #: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "Gi_zle"
 
-#: ../meld/dirdiff.py:873
+#: ../meld/dirdiff.py:885
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "Bu dizinler taranırken birçok hata oluştu"
 
-#: ../meld/dirdiff.py:874
+#: ../meld/dirdiff.py:886
 msgid "Files with invalid encodings found"
 msgstr "Geçersiz kodlamada dosyalar bulundu"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:876
+#: ../meld/dirdiff.py:888
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Bazı dosyalar yanlış kodlamadaydı. Adları şu şekildedir:"
 
-#: ../meld/dirdiff.py:878
+#: ../meld/dirdiff.py:890
 msgid "Files hidden by case insensitive comparison"
 msgstr "Büyük küçük harf duyarsız karşılaştırmaya göre gizli dosyalar"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:880
+#: ../meld/dirdiff.py:892
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1727,17 +1737,17 @@ msgstr ""
 "Büyük/küçük harf duyarlı bir dosya sisteminde büyük/küçük harf duyarsız bir "
 "karşılaştırma yapmaktasınız. Bu klasördeki bazı dosyalar gizlidir:"
 
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:903
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "'%s' '%s' için gizli"
 
-#: ../meld/dirdiff.py:947
+#: ../meld/dirdiff.py:959
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr "“%s” klasörü değiştirilsin mi?"
 
-#: ../meld/dirdiff.py:949
+#: ../meld/dirdiff.py:961
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
@@ -1746,11 +1756,11 @@ msgstr ""
 "“%s”'de aynı ad ile başka klasör zaten var.\n"
 "Eğer var olan klasörü değiştirirseniz, içindeki tüm dosyalar kaybolacaktır."
 
-#: ../meld/dirdiff.py:962
+#: ../meld/dirdiff.py:974
 msgid "Error copying file"
 msgstr "Dosya kopyalamada hata"
 
-#: ../meld/dirdiff.py:963
+#: ../meld/dirdiff.py:975
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1762,12 +1772,12 @@ msgstr ""
 "%s dizinine kopyalanamadı.\n"
 "%s"
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:998
 #, python-format
 msgid "Error deleting %s"
 msgstr "%s silinirken hata"
 
-#: ../meld/dirdiff.py:1499
+#: ../meld/dirdiff.py:1511
 msgid "No folder"
 msgstr "Klasör yok"
 
