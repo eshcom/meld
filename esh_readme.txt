@@ -11,9 +11,9 @@ meld /home/tatiana/projects/github/meld/examples/c_v21.lang /home/tatiana/projec
 --rename file-filter items:
 
 --ui:
-CustomFilterMenu				-> FileFilterMenu
-CustomPopup						-> FileFilterPopup
-FilterButtons					-> <not used>
+CustomFilterMenu						-> FileFilterMenu
+CustomPopup								-> FileFilterPopup
+FilterButtons							-> <not used>
 
 --code:
 (func)	on_custom_filter_menu_toggled	-> on_file_filter_menu_toggled
@@ -26,10 +26,11 @@ FilterButtons					-> <not used>
 (var)	popup_deactivate_id				-> (common var) popup_deactivate_id
 (var)	filter_ui						-> file_filter_ui
 (var)	filter_actiongroup				-> file_filter_actiongroup
-(func)	_cleanup_filter_menu_button		-> need extend for text-filters
-(func)	_create_filter_menu_button		-> need extend for text-filters
 (str)	DirdiffFilterActions			-> FileFilterActions
 (ui)	Filters							-> File filters
 (ui)	Set active filters				-> Set active file filters
 (pot)	msgid "Filters"					-> msgid "File filters"
 (pot)	msgid "Set active filters"		-> msgid "Set active file filters"
+(func)	_cleanup_filter_menu_button		-> need extend for text-filters
+(func)	_create_filter_menu_button		-> need extend for text-filters
+
