@@ -1169,7 +1169,7 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:40
 #, fuzzy
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Testu-iragazkiak"
 
 #: ../data/ui/preferences.ui.h:41

@@ -1116,7 +1116,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "הסרת הבדלי שורות ריקות מההתחלה ומהסוף של שינויים"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "מסנני טקסט"
 
 #: ../data/ui/preferences.ui.h:41

@@ -1151,7 +1151,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Unterschiede in Leerzeilen vor und nach Änderungen abschneiden"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Textfilter"
 
 #: ../data/ui/preferences.ui.h:41

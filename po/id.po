@@ -1127,7 +1127,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Pangkas perbedaan baris kosong dari awal dan akhir perubahan"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Penyaring teks"
 
 #: ../data/ui/preferences.ui.h:41

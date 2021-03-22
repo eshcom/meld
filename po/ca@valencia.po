@@ -1155,7 +1155,7 @@ msgstr ""
 "canvis"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Filtres de text"
 
 #: ../data/ui/preferences.ui.h:41

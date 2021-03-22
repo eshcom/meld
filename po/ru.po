@@ -1114,8 +1114,8 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "При сравнении игнорировать различия по количеству пустых строк"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
-msgstr "Текстовые фильтры"
+msgid "Text filters by file content"
+msgstr "Текстовые фильтры по содержимому файлов"
 
 #: ../data/ui/preferences.ui.h:41
 msgid ""

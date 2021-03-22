@@ -1123,7 +1123,7 @@ msgstr ""
 "modifiche"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Filtri di testo"
 
 #: ../data/ui/preferences.ui.h:41
