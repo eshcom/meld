@@ -476,7 +476,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             treeview.set_headers_visible(extra_cols)
 
     # esh: handled on clicked file-filters menu-button in toolbar,
-    #      filter_menu_button is the "/Toolbar/FilterActions/CustomFilterMenu" widget
+    #      filter_menu_button is the "/Toolbar/FilterActions/FileFilterMenu" widget
     def on_custom_filter_menu_toggled(self, item):
         if item.get_active():
             self.custom_popup.connect("deactivate",
@@ -501,7 +501,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             ui.add_ui(self.custom_merge_id, *x)
         self.popup_deactivate_id = self.popup_menu.connect("deactivate", self.on_popup_deactivate_event)
         self.custom_popup = ui.get_widget("/CustomPopup")
-        self.filter_menu_button = ui.get_widget("/Toolbar/FilterActions/CustomFilterMenu")
+        self.filter_menu_button = ui.get_widget("/Toolbar/FilterActions/FileFilterMenu")
         label = misc.make_tool_button_widget(self.filter_menu_button.props.label)
         self.filter_menu_button.set_label_widget(label)
 

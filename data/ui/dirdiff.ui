@@ -85,7 +85,7 @@
       </object>
     </child>
     <child>
-      <object class="GtkToggleAction" id="CustomFilterMenu">
+      <object class="GtkToggleAction" id="FileFilterMenu">
         <property name="label" translatable="yes">File filters</property>
         <property name="tooltip" translatable="yes">Set active file filters</property>
         <property name="is_important">True</property>
