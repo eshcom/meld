@@ -627,11 +627,11 @@ msgid "Show modified"
 msgstr "Vis ændret"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Filtre"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Angiv aktivt filter"
 
 #: ../data/ui/EditableList.ui.h:1

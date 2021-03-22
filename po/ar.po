@@ -567,12 +567,12 @@ msgstr "مفتاح التعديل Shift"
 
 #: ../data/ui/dirdiff.ui.h:18
 #, fuzzy
-msgid "Filters"
+msgid "File filters"
 msgstr "مرشحات البريد"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "مرشحات البريد"
 
 #: ../data/ui/EditableList.ui.h:1

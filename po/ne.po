@@ -560,12 +560,12 @@ msgstr "परिमार्जन गरिएको देखाउनुह�
 
 #: ../data/ui/dirdiff.ui.h:18
 #, fuzzy
-msgid "Filters"
+msgid "File filters"
 msgstr "फाइल फिल्टरहरु"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "फाइल फिल्टरहरु"
 
 #: ../data/ui/EditableList.ui.h:1

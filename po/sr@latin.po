@@ -619,11 +619,11 @@ msgid "Show modified"
 msgstr "Prikaži izmenjene"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Propusnici"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Podesite aktivne filtere"
 
 #: ../data/ui/EditableList.ui.h:1

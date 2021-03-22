@@ -651,11 +651,11 @@ msgid "Show modified"
 msgstr "Aldatuak erakusten ditu"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Iragazkiak"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Iragazki aktiboak ezartzen ditu"
 
 #: ../data/ui/EditableList.ui.h:1

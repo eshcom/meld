@@ -640,11 +640,11 @@ msgid "Show modified"
 msgstr "Εμφάνιση τροποποιημένου"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Φίλτρα"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Ορισμός ενεργών φίλτρων"
 
 #: ../data/ui/EditableList.ui.h:1

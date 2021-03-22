@@ -570,11 +570,11 @@ msgid "Show modified"
 msgstr "Mostrar modificados"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Filtros"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Estabelecer filtros activos"
 
 #: ../data/ui/EditableList.ui.h:1

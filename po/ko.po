@@ -555,12 +555,12 @@ msgstr "고친 것 표시"
 
 #: ../data/ui/dirdiff.ui.h:18
 #, fuzzy
-msgid "Filters"
+msgid "File filters"
 msgstr "파일 필터"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "파일 필터"
 
 #: ../data/ui/EditableList.ui.h:1

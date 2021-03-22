@@ -552,12 +552,12 @@ msgstr "Laat veranderde zien"
 
 #: ../data/ui/dirdiff.ui.h:18
 #, fuzzy
-msgid "Filters"
+msgid "File filters"
 msgstr "Bestands filters"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Bestands filters"
 
 #: ../data/ui/EditableList.ui.h:1

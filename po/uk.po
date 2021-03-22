@@ -553,12 +553,12 @@ msgstr "Показати модифіковані"
 
 #: ../data/ui/dirdiff.ui.h:18
 #, fuzzy
-msgid "Filters"
+msgid "File filters"
 msgstr "Фільтр файлів"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Фільтр файлів"
 
 #: ../data/ui/EditableList.ui.h:1

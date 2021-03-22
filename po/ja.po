@@ -554,11 +554,11 @@ msgid "Show modified"
 msgstr "変更のあるファイルを表示します"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "フィルター"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "フィルターを選択します"
 
 #: ../data/ui/EditableList.ui.h:1

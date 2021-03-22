@@ -556,11 +556,11 @@ msgid "Show modified"
 msgstr "Hiện các thay đổi"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Bộ lọc"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Bật bộ lọc"
 
 #: ../data/ui/EditableList.ui.h:1
