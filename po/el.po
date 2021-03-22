@@ -1160,7 +1160,7 @@ msgstr ""
 "Περικοπή των διαφορών κενής γραμμής από την αρχή και το τέλος των αλλαγών"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Φίλτρα κειμένου"
 
 #: ../data/ui/preferences.ui.h:41

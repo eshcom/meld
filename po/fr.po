@@ -1162,7 +1162,7 @@ msgstr ""
 "modifications"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Filtres textuels"
 
 #: ../data/ui/preferences.ui.h:41

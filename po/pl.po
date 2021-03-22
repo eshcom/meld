@@ -1137,7 +1137,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Obcinanie różnic pustych wierszy z początku i końca zmian"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Filtry tekstu"
 
 #: ../data/ui/preferences.ui.h:41

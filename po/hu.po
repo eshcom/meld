@@ -1121,7 +1121,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Üres sorokból álló eltérés lenyírása a módosítások elejéről és végéről"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Szövegszűrők"
 
 #: ../data/ui/preferences.ui.h:41

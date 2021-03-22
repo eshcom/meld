@@ -1126,7 +1126,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Değişikliklerin baştan sona boş satır farklılıklarını kırp"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Metin süzgeçleri"
 
 #: ../data/ui/preferences.ui.h:41

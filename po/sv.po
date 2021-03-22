@@ -1127,7 +1127,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Ta bort tomma radskillnader från början och slutet av ändringar"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Textfilter"
 
 #: ../data/ui/preferences.ui.h:41

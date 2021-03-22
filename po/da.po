@@ -1139,7 +1139,7 @@ msgstr ""
 "Beskær tomme linjer-forskelle fra begyndelsen og slutningen af ændringer"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Tekstfiltre"
 
 # vert mønster er et regulært udtryk i python, der erstatter

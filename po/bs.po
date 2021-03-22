@@ -1130,7 +1130,7 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr "Poravnaj razlike između praznih redova od početka do kraja izmjena"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Tekstualni filteri"
 
 #: ../data/ui/preferences.ui.h:41

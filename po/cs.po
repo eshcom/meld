@@ -1128,7 +1128,7 @@ msgstr ""
 "Vynechat od začátku do konce změn rozdíly spočívající v prázdných řádcích"
 
 #: ../data/ui/preferences.ui.h:40
-msgid "Text filters"
+msgid "Text filters by file content"
 msgstr "Filtry textu"
 
 #: ../data/ui/preferences.ui.h:41
