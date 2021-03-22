@@ -618,11 +618,11 @@ msgid "Show modified"
 msgstr "Değiştirilmişi göster"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Süzgeçler"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Etkin süzgeçleri ayarla"
 
 #: ../data/ui/EditableList.ui.h:1

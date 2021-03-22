@@ -554,11 +554,11 @@ msgid "Show modified"
 msgstr "显示已修改的"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "过滤器"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "设定启用的过滤器"
 
 #: ../data/ui/EditableList.ui.h:1

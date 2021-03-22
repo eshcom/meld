@@ -622,11 +622,11 @@ msgid "Show modified"
 msgstr "Apresentar alterados"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Filtros"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Definir filtros ativos"
 
 #: ../data/ui/EditableList.ui.h:1

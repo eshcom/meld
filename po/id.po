@@ -617,11 +617,11 @@ msgid "Show modified"
 msgstr "Tampilkan yang berubah"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Penyaring"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Tata penyaring aktif"
 
 #: ../data/ui/EditableList.ui.h:1

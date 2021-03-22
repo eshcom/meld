@@ -639,11 +639,11 @@ msgid "Show modified"
 msgstr "Mostra modificats"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Filtres"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Estableix els filtres actius"
 
 #: ../data/ui/EditableList.ui.h:1

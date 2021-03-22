@@ -18,6 +18,7 @@ FilterButtons					-> <not used>
 --code:
 (func)	on_custom_filter_menu_toggled	-> on_file_filter_menu_toggled
 (func)	create_name_filters				-> create_file_filters
+(func)	_update_name_filter				-> _update_file_filter
 (var)	name_filters					-> file_filters
 (var)	custom_popup					-> file_filter_popup
 (var)	filter_menu_button				-> file_filter_menu_button

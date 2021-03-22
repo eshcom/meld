@@ -562,11 +562,11 @@ msgid "Show modified"
 msgstr "Näytä muokatut"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Suodattimet"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Aseta aktiiviset suodattimet"
 
 #: ../data/ui/EditableList.ui.h:1

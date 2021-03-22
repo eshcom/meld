@@ -615,11 +615,11 @@ msgid "Show modified"
 msgstr "Прикажи измењене"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Пропусници"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Подесите активне филтере"
 
 #: ../data/ui/EditableList.ui.h:1

@@ -559,11 +559,11 @@ msgid "Show modified"
 msgstr "顯示修改處"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "過濾器"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "設定啟用的過濾器"
 
 #: ../data/ui/EditableList.ui.h:1

@@ -606,11 +606,11 @@ msgid "Show modified"
 msgstr "הצגת שינויים"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "מסננים"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "קביעת מסננים פעילים"
 
 #: ../data/ui/EditableList.ui.h:1

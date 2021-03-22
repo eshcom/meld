@@ -606,11 +606,11 @@ msgid "Show modified"
 msgstr "Показывать изменённые"
 
 #: ../data/ui/dirdiff.ui.h:18
-msgid "Filters"
+msgid "File filters"
 msgstr "Файл.фильтры"
 
 #: ../data/ui/dirdiff.ui.h:19
-msgid "Set active filters"
+msgid "Set active file filters"
 msgstr "Установить фильтры"
 
 #: ../data/ui/EditableList.ui.h:1
