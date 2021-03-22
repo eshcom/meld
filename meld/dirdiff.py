@@ -329,9 +329,9 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.actiongroup = self.DirdiffActions
         self.actiongroup.set_translation_domain("meld")
 
-        self.name_filters = []
+        self.file_filters = []
         self.text_filters = []
-        self.create_name_filters()
+        self.create_file_filters()
         self.create_text_filters()
         self.settings_handlers = [
             meldsettings.connect("file-filters-changed",
@@ -476,34 +476,34 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             treeview.set_headers_visible(extra_cols)
 
     # esh: handled on clicked file-filters menu-button in toolbar,
-    #      filter_menu_button is the "/Toolbar/FilterActions/FileFilterMenu" widget
+    #      file_filter_menu_button is the "/Toolbar/FilterActions/FileFilterMenu" widget
     def on_file_filter_menu_toggled(self, item):
         if item.get_active():
-            self.custom_popup.connect("deactivate",
-                                      lambda popup: item.set_active(False))
-            self.custom_popup.popup(None, None,
-                                    misc.position_menu_under_widget,
-                                    self.filter_menu_button, 1,
-                                    Gtk.get_current_event_time())
+            self.file_filter_popup.connect("deactivate",
+                                           lambda popup: item.set_active(False))
+            self.file_filter_popup.popup(None, None,
+                                         misc.position_menu_under_widget,
+                                         self.file_filter_menu_button, 1,
+                                         Gtk.get_current_event_time())
 
     def _cleanup_filter_menu_button(self, ui):
         if self.popup_deactivate_id:
             self.popup_menu.disconnect(self.popup_deactivate_id)
-        if self.custom_merge_id:
-            ui.remove_ui(self.custom_merge_id)
-        if self.filter_actiongroup in ui.get_action_groups():
-            ui.remove_action_group(self.filter_actiongroup)
+        if self.file_filter_merge_id:
+            ui.remove_ui(self.file_filter_merge_id)
+        if self.file_filter_actiongroup in ui.get_action_groups():
+            ui.remove_action_group(self.file_filter_actiongroup)
 
     def _create_filter_menu_button(self, ui):
-        ui.insert_action_group(self.filter_actiongroup, -1)
-        self.custom_merge_id = ui.new_merge_id()
-        for x in self.filter_ui:
-            ui.add_ui(self.custom_merge_id, *x)
+        ui.insert_action_group(self.file_filter_actiongroup, -1)
+        self.file_filter_merge_id = ui.new_merge_id()
+        for x in self.file_filter_ui:
+            ui.add_ui(self.file_filter_merge_id, *x)
         self.popup_deactivate_id = self.popup_menu.connect("deactivate", self.on_popup_deactivate_event)
-        self.custom_popup = ui.get_widget("/FileFilterPopup")
-        self.filter_menu_button = ui.get_widget("/Toolbar/FilterActions/FileFilterMenu")
-        label = misc.make_tool_button_widget(self.filter_menu_button.props.label)
-        self.filter_menu_button.set_label_widget(label)
+        self.file_filter_popup = ui.get_widget("/FileFilterPopup")
+        self.file_filter_menu_button = ui.get_widget("/Toolbar/FilterActions/FileFilterMenu")
+        label = misc.make_tool_button_widget(self.file_filter_menu_button.props.label)
+        self.file_filter_menu_button.set_label_widget(label)
 
     def on_container_switch_in_event(self, ui):
         melddoc.MeldDoc.on_container_switch_in_event(self, ui)
@@ -516,37 +516,38 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
 
     def on_file_filters_changed(self, app):
         self._cleanup_filter_menu_button(self.ui_manager) # esh: file-filters only
-        relevant_change = self.create_name_filters()
+        relevant_change = self.create_file_filters()
         self._create_filter_menu_button(self.ui_manager) # esh: file-filters only
         if relevant_change:
             self.refresh()
 
-    # esh: name-filters - are file-filters
-    def create_name_filters(self):
+    def create_file_filters(self):
         # Ordering of name filters is irrelevant
-        old_active = set([f.filter_string for f in self.name_filters
+        old_active = set([f.filter_string for f in self.file_filters
                           if f.active])
         new_active = set([f.filter_string for f in meldsettings.file_filters
                           if f.active])
         active_filters_changed = old_active != new_active
 
-        self.name_filters = [copy.copy(f) for f in meldsettings.file_filters]
+        self.file_filters = [copy.copy(f) for f in meldsettings.file_filters]
         actions = []
         disabled_actions = []
-        self.filter_ui = []
-        for i, f in enumerate(self.name_filters):
+        self.file_filter_ui = []
+        for i, f in enumerate(self.file_filters):
             name = "Hide%d" % i
-            callback = lambda b, i=i: self._update_name_filter(b, i)
+            callback = lambda b, i=i: self._update_file_filter(b, i)
             actions.append((name, None, f.label, None, _("Hide %s") % f.label, callback, f.active))
-            self.filter_ui.append(["/FileFilterPopup" , name, name, Gtk.UIManagerItemType.MENUITEM, False])
-            self.filter_ui.append(["/Menubar/ViewMenu/FileFilters" , name, name, Gtk.UIManagerItemType.MENUITEM, False])
+            self.file_filter_ui.append(["/FileFilterPopup" , name, name,
+                                        Gtk.UIManagerItemType.MENUITEM, False])
+            self.file_filter_ui.append(["/Menubar/ViewMenu/FileFilters" , name, name,
+                                        Gtk.UIManagerItemType.MENUITEM, False])
             if f.filter is None:
                 disabled_actions.append(name)
 
-        self.filter_actiongroup = Gtk.ActionGroup(name="DirdiffFilterActions")
-        self.filter_actiongroup.add_toggle_actions(actions)
+        self.file_filter_actiongroup = Gtk.ActionGroup(name="FileFilterActions")
+        self.file_filter_actiongroup.add_toggle_actions(actions)
         for name in disabled_actions:
-            self.filter_actiongroup.get_action(name).set_sensitive(False)
+            self.file_filter_actiongroup.get_action(name).set_sensitive(False)
 
         return active_filters_changed
 
@@ -714,7 +715,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                     differences = True
                     continue
 
-                for f in self.name_filters:
+                for f in self.file_filters:
                     if not f.active or f.filter is None:
                         continue
                     entries = [e for e in entries if f.filter.match(e) is None]
@@ -845,7 +846,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             "Text filters are in use and may be masking content differences.")
 
         is_shallow = self.props.shallow_comparison
-        have_file_filters = any(f.active for f in self.name_filters)
+        have_file_filters = any(f.active for f in self.file_filters)
         have_text_filters = any(f.active for f in self.text_filters)
 
         secondary = [shallow_note if is_shallow else identical_note]
@@ -1238,8 +1239,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.props.status_filters = state_strs
         self.refresh()
 
-    def _update_name_filter(self, button, idx):
-        self.name_filters[idx].active = button.get_active()
+    def _update_file_filter(self, button, idx):
+        self.file_filters[idx].active = button.get_active()
         self.refresh()
 
     def on_filter_hide_current_clicked(self, button):
