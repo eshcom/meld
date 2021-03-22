@@ -45,6 +45,7 @@
       <menu action="FileStatus" />
       <menu action="VcStatus" />
       <menu action="FileFilters" />
+      <menu action="TextFilters" />
       <separator/>
       <placeholder name="ViewDocSpecificPlaceholder" />
       <separator/>
