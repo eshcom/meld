@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 14:43+0300\n"
+"POT-Creation-Date: 2021-03-22 18:38+0300\n"
 "PO-Revision-Date: 2017-03-14 09:57+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -561,7 +561,7 @@ msgstr "Copia a destra"
 msgid "Delete selected"
 msgstr "Elimina selezione"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
 msgid "Hide"
 msgstr "Nascondi"
 
@@ -612,6 +612,16 @@ msgstr "Filtri"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
+msgstr "Imposta i filtri attivi"
+
+#: ../data/ui/dirdiff.ui.h:20
+#, fuzzy
+msgid "Text filters"
+msgstr "Filtri di testo"
+
+#: ../data/ui/dirdiff.ui.h:21
+#, fuzzy
+msgid "Set active text filters"
 msgstr "Imposta i filtri attivi"
 
 #: ../data/ui/EditableList.ui.h:1
@@ -856,7 +866,7 @@ msgstr "Se non si salva, tutte le modifiche andranno perse per sempre."
 msgid "Close _without Saving"
 msgstr "Chiudi senza sal_vare"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
 msgid "_Cancel"
 msgstr "A_nnulla"
 
@@ -895,7 +905,7 @@ msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr ""
 "Le modifiche apportate ai seguenti documenti andranno perse per sempre:\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
 msgid "_Replace"
 msgstr "Sostit_uisci"
 
@@ -1656,30 +1666,30 @@ msgstr "Data e ora di modifica"
 msgid "Permissions"
 msgstr "Permessi"
 
-#: ../meld/dirdiff.py:540
+#: ../meld/dirdiff.py:550
 #, python-format
 msgid "Hide %s"
 msgstr "Nascondi %s"
 
-#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] Analisi di %s"
 
-#: ../meld/dirdiff.py:828
+#: ../meld/dirdiff.py:840
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Fatto"
 
-#: ../meld/dirdiff.py:836
+#: ../meld/dirdiff.py:848
 msgid "Folders have no differences"
 msgstr "Le cartelle non presentano alcuna differenza"
 
-#: ../meld/dirdiff.py:838
+#: ../meld/dirdiff.py:850
 msgid "Contents of scanned files in folders are identical."
 msgstr "Il contenuto dei file analizzati nelle cartelle è identico."
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:852
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
@@ -1687,41 +1697,41 @@ msgstr ""
 "I file analizzati nelle cartelle sembrerebbero identici, ma il loro "
 "contenuto non è stato analizzato."
 
-#: ../meld/dirdiff.py:843
+#: ../meld/dirdiff.py:855
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 "Sono in uso dei filtri sui file: non tutti i file sono stati analizzati."
 
-#: ../meld/dirdiff.py:845
+#: ../meld/dirdiff.py:857
 msgid "Text filters are in use and may be masking content differences."
 msgstr ""
 "Sono in uso filtri sul testo e potrebbero nascondere differenze tra i file."
 
-#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
 #: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "Nascon_di"
 
-#: ../meld/dirdiff.py:873
+#: ../meld/dirdiff.py:885
 msgid "Multiple errors occurred while scanning this folder"
 msgstr ""
 "Si sono verificati molteplici errore durante l'analisi di questa cartella"
 
-#: ../meld/dirdiff.py:874
+#: ../meld/dirdiff.py:886
 msgid "Files with invalid encodings found"
 msgstr "Trovati file con codifiche non valide"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:876
+#: ../meld/dirdiff.py:888
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Alcuni file presentano delle codifiche non corrette. I nomi sono:"
 
-#: ../meld/dirdiff.py:878
+#: ../meld/dirdiff.py:890
 msgid "Files hidden by case insensitive comparison"
 msgstr "File nascosti dal confronto senza distinzione maiuscole/minuscole"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:880
+#: ../meld/dirdiff.py:892
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1729,17 +1739,17 @@ msgstr ""
 "Confronto eseguito senza distinzione tra maiuscole/minuscole su un file "
 "system che applica tale distinzione. Alcuni file sono nascosti:"
 
-#: ../meld/dirdiff.py:891
+#: ../meld/dirdiff.py:903
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "«%s» è nascosto da «%s»"
 
-#: ../meld/dirdiff.py:947
+#: ../meld/dirdiff.py:959
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr "Sostituire la cartella «%s»?"
 
-#: ../meld/dirdiff.py:949
+#: ../meld/dirdiff.py:961
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
@@ -1749,11 +1759,11 @@ msgstr ""
 "Sostituendo la cartella esistente, tutti i file in essa contenuti saranno "
 "persi."
 
-#: ../meld/dirdiff.py:962
+#: ../meld/dirdiff.py:974
 msgid "Error copying file"
 msgstr "Errore nel copiare il file"
 
-#: ../meld/dirdiff.py:963
+#: ../meld/dirdiff.py:975
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1766,12 +1776,12 @@ msgstr ""
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:986
+#: ../meld/dirdiff.py:998
 #, python-format
 msgid "Error deleting %s"
 msgstr "Errore nell'eliminare %s"
 
-#: ../meld/dirdiff.py:1499
+#: ../meld/dirdiff.py:1511
 msgid "No folder"
 msgstr "Nessuna cartella"
 

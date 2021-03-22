@@ -92,6 +92,14 @@
         <signal name="toggled" handler="on_file_filter_menu_toggled" swapped="no"/>
       </object>
     </child>
+    <child>
+      <object class="GtkToggleAction" id="TextFilterMenu">
+        <property name="label" translatable="yes">Text filters</property>
+        <property name="tooltip" translatable="yes">Set active text filters</property>
+        <property name="is_important">True</property>
+        <signal name="toggled" handler="on_text_filter_menu_toggled" swapped="no"/>
+      </object>
+    </child>
   </object>
   <object class="GtkWindow" id="container">
     <property name="visible">True</property>

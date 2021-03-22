@@ -23,14 +23,15 @@ FilterButtons							-> <not used>
 (var)	custom_popup					-> file_filter_popup
 (var)	filter_menu_button				-> file_filter_menu_button
 (var)	custom_merge_id					-> file_filter_merge_id
-(var)	popup_deactivate_id				-> (common var) popup_deactivate_id
 (var)	filter_ui						-> file_filter_ui
 (var)	filter_actiongroup				-> file_filter_actiongroup
 (str)	DirdiffFilterActions			-> FileFilterActions
+
 (ui)	Filters							-> File filters
 (ui)	Set active filters				-> Set active file filters
 (pot)	msgid "Filters"					-> msgid "File filters"
 (pot)	msgid "Set active filters"		-> msgid "Set active file filters"
+
+(var)	popup_deactivate_id				-> (common var) popup_deactivate_id
 (func)	_cleanup_filter_menu_button		-> need extend for text-filters
 (func)	_create_filter_menu_button		-> need extend for text-filters
-
