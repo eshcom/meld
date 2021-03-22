@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
-"POT-Creation-Date: 2012-02-03 13:29+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2012-02-03 13:26+0200\n"
 "Last-Translator: Alexander Shopov  <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -17,187 +17,444 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../bin/meld:97
+#: ../bin/meld:186
 msgid "Cannot import: "
 msgstr "Следните модули не мога да бъдат внесени: "
 
-#: ../bin/meld:100
+#: ../bin/meld:189
 #, c-format
 msgid "Meld requires %s or higher."
 msgstr "Meld изисква %s или по-висока версия."
 
-#: ../data/meld.desktop.in.h:1
-msgid "Compare and merge your files"
-msgstr "Сравняване и сливане на файлове"
+#: ../bin/meld:241
+#, c-format
+msgid ""
+"Couldn't load Meld-specific CSS (%s)\n"
+"%s"
+msgstr ""
+
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
+msgid "Meld"
+msgstr "Meld"
 
 #: ../data/meld.desktop.in.h:2
 msgid "Diff Viewer"
 msgstr "Преглед на разлики"
 
-#: ../data/meld.desktop.in.h:3 ../data/ui/meldapp.ui.h:5
-msgid "Meld"
-msgstr "Meld"
-
-#: ../data/meld.desktop.in.h:4
+#: ../data/meld.desktop.in.h:3
 msgid "Meld Diff Viewer"
 msgstr "Програма за сравняване Meld"
 
-#: ../data/ui/EditableList.ui.h:1
-msgid "Active"
-msgstr "Действащ"
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
+msgid "Compare and merge your files"
+msgstr "Сравняване и сливане на файлове"
 
-#: ../data/ui/EditableList.ui.h:2
-msgid "Add new filter"
-msgstr "Добавяне на нов филтър"
-
-#: ../data/ui/EditableList.ui.h:3
-msgid "Editable List"
-msgstr "Списък с редактираните файлове"
-
-#: ../data/ui/EditableList.ui.h:4
-msgid "Move _Down"
-msgstr "На_горе"
-
-#: ../data/ui/EditableList.ui.h:5
-msgid "Move _Up"
-msgstr "На_долу"
-
-#: ../data/ui/EditableList.ui.h:6
-msgid "Move item down"
-msgstr "Преместване на елемента нагоре"
-
-#: ../data/ui/EditableList.ui.h:7
-msgid "Move item up"
-msgstr "Преместване на елемента надолу"
-
-#: ../data/ui/EditableList.ui.h:8 ../meld/vcview.py:166
-msgid "Name"
-msgstr "Име"
-
-#: ../data/ui/EditableList.ui.h:9
-msgid "Pattern"
-msgstr "Шаблон"
-
-#: ../data/ui/EditableList.ui.h:10
-msgid "Remove selected filter"
-msgstr "Премахване на избрания филтър"
-
-#: ../data/ui/EditableList.ui.h:11 ../meld/vcview.py:130
-msgid "_Add"
-msgstr "_Добавяне"
-
-#: ../data/ui/EditableList.ui.h:12 ../meld/vcview.py:132
-msgid "_Remove"
-msgstr "_Премахване"
-
-#: ../data/ui/filediff.ui.h:1
-msgid "Save modified files?"
-msgstr "Запазване на променените файлове?"
-
-#: ../data/ui/filediff.ui.h:2
-msgid ""
-"Some files have been modified.\n"
-"Which ones would you like to save?"
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
 msgstr ""
-"Някои файлове са променени.\n"
-"Кои от тях искате да се запазят?"
 
-#: ../data/ui/filediff.ui.h:4
-msgid "_Discard Changes"
-msgstr "_Отмяна на промените"
-
-#: ../data/ui/filediff.ui.h:5
-msgid "_Save Selected"
-msgstr "_Запазване на избраните"
-
-#: ../data/ui/findbar.ui.h:1
-msgid "Regular E_xpression"
-msgstr "Ре_гулярен израз"
-
-#: ../data/ui/findbar.ui.h:2
-msgid "Replace _All"
-msgstr "Замяна на _всички"
-
-#: ../data/ui/findbar.ui.h:3
-msgid "Replace _With"
-msgstr "Замяна _с"
-
-#: ../data/ui/findbar.ui.h:4
-msgid "Who_le word"
-msgstr "_Цели думи"
-
-#: ../data/ui/findbar.ui.h:5
-msgid "_Match Case"
-msgstr "Зачитане на главни/_малки"
-
-#: ../data/ui/findbar.ui.h:6
-msgid "_Next"
-msgstr "_Следващо"
-
-#: ../data/ui/findbar.ui.h:7
-msgid "_Previous"
-msgstr "_Предишно"
-
-#: ../data/ui/findbar.ui.h:8 ../meld/meldwindow.py:141
-msgid "_Replace"
-msgstr "_Замяна"
-
-#: ../data/ui/findbar.ui.h:9
-msgid "_Search for"
-msgstr "_Търсене за:"
-
-#: ../data/ui/meldapp.ui.h:1
-msgid "Choose Files"
-msgstr "Избор на файлове"
-
-#: ../data/ui/meldapp.ui.h:2
+#: ../data/meld.appdata.xml.in.h:3
 msgid ""
-"Copyright &#xA9; 2002-2009 Stephen Kennedy\n"
-"Copyright &#xA9; 2009-2011 Kai Willadsen"
+"Meld is a visual diff and merge tool targeted at developers. Meld helps you "
+"compare files, directories, and version controlled projects. It provides "
+"two- and three-way comparison of both files and directories, and supports "
+"many version control systems including Git, Mercurial, Bazaar and Subversion."
+msgstr ""
+
+#: ../data/meld.appdata.xml.in.h:4
+msgid ""
+"Meld helps you review code changes, understand patches, and makes enormous "
+"merge conflicts slightly less painful."
+msgstr ""
+
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr ""
+
+#: ../data/mime/meld.xml.in.h:1
+msgid "Meld comparison description"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:1
+msgid "Default window width"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:2
+msgid "Default window height"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:3
+msgid "Default window maximised state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:4
+msgid "Default window fullscreen state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:5
+#, fuzzy
+msgid "Show toolbar"
+msgstr "Показване или скриване на лентата с инструменти"
+
+#: ../data/org.gnome.meld.gschema.xml.h:6
+msgid "If true, the window toolbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:7
+#, fuzzy
+msgid "Show statusbar"
+msgstr "_Лента за състояние"
+
+#: ../data/org.gnome.meld.gschema.xml.h:8
+msgid "If true, the window statusbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:9
+msgid "Additional automatically detected text encodings"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:10
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Width of an indentation step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "The number of spaces to use for a single indent step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:13
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:14
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:15
+#, fuzzy
+msgid "Show line numbers"
+msgstr "Показване на _номерата на редовете"
+
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:17
+msgid "Highlight syntax"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:18
+msgid ""
+"Whether to highlight syntax in comparisons. Because of Meld's own color "
+"highlighting, this is off by default."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:19
+#, fuzzy
+msgid "Color scheme to use for syntax highlighting"
+msgstr "Използване на _оцветяване на синтаксиса"
+
+#: ../data/org.gnome.meld.gschema.xml.h:20
+msgid "Used by GtkSourceView to determine colors for syntax highlighting"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:21
+#, fuzzy
+msgid "Displayed whitespace"
+msgstr "Показване на _празните знаци"
+
+#: ../data/org.gnome.meld.gschema.xml.h:22
+msgid ""
+"Selector for individual whitespace character types to be shown. Possible "
+"values are 'space', 'tab', 'newline' and 'nbsp'."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:23
+msgid "Wrap mode"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:24
+msgid ""
+"Lines in file comparisons will be wrapped according to this setting, either "
+"not at all ('none'), at any character ('char') or only at the end of words "
+"('word')."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:25
+msgid "Highlight current line"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:26
+msgid ""
+"If true, the line containing the cursor will be highlighted in file "
+"comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:27
+#, fuzzy
+msgid "Use the system default monospace font"
+msgstr "Използване на _системния шрифт с фиксирана ширина"
+
+#: ../data/org.gnome.meld.gschema.xml.h:28
+msgid ""
+"If false, custom-font will be used instead of the system monospace font."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:29
+msgid "Custom font"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:30
+msgid ""
+"The custom font to use, stored as a string and parsed as a Pango font "
+"description."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:31
+msgid "Ignore blank lines when comparing files"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:32
+msgid ""
+"If true, blank lines will be trimmed when highlighting changes between files."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:33
+#, fuzzy
+msgid "Use the system default editor"
+msgstr "Използване на стандартния _редактор на GNOME"
+
+#: ../data/org.gnome.meld.gschema.xml.h:34
+msgid ""
+"If false, custom-editor-command will be used instead of the system editor "
+"when opening files externally."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:35
+msgid "The custom editor launch command"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:36
+msgid ""
+"The command used to launch a custom editor. Some limited templating is "
+"supported here; at the moment '{file}' and '{line}' are recognised tokens."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:37
+msgid "Columns to display"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:38
+msgid ""
+"List of column names in folder comparison and whether they should be "
+"displayed."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
+msgid "Ignore symbolic links"
+msgstr "Игнориране на символните връзки"
+
+#: ../data/org.gnome.meld.gschema.xml.h:40
+msgid ""
+"If true, folder comparisons do not follow symbolic links when traversing the "
+"folder tree."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:41
+#, fuzzy
+msgid "Use shallow comparison"
+msgstr "Презареждане на сравнението"
+
+#: ../data/org.gnome.meld.gschema.xml.h:42
+msgid ""
+"If true, folder comparisons compare files based solely on size and mtime, "
+"considering files to be identical if their size and mtime match, and "
+"different otherwise."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:43
+msgid "File timestamp resolution"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:44
+msgid ""
+"When comparing based on mtime, this is the minimum difference in nanoseconds "
+"between two files before they're considered to have different mtimes. This "
+"is useful when comparing files between filesystems with different timestamp "
+"resolution."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:46
+msgid ""
+"If true, folder comparisons that compare file contents also apply active "
+"text filters and the blank line trimming option, and ignore newline "
+"differences."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:47
+#, fuzzy
+msgid "File status filters"
+msgstr "Филтри за файлове"
+
+#: ../data/org.gnome.meld.gschema.xml.h:48
+msgid "List of statuses used to filter visible files in folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:49
+#, fuzzy
+msgid "Show the version control console output"
+msgstr "Ново сравнение спрямо системата за версии"
+
+#: ../data/org.gnome.meld.gschema.xml.h:50
+msgid ""
+"If true, a console output section will be shown in version control views, "
+"showing the commands run for version control operations."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:51
+#, fuzzy
+msgid "Version control pane position"
+msgstr "Навигация при контрола на _версиите"
+
+#: ../data/org.gnome.meld.gschema.xml.h:52
+msgid ""
+"This is the height of the main version control tree when the console pane is "
+"shown."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:53
+msgid "Present version comparisons as left-local/right-remote"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:54
+msgid ""
+"If true, version control comparisons will use a left-is-local, right-is-"
+"remote scheme to determine what order to present files in panes. Otherwise, "
+"a left-is-theirs, right-is-mine scheme is used."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:55
+#, fuzzy
+msgid "Order for files in three-way version control merge comparisons"
+msgstr "Ново сравнение спрямо системата за версии"
+
+#: ../data/org.gnome.meld.gschema.xml.h:56
+msgid ""
+"Choices for file order are remote/merged/local and local/merged/remote. This "
+"preference only affects three-way comparisons launched from the version "
+"control view, so is used solely for merges/conflict resolution within Meld."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:57
+msgid "Show margin in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:58
+msgid ""
+"If true, a guide will be displayed to show what column the margin is at in "
+"the version control commit message editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:59
+msgid "Margin column in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:60
+msgid ""
+"The column at which to show the margin in the version control commit message "
+"editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:61
+msgid "Automatically hard-wrap commit messages"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:62
+msgid ""
+"If true, the version control commit message editor will hard-wrap (i.e., "
+"insert line breaks) at the commit margin before commit."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:63
+#, fuzzy
+msgid "Version control status filters"
+msgstr "Навигация при контрола на _версиите"
+
+#: ../data/org.gnome.meld.gschema.xml.h:64
+msgid ""
+"List of statuses used to filter visible files in version control comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:65
+#, fuzzy
+msgid "Filename-based filters"
+msgstr "Филтри за файлове"
+
+#: ../data/org.gnome.meld.gschema.xml.h:66
+msgid ""
+"List of predefined filename-based filters that, if active, will remove "
+"matching files from a folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:67
+#, fuzzy
+msgid "Text-based filters"
+msgstr "Филтри за текст"
+
+#: ../data/org.gnome.meld.gschema.xml.h:68
+msgid ""
+"List of predefined text-based regex filters that, if active, will remove "
+"text from being used in a file comparison. The text will still be displayed, "
+"but won't contribute to the comparison itself."
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+msgid "Base color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+msgid "Dark color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/ui/application.ui.h:1
+msgid "About Meld"
+msgstr ""
+
+#: ../data/ui/application.ui.h:2
+#, fuzzy
+msgid ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
 msgstr ""
 "Авторски права © 2002-2009 Stephen Kennedy\n"
 "Авторски права © 2009-2011 Kai Willadsen"
 
-#: ../data/ui/meldapp.ui.h:4
-msgid "Directory"
-msgstr "Папка"
+#: ../data/ui/application.ui.h:4
+msgid "Website"
+msgstr ""
 
-#. Refers to version of the file being compared
-#: ../data/ui/meldapp.ui.h:7
-msgid "Mine"
-msgstr "Мои"
-
-#. Refers to version of the file being compared
-#: ../data/ui/meldapp.ui.h:9
-msgid "Original"
-msgstr "Първоначални"
-
-#. Refers to version of the file being compared
-#: ../data/ui/meldapp.ui.h:11
-msgid "Other"
-msgstr "Чужди"
-
-#: ../data/ui/meldapp.ui.h:12
-msgid "Select VC Directory"
-msgstr "Избор на папка с контрол на версиите"
-
-#: ../data/ui/meldapp.ui.h:13
-msgid "_Directory Comparison"
-msgstr "Сравняване на _папки"
-
-#: ../data/ui/meldapp.ui.h:14
-msgid "_File Comparison"
-msgstr "Сравняване на _файлове"
-
-#: ../data/ui/meldapp.ui.h:15
-msgid "_Three Way Compare"
-msgstr "_Тройно сравняване"
-
-#: ../data/ui/meldapp.ui.h:16
-msgid "_Version Control Browser"
-msgstr "Навигация при контрола на _версиите"
-
-#: ../data/ui/meldapp.ui.h:17
+#: ../data/ui/application.ui.h:5
 msgid "translator-credits"
 msgstr ""
 "Александър Шопов <ash@kambanaria.org>\n"
@@ -206,113 +463,619 @@ msgstr ""
 "Научете повече за нас на http://gnome.cult.bg\n"
 "Докладвайте за грешки на http://gnome.cult.bg/bugs"
 
+#: ../data/ui/application.ui.h:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "_Настройки"
+
+#: ../data/ui/application.ui.h:7
+msgid "_Help"
+msgstr "Помо_щ"
+
+#: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/application.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
+msgid "_Compare"
+msgstr "_Сравняване"
+
+#: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
+#, fuzzy
+msgid "Compare selected files"
+msgstr "Сравняване на избраното"
+
+#: ../data/ui/dirdiff.ui.h:3
+#, fuzzy
+msgid "Copy to _Left"
+msgstr "Копиране наляво"
+
+#: ../data/ui/dirdiff.ui.h:4
+msgid "Copy to left"
+msgstr "Копиране наляво"
+
+#: ../data/ui/dirdiff.ui.h:5
+#, fuzzy
+msgid "Copy to _Right"
+msgstr "Копиране надясно"
+
+#: ../data/ui/dirdiff.ui.h:6
+msgid "Copy to right"
+msgstr "Копиране надясно"
+
+#: ../data/ui/dirdiff.ui.h:7
+msgid "Delete selected"
+msgstr "Изтриване на избраното"
+
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+msgid "Hide"
+msgstr "Скриване"
+
+#: ../data/ui/dirdiff.ui.h:9
+msgid "Hide selected"
+msgstr "Скриване на избраното"
+
+#: ../data/ui/dirdiff.ui.h:10
+msgid "Ignore Filename Case"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:11
+msgid ""
+"Consider differently-cased filenames that are otherwise-identical to be the "
+"same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:12
+msgid "Same"
+msgstr "Еднакви"
+
+#: ../data/ui/dirdiff.ui.h:13
+msgid "Show identical"
+msgstr "Показване на еднаквите"
+
+#: ../data/ui/dirdiff.ui.h:14
+msgid "New"
+msgstr "Нови"
+
+#: ../data/ui/dirdiff.ui.h:15
+msgid "Show new"
+msgstr "Показване на новите"
+
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
+msgid "Modified"
+msgstr "Променени"
+
+#: ../data/ui/dirdiff.ui.h:17
+msgid "Show modified"
+msgstr "Показване на променените"
+
+#: ../data/ui/dirdiff.ui.h:18
+msgid "Filters"
+msgstr "Филтри"
+
+#: ../data/ui/dirdiff.ui.h:19
+msgid "Set active filters"
+msgstr "Задаване на активни филтри"
+
+#: ../data/ui/EditableList.ui.h:1
+msgid "Editable List"
+msgstr "Списък с редактираните файлове"
+
+#: ../data/ui/EditableList.ui.h:2
+msgid "Active"
+msgstr "Действащ"
+
+#: ../data/ui/EditableList.ui.h:3
+msgid "Column Name"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
+msgid "_Add"
+msgstr "_Добавяне"
+
+#: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+#: ../meld/vcview.py:644
+msgid "_Remove"
+msgstr "_Премахване"
+
+#: ../data/ui/EditableList.ui.h:6
+msgid "Move item up"
+msgstr "Преместване на елемента надолу"
+
+#: ../data/ui/EditableList.ui.h:7
+msgid "Move _Up"
+msgstr "На_долу"
+
+#: ../data/ui/EditableList.ui.h:8
+msgid "Move item down"
+msgstr "Преместване на елемента нагоре"
+
+#: ../data/ui/EditableList.ui.h:9
+msgid "Move _Down"
+msgstr "На_горе"
+
+#. Create icon and filename CellRenderer
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
+msgid "Name"
+msgstr "Име"
+
+#: ../data/ui/EditableList.ui.h:11
+msgid "Pattern"
+msgstr "Шаблон"
+
+#: ../data/ui/EditableList.ui.h:12
+msgid "Add new filter"
+msgstr "Добавяне на нов филтър"
+
+#: ../data/ui/EditableList.ui.h:13
+msgid "Remove selected filter"
+msgstr "Премахване на избрания филтър"
+
+#: ../data/ui/filediff.ui.h:1
+#, fuzzy
+msgid "Format as Patch..."
+msgstr "Форматиране на кръпка…"
+
+#: ../data/ui/filediff.ui.h:2
+msgid "Create a patch using differences between files"
+msgstr "Създаване на кръпка на база разликите между файловете"
+
+#: ../data/ui/filediff.ui.h:3
+msgid "Save A_ll"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:4
+#, fuzzy
+msgid "Save all files in the current comparison"
+msgstr "Ново сравнение спрямо системата за версии"
+
+#: ../data/ui/filediff.ui.h:5
+msgid "Revert files to their saved versions"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:6
+msgid "Add Synchronization Point"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:7
+msgid "Add a synchronization point for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:8
+msgid "Clear Synchronization Points"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:9
+msgid "Clear sychronization points for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:10
+#, fuzzy
+msgid "Previous Conflict"
+msgstr "Предишен конфликт"
+
+#: ../data/ui/filediff.ui.h:11
+msgid "Go to the previous conflict"
+msgstr "Към предишния конфликт"
+
+#: ../data/ui/filediff.ui.h:12
+#, fuzzy
+msgid "Next Conflict"
+msgstr "Следващ конфликт"
+
+#: ../data/ui/filediff.ui.h:13
+msgid "Go to the next conflict"
+msgstr "Към следващия конфликт"
+
+#: ../data/ui/filediff.ui.h:14
+#, fuzzy
+msgid "Push to Left"
+msgstr "Наляво"
+
+#: ../data/ui/filediff.ui.h:15
+msgid "Push current change to the left"
+msgstr "Повтаряне на текущата промяна наляво"
+
+#: ../data/ui/filediff.ui.h:16
+#, fuzzy
+msgid "Push to Right"
+msgstr "Надясно"
+
+#: ../data/ui/filediff.ui.h:17
+msgid "Push current change to the right"
+msgstr "Повтаряне на текущата промяна надясно"
+
+#: ../data/ui/filediff.ui.h:18
+#, fuzzy
+msgid "Pull from Left"
+msgstr "От ляво"
+
+#: ../data/ui/filediff.ui.h:19
+msgid "Pull change from the left"
+msgstr "Повтаряне на текущата промяна отляво"
+
+#: ../data/ui/filediff.ui.h:20
+#, fuzzy
+msgid "Pull from Right"
+msgstr "От дясно"
+
+#: ../data/ui/filediff.ui.h:21
+msgid "Pull change from the right"
+msgstr "Повтаряне на текущата промяна отдясно"
+
+#: ../data/ui/filediff.ui.h:22
+#, fuzzy
+msgid "Copy Above Left"
+msgstr "Отгоре отляво"
+
+#: ../data/ui/filediff.ui.h:23
+msgid "Copy change above the left chunk"
+msgstr "Повтаряне на промяната над лявото парче код"
+
+#: ../data/ui/filediff.ui.h:24
+#, fuzzy
+msgid "Copy Below Left"
+msgstr "Отдолу отляво"
+
+#: ../data/ui/filediff.ui.h:25
+msgid "Copy change below the left chunk"
+msgstr "Повтаряне на промяната под лявото парче код"
+
+#: ../data/ui/filediff.ui.h:26
+#, fuzzy
+msgid "Copy Above Right"
+msgstr "Отгоре отдясно"
+
+#: ../data/ui/filediff.ui.h:27
+msgid "Copy change above the right chunk"
+msgstr "Повтаряне на промяната над дясното парче код"
+
+#: ../data/ui/filediff.ui.h:28
+#, fuzzy
+msgid "Copy Below Right"
+msgstr "Отдолу отдясно"
+
+#: ../data/ui/filediff.ui.h:29
+msgid "Copy change below the right chunk"
+msgstr "Повтаряне на промяната под дясното парче код"
+
+#: ../data/ui/filediff.ui.h:30
+msgid "Delete"
+msgstr "Заличаване"
+
+#: ../data/ui/filediff.ui.h:31
+msgid "Delete change"
+msgstr "Заличаване на промяната"
+
+#: ../data/ui/filediff.ui.h:32
+#, fuzzy
+msgid "Merge All from Left"
+msgstr "Сливане на всички промени от ляво"
+
+#: ../data/ui/filediff.ui.h:33
+msgid "Merge all non-conflicting changes from the left"
+msgstr "Сливане на промените от ляво, непредизвикващи конфликт"
+
+#: ../data/ui/filediff.ui.h:34
+#, fuzzy
+msgid "Merge All from Right"
+msgstr "Сливане на всички промени от дясно"
+
+#: ../data/ui/filediff.ui.h:35
+msgid "Merge all non-conflicting changes from the right"
+msgstr "Сливане на промените от дясно, непредизвикващи конфликт"
+
+#: ../data/ui/filediff.ui.h:36
+msgid "Merge All"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:37
+msgid "Merge all non-conflicting changes from left and right panes"
+msgstr "Сливане на всички промени от ляво и от дясно, непредизвикващи конфликт"
+
+#: ../data/ui/filediff.ui.h:38
+#, fuzzy
+msgid "Previous Pane"
+msgstr "Предишна разлика"
+
+#: ../data/ui/filediff.ui.h:39
+#, fuzzy
+msgid "Move keyboard focus to the previous document in this comparison"
+msgstr ""
+"Прехвърляне на фокуса на клавиатурата към следващия документ в сравнението"
+
+#: ../data/ui/filediff.ui.h:40
+#, fuzzy
+msgid "Next Pane"
+msgstr "Следваща разлика"
+
+#: ../data/ui/filediff.ui.h:41
+msgid "Move keyboard focus to the next document in this comparison"
+msgstr ""
+"Прехвърляне на фокуса на клавиатурата към следващия документ в сравнението"
+
+#: ../data/ui/filediff.ui.h:42
+#, fuzzy
+msgid "Lock Scrolling"
+msgstr "Съвместно придвижване"
+
+#: ../data/ui/filediff.ui.h:43
+msgid "Lock scrolling of all panes"
+msgstr "Всички панели да се придвижват съвместно"
+
+#: ../data/ui/filediff.ui.h:44
+msgid "Save changes to documents before closing?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:45
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:46
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:48
+msgid "_Save"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:49
+msgid ""
+"This file can not be written to. You may click here to unlock this file and "
+"make changes anyway, but these changes must be saved to a new file."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:50
+#, fuzzy
+msgid "File 3"
+msgstr "_Файл"
+
+#: ../data/ui/filediff.ui.h:51
+#, fuzzy
+msgid "File 2"
+msgstr "_Файл"
+
+#: ../data/ui/filediff.ui.h:52
+#, fuzzy
+msgid "File 1"
+msgstr "_Файл"
+
+#: ../data/ui/filediff.ui.h:53
+msgid "Revert unsaved changes to documents?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:54
+msgid "Changes made to the following documents will be permanently lost:\n"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+msgid "_Replace"
+msgstr "_Замяна"
+
+#: ../data/ui/findbar.ui.h:2
+msgid "Replace _All"
+msgstr "Замяна на _всички"
+
+#: ../data/ui/findbar.ui.h:3
+msgid "_Previous"
+msgstr "_Предишно"
+
+#: ../data/ui/findbar.ui.h:4
+msgid "_Next"
+msgstr "_Следващо"
+
+#: ../data/ui/findbar.ui.h:5
+msgid "Find:"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:6
+#, fuzzy
+msgid "Replace _with:"
+msgstr "Замяна _с"
+
+#: ../data/ui/findbar.ui.h:7
+#, fuzzy
+msgid "_Match case"
+msgstr "Зачитане на главни/_малки"
+
+#: ../data/ui/findbar.ui.h:8
+msgid "Who_le word"
+msgstr "_Цели думи"
+
+#: ../data/ui/findbar.ui.h:9
+#, fuzzy
+msgid "Regular e_xpression"
+msgstr "Ре_гулярен израз"
+
+#: ../data/ui/findbar.ui.h:10
+msgid "Wrapped"
+msgstr ""
+
 #: ../data/ui/patch-dialog.ui.h:1
+#, fuzzy
+msgid "Format as Patch"
+msgstr "Форматиране на кръпка…"
+
+#: ../data/ui/patch-dialog.ui.h:2
 msgid "Copy to Clipboard"
 msgstr "Копиране в междинния буфер"
 
-#: ../data/ui/patch-dialog.ui.h:2
-msgid "Create Patch"
-msgstr "Създаване на кръпка"
-
-#: ../data/ui/patch-dialog.ui.h:3
-msgid "Create a patch"
-msgstr "Създаване на кръпка"
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
+#, fuzzy
+msgid "Save Patch"
+msgstr "Запазване на кръпката като…"
 
 #: ../data/ui/patch-dialog.ui.h:4
+msgid "Use differences between:"
+msgstr "Да се ползват разликите между:"
+
+#: ../data/ui/patch-dialog.ui.h:5
 msgid "Left and middle panes"
 msgstr "Левият и средният подпрозорци"
 
-#: ../data/ui/patch-dialog.ui.h:5
+#: ../data/ui/patch-dialog.ui.h:6
 msgid "Middle and right panes"
 msgstr "Средният и десният подпрозорци"
-
-#: ../data/ui/patch-dialog.ui.h:6
-msgid "Use differences between:"
-msgstr "Да се ползват разликите между:"
 
 #: ../data/ui/patch-dialog.ui.h:7
 msgid "_Reverse patch direction"
 msgstr "_Обръщане на посоката на кръпката"
 
 #: ../data/ui/preferences.ui.h:1
-msgid "Display"
-msgstr "Визуализация"
-
-#: ../data/ui/preferences.ui.h:2
-msgid "Do not _split words over two lines"
-msgstr "_Думите да не се пренасят"
-
-#: ../data/ui/preferences.ui.h:3
-msgid "Edito_r command:"
-msgstr "_Команда на редактора:"
-
-#: ../data/ui/preferences.ui.h:4
-msgid "Editor"
-msgstr "Редактор"
-
-#: ../data/ui/preferences.ui.h:5
-msgid "Enable text _wrapping"
-msgstr "_Пренасяне на текста"
-
-#: ../data/ui/preferences.ui.h:6
-msgid "Encoding"
-msgstr "Кодиране"
-
-#: ../data/ui/preferences.ui.h:7
-msgid "External editor"
-msgstr "Външен редактор"
-
-#: ../data/ui/preferences.ui.h:8
-msgid "File Filters"
-msgstr "Филтър за файлове"
-
-#: ../data/ui/preferences.ui.h:9
-msgid "Font"
-msgstr "Шрифт"
-
-#: ../data/ui/preferences.ui.h:10
-msgid "Ignore changes which insert or delete blank lines"
-msgstr "Игнориране на промени в броя и положението на празните редове"
-
-#: ../data/ui/preferences.ui.h:11
-msgid "Ignore symbolic links"
-msgstr "Игнориране на символните връзки"
-
-#: ../data/ui/preferences.ui.h:12
-msgid "Loading"
-msgstr "Зареждане"
-
-#: ../data/ui/preferences.ui.h:13
 msgid "Meld Preferences"
 msgstr "Настройки на Meld"
 
-#: ../data/ui/preferences.ui.h:14
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Шрифт"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "Използване на _системния шрифт с фиксирана ширина"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "_Editor font:"
+msgstr "_Шрифт на редактора:"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Display"
+msgstr "Визуализация"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "_Tab width:"
+msgstr "Ширина на _табулатора:"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "_Insert spaces instead of tabs"
+msgstr "_Шпации вместо табулатори"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Enable text _wrapping"
+msgstr "_Пренасяне на текста"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Do not _split words over two lines"
+msgstr "_Думите да не се пренасят"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Highlight _current line"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:11
 msgid "Show _line numbers"
 msgstr "Показване на _номерата на редовете"
 
-#: ../data/ui/preferences.ui.h:15
+#: ../data/ui/preferences.ui.h:12
 msgid "Show w_hitespace"
 msgstr "Показване на _празните знаци"
 
-#: ../data/ui/preferences.ui.h:16
-msgid "Text Filters"
-msgstr "Филтри за текст"
-
-#: ../data/ui/preferences.ui.h:17
-msgid "Use _default system editor"
-msgstr "Използване на стандартния _редактор на GNOME"
-
-#: ../data/ui/preferences.ui.h:18
+#: ../data/ui/preferences.ui.h:13
 msgid "Use s_yntax highlighting"
 msgstr "Използване на _оцветяване на синтаксиса"
 
+#: ../data/ui/preferences.ui.h:14
+#, fuzzy
+msgid "Syntax highlighting color scheme:"
+msgstr "Използване на _оцветяване на синтаксиса"
+
+#: ../data/ui/preferences.ui.h:15
+#, fuzzy
+msgid "External Editor"
+msgstr "Външен редактор"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "Use _default system editor"
+msgstr "Използване на стандартния _редактор на GNOME"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Edito_r command:"
+msgstr "_Команда на редактора:"
+
+#: ../data/ui/preferences.ui.h:18
+msgid "Editor"
+msgstr "Редактор"
+
 #: ../data/ui/preferences.ui.h:19
-msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-msgstr ""
-"При зареждане на файл, да се пробват кодиранията в тази последователност "
-"(напр.: utf8, iso8859)"
+#, fuzzy
+msgid "Shallow Comparison"
+msgstr "Сравняване на _файлове"
 
 #: ../data/ui/preferences.ui.h:20
+msgid "C_ompare files based only on size and timestamp"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:21
+msgid "_Timestamp resolution:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
+#, fuzzy
+msgid "Symbolic Links"
+msgstr "Игнориране на символните връзки"
+
+#: ../data/ui/preferences.ui.h:26
+msgid "Visible Columns"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:27
+#, fuzzy
+msgid "Folder Comparisons"
+msgstr "Сравняване на _файлове"
+
+#: ../data/ui/preferences.ui.h:28
+#, fuzzy
+msgid "Version Comparisons"
+msgstr "Сравняване на _файлове"
+
+#: ../data/ui/preferences.ui.h:29
+msgid "_Order when comparing file revisions:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:30
+msgid "Order when _merging files:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:31
+#, fuzzy
+msgid "Commit Messages"
+msgstr "Съобщение в дневника"
+
+#: ../data/ui/preferences.ui.h:32
+msgid "Show _right margin at:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:33
+msgid "Automatically _break lines at right margin on commit"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:34
+#, fuzzy
+msgid "Version Control"
+msgstr "Контрол на версиите\t1\t%s\n"
+
+#: ../data/ui/preferences.ui.h:35
+#, fuzzy
+msgid "Filename filters"
+msgstr "Филтри за файлове"
+
+#: ../data/ui/preferences.ui.h:36
 msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
@@ -321,7 +1084,24 @@ msgstr ""
 "При сравняване на папки някои файлове и директории може да се пренебрегват. "
 "Всеки ред е списък от шаблони на обвивката, разделени с интервали."
 
-#: ../data/ui/preferences.ui.h:21
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
+msgid "File Filters"
+msgstr "Филтър за файлове"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:40
+#, fuzzy
+msgid "Text filters"
+msgstr "Филтри за текст"
+
+#: ../data/ui/preferences.ui.h:41
 msgid ""
 "When performing file comparisons, you may ignore certain types of changes. "
 "Each pattern here is a python regular expression which replaces matching "
@@ -335,149 +1115,651 @@ msgstr ""
 "групи, само групите се заменят. Обърнете се към ръководството за повече "
 "подробности."
 
-#: ../data/ui/preferences.ui.h:22
-msgid "_Editor font:"
-msgstr "_Шрифт на редактора:"
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
+msgid "Text Filters"
+msgstr "Филтри за текст"
 
-#: ../data/ui/preferences.ui.h:23
-msgid "_Insert spaces instead of tabs"
-msgstr "_Шпации вместо табулатори"
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
+msgstr ""
 
-#: ../data/ui/preferences.ui.h:24
-msgid "_Tab width:"
-msgstr "Ширина на _табулатора:"
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
+msgstr ""
 
-#: ../data/ui/preferences.ui.h:25
-msgid "_Use the system fixed width font"
-msgstr "Използване на _системния шрифт с фиксирана ширина"
+#: ../data/ui/preferences.ui.h:45
+msgid "Remote, merge, local"
+msgstr ""
 
-#: ../data/ui/vcview.ui.h:1
-msgid "Commit Files"
-msgstr "Файлове за подаване"
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr ""
 
-#: ../data/ui/vcview.ui.h:2
-msgid "Log Message"
-msgstr "Съобщение в дневника"
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr ""
 
-#: ../data/ui/vcview.ui.h:3
-msgid "Previous Logs"
-msgstr "Предишни съобщения"
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr ""
 
-#: ../data/ui/vcview.ui.h:4
-msgid "VC Log"
-msgstr "Дневник на хранилището"
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr ""
 
-#: ../meld/dirdiff.py:232 ../meld/vcview.py:127
-msgid "_Compare"
-msgstr "_Сравняване"
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr ""
 
-#: ../meld/dirdiff.py:232 ../meld/vcview.py:127
-msgid "Compare selected"
-msgstr "Сравняване на избраното"
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
 
-#: ../meld/dirdiff.py:233
-msgid "Copy to _Left"
-msgstr "Копиране на_ляво"
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
+msgstr "Сравняване на _файлове"
 
-#: ../meld/dirdiff.py:233
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "Презареждане на сравнението"
+
+#: ../data/ui/shortcuts.ui.h:4
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr "Meld"
+
+#: ../data/ui/shortcuts.ui.h:5
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr "Спиране на текущото действие"
+
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "Презареждане на сравнението"
+
+#: ../data/ui/shortcuts.ui.h:7
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr "На цял екран"
+
+#: ../data/ui/shortcuts.ui.h:8
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr "_Подпрозорци"
+
+#: ../data/ui/shortcuts.ui.h:9
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr "Към предишната разлика"
+
+#: ../data/ui/shortcuts.ui.h:10
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr "Към следващата разлика"
+
+#: ../data/ui/shortcuts.ui.h:11
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr "Фокусиране на този подпрозорец"
+
+#: ../data/ui/shortcuts.ui.h:12
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr "Преместване на_ляво"
+
+#: ../data/ui/shortcuts.ui.h:13
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr "Преместване на_дясно"
+
+#: ../data/ui/shortcuts.ui.h:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr "_Разлики"
+
+#: ../data/ui/shortcuts.ui.h:15
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr "Към предишната разлика"
+
+#: ../data/ui/shortcuts.ui.h:16
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr "Към следващата разлика"
+
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "_Редактиране"
+
+#: ../data/ui/shortcuts.ui.h:18
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:19
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:20
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:21
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:22
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:23
+msgctxt "shortcut window"
+msgid "Find"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "_Следваща поява"
+
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
+msgstr "_Предишна поява"
+
+#: ../data/ui/shortcuts.ui.h:26
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr "_Замяна"
+
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "Сравняване на _файлове"
+
+#: ../data/ui/shortcuts.ui.h:28
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr "Запазване на текущия файл"
+
+#: ../data/ui/shortcuts.ui.h:29
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr "Запазване на текущия файл"
+
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "Ново сравнение"
+
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "Предишен конфликт"
+
+#: ../data/ui/shortcuts.ui.h:32
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr "Следващ конфликт"
+
+#: ../data/ui/shortcuts.ui.h:33
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr "Наляво"
+
+#: ../data/ui/shortcuts.ui.h:34
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr "Надясно"
+
+#: ../data/ui/shortcuts.ui.h:35
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr "Повтаряне на текущата промяна отляво"
+
+#: ../data/ui/shortcuts.ui.h:36
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr "Повтаряне на текущата промяна отдясно"
+
+#: ../data/ui/shortcuts.ui.h:37
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr "Повтаряне на промяната над лявото парче код"
+
+#: ../data/ui/shortcuts.ui.h:38
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr "Повтаряне на промяната под лявото парче код"
+
+#: ../data/ui/shortcuts.ui.h:39
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr "Повтаряне на промяната над дясното парче код"
+
+#: ../data/ui/shortcuts.ui.h:40
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr "Повтаряне на промяната под дясното парче код"
+
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "Заличаване на промяната"
+
+#: ../data/ui/shortcuts.ui.h:42
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr "Предишна разлика"
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "Презареждане на сравнението"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "Сравняване на _файлове"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
 msgid "Copy to left"
 msgstr "Копиране наляво"
 
-#: ../meld/dirdiff.py:234
-msgid "Copy to _Right"
-msgstr "Копиране на_дясно"
-
-#: ../meld/dirdiff.py:234
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
 msgid "Copy to right"
 msgstr "Копиране надясно"
 
-#: ../meld/dirdiff.py:235
-msgid "Delete selected"
-msgstr "Изтриване на избраното"
+#: ../data/ui/shortcuts.ui.h:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr "Ново сравнение спрямо системата за версии"
 
-#: ../meld/dirdiff.py:236 ../meld/filediff.py:1157
-msgid "Hide"
-msgstr "Скриване"
+#: ../data/ui/shortcuts.ui.h:48
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr "Избор на контрол на версиите"
 
-#: ../meld/dirdiff.py:236
-msgid "Hide selected"
-msgstr "Скриване на избраното"
+#: ../data/ui/shortcuts.ui.h:49
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr ""
 
-#: ../meld/dirdiff.py:240
-msgid "Case"
-msgstr "Регистър"
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
+#, fuzzy
+msgid "New comparison"
+msgstr "Сравняване на _файлове"
 
-#: ../meld/dirdiff.py:240
-msgid "Ignore case of entries"
-msgstr "Регистърът на избраното да е без значение"
+#: ../data/ui/tab-placeholder.ui.h:2
+#, fuzzy
+msgid "File comparison"
+msgstr "Сравняване на _файлове"
 
-#: ../meld/dirdiff.py:241
-msgid "Same"
-msgstr "Еднакви"
+#: ../data/ui/tab-placeholder.ui.h:3
+#, fuzzy
+msgid "Directory comparison"
+msgstr "Сравняване на _папки"
 
-#: ../meld/dirdiff.py:241
-msgid "Show identical"
-msgstr "Показване на еднаквите"
+#: ../data/ui/tab-placeholder.ui.h:4
+#, fuzzy
+msgid "Version control view"
+msgstr "Навигация при контрола на _версиите"
 
-#: ../meld/dirdiff.py:242
-msgid "New"
-msgstr "Нови"
+#: ../data/ui/tab-placeholder.ui.h:5
+#, fuzzy
+msgid "_3-way comparison"
+msgstr "Сравняване на _файлове"
 
-#: ../meld/dirdiff.py:242
-msgid "Show new"
-msgstr "Показване на новите"
+#: ../data/ui/tab-placeholder.ui.h:6
+#, fuzzy
+msgid "Select Third File"
+msgstr "Избор на файл"
 
-#: ../meld/dirdiff.py:243
-msgid "Modified"
-msgstr "Променени"
+#: ../data/ui/tab-placeholder.ui.h:7
+#, fuzzy
+msgid "Select Second File"
+msgstr "Избор на файл"
 
-#: ../meld/dirdiff.py:243 ../meld/vcview.py:140
-msgid "Show modified"
-msgstr "Показване на променените"
+#: ../data/ui/tab-placeholder.ui.h:8
+#, fuzzy
+msgid "Select First File"
+msgstr "Избор на файл"
 
-#: ../meld/dirdiff.py:245
-msgid "Filters"
-msgstr "Филтри"
+#: ../data/ui/tab-placeholder.ui.h:9
+#, fuzzy
+msgid "Select First Folder"
+msgstr "Избор на папка"
 
-#: ../meld/dirdiff.py:245
-msgid "Set active filters"
-msgstr "Задаване на активни филтри"
+#: ../data/ui/tab-placeholder.ui.h:10
+#, fuzzy
+msgid "Select Second Folder"
+msgstr "Избор на папка"
 
-#: ../meld/dirdiff.py:362
+#: ../data/ui/tab-placeholder.ui.h:11
+#, fuzzy
+msgid "Select Third Folder"
+msgstr "Избор на файл"
+
+#: ../data/ui/tab-placeholder.ui.h:12
+#, fuzzy
+msgid "Select A Version-Controlled Folder"
+msgstr "Навигация при контрола на _версиите"
+
+#: ../data/ui/tab-placeholder.ui.h:13
+#, fuzzy
+msgid "_Blank comparison"
+msgstr "Сравняване на _файлове"
+
+#: ../data/ui/tab-placeholder.ui.h:14
+#, fuzzy
+msgid "C_ompare"
+msgstr "_Сравняване"
+
+#: ../data/ui/vcview.ui.h:3
+#, fuzzy
+msgid "Co_mmit..."
+msgstr "По_даване"
+
+#: ../data/ui/vcview.ui.h:4
+#, fuzzy
+msgid "Commit changes to version control"
+msgstr "Избор на контрол на версиите"
+
+#: ../data/ui/vcview.ui.h:5
+msgid "_Update"
+msgstr "_Обновяване"
+
+#: ../data/ui/vcview.ui.h:6
+msgid "Update working copy from version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:7
+msgid "_Push"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:8
+#, fuzzy
+msgid "Push local changes to remote"
+msgstr "Повтаряне на текущата промяна наляво"
+
+#: ../data/ui/vcview.ui.h:10
+#, fuzzy
+msgid "Add to version control"
+msgstr "Избор на контрол на версиите"
+
+#: ../data/ui/vcview.ui.h:12
+#, fuzzy
+msgid "Remove from version control"
+msgstr "Избор на контрол на версиите"
+
+#: ../data/ui/vcview.ui.h:13
+#, fuzzy
+msgid "Mar_k as Resolved"
+msgstr "Отбелязване като разрешен спрямо контрола на версиите"
+
+#: ../data/ui/vcview.ui.h:14
+#, fuzzy
+msgid "Mark as resolved in version control"
+msgstr "Отбелязване като разрешен спрямо контрола на версиите"
+
+#: ../data/ui/vcview.ui.h:15
+msgid "Re_vert"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:16
+#, fuzzy
+msgid "Revert working copy to original state"
+msgstr "Връщане към оригинала"
+
+#: ../data/ui/vcview.ui.h:17
+msgid "Delete from working copy"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:18
+msgid "Console"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:19
+msgid "Show or hide the version control console output pane"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:20
+msgid "_Flatten"
+msgstr "_Без йерархия"
+
+#: ../data/ui/vcview.ui.h:21
+msgid "Flatten directories"
+msgstr "Представяне на папките като една"
+
+#: ../data/ui/vcview.ui.h:22
+msgid "_Modified"
+msgstr "_Променени"
+
+#: ../data/ui/vcview.ui.h:23
+#, fuzzy
+msgid "Show modified files"
+msgstr "Запазване на променените файлове?"
+
+#: ../data/ui/vcview.ui.h:24
+msgid "_Normal"
+msgstr "_Нормални"
+
+#: ../data/ui/vcview.ui.h:25
+#, fuzzy
+msgid "Show normal files"
+msgstr "Показване на игнорираните файлове"
+
+#: ../data/ui/vcview.ui.h:26
+msgid "Un_versioned"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:27
+msgid "Show unversioned files"
+msgstr "Показване на неконтролираните файлове"
+
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
+msgid "Ignored"
+msgstr "Игнорирани"
+
+#: ../data/ui/vcview.ui.h:29
+msgid "Show ignored files"
+msgstr "Показване на игнорираните файлове"
+
+#: ../data/ui/vcview.ui.h:30
+msgid "Commit"
+msgstr "Подаване"
+
+#: ../data/ui/vcview.ui.h:31
+msgid "Commit Files"
+msgstr "Файлове за подаване"
+
+#: ../data/ui/vcview.ui.h:32
+msgid "Log Message"
+msgstr "Съобщение в дневника"
+
+#: ../data/ui/vcview.ui.h:33
+#, fuzzy
+msgid "Previous logs:"
+msgstr "Предишни съобщения"
+
+#: ../data/ui/vcview.ui.h:34
+msgid "Co_mmit"
+msgstr "По_даване"
+
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
+msgid "Location"
+msgstr "Местоположение"
+
+#: ../data/ui/vcview.ui.h:37
+msgid "Status"
+msgstr "Състояние"
+
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:39
+msgid "Console output"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:40
+msgid "Push local commits to remote?"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:41
+msgid "The commits to be pushed are determined by your version control system."
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:42
+#, fuzzy
+msgid "_Push commits"
+msgstr "Надясно"
+
+#: ../meld/const.py:12
+msgid "UNIX (LF)"
+msgstr ""
+
+#: ../meld/const.py:13
+msgid "DOS/Windows (CR-LF)"
+msgstr ""
+
+#: ../meld/const.py:14
+msgid "Mac OS (CR)"
+msgstr ""
+
+#. Create file size CellRenderer
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+msgid "Size"
+msgstr ""
+
+#. Create date-time CellRenderer
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+msgid "Modification time"
+msgstr ""
+
+#. Create permissions CellRenderer
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+msgid "Permissions"
+msgstr ""
+
+#: ../meld/dirdiff.py:540
 #, python-format
 msgid "Hide %s"
 msgstr "Скриване на %s"
 
-#: ../meld/dirdiff.py:465 ../meld/dirdiff.py:478 ../meld/vcview.py:322
-#: ../meld/vcview.py:346
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] Проверка на %s"
 
-#: ../meld/dirdiff.py:577
+#: ../meld/dirdiff.py:828
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Готово"
 
-#: ../meld/dirdiff.py:581
+#: ../meld/dirdiff.py:836
+#, fuzzy
+msgid "Folders have no differences"
+msgstr "[%s] Извличане на разликите"
+
+#: ../meld/dirdiff.py:838
+msgid "Contents of scanned files in folders are identical."
+msgstr ""
+
+#: ../meld/dirdiff.py:840
+msgid ""
+"Scanned files in folders appear identical, but contents have not been "
+"scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:843
+msgid "File filters are in use, so not all files have been scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:845
+#, fuzzy
+msgid "Text filters are in use and may be masking content differences."
+msgstr ""
+"Използват се филтри за текста. Те може да скриват разлики между текстовете. "
+"Искате ли да сравните файловете без използване на филтри?"
+
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+msgid "Hi_de"
+msgstr "_Скриване"
+
+#: ../meld/dirdiff.py:873
 msgid "Multiple errors occurred while scanning this folder"
 msgstr "При обхождането на тази папка възникнаха множество грешки"
 
-#: ../meld/dirdiff.py:582
+#: ../meld/dirdiff.py:874
 msgid "Files with invalid encodings found"
 msgstr "Открити са файлове с неправилно кодиране"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:584
+#: ../meld/dirdiff.py:876
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Някои файлове са в друго кодиране. Имената им са:"
 
-#: ../meld/dirdiff.py:586
+#: ../meld/dirdiff.py:878
 msgid "Files hidden by case insensitive comparison"
 msgstr "Сравнението без разлика главни/малки крие файлове"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:588
+#: ../meld/dirdiff.py:880
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -486,307 +1768,142 @@ msgstr ""
 "система, която отчита регистъра на буквите. Следните файлове не се виждат:\n"
 "%s"
 
-#: ../meld/dirdiff.py:599
+#: ../meld/dirdiff.py:891
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "„%s“ е скрит от „%s“"
 
-#: ../meld/dirdiff.py:624 ../meld/filediff.py:1008 ../meld/filediff.py:1161
-msgid "Hi_de"
-msgstr "_Скриване"
-
-#: ../meld/dirdiff.py:674
+#: ../meld/dirdiff.py:947
 #, python-format
-msgid ""
-"'%s' exists.\n"
-"Overwrite?"
+msgid "Replace folder “%s”?"
 msgstr ""
-"„%s“ съществува.\n"
-"Да се презапише?"
 
-#: ../meld/dirdiff.py:681
+#: ../meld/dirdiff.py:949
 #, python-format
 msgid ""
-"Error copying '%s' to '%s'\n"
+"Another folder with the same name already exists in “%s”.\n"
+"If you replace the existing folder, all files in it will be lost."
+msgstr ""
+
+#: ../meld/dirdiff.py:962
+msgid "Error copying file"
+msgstr ""
+
+#: ../meld/dirdiff.py:963
+#, fuzzy, python-format
+msgid ""
+"Couldn't copy %s\n"
+"to %s.\n"
 "\n"
-"%s."
+"%s"
 msgstr ""
 "Грешка при копиране на „%s“ в „%s“\n"
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:699 ../meld/vcview.py:526
-#, python-format
-msgid ""
-"'%s' is a directory.\n"
-"Remove recursively?"
-msgstr ""
-"„%s“ е папка.\n"
-"Да се изтрие ли рекурсивно?"
-
-#: ../meld/dirdiff.py:706 ../meld/vcview.py:531
-#, python-format
-msgid ""
-"Error removing %s\n"
-"\n"
-"%s."
+#: ../meld/dirdiff.py:986
+#, fuzzy, python-format
+msgid "Error deleting %s"
 msgstr ""
 "Грешка при изтриването на %s\n"
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:731
-#, python-format
-msgid "%i second"
-msgid_plural "%i seconds"
-msgstr[0] "%i секунда"
-msgstr[1] "%i секунди"
-
-#: ../meld/dirdiff.py:732
-#, python-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i минута"
-msgstr[1] "%i минути"
-
-#: ../meld/dirdiff.py:733
-#, python-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i час"
-msgstr[1] "%i часа"
-
-#: ../meld/dirdiff.py:734
-#, python-format
-msgid "%i day"
-msgid_plural "%i days"
-msgstr[0] "%i ден"
-msgstr[1] "%i дена"
-
-#: ../meld/dirdiff.py:735
-#, python-format
-msgid "%i week"
-msgid_plural "%i weeks"
-msgstr[0] "%i седмица"
-msgstr[1] "%i седмици"
-
-#: ../meld/dirdiff.py:736
-#, python-format
-msgid "%i month"
-msgid_plural "%i months"
-msgstr[0] "%i месец"
-msgstr[1] "%i месеца"
-
-#: ../meld/dirdiff.py:737
-#, python-format
-msgid "%i year"
-msgid_plural "%i years"
-msgstr[0] "%i година"
-msgstr[1] "%i години"
-
-#: ../meld/filediff.py:294
-msgid "Format as patch..."
-msgstr "Форматиране на кръпка…"
-
-#: ../meld/filediff.py:294
-msgid "Create a patch using differences between files"
-msgstr "Създаване на кръпка на база разликите между файловете"
-
-#: ../meld/filediff.py:295
-msgid "Previous conflict"
-msgstr "Предишен конфликт"
-
-#: ../meld/filediff.py:295
-msgid "Go to the previous conflict"
-msgstr "Към предишния конфликт"
-
-#: ../meld/filediff.py:296
-msgid "Next conflict"
-msgstr "Следващ конфликт"
-
-#: ../meld/filediff.py:296
-msgid "Go to the next conflict"
-msgstr "Към следващия конфликт"
-
-#: ../meld/filediff.py:297
-msgid "Push to left"
-msgstr "Наляво"
-
-#: ../meld/filediff.py:297
-msgid "Push current change to the left"
-msgstr "Повтаряне на текущата промяна наляво"
-
-#: ../meld/filediff.py:298
-msgid "Push to right"
-msgstr "Надясно"
-
-#: ../meld/filediff.py:298
-msgid "Push current change to the right"
-msgstr "Повтаряне на текущата промяна надясно"
-
-#. FIXME: using LAST and FIRST is terrible and unreliable icon abuse
-#: ../meld/filediff.py:300
-msgid "Pull from left"
-msgstr "От ляво"
-
-#: ../meld/filediff.py:300
-msgid "Pull change from the left"
-msgstr "Повтаряне на текущата промяна отляво"
-
-#: ../meld/filediff.py:301
-msgid "Pull from right"
-msgstr "От дясно"
-
-#: ../meld/filediff.py:301
-msgid "Pull change from the right"
-msgstr "Повтаряне на текущата промяна отдясно"
-
-#: ../meld/filediff.py:302
-msgid "Copy above left"
-msgstr "Отгоре отляво"
-
-#: ../meld/filediff.py:302
-msgid "Copy change above the left chunk"
-msgstr "Повтаряне на промяната над лявото парче код"
-
-#: ../meld/filediff.py:303
-msgid "Copy below left"
-msgstr "Отдолу отляво"
-
-#: ../meld/filediff.py:303
-msgid "Copy change below the left chunk"
-msgstr "Повтаряне на промяната под лявото парче код"
-
-#: ../meld/filediff.py:304
-msgid "Copy above right"
-msgstr "Отгоре отдясно"
-
-#: ../meld/filediff.py:304
-msgid "Copy change above the right chunk"
-msgstr "Повтаряне на промяната над дясното парче код"
-
-#: ../meld/filediff.py:305
-msgid "Copy below right"
-msgstr "Отдолу отдясно"
-
-#: ../meld/filediff.py:305
-msgid "Copy change below the right chunk"
-msgstr "Повтаряне на промяната под дясното парче код"
-
-#: ../meld/filediff.py:306
-msgid "Delete"
-msgstr "Заличаване"
-
-#: ../meld/filediff.py:306
-msgid "Delete change"
-msgstr "Заличаване на промяната"
-
-#: ../meld/filediff.py:307
-msgid "Merge all changes from left"
-msgstr "Сливане на всички промени от ляво"
-
-#: ../meld/filediff.py:307
-msgid "Merge all non-conflicting changes from the left"
-msgstr "Сливане на промените от ляво, непредизвикващи конфликт"
-
-#: ../meld/filediff.py:308
-msgid "Merge all changes from right"
-msgstr "Сливане на всички промени от дясно"
-
-#: ../meld/filediff.py:308
-msgid "Merge all non-conflicting changes from the right"
-msgstr "Сливане на промените от дясно, непредизвикващи конфликт"
-
-#: ../meld/filediff.py:309
-msgid "Merge all non-conflicting"
-msgstr "Сливане на всички промени"
-
-#: ../meld/filediff.py:309
-msgid "Merge all non-conflicting changes from left and right panes"
-msgstr "Сливане на всички промени от ляво и от дясно, непредизвикващи конфликт"
-
-#: ../meld/filediff.py:310
-msgid "Cycle through documents"
-msgstr "Преминаване през документите"
-
-#: ../meld/filediff.py:310
-msgid "Move keyboard focus to the next document in this comparison"
+#: ../meld/dirdiff.py:1499
+msgid "No folder"
 msgstr ""
-"Прехвърляне на фокуса на клавиатурата към следващия документ в сравнението"
-
-#: ../meld/filediff.py:314
-msgid "Lock scrolling"
-msgstr "Съвместно придвижване"
-
-#: ../meld/filediff.py:315
-msgid "Lock scrolling of all panes"
-msgstr "Всички панели да се придвижват съвместно"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
-#: ../meld/filediff.py:396
+#: ../meld/filediff.py:335
 msgid "INS"
 msgstr "ВМК"
 
-#: ../meld/filediff.py:396
+#: ../meld/filediff.py:335
 msgid "OVR"
 msgstr "ЗАМ"
 
 #. Abbreviation for line, column so that it will fit in the status bar
-#: ../meld/filediff.py:398
+#: ../meld/filediff.py:337
 #, python-format
 msgid "Ln %i, Col %i"
 msgstr "Ред %i, Кол. %i"
 
-#: ../meld/filediff.py:722
-#, python-format
+#: ../meld/filediff.py:762
+msgid "Comparison results will be inaccurate"
+msgstr ""
+
+#: ../meld/filediff.py:764
+#, fuzzy
 msgid ""
-"Filter '%s' changed the number of lines in the file. Comparison will be "
-"incorrect. See the user manual for more details."
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
 msgstr ""
 "Филтърът „%s“ промени броя на редовете във файла. Сравняването няма да бъде "
 "коректно. Обърнете се към ръководството за повече информация."
 
-#. TRANSLATORS: this is the name of a new file which has not yet been saved
-#: ../meld/filediff.py:809
-msgid "<unnamed>"
-msgstr "<ненаименован>"
+#: ../meld/filediff.py:820
+#, fuzzy
+msgid "Mark conflict as resolved?"
+msgstr "Отбелязване като разрешен спрямо контрола на версиите"
 
-#: ../meld/filediff.py:996
+#: ../meld/filediff.py:822
+msgid ""
+"If the conflict was resolved successfully, you may mark it as resolved now."
+msgstr ""
+
+#: ../meld/filediff.py:824
+msgid "Cancel"
+msgstr ""
+
+#: ../meld/filediff.py:825
+#, fuzzy
+msgid "Mark _Resolved"
+msgstr "_Разрешен"
+
+#: ../meld/filediff.py:1076
 #, python-format
-msgid "[%s] Set num panes"
-msgstr "[%s] Задаване на броя панели"
+msgid "There was a problem opening the file “%s”."
+msgstr ""
 
-#: ../meld/filediff.py:1002
-#, python-format
-msgid "[%s] Opening files"
-msgstr "[%s] Отваряне на файлове"
-
-#: ../meld/filediff.py:1026 ../meld/filediff.py:1035 ../meld/filediff.py:1047
-#: ../meld/filediff.py:1053
-msgid "Could not read file"
-msgstr "Файлът не може да бъде прочетен"
-
-#: ../meld/filediff.py:1027
-#, python-format
-msgid "[%s] Reading files"
-msgstr "[%s] Прочитане на файлове"
-
-#: ../meld/filediff.py:1036
-#, python-format
-msgid "%s appears to be a binary file."
+#: ../meld/filediff.py:1084
+#, fuzzy, python-format
+msgid "File %s appears to be a binary file."
 msgstr "%s прилича на двоичен файл."
 
-#: ../meld/filediff.py:1048
-#, python-format
-msgid "%s is not in encodings: %s"
-msgstr "%s не е в кодирането: %s"
+#: ../meld/filediff.py:1086
+#, fuzzy
+msgid "Do you want to open the file using the default application?"
+msgstr "Отваряне на избраната папка или файл в стандартната външна програма"
 
-#: ../meld/filediff.py:1078 ../meld/filemerge.py:67
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
 #, python-format
 msgid "[%s] Computing differences"
 msgstr "[%s] Изчисляване на разликите"
 
-#: ../meld/filediff.py:1148
+#: ../meld/filediff.py:1166
+#, python-format
+msgid "File %s has changed on disk"
+msgstr ""
+
+#: ../meld/filediff.py:1167
+#, fuzzy
+msgid "Do you want to reload the file?"
+msgstr "Файлът не може да бъде прочетен"
+
+#: ../meld/filediff.py:1169
+#, fuzzy
+msgid "_Reload"
+msgstr "Презареждане"
+
+#: ../meld/filediff.py:1327
+msgid "Files are identical"
+msgstr "Файловете са еднакви"
+
+#: ../meld/filediff.py:1340
 msgid ""
 "Text filters are being used, and may be masking differences between files. "
 "Would you like to compare the unfiltered files?"
@@ -794,717 +1911,1058 @@ msgstr ""
 "Използват се филтри за текста. Те може да скриват разлики между текстовете. "
 "Искате ли да сравните файловете без използване на филтри?"
 
-#: ../meld/filediff.py:1154
-msgid "Files are identical"
-msgstr "Файловете са еднакви"
+#: ../meld/filediff.py:1345
+#, fuzzy
+msgid "Files differ in line endings only"
+msgstr "Открити са файлове с неправилно кодиране"
 
-#: ../meld/filediff.py:1164
+#: ../meld/filediff.py:1347
+#, python-format
+msgid ""
+"Files are identical except for differing line endings:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1367
 msgid "Show without filters"
 msgstr "Показване без филтри"
 
-#: ../meld/filediff.py:1354
+#: ../meld/filediff.py:1389
+msgid "Change highlighting incomplete"
+msgstr ""
+
+#: ../meld/filediff.py:1390
+msgid ""
+"Some changes were not highlighted because they were too large. You can force "
+"Meld to take longer to highlight larger changes, though this may be slow."
+msgstr ""
+
+#: ../meld/filediff.py:1398
+#, fuzzy
+msgid "Keep highlighting"
+msgstr "Използване на _оцветяване на синтаксиса"
+
+#: ../meld/filediff.py:1400
+#, fuzzy
+msgid "_Keep highlighting"
+msgstr "Използване на _оцветяване на синтаксиса"
+
+#: ../meld/filediff.py:1432
+#, python-format
+msgid "Replace file “%s”?"
+msgstr ""
+
+#: ../meld/filediff.py:1434
 #, python-format
 msgid ""
-"\"%s\" exists!\n"
-"Overwrite?"
+"A file with this name already exists in “%s”.\n"
+"If you replace the existing file, its contents will be lost."
 msgstr ""
-"„%s“ съществува.\n"
-"Да се презапише?"
 
-#: ../meld/filediff.py:1367
+#: ../meld/filediff.py:1451
+#, fuzzy
+msgid "Save Left Pane As"
+msgstr "Запазване на кръпката като…"
+
+#: ../meld/filediff.py:1453
+#, fuzzy
+msgid "Save Middle Pane As"
+msgstr "Левият и средният подпрозорци"
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr ""
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1474
+msgid "Save Anyway"
+msgstr ""
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr ""
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#, fuzzy, python-format
+msgid "Could not save file %s."
+msgstr "Файлът не може да бъде прочетен"
+
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
 #, python-format
 msgid ""
-"Error writing to %s\n"
-"\n"
-"%s."
+"Couldn't save file due to:\n"
+"%s"
 msgstr ""
-"Грешка при запис в %s\n"
-"\n"
-"%s."
 
-#: ../meld/filediff.py:1376
-#, python-format
-msgid "Choose a name for buffer %i."
-msgstr "Избор на име за буфера %i."
+#: ../meld/filediff.py:1879
+msgid "Live comparison updating disabled"
+msgstr ""
 
-#: ../meld/filediff.py:1391
-#, python-format
+#: ../meld/filediff.py:1880
 msgid ""
-"This file '%s' contains a mixture of line endings.\n"
-"\n"
-"Which format would you like to use?"
+"Live updating of comparisons is disabled when synchronization points are "
+"active. You can still manually refresh the comparison, and live updates will "
+"resume when synchronization points are cleared."
 msgstr ""
-"Комбинациите за край на ред във файла „%s“ са различни.\n"
-"\n"
-"Кой вариант искате да се ползва?"
 
-#: ../meld/filediff.py:1407
-#, python-format
-msgid ""
-"'%s' contains characters not encodable with '%s'\n"
-"Would you like to save as UTF-8?"
-msgstr ""
-"„%s“ съдържа знаци, които не могат да се кодират чрез „%s“\n"
-"Желаете ли да се запише в „UTF-8“?"
-
-#: ../meld/filediff.py:1466
-#, python-format
-msgid ""
-"Reloading will discard changes in:\n"
-"%s\n"
-"\n"
-"You cannot undo this operation."
-msgstr ""
-"Презареждането ще препокрие промените в:\n"
-"%s\n"
-"\n"
-"Няма да можете да отмените тази операция."
-
-#: ../meld/filemerge.py:82
+#: ../meld/filemerge.py:37
 #, python-format
 msgid "[%s] Merging files"
 msgstr "[%s] Сливане на файлове"
 
-#: ../meld/meldapp.py:152
+#: ../meld/gutterrendererchunk.py:210
+#, fuzzy
+msgid "Copy _up"
+msgstr "Копиране на_ляво"
+
+#: ../meld/gutterrendererchunk.py:211
+#, fuzzy
+msgid "Copy _down"
+msgstr "Копиране на_ляво"
+
+#: ../meld/meldapp.py:175
 msgid "wrong number of arguments supplied to --diff"
 msgstr "грешен брой аргументи подадени на опцията „--diff“"
 
-#: ../meld/meldapp.py:156
+#: ../meld/meldapp.py:180
 msgid "Start with an empty window"
 msgstr "Стартиране с празен прозорец"
 
-#: ../meld/meldapp.py:157 ../meld/meldapp.py:158 ../meld/meldapp.py:160
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
 msgid "file"
 msgstr "файл"
 
-#: ../meld/meldapp.py:157 ../meld/meldapp.py:159 ../meld/meldapp.py:160
-msgid "dir"
-msgstr "папка"
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
+msgid "folder"
+msgstr ""
 
-#: ../meld/meldapp.py:157
+#: ../meld/meldapp.py:182
 msgid "Start a version control comparison"
 msgstr "Ново сравнение спрямо системата за версии"
 
-#: ../meld/meldapp.py:158
+#: ../meld/meldapp.py:184
 msgid "Start a 2- or 3-way file comparison"
 msgstr "Ново сравнение на 2 или 3 файла"
 
-#: ../meld/meldapp.py:159
-msgid "Start a 2- or 3-way directory comparison"
-msgstr "Ново сравнение на 2 или 3 папки"
+#: ../meld/meldapp.py:186
+#, fuzzy
+msgid "Start a 2- or 3-way folder comparison"
+msgstr "Ново сравнение на 2 или 3 файла"
 
-#: ../meld/meldapp.py:160
-msgid "Start a comparison between file and dir/file"
-msgstr "Ново сравнение на файл и папка/файл"
+#: ../meld/meldapp.py:229
+#, python-format
+msgid "Error: %s\n"
+msgstr ""
 
-#: ../meld/meldapp.py:166
+#: ../meld/meldapp.py:236
 msgid "Meld is a file and directory comparison tool."
 msgstr "Meld е инструмент за сравняване на файлове и папки."
 
-#: ../meld/meldapp.py:169
+#: ../meld/meldapp.py:240
 msgid "Set label to use instead of file name"
 msgstr "Задаване на етикет, който да се ползва вместо име на файл"
 
-#: ../meld/meldapp.py:171
+#: ../meld/meldapp.py:243
+msgid "Open a new tab in an already running instance"
+msgstr ""
+
+#: ../meld/meldapp.py:246
 msgid "Automatically compare all differing files on startup"
 msgstr ""
 "При стартиране автоматично да се сравняват всички различаващи се файлове"
 
-#: ../meld/meldapp.py:173
+#: ../meld/meldapp.py:249
 msgid "Ignored for compatibility"
 msgstr "Игнорира се за съвместимост"
 
-#: ../meld/meldapp.py:176
+#: ../meld/meldapp.py:253
 msgid "Set the target file for saving a merge result"
 msgstr "Задаване къде да се запише резултатът от сливането"
 
-#: ../meld/meldapp.py:179
-msgid "Creates a diff tab for up to 3 supplied files or directories."
+#: ../meld/meldapp.py:256
+#, fuzzy
+msgid "Automatically merge files"
+msgstr ""
+"При стартиране автоматично да се сравняват всички различаващи се файлове"
+
+#: ../meld/meldapp.py:260
+msgid "Load a saved comparison from a Meld comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:264
+#, fuzzy
+msgid "Create a diff tab for the supplied files or folders"
 msgstr "Създаване на подпрозорец за сравнение на 3 подадени цели."
 
-#: ../meld/meldapp.py:182
-#, python-format
-msgid "too many arguments (wanted 0-4, got %d)"
+#: ../meld/meldapp.py:284
+#, fuzzy, python-format
+msgid "too many arguments (wanted 0-3, got %d)"
 msgstr "прекалено много аргументи (позволени са 0÷4, а не %d)"
 
-#: ../meld/meldapp.py:184 ../meld/meldapp.py:188
-msgid "can't compare more than three directories"
-msgstr "невъзможно е да се сравняват повече от три папка"
+#: ../meld/meldapp.py:287
+msgid "can't auto-merge less than 3 files"
+msgstr ""
 
-#: ../meld/melddoc.py:56 ../meld/melddoc.py:57
+#: ../meld/meldapp.py:289
+#, fuzzy
+msgid "can't auto-merge directories"
+msgstr "Представяне на папките като една"
+
+#: ../meld/meldapp.py:303
+msgid "Error reading saved comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:330
+#, python-format
+msgid "invalid path or URI \"%s\""
+msgstr ""
+
+#. TRANSLATORS: This is the label of a new, currently-unnamed file.
+#: ../meld/meldbuffer.py:131
+msgid "<unnamed>"
+msgstr "<ненаименован>"
+
+#: ../meld/melddoc.py:64
 msgid "untitled"
 msgstr "безименен"
 
-#: ../meld/meldwindow.py:125
+#: ../meld/meldwindow.py:52
 msgid "_File"
 msgstr "_Файл"
 
-#: ../meld/meldwindow.py:126
-msgid "_New..."
-msgstr "_Ново…"
+#: ../meld/meldwindow.py:53
+#, fuzzy
+msgid "_New Comparison..."
+msgstr "Сравняване на _файлове"
 
-#: ../meld/meldwindow.py:126
+#: ../meld/meldwindow.py:54
 msgid "Start a new comparison"
 msgstr "Ново сравнение"
 
-#: ../meld/meldwindow.py:127
+#: ../meld/meldwindow.py:57
 msgid "Save the current file"
 msgstr "Запазване на текущия файл"
 
-#: ../meld/meldwindow.py:129
+#: ../meld/meldwindow.py:59
+#, fuzzy
+msgid "Save As..."
+msgstr "Запазване на кръпката като…"
+
+#: ../meld/meldwindow.py:60
+#, fuzzy
+msgid "Save the current file with a different name"
+msgstr "Запазване на текущия файл"
+
+#: ../meld/meldwindow.py:63
 msgid "Close the current file"
 msgstr "Затваряне на текущия файл"
 
-#: ../meld/meldwindow.py:130
-msgid "Quit the program"
-msgstr "Спиране на програмата"
-
-#: ../meld/meldwindow.py:132
+#: ../meld/meldwindow.py:66
 msgid "_Edit"
 msgstr "_Редактиране"
 
-#: ../meld/meldwindow.py:133
+#: ../meld/meldwindow.py:68
 msgid "Undo the last action"
 msgstr "Отмяна на последното действие"
 
-#: ../meld/meldwindow.py:134
+#: ../meld/meldwindow.py:71
 msgid "Redo the last undone action"
 msgstr "Повтаряне на последното отменено действие"
 
-#: ../meld/meldwindow.py:135
+#: ../meld/meldwindow.py:73
 msgid "Cut the selection"
 msgstr "Отрязване на избраното"
 
-#: ../meld/meldwindow.py:136
+#: ../meld/meldwindow.py:75
 msgid "Copy the selection"
 msgstr "Копиране на избраното"
 
-#: ../meld/meldwindow.py:137
+#: ../meld/meldwindow.py:77
 msgid "Paste the clipboard"
 msgstr "Поставяне на междинния буфер"
 
-#: ../meld/meldwindow.py:138
+#: ../meld/meldwindow.py:79
+msgid "Find..."
+msgstr ""
+
+#: ../meld/meldwindow.py:79
 msgid "Search for text"
 msgstr "Търсене на текст"
 
-#: ../meld/meldwindow.py:139
+#: ../meld/meldwindow.py:81
 msgid "Find Ne_xt"
 msgstr "_Следваща поява"
 
-#: ../meld/meldwindow.py:139
+#: ../meld/meldwindow.py:82
 msgid "Search forwards for the same text"
 msgstr "Търсене напред за същия текст"
 
-#: ../meld/meldwindow.py:140
+#: ../meld/meldwindow.py:84
 msgid "Find _Previous"
 msgstr "_Предишна поява"
 
-#: ../meld/meldwindow.py:140
+#: ../meld/meldwindow.py:85
 msgid "Search backwards for the same text"
 msgstr "Търсене назад за същия текст"
 
-#: ../meld/meldwindow.py:141
+#: ../meld/meldwindow.py:88
+#, fuzzy
+msgid "_Replace..."
+msgstr "_Замяна"
+
+#: ../meld/meldwindow.py:89
 msgid "Find and replace text"
 msgstr "Търсене и замяна на текст"
 
-#: ../meld/meldwindow.py:142
-msgid "Prefere_nces"
-msgstr "_Настройки"
-
-#: ../meld/meldwindow.py:142
-msgid "Configure the application"
-msgstr "Настройки на програмата"
-
-#: ../meld/meldwindow.py:144
+#: ../meld/meldwindow.py:92
 msgid "_Changes"
 msgstr "_Разлики"
 
-#: ../meld/meldwindow.py:145
-msgid "Next change"
+#: ../meld/meldwindow.py:93
+#, fuzzy
+msgid "Next Change"
 msgstr "Следваща разлика"
 
-#: ../meld/meldwindow.py:145
+#: ../meld/meldwindow.py:94
 msgid "Go to the next change"
 msgstr "Към следващата разлика"
 
-#: ../meld/meldwindow.py:146
-msgid "Previous change"
+#: ../meld/meldwindow.py:96
+#, fuzzy
+msgid "Previous Change"
 msgstr "Предишна разлика"
 
-#: ../meld/meldwindow.py:146
+#: ../meld/meldwindow.py:97
 msgid "Go to the previous change"
 msgstr "Към предишната разлика"
 
-#: ../meld/meldwindow.py:147
-msgid "Open externally"
+#: ../meld/meldwindow.py:99
+#, fuzzy
+msgid "Open Externally"
 msgstr "Отваряне с външна програма"
 
-#: ../meld/meldwindow.py:147
+#: ../meld/meldwindow.py:100
 msgid "Open selected file or directory in the default external application"
 msgstr "Отваряне на избраната папка или файл в стандартната външна програма"
 
-#: ../meld/meldwindow.py:149
+#: ../meld/meldwindow.py:104
 msgid "_View"
 msgstr "_Изглед"
 
-#: ../meld/meldwindow.py:150
-msgid "File status"
+#: ../meld/meldwindow.py:105
+#, fuzzy
+msgid "File Status"
 msgstr "Състояние на файла"
 
-#: ../meld/meldwindow.py:151
-msgid "Version status"
+#: ../meld/meldwindow.py:106
+#, fuzzy
+msgid "Version Status"
 msgstr "Състояние на версията"
 
-#: ../meld/meldwindow.py:152
-msgid "File filters"
-msgstr "Филтри за файлове"
-
-#: ../meld/meldwindow.py:153
+#: ../meld/meldwindow.py:110
 msgid "Stop the current action"
 msgstr "Спиране на текущото действие"
 
-#: ../meld/meldwindow.py:154
+#: ../meld/meldwindow.py:113
 msgid "Refresh the view"
 msgstr "Обновяване на изгледа"
 
-#: ../meld/meldwindow.py:155
-msgid "Reload"
-msgstr "Презареждане"
-
-#: ../meld/meldwindow.py:155
-msgid "Reload the comparison"
-msgstr "Презареждане на сравнението"
-
-#: ../meld/meldwindow.py:157
-msgid "_Tabs"
-msgstr "_Подпрозорци"
-
-#: ../meld/meldwindow.py:158
-msgid "_Previous Tab"
-msgstr "_Предишeн подпрозорец"
-
-#: ../meld/meldwindow.py:158
-msgid "Activate previous tab"
-msgstr "Фокусиране на предишния подпрозорец"
-
-#: ../meld/meldwindow.py:159
-msgid "_Next Tab"
-msgstr "_Следващ подпрозорец"
-
-#: ../meld/meldwindow.py:159
-msgid "Activate next tab"
-msgstr "Фокусиране на следващия подпрозорец"
-
-#: ../meld/meldwindow.py:160
-msgid "Move Tab _Left"
-msgstr "Преместване на_ляво"
-
-#: ../meld/meldwindow.py:160
-msgid "Move current tab to left"
-msgstr "Преместване на текущия прозорец наляво"
-
-#: ../meld/meldwindow.py:161
-msgid "Move Tab _Right"
-msgstr "Преместване на_дясно"
-
-#: ../meld/meldwindow.py:161
-msgid "Move current tab to right"
-msgstr "Преместване на текущия прозорец надясно"
-
-#: ../meld/meldwindow.py:163
-msgid "_Help"
-msgstr "Помо_щ"
-
-#: ../meld/meldwindow.py:164
-msgid "_Contents"
-msgstr "_Съдържание"
-
-#: ../meld/meldwindow.py:164
-msgid "Open the Meld manual"
-msgstr "Отваряне на ръководството на Meld"
-
-#: ../meld/meldwindow.py:165
-msgid "Report _Bug"
-msgstr "_Докладване на грешка"
-
-#: ../meld/meldwindow.py:165
-msgid "Report a bug in Meld"
-msgstr "Докладване на грешка в Meld"
-
-#: ../meld/meldwindow.py:166
-msgid "About this program"
-msgstr "Информация за тази програма"
-
-#: ../meld/meldwindow.py:169
-msgid "Full Screen"
+#: ../meld/meldwindow.py:117
+#, fuzzy
+msgid "Fullscreen"
 msgstr "На цял екран"
 
-#: ../meld/meldwindow.py:169
-msgid "View the comparison in full screen"
+#: ../meld/meldwindow.py:118
+#, fuzzy
+msgid "View the comparison in fullscreen"
 msgstr "Извеждане на сравнението на цял екран"
 
-#: ../meld/meldwindow.py:170
+#: ../meld/meldwindow.py:120
 msgid "_Toolbar"
 msgstr "Лента с _инструменти"
 
-#: ../meld/meldwindow.py:170
+#: ../meld/meldwindow.py:121
 msgid "Show or hide the toolbar"
 msgstr "Показване или скриване на лентата с инструменти"
 
-#: ../meld/meldwindow.py:171
-msgid "_Statusbar"
-msgstr "_Лента за състояние"
+#: ../meld/meldwindow.py:131
+#, fuzzy
+msgid "Open Recent"
+msgstr "Отваряне с външна програма"
 
-#: ../meld/meldwindow.py:171
-msgid "Show or hide the statusbar"
-msgstr "Показване или скриване на лентата за състояние"
+#: ../meld/meldwindow.py:132
+#, fuzzy
+msgid "Open recent files"
+msgstr "Избор на файл"
 
-#: ../meld/meldwindow.py:538
-msgid "Switch to this tab"
-msgstr "Фокусиране на този подпрозорец"
+#: ../meld/meldwindow.py:152
+#, fuzzy
+msgid "_Meld"
+msgstr "Meld"
 
-#. exit at first non found directory + file
-#: ../meld/meldwindow.py:629
-msgid "Cannot compare a mixture of files and directories.\n"
+#: ../meld/meldwindow.py:153
+msgid "Quit the program"
+msgstr "Спиране на програмата"
+
+#: ../meld/meldwindow.py:155
+msgid "Prefere_nces"
+msgstr "_Настройки"
+
+#: ../meld/meldwindow.py:156
+msgid "Configure the application"
+msgstr "Настройки на програмата"
+
+#: ../meld/meldwindow.py:158
+msgid "_Contents"
+msgstr "_Съдържание"
+
+#: ../meld/meldwindow.py:159
+msgid "Open the Meld manual"
+msgstr "Отваряне на ръководството на Meld"
+
+#: ../meld/meldwindow.py:161
+#, fuzzy
+msgid "About this application"
+msgstr "Настройки на програмата"
+
+#: ../meld/meldwindow.py:650
+#, python-format
+msgid "Need three files to auto-merge, got: %r"
+msgstr ""
+
+#: ../meld/meldwindow.py:664
+#, fuzzy
+msgid "Cannot compare a mixture of files and directories"
 msgstr "Невъзможно е да се сравняват файлове с папки.\n"
 
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
+msgstr ""
+
 #. no common path. empty names get changed to "[None]"
-#: ../meld/misc.py:174
+#: ../meld/misc.py:259
 msgid "[None]"
 msgstr "[Липсва]"
 
-#: ../meld/patchdialog.py:122
-msgid "Save Patch As..."
-msgstr "Запазване на кръпката като…"
-
-#: ../meld/preferences.py:37
+#: ../meld/preferences.py:33
 msgid "label"
 msgstr "етикет"
 
-#: ../meld/preferences.py:37
+#: ../meld/preferences.py:33
 msgid "pattern"
 msgstr "шаблон"
 
-#: ../meld/preferences.py:111
-msgid "Only available if you have gnome-python-desktop installed"
-msgstr "Включва се, само ако gnome-python-desktop е инсталиран"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:234
-msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-msgstr "Резервни копия\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:236
-msgid ""
-"OS-specific metadata\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
-"Desktop.ini\n"
-msgstr ""
-"Метаданни на ОС\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db Desktop."
-"ini\n"
-
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:238
-#, python-format
-msgid "Version Control\t1\t%s\n"
+#: ../meld/recent.py:114
+#, fuzzy
+msgid "Version control:"
 msgstr "Контрол на версиите\t1\t%s\n"
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:240
-msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
-msgstr "Двоични файлове\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+#: ../meld/ui/notebooklabel.py:63
+msgid "Close tab"
+msgstr "Затваряне на подпрозореца"
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:242
-msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
-msgstr "Мултимедия\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+#: ../meld/ui/vcdialogs.py:48
+msgid "No files will be committed"
+msgstr ""
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:244
-msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-msgstr "Ключови думи на CVS\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+#. Translators: First %s is replaced by translated "%d unpushed
+#. commits", second %s is replaced by translated "%d branches"
+#: ../meld/vc/git.py:94
+#, python-format
+msgid "%s in %s"
+msgstr ""
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:246
-msgid "C++ comment\t0\t//.*\n"
-msgstr "Коментар на C++\t0\t//.*\n"
+#. Translators: These messages cover the case where there is
+#. only one branch, and are not part of another message.
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
+#, python-format
+msgid "%d unpushed commit"
+msgid_plural "%d unpushed commits"
+msgstr[0] ""
+msgstr[1] ""
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:248
-msgid "C comment\t0\t/\\*.*?\\*/\n"
-msgstr "Коментар на C\t0\t/\\*.*?\\*/\n"
+#: ../meld/vc/git.py:97
+#, python-format
+msgid "%d branch"
+msgid_plural "%d branches"
+msgstr[0] ""
+msgstr[1] ""
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:250
-msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
-msgstr "Всички празни знаци\t0\t[ \\t\\r\\f\\v]*\n"
+#: ../meld/vc/git.py:336
+#, fuzzy, python-format
+msgid "Mode changed from %s to %s"
+msgstr "Сливане на всички промени от ляво"
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:252
-msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
-msgstr "Празни знаци в началото на реда\t0\t^[ \\t\\r\\f\\v]*\n"
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
 
-#. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
-#: ../meld/preferences.py:254
-msgid "Script comment\t0\t#.*"
-msgstr "Коментар в скрипт\t0\t#.*"
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
 
-#: ../meld/vcview.py:128
-msgid "Co_mmit"
-msgstr "По_даване"
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
+#, fuzzy
+msgid "None"
+msgstr "[Липсва]"
 
-#: ../meld/vcview.py:128
-msgid "Commit"
-msgstr "Подаване"
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
 
-#: ../meld/vcview.py:129
-msgid "_Update"
-msgstr "_Обновяване"
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr ""
 
-#: ../meld/vcview.py:129
-msgid "Update"
-msgstr "Обновяване"
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr ""
 
-#: ../meld/vcview.py:130
-msgid "Add to VC"
-msgstr "Добавяне към контрола"
-
-#: ../meld/vcview.py:131
-msgid "Add _Binary"
-msgstr "Добавяне на д_воичен"
-
-#: ../meld/vcview.py:131
-msgid "Add binary to VC"
-msgstr "Двоично добавяне към контрола"
-
-#: ../meld/vcview.py:132
-msgid "Remove from VC"
-msgstr "Премахване от контрол"
-
-#: ../meld/vcview.py:133
-msgid "_Resolved"
-msgstr "_Разрешен"
-
-#: ../meld/vcview.py:133
-msgid "Mark as resolved for VC"
-msgstr "Отбелязване като разрешен спрямо контрола на версиите"
-
-#: ../meld/vcview.py:134
-msgid "Revert to original"
-msgstr "Връщане към оригинала"
-
-#: ../meld/vcview.py:135
-msgid "Delete locally"
-msgstr "Локално изтриване"
-
-#: ../meld/vcview.py:139
-msgid "_Flatten"
-msgstr "_Без йерархия"
-
-#: ../meld/vcview.py:139
-msgid "Flatten directories"
-msgstr "Представяне на папките като една"
-
-#: ../meld/vcview.py:140
-msgid "_Modified"
-msgstr "_Променени"
-
-#: ../meld/vcview.py:141
-msgid "_Normal"
-msgstr "_Нормални"
-
-#: ../meld/vcview.py:141
-msgid "Show normal"
-msgstr "Показване на нормалните"
-
-#: ../meld/vcview.py:142
-msgid "Non _VC"
-msgstr "Извън _контрол"
-
-#: ../meld/vcview.py:142
-msgid "Show unversioned files"
-msgstr "Показване на неконтролираните файлове"
-
-#: ../meld/vcview.py:143
-msgid "Ignored"
-msgstr "Игнорирани"
-
-#: ../meld/vcview.py:143
-msgid "Show ignored files"
-msgstr "Показване на игнорираните файлове"
-
-#: ../meld/vcview.py:186 ../meld/vcview.py:318
-msgid "Location"
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Local"
 msgstr "Местоположение"
 
-#: ../meld/vcview.py:187
-msgid "Status"
-msgstr "Състояние"
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Remote"
+msgstr "_Премахване"
 
-#: ../meld/vcview.py:188
-msgid "Rev"
-msgstr "Ревизия"
+#: ../meld/vc/_vc.py:71
+#, fuzzy
+msgid "Unversioned"
+msgstr "Показване на неконтролираните файлове"
 
-#: ../meld/vcview.py:189
-msgid "Tag"
-msgstr "Етикет"
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr ""
 
-#: ../meld/vcview.py:190
-msgid "Options"
-msgstr "Настройки"
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr ""
 
-#: ../meld/vcview.py:249
-msgid "Choose one Version Control"
-msgstr "Избор на контрол на версиите"
+#: ../meld/vc/_vc.py:78
+#, fuzzy
+msgid "Renamed"
+msgstr "<ненаименован>"
 
-#: ../meld/vcview.py:250
-msgid "Only one Version Control in this directory"
-msgstr "Само един вид контрол на версиите в тази папка"
+#: ../meld/vc/_vc.py:79
+#, fuzzy
+msgid "Conflict"
+msgstr "Следващ конфликт"
 
-#. TRANSLATORS: this is an error message when a version control
-#. application isn't installed or can't be found
-#: ../meld/vcview.py:263
+#: ../meld/vc/_vc.py:80
+#, fuzzy
+msgid "Removed"
+msgstr "_Премахване"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr ""
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
 #, python-format
-msgid "%s Not Installed"
-msgstr "%s не е инсталиран"
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr ""
 
-#. TRANSLATORS: this is an error message when a version
-#. controlled repository is invalid or corrupted
-#: ../meld/vcview.py:267
-msgid "Invalid Repository"
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, fuzzy, python-format
+msgid "%(name)s (Invalid repository)"
 msgstr "Счупено хранилище"
 
 #: ../meld/vcview.py:276
-#, python-format
-msgid "%s (%s)"
-msgstr "%s (%s)"
+msgid "No valid version control system found in this folder"
+msgstr ""
 
-#. TRANSLATORS: This is the location of the directory the user is diffing
-#: ../meld/vcview.py:318
+#: ../meld/vcview.py:278
+#, fuzzy
+msgid "Only one version control system found in this folder"
+msgstr "Само един вид контрол на версиите в тази папка"
+
+#: ../meld/vcview.py:280
+#, fuzzy
+msgid "Choose which version control system to use"
+msgstr "Избор на контрол на версиите"
+
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
 #, python-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: ../meld/vcview.py:362
+#: ../meld/vcview.py:352
+#, fuzzy, python-format
+msgid "Scanning %s"
+msgstr "[%s] Проверка на %s"
+
+#: ../meld/vcview.py:391
 msgid "(Empty)"
 msgstr "(Празен)"
 
-#: ../meld/vcview.py:400
+#: ../meld/vcview.py:435
 #, python-format
-msgid "[%s] Fetching differences"
-msgstr "[%s] Извличане на разликите"
+msgid "%s — local"
+msgstr ""
 
-#: ../meld/vcview.py:408
+#: ../meld/vcview.py:436
 #, python-format
-msgid "[%s] Applying patch"
-msgstr "[%s] Прилагане на кръпка"
+msgid "%s — remote"
+msgstr ""
 
-#: ../meld/vcview.py:501
-msgid "Select some files first."
-msgstr "Първо изберете файлове."
-
-#: ../meld/vcview.py:574
+#: ../meld/vcview.py:444
 #, python-format
+msgid "%s (local, merge, remote)"
+msgstr ""
+
+#: ../meld/vcview.py:449
+#, python-format
+msgid "%s (remote, merge, local)"
+msgstr ""
+
+#: ../meld/vcview.py:460
+#, python-format
+msgid "%s — repository"
+msgstr ""
+
+#: ../meld/vcview.py:466
+#, python-format
+msgid "%s (working, repository)"
+msgstr ""
+
+#: ../meld/vcview.py:470
+#, python-format
+msgid "%s (repository, working)"
+msgstr ""
+
+#: ../meld/vcview.py:638
+msgid "Remove folder and all its files?"
+msgstr ""
+
+#: ../meld/vcview.py:640
 msgid ""
+"This will remove all selected files and folders, and all files within any "
+"selected folders, from version control."
+msgstr ""
+
+#: ../meld/vcview.py:665
+#, fuzzy, python-format
+msgid "Error removing %s"
+msgstr ""
+"Грешка при изтриването на %s\n"
 "\n"
-"                    Invoking 'patch' failed.\n"
-"                    \n"
-"                    Maybe you don't have 'GNU patch' installed,\n"
-"                    or you use an untested version of %s.\n"
-"                    \n"
-"                    Please send email bug report to:\n"
-"                    meld-list@gnome.org\n"
-"                    \n"
-"                    Containing the following information:\n"
-"                    \n"
-"                    - meld version: '%s'\n"
-"                    - source control software type: '%s'\n"
-"                    - source control software version: 'X.Y.Z'\n"
-"                    - the output of '%s somefile.txt'\n"
-"                    - patch command: '%s'\n"
-"                    (no need to actually run it, just provide\n"
-"                    the command line) \n"
-"                    \n"
-"                    Replace 'X.Y.Z' by the actual version for the\n"
-"                    source control software you use.\n"
-"                    "
+"%s."
+
+#: ../meld/vcview.py:746
+msgid "Clear"
 msgstr ""
-"\n"
-"                    Неуспешно стартиране на програмата „patch“.\n"
-"                    \n"
-"                    Възможно е програмата  „GNU patch“ да не е\n"
-"                    инсталирана или версията при вас на %s да\n"
-"                    не е тествана.\n"
-"                    \n"
-"                    Моля, изпратете доклад за грешка до:\n"
-"                    meld-list@gnome.org\n"
-"                    \n"
-"                    Включете следната информация:\n"
-"                    \n"
-"                    - версия на meld: „%s“\n"
-"                    - вид на контрола на версиите: „%s“\n"
-"                    - версия на контрола на версиите: „X.Y.Z“\n"
-"                    - резултатът от „%s файл.txt“\n"
-"                    - команда за кръпки: „%s“\n"
-"                    (няма нужда да изпълнявате горната команда,\n"
-"                    просто включете в доклада самата команда)\n"
-"                    \n"
-"                    Заменете „X.Y.Z“ с версията на софтуера за\n"
-"                    контрол на версиите, който ползвате.\n"
-"                    "
 
-#: ../meld/ui/findbar.py:127
-#, python-format
-msgid ""
-"Regular expression error\n"
-"'%s'"
-msgstr ""
-"Грешка в регулярния израз:\n"
-"„%s“"
+#~ msgid ""
+#~ "Some files have been modified.\n"
+#~ "Which ones would you like to save?"
+#~ msgstr ""
+#~ "Някои файлове са променени.\n"
+#~ "Кои от тях искате да се запазят?"
 
-#: ../meld/ui/historyentry.py:293
-msgid "_Browse..."
-msgstr "_Избор…"
+#~ msgid "_Discard Changes"
+#~ msgstr "_Отмяна на промените"
 
-#: ../meld/ui/historyentry.py:301
-msgid "Path"
-msgstr "Път"
+#~ msgid "_Save Selected"
+#~ msgstr "_Запазване на избраните"
 
-#: ../meld/ui/historyentry.py:302
-msgid "Path to file"
-msgstr "Път към файла"
+#~ msgid "_Search for"
+#~ msgstr "_Търсене за:"
 
-#: ../meld/ui/historyentry.py:303
-msgid "Pop up a file selector to choose a file"
-msgstr "Отваряне на прозорец за избор на файл"
+#~ msgid "Choose Files"
+#~ msgstr "Избор на файлове"
 
-#: ../meld/ui/historyentry.py:441
-msgid "Select directory"
-msgstr "Избор на папка"
+#~ msgid "Directory"
+#~ msgstr "Папка"
 
-#: ../meld/ui/historyentry.py:445
-msgid "Select file"
-msgstr "Избор на файл"
+#~ msgid "Mine"
+#~ msgstr "Мои"
 
-#: ../meld/ui/notebooklabel.py:60
-msgid "Close tab"
-msgstr "Затваряне на подпрозореца"
+#~ msgid "Original"
+#~ msgstr "Първоначални"
 
-#. These are the possible states of files. Be sure to get the colons correct.
-#: ../meld/vc/_vc.py:40
-msgid ""
-"Ignored:Unversioned:::Error::Newly added:Modified:Conflict:Removed:Missing"
-msgstr ""
-"Игнориран:Неконтролиран:::Грешка::Новодобавен:Променен:В конфликт:Изтрит:"
-"Липсващ"
+#~ msgid "Other"
+#~ msgstr "Чужди"
 
-#: ../meld/vc/cvs.py:163
-#, python-format
-msgid ""
-"Error converting to a regular expression\n"
-"The pattern was '%s'\n"
-"The error was '%s'"
-msgstr ""
-"Грешка при преобразуване към регулярен израз\n"
-"Изразът е: „%s“\n"
-"Грешката е: „%s“"
+#~ msgid "Select VC Directory"
+#~ msgstr "Избор на папка с контрол на версиите"
+
+#~ msgid "_Three Way Compare"
+#~ msgstr "_Тройно сравняване"
+
+#~ msgid "Create Patch"
+#~ msgstr "Създаване на кръпка"
+
+#~ msgid "Create a patch"
+#~ msgstr "Създаване на кръпка"
+
+#~ msgid "Encoding"
+#~ msgstr "Кодиране"
+
+#~ msgid "Ignore changes which insert or delete blank lines"
+#~ msgstr "Игнориране на промени в броя и положението на празните редове"
+
+#~ msgid "Loading"
+#~ msgstr "Зареждане"
+
+#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+#~ msgstr ""
+#~ "При зареждане на файл, да се пробват кодиранията в тази последователност "
+#~ "(напр.: utf8, iso8859)"
+
+#~ msgid "VC Log"
+#~ msgstr "Дневник на хранилището"
+
+#~ msgid "Copy _Right"
+#~ msgstr "Копиране на_дясно"
+
+#~ msgid "Case"
+#~ msgstr "Регистър"
+
+#~ msgid "Ignore case of entries"
+#~ msgstr "Регистърът на избраното да е без значение"
+
+#~ msgid ""
+#~ "'%s' exists.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "„%s“ съществува.\n"
+#~ "Да се презапише?"
+
+#~ msgid ""
+#~ "'%s' is a directory.\n"
+#~ "Remove recursively?"
+#~ msgstr ""
+#~ "„%s“ е папка.\n"
+#~ "Да се изтрие ли рекурсивно?"
+
+#~ msgid "%i second"
+#~ msgid_plural "%i seconds"
+#~ msgstr[0] "%i секунда"
+#~ msgstr[1] "%i секунди"
+
+#~ msgid "%i minute"
+#~ msgid_plural "%i minutes"
+#~ msgstr[0] "%i минута"
+#~ msgstr[1] "%i минути"
+
+#~ msgid "%i hour"
+#~ msgid_plural "%i hours"
+#~ msgstr[0] "%i час"
+#~ msgstr[1] "%i часа"
+
+#~ msgid "%i day"
+#~ msgid_plural "%i days"
+#~ msgstr[0] "%i ден"
+#~ msgstr[1] "%i дена"
+
+#~ msgid "%i week"
+#~ msgid_plural "%i weeks"
+#~ msgstr[0] "%i седмица"
+#~ msgstr[1] "%i седмици"
+
+#~ msgid "%i month"
+#~ msgid_plural "%i months"
+#~ msgstr[0] "%i месец"
+#~ msgstr[1] "%i месеца"
+
+#~ msgid "%i year"
+#~ msgid_plural "%i years"
+#~ msgstr[0] "%i година"
+#~ msgstr[1] "%i години"
+
+#~ msgid "Merge all non-conflicting"
+#~ msgstr "Сливане на всички промени"
+
+#~ msgid "Cycle through documents"
+#~ msgstr "Преминаване през документите"
+
+#~ msgid "[%s] Set num panes"
+#~ msgstr "[%s] Задаване на броя панели"
+
+#~ msgid "[%s] Opening files"
+#~ msgstr "[%s] Отваряне на файлове"
+
+#~ msgid "[%s] Reading files"
+#~ msgstr "[%s] Прочитане на файлове"
+
+#~ msgid "%s is not in encodings: %s"
+#~ msgstr "%s не е в кодирането: %s"
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "„%s“ съществува.\n"
+#~ "Да се презапише?"
+
+#~ msgid ""
+#~ "Error writing to %s\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr ""
+#~ "Грешка при запис в %s\n"
+#~ "\n"
+#~ "%s."
+
+#~ msgid "Choose a name for buffer %i."
+#~ msgstr "Избор на име за буфера %i."
+
+#~ msgid ""
+#~ "This file '%s' contains a mixture of line endings.\n"
+#~ "\n"
+#~ "Which format would you like to use?"
+#~ msgstr ""
+#~ "Комбинациите за край на ред във файла „%s“ са различни.\n"
+#~ "\n"
+#~ "Кой вариант искате да се ползва?"
+
+#~ msgid ""
+#~ "'%s' contains characters not encodable with '%s'\n"
+#~ "Would you like to save as UTF-8?"
+#~ msgstr ""
+#~ "„%s“ съдържа знаци, които не могат да се кодират чрез „%s“\n"
+#~ "Желаете ли да се запише в „UTF-8“?"
+
+#~ msgid ""
+#~ "Reloading will discard changes in:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "You cannot undo this operation."
+#~ msgstr ""
+#~ "Презареждането ще препокрие промените в:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Няма да можете да отмените тази операция."
+
+#~ msgid "dir"
+#~ msgstr "папка"
+
+#~ msgid "Start a 2- or 3-way directory comparison"
+#~ msgstr "Ново сравнение на 2 или 3 папки"
+
+#~ msgid "Start a comparison between file and dir/file"
+#~ msgstr "Ново сравнение на файл и папка/файл"
+
+#~ msgid "can't compare more than three directories"
+#~ msgstr "невъзможно е да се сравняват повече от три папка"
+
+#~ msgid "_New..."
+#~ msgstr "_Ново…"
+
+#~ msgid "_Previous Tab"
+#~ msgstr "_Предишeн подпрозорец"
+
+#~ msgid "Activate previous tab"
+#~ msgstr "Фокусиране на предишния подпрозорец"
+
+#~ msgid "_Next Tab"
+#~ msgstr "_Следващ подпрозорец"
+
+#~ msgid "Activate next tab"
+#~ msgstr "Фокусиране на следващия подпрозорец"
+
+#~ msgid "Move current tab to left"
+#~ msgstr "Преместване на текущия прозорец наляво"
+
+#~ msgid "Move current tab to right"
+#~ msgstr "Преместване на текущия прозорец надясно"
+
+#~ msgid "Report _Bug"
+#~ msgstr "_Докладване на грешка"
+
+#~ msgid "Report a bug in Meld"
+#~ msgstr "Докладване на грешка в Meld"
+
+#~ msgid "About this program"
+#~ msgstr "Информация за тази програма"
+
+#~ msgid "Show or hide the statusbar"
+#~ msgstr "Показване или скриване на лентата за състояние"
+
+#~ msgid "Only available if you have gnome-python-desktop installed"
+#~ msgstr "Включва се, само ако gnome-python-desktop е инсталиран"
+
+#~ msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+#~ msgstr "Резервни копия\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+
+#~ msgid ""
+#~ "OS-specific metadata\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
+#~ "Desktop.ini\n"
+#~ msgstr ""
+#~ "Метаданни на ОС\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
+#~ "Desktop.ini\n"
+
+#~ msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+#~ msgstr "Двоични файлове\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+
+#~ msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+#~ msgstr "Мултимедия\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+
+#~ msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+#~ msgstr "Ключови думи на CVS\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+
+#~ msgid "C++ comment\t0\t//.*\n"
+#~ msgstr "Коментар на C++\t0\t//.*\n"
+
+#~ msgid "C comment\t0\t/\\*.*?\\*/\n"
+#~ msgstr "Коментар на C\t0\t/\\*.*?\\*/\n"
+
+#~ msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
+#~ msgstr "Всички празни знаци\t0\t[ \\t\\r\\f\\v]*\n"
+
+#~ msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+#~ msgstr "Празни знаци в началото на реда\t0\t^[ \\t\\r\\f\\v]*\n"
+
+#~ msgid "Script comment\t0\t#.*"
+#~ msgstr "Коментар в скрипт\t0\t#.*"
+
+#~ msgid "Update"
+#~ msgstr "Обновяване"
+
+#~ msgid "Add to VC"
+#~ msgstr "Добавяне към контрола"
+
+#~ msgid "Add _Binary"
+#~ msgstr "Добавяне на д_воичен"
+
+#~ msgid "Add binary to VC"
+#~ msgstr "Двоично добавяне към контрола"
+
+#~ msgid "Remove from VC"
+#~ msgstr "Премахване от контрол"
+
+#~ msgid "Delete locally"
+#~ msgstr "Локално изтриване"
+
+#~ msgid "Show normal"
+#~ msgstr "Показване на нормалните"
+
+#~ msgid "Non _VC"
+#~ msgstr "Извън _контрол"
+
+#~ msgid "Rev"
+#~ msgstr "Ревизия"
+
+#~ msgid "Tag"
+#~ msgstr "Етикет"
+
+#~ msgid "Options"
+#~ msgstr "Настройки"
+
+#~ msgid "%s Not Installed"
+#~ msgstr "%s не е инсталиран"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "[%s] Applying patch"
+#~ msgstr "[%s] Прилагане на кръпка"
+
+#~ msgid "Select some files first."
+#~ msgstr "Първо изберете файлове."
+
+#~ msgid ""
+#~ "\n"
+#~ "                    Invoking 'patch' failed.\n"
+#~ "                    \n"
+#~ "                    Maybe you don't have 'GNU patch' installed,\n"
+#~ "                    or you use an untested version of %s.\n"
+#~ "                    \n"
+#~ "                    Please send email bug report to:\n"
+#~ "                    meld-list@gnome.org\n"
+#~ "                    \n"
+#~ "                    Containing the following information:\n"
+#~ "                    \n"
+#~ "                    - meld version: '%s'\n"
+#~ "                    - source control software type: '%s'\n"
+#~ "                    - source control software version: 'X.Y.Z'\n"
+#~ "                    - the output of '%s somefile.txt'\n"
+#~ "                    - patch command: '%s'\n"
+#~ "                    (no need to actually run it, just provide\n"
+#~ "                    the command line) \n"
+#~ "                    \n"
+#~ "                    Replace 'X.Y.Z' by the actual version for the\n"
+#~ "                    source control software you use.\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    Неуспешно стартиране на програмата „patch“.\n"
+#~ "                    \n"
+#~ "                    Възможно е програмата  „GNU patch“ да не е\n"
+#~ "                    инсталирана или версията при вас на %s да\n"
+#~ "                    не е тествана.\n"
+#~ "                    \n"
+#~ "                    Моля, изпратете доклад за грешка до:\n"
+#~ "                    meld-list@gnome.org\n"
+#~ "                    \n"
+#~ "                    Включете следната информация:\n"
+#~ "                    \n"
+#~ "                    - версия на meld: „%s“\n"
+#~ "                    - вид на контрола на версиите: „%s“\n"
+#~ "                    - версия на контрола на версиите: „X.Y.Z“\n"
+#~ "                    - резултатът от „%s файл.txt“\n"
+#~ "                    - команда за кръпки: „%s“\n"
+#~ "                    (няма нужда да изпълнявате горната команда,\n"
+#~ "                    просто включете в доклада самата команда)\n"
+#~ "                    \n"
+#~ "                    Заменете „X.Y.Z“ с версията на софтуера за\n"
+#~ "                    контрол на версиите, който ползвате.\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "Грешка в регулярния израз:\n"
+#~ "„%s“"
+
+#~ msgid "_Browse..."
+#~ msgstr "_Избор…"
+
+#~ msgid "Path"
+#~ msgstr "Път"
+
+#~ msgid "Path to file"
+#~ msgstr "Път към файла"
+
+#~ msgid "Pop up a file selector to choose a file"
+#~ msgstr "Отваряне на прозорец за избор на файл"
+
+#~ msgid ""
+#~ "Ignored:Unversioned:::Error::Newly added:Modified:Conflict:Removed:Missing"
+#~ msgstr ""
+#~ "Игнориран:Неконтролиран:::Грешка::Новодобавен:Променен:В конфликт:Изтрит:"
+#~ "Липсващ"
+
+#~ msgid ""
+#~ "Error converting to a regular expression\n"
+#~ "The pattern was '%s'\n"
+#~ "The error was '%s'"
+#~ msgstr ""
+#~ "Грешка при преобразуване към регулярен израз\n"
+#~ "Изразът е: „%s“\n"
+#~ "Грешката е: „%s“"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-24 16:32+0530\n"
+"POT-Creation-Date: 2021-03-22 14:43+0300\n"
 "PO-Revision-Date: 2005-06-24 16:51+0530\n"
 "Last-Translator: Amanpreet Singh Alam <amanpreetalam@yahoo.com>\n"
 "Language-Team: Punjabi <fedora-transa-pa@redhat.com>\n"
@@ -17,992 +17,2697 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#. action_name, stock_icon, label, accelerator, tooltip,
-#: dirdiff.py:76 filediff.py:123 meldapp.py:91 wocoview.py:94
-msgid "_File"
-msgstr "ਫਾਇਲ(_F)"
-
-#: dirdiff.py:78 filediff.py:148 wocoview.py:99 glade2/meldapp.glade.h:53
-#: glade2/wocoview.glade.h:16
-msgid "_Diff"
-msgstr "ਅੰਤਰ(_Diff)"
-
-#: dirdiff.py:82 filediff.py:142 meldapp.py:103 wocoview.py:111
-msgid "_View"
-msgstr "ਵੇਖੋ(_V)"
-
-#: dirdiff.py:83 filediff.py:143
-msgid "One Pane"
-msgstr "ਇੱਕ ਬਾਹੀ"
-
-#: dirdiff.py:84 filediff.py:144
-msgid "Two Panes"
-msgstr "ਦੋ ਬਾਹੀਆਂ"
-
-#: dirdiff.py:85 filediff.py:145
-msgid "Three Panes"
-msgstr "ਤਿੰਨ ਬਾਹੀਆਂ"
-
-#: dirdiff.py:86 filediff.py:146
-msgid "Horizontal View"
-msgstr "ਖਿਤਿਜੀ ਝਲਕ"
-
-#: dirdiff.py:87 filediff.py:147
-msgid "Show Filenames"
-msgstr "ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ"
-
-#: filediff.py:124 filediff.py:125
-msgid "Save the current file"
-msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
-
-#: filediff.py:126
-msgid "_Save All"
-msgstr "ਸਭ ਸੰਭਾਲੋ(_S)"
-
-#: filediff.py:126
-msgid "Save all files"
-msgstr "ਸਭ ਫਾਇਲਾਂ ਸੰਭਾਲੋ"
-
-#: filediff.py:128
-msgid "Pane 1"
-msgstr "ਬਾਹੀ 1"
-
-#: filediff.py:129
-msgid "Pane 2"
-msgstr "ਬਾਹੀ 2"
-
-#: filediff.py:130
-msgid "Pane 3"
-msgstr "ਬਾਹੀ 3"
-
-#: filediff.py:131
-msgid "_Print..."
-msgstr "ਛਾਪੋ(_P)..."
-
-#: filediff.py:131
-msgid "Print this comparison"
-msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
-
-#: filediff.py:132 wocoview.py:96
-msgid "_Close"
-msgstr "ਬੰਦ(_C)"
-
-#: filediff.py:132 wocoview.py:96
-msgid "Close this tab"
-msgstr "ਇਹ ਟੈਬ ਬੰਦ ਕਰੋ"
-
-#: filediff.py:133 glade2/wocoview.glade.h:17
-msgid "_Edit"
-msgstr "ਸੋਧ(_E)"
-
-#: filediff.py:134
-msgid "_Undo"
-msgstr "ਵਾਪਸ(_U)"
-
-#: filediff.py:134
-msgid "Undo last change"
+#: ../bin/meld:186
+msgid "Cannot import: "
 msgstr ""
 
-#: filediff.py:135
-msgid "_Redo"
-msgstr "ਮੁੜ ਵਾਪਸ(_R)"
-
-#: filediff.py:135
-msgid "Redo last change"
+#: ../bin/meld:189
+#, c-format
+msgid "Meld requires %s or higher."
 msgstr ""
 
-#: filediff.py:136
-msgid "_Find"
-msgstr "_ਖੋਜ"
-
-#: filediff.py:136
-msgid "Search the document"
-msgstr "ਦਸਤਾਵੇਜ਼ ਖੋਜ"
-
-#: filediff.py:137
-msgid "_Find Next"
-msgstr "ਅੱਗੇ ਖੋਜ(_F)"
-
-#: filediff.py:137
-msgid "Repeat the last find"
-msgstr ""
-
-#: filediff.py:138 glade2/filediff.glade.h:13
-msgid "_Replace"
-msgstr "ਤਬਦੀਲ(_R)"
-
-#: filediff.py:138
-msgid "Find and replace text"
-msgstr "ਪਾਠ ਖੋਜ ਅਤੇ ਤਬਦੀਲ"
-
-#: filediff.py:139
-msgid "Cu_t"
-msgstr "ਕੱਟੋ(_t)"
-
-#: filediff.py:139 filediff.py:140
-msgid "Copy selected text"
-msgstr ""
-
-#: filediff.py:140
-msgid "_Copy"
-msgstr "ਨਕਲ(_C)"
-
-#: filediff.py:141
-msgid "_Paste"
-msgstr "ਚੇਪੋ(_P)"
-
-#: filediff.py:141
-msgid "Paste selected text"
-msgstr ""
-
-#: filediff.py:149
-msgid "Refres_h"
-msgstr "ਤਾਜ਼ਾ(_h)"
-
-#: filediff.py:149
-msgid "Recompute differences"
-msgstr "ਅੰਤਰ ਮੁੜ ਕੱਢੋ"
-
-#: filediff.py:150
-msgid "_Next"
-msgstr "ਅੱਗੇ(_N)"
-
-#: filediff.py:150
-msgid "Next difference"
-msgstr "ਅੱਗੇ ਅੰਤਰ"
-
-#: filediff.py:151
-msgid "Pr_ev"
-msgstr "ਪਿੱਛੇ(_e)"
-
-#: filediff.py:151
-msgid "Previous difference"
-msgstr "ਪਿੱਛੇ ਅੰਤਰ"
-
-#: filediff.py:152
-msgid "Copy contents left"
-msgstr ""
-
-#: filediff.py:153
-msgid "Copy contents right"
-msgstr ""
-
-#: filediff.py:294
-msgid "Insert,Overwrite"
-msgstr "ਸ਼ਾਮਲ, ਉੱਪਰ ਲਿਖੋ"
-
-#. insert/overwrite
-#: filediff.py:295
-#, python-format
-msgid "Line %i, Column %i"
-msgstr "ਸਤਰ %i, ਕਾਲਮ %i"
-
-#: filediff.py:569
-#, python-format
-msgid "[%s] Set num panes"
-msgstr ""
-
-#: filediff.py:574
-#, python-format
-msgid "[%s] Opening files"
-msgstr "[%s] ਫਾਇਲਾਂ ਖੁੱਲੀਆਂ"
-
-#: filediff.py:591
-#, python-format
+#: ../bin/meld:241
+#, c-format
 msgid ""
-"Could not open '%s' for reading.\n"
-"\n"
-"The error was:\n"
+"Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
 
-#: filediff.py:595
-#, python-format
-msgid "[%s] Reading files"
-msgstr ""
-
-#: filediff.py:610
-#, python-format
-msgid ""
-"Could not read from '%s'.\n"
-"\n"
-"I tried encodings %s."
-msgstr ""
-
-#: filediff.py:615
-#, python-format
-msgid ""
-"Could not read from '%s'.\n"
-"\n"
-"The error was:\n"
-"%s"
-msgstr ""
-
-#: filediff.py:634
-#, python-format
-msgid "[%s] Computing differences"
-msgstr ""
-
-#: filediff.py:788
-#, python-format
-msgid "Save buffer %i as."
-msgstr ""
-
-#: filediff.py:801
-#, python-format
-msgid ""
-"\"%s\" exists!\n"
-"Overwrite?"
-msgstr ""
-
-#: filediff.py:815
-#, python-format
-msgid ""
-"This file '%s' contains a mixture of line endings.\n"
-"\n"
-"Which format would you like to use?"
-msgstr ""
-
-#: filediff.py:832
-#, python-format
-msgid ""
-"Error writing to %s\n"
-"\n"
-"%s."
-msgstr ""
-
-#: filediff.py:875
-#, python-format
-msgid ""
-"Refreshing will discard changes in:\n"
-"%s\n"
-"\n"
-"You cannot undo this operation."
-msgstr ""
-
-#: filediff.py:1424
-#, python-format
-msgid "%s"
-msgstr "%s"
-
-#: filediff.py:1425
-#, python-format
-msgid "Regex Error: %s"
-msgstr "Regex ਗਲਤੀ: %s"
-
-#: filediff.py:1524
-#, python-format
-msgid "'%s' was not found."
-msgstr ""
-
-#: fileprint.py:194
-#, python-format
-msgid "Print... %s"
-msgstr "ਛਾਪੋ... %s"
-
-#: fileprint.py:214
-msgid "Print Preview"
-msgstr "ਛਾਪਾਈ ਝਲਕ"
-
-#: meld:49
-#, c-format
-msgid "Meld requires python%s or higher."
-msgstr ""
-
-#: meld:67
-#, c-format
-msgid "Meld requires pygtk-%s or higher. (found %s)"
-msgstr ""
-
-#: meldapp.py:92
-msgid "_New"
-msgstr "ਨਵਾਂ(_N)"
-
-#: meldapp.py:93 meldapp.py:94
-msgid "File Comparision"
-msgstr "ਫਾਇਲ ਤੁਲਨਾ"
-
-#: meldapp.py:95 meldapp.py:96
-msgid "Folder Comparision"
-msgstr "ਫੋਲਡਰ ਤੁਲਨਾ"
-
-#: meldapp.py:97
-msgid "Working Copy Browser"
-msgstr ""
-
-#: meldapp.py:100
-msgid "_Settings"
-msgstr "ਸੈਟਿੰਗ(_S)"
-
-#: meldapp.py:104
-msgid "Show Toolbar"
-msgstr "ਸੰਦ-ਪੱਟੀ ਵੇਖਾਓ"
-
-#: meldapp.py:105
-msgid "Show Statusbar"
-msgstr "ਸਥਿਤੀ ਪੱਟੀ ਵੇਖਾਓ"
-
-#: meldapp.py:107
-msgid "_Help"
-msgstr "ਸਹਾਇਤਾ(_H)"
-
-#: meldapp.py:109
-msgid "_Report Bug"
-msgstr "ਬੱਗ ਜਾਣਕਾਰੀ(_R)"
-
-#: meldapp.py:344
-msgid "Cannot compare a mixture of files and directories.\n"
-msgstr ""
-
-#: meldapp.py:347
-msgid "folder"
-msgstr "ਫੋਲਡਰ"
-
-#: meldapp.py:348
-msgid "file"
-msgstr "ਫਾਇਲ"
-
-#: meldapp.py:349
-msgid "nonexistant"
-msgstr ""
-
-#: meldapp.py:376
-msgid "Run meld --help for help"
-msgstr "ਸਹਾਇਤਾ ਲਈ ਚਲਾਓ meld --help"
-
-#. ###############################################################################
-#.
-#. usage
-#.
-#. ###############################################################################
-#: meldapp.py:442
-msgid ""
-"Meld is a file and directory comparison tool. Usage:\n"
-"\n"
-"    meld                        Start with no windows open\n"
-"    meld <dir>                  Start with CVS browser in 'dir'\n"
-"    meld <file>                 Start with CVS diff of 'file'\n"
-"    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
-"    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory comparison\n"
-"\n"
-"Options:\n"
-"    -h, --help                  Show this help text and exit\n"
-"    -v, --version               Display the version and exit\n"
-"\n"
-"For more information choose help -> contents.\n"
-"Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
-"Discuss meld at http://mail.gnome.org/mailman/listinfo/gnome-devtools\n"
-msgstr ""
-
-#: meldapp.py:459
-#, python-format
-msgid ""
-"Meld %s\n"
-"Written by Stephen Kennedy <stevek@gnome.org>"
-msgstr ""
-
-#: meldapp.py:480
-msgid "Usage: meld [options] [arguments]"
-msgstr "ਵਰਤੋਂ: meld [options] [arguments]"
-
-#: meldapp.py:481
-msgid "Use label instead of filename. This option may be used several times."
-msgstr ""
-
-#: meldapp.py:482
-msgid "Save snapshot to file,x,y,w,h"
-msgstr ""
-
-#: meldapp.py:483
-msgid "Use an existing instance"
-msgstr "ਮੌਜੂਦਾ ਹੀ ਵਰਤੋਂ"
-
-#: meldapp.py:484
-msgid "Ignored for compatibility"
-msgstr ""
-
-#: meldapp.py:494
-#, python-format
-msgid "Connection to existing app failed: %s"
-msgstr ""
-
-#: meldapp.py:530
-#, python-format
-msgid "Wrong number of arguments (Got %i)"
-msgstr ""
-
-#: melddoc.py:41
-msgid "untitled"
-msgstr "ਬਿਨਾਂ ਸਿਰਲੇਖ"
-
-#. no common path. empty names get changed to "[None]"
-#: misc.py:105
-msgid "[None]"
-msgstr "[ਕੋਈ ਨਹੀਂ]"
-
-#: prefsui.py:215
-msgid "Line numbers are only available if you have pygtksourceview installed."
-msgstr ""
-
-#: prefsui.py:219
-msgid "Syntax highlighting is only available if you have pygtksourceview installed."
-msgstr ""
-
-#: svnview.py:40
-msgid "Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
-msgstr ""
-
-#: svnview.py:289 wocoview.py:156
-msgid "Name"
-msgstr "ਨਾਂ"
-
-#: svnview.py:306 wocoview.py:173
-msgid "Location"
-msgstr "ਟਿਕਾਣਾ"
-
-#: svnview.py:307 wocoview.py:174
-msgid "Status"
-msgstr "ਸਥਿਤੀ"
-
-#: svnview.py:308 wocoview.py:175
-msgid "Rev"
-msgstr "ਰੀਵਿਜ਼ਨ"
-
-#: svnview.py:309 wocoview.py:176 glade2/wocoview.glade.h:13
-msgid "Tag"
-msgstr "ਟੈਗ"
-
-#: svnview.py:310 wocoview.py:177
-msgid "Options"
-msgstr "ਚੋਣ"
-
-#: svnview.py:347
-#, python-format
-msgid "[%s] Scanning"
-msgstr ""
-
-#: svnview.py:374
-#, python-format
-msgid "[%s] Scanning %s"
-msgstr ""
-
-#: svnview.py:390
-msgid "(Empty)"
-msgstr "(ਖਾਲੀ)"
-
-#: svnview.py:426
-#, python-format
-msgid "[%s] Fetching differences"
-msgstr ""
-
-#: svnview.py:434
-#, python-format
-msgid "[%s] Applying patch"
-msgstr ""
-
-#: svnview.py:438
-msgid "No differences found."
-msgstr "ਕੋਈ ਅੰਤਰ ਨਹੀਂ ਮਿਲਿਆ ਹੈ।"
-
-#: svnview.py:512
-msgid "Select some files first."
-msgstr "ਪਹਿਲਾਂ ਕੁਝ ਫਾਇਲਾਂ ਦੀ ਚੋਣ ਕਰੋ।"
-
-#: svnview.py:533 wocoview.py:230
-#, python-format
-msgid ""
-"'%s' is a directory.\n"
-"Remove recusively?"
-msgstr ""
-
-#: svnview.py:538 wocoview.py:235
-#, python-format
-msgid ""
-"Error removing %s\n"
-"\n"
-"%s."
-msgstr ""
-
-#: wocoview.py:97
-msgid "_Version"
-msgstr "ਵਰਜਨ(_V)"
-
-#: wocoview.py:99
-msgid "Compare versions"
-msgstr ""
-
-#: wocoview.py:101 glade2/wocoview.glade.h:19
-msgid "_Update"
-msgstr "ਅੱਪਡੇਟ(_U)"
-
-#: wocoview.py:101
-msgid "Update the local copy"
-msgstr "ਲੋਕਲ ਨਕਲ ਅੱਪਡੇਟ"
-
-#: wocoview.py:103 glade2/wocoview.glade.h:15
-msgid "_Commit"
-msgstr "ਕਮਿਟ(_C)"
-
-#: wocoview.py:103
-msgid "Commit changes"
-msgstr "ਤਬਦੀਲੀਆਂ ਕਮਿਟ"
-
-#: wocoview.py:105 glade2/wocoview.glade.h:14
-msgid "_Add"
-msgstr "ਸ਼ਾਮਲ(_A)"
-
-#: wocoview.py:105
-msgid "Add to control"
-msgstr "ਕੰਟਰੋਲ 'ਚ ਸ਼ਾਮਲ"
-
-#: wocoview.py:107 glade2/wocoview.glade.h:18
-msgid "_Remove"
-msgstr "ਹਟਾਓ(_R)"
-
-#: wocoview.py:107
-msgid "Remove from control"
-msgstr "ਕੰਟਰੋਲ 'ਚੋਂ ਹਟਾਓ"
-
-#: wocoview.py:109
-msgid "_Delete"
-msgstr "ਹਟਾਓ(_D)"
-
-#: wocoview.py:109
-msgid "Remove locally"
-msgstr "ਲੋਕਲ ਹਟਾਓ"
-
-#: wocoview.py:113
-msgid "_Up"
-msgstr "ਉਪਰ(_U)"
-
-#: wocoview.py:113
-msgid "Previous change"
-msgstr ""
-
-#: wocoview.py:115
-msgid "_Down"
-msgstr "ਹੇਠਾਂ(_D)"
-
-#: wocoview.py:115
-msgid "Next change"
-msgstr "ਅੱਗੇ ਤਬਦੀਲ"
-
-#: wocoview.py:117
-msgid "_Flatten"
-msgstr ""
-
-#: wocoview.py:117
-msgid "Flatten tree"
-msgstr ""
-
-#: wocoview.py:119
-msgid "_Modified"
-msgstr "ਸੋਧਿਆ(_M)"
-
-#: wocoview.py:119
-msgid "View modified files"
-msgstr ""
-
-#: wocoview.py:121
-msgid "_Normal"
-msgstr "ਸਧਾਰਨ(_N)"
-
-#: wocoview.py:121
-msgid "View normal files"
-msgstr ""
-
-#: wocoview.py:123
-msgid "Un_known"
-msgstr "ਅਣਜਾਣ(_k)"
-
-#: wocoview.py:123
-msgid "View non version controlled files"
-msgstr ""
-
-#: wocoview.py:125
-msgid "_Ignored"
-msgstr "ਅਣਡਿੱਠਾ(_I)"
-
-#: wocoview.py:125
-msgid "View ignored items"
-msgstr ""
-
-#: wocoview.py:127
-msgid "_Console"
-msgstr "ਕੰਨਸੋਲ(_C_"
-
-#: wocoview.py:127
-msgid "View command line output"
-msgstr ""
-
-#: data/meld.desktop.in.h:1
-msgid "Compare and merge your files."
-msgstr ""
-
-#: data/meld.desktop.in.h:2
-msgid "Meld Diff Viewer"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:1
-msgid "Copy Left"
-msgstr "ਖੱਬੇ ਨਕਲ"
-
-#: glade2/dirdiff.glade.h:2
-msgid "Copy Right"
-msgstr "ਸੱਜੇ ਨਕਲ"
-
-#: glade2/dirdiff.glade.h:3 glade2/filediff.glade.h:5
-msgid "Edit"
-msgstr "ਸੋਧ"
-
-#: glade2/dirdiff.glade.h:4
-msgid "Launch _Comparison"
-msgstr ""
-
-#: glade2/dirdiff.glade.h:5
-msgid "_Delete Selected"
-msgstr ""
-
-#: glade2/filediff.glade.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
-"Which ones would you like to save?</span>"
-msgstr ""
-
-#: glade2/filediff.glade.h:3
-msgid "Copy All _Left"
-msgstr ""
-
-#: glade2/filediff.glade.h:4
-msgid "Copy All _Right"
-msgstr ""
-
-#: glade2/filediff.glade.h:6
-msgid "Match _entire word only"
-msgstr ""
-
-#: glade2/filediff.glade.h:7
-msgid "Regular e_xpression"
-msgstr "ਨਿਯਮਤ ਸਮੀਕਰਨ(_x)"
-
-#: glade2/filediff.glade.h:8
-msgid "Replace _All"
-msgstr "ਸਭ ਤਬਦੀਲ(_A)"
-
-#: glade2/filediff.glade.h:9
-msgid "Save _As..."
-msgstr "ਏਦਾਂ ਸੰਭਾਲੋ(_A)..."
-
-#: glade2/filediff.glade.h:10
-msgid "Save modified files?"
-msgstr "ਕੀ ਸੋਧੀਆਂ ਫਾਇਲਾਂ ਸੰਭਾਲਣੀਆਂ ਹਨ?"
-
-#: glade2/filediff.glade.h:11
-msgid "Search:"
-msgstr "ਖੋਜ:"
-
-#: glade2/filediff.glade.h:12
-msgid "_Match case"
-msgstr ""
-
-#: glade2/filediff.glade.h:14
-msgid "_Replace..."
-msgstr "ਤਬਦੀਲ(_R)..."
-
-#: glade2/filediff.glade.h:15
-msgid "_Replace:"
-msgstr "ਤਬਦੀਲ(_R):"
-
-#: glade2/filediff.glade.h:16
-msgid "_Wrap around"
-msgstr "ਪਾਸਿਉ ਸਮੇਟੋ(_W)"
-
-#: glade2/meldapp.glade.h:1
-msgid "(gnome-default-editor)"
-msgstr "(ਗਨੋਮ-ਮੂਲ-ਸੰਪਾਦਕ)"
-
-#: glade2/meldapp.glade.h:2
-msgid "<b>Edit Menu</b>"
-msgstr "<b>ਮੇਨੂ ਸੋਧ</b>"
-
-#: glade2/meldapp.glade.h:3
-msgid "<b>Font</b>"
-msgstr "<b>ਫੋਂਟ</b>"
-
-#: glade2/meldapp.glade.h:4
-msgid "<b>Global options</b>"
-msgstr "<b>ਵਿਆਪਕ ਚੋਣ</b>"
-
-#: glade2/meldapp.glade.h:5
-msgid "<b>Loading</b>"
-msgstr "<b>ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ</b>"
-
-#: glade2/meldapp.glade.h:6
-msgid "<b>Misc</b>"
-msgstr "<b>ਫੁਟਕਲ</b>"
-
-#: glade2/meldapp.glade.h:7
-msgid "<b>Saving</b>"
-msgstr "<b>ਸੰਭਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ</b>"
-
-#: glade2/meldapp.glade.h:8
-msgid "<b>Toolbar Appearance</b>"
-msgstr ""
-
-#: glade2/meldapp.glade.h:9
-msgid "<b>Update Options</b>"
-msgstr ""
-
-#: glade2/meldapp.glade.h:10
-msgid "<b>Whitespace</b>"
-msgstr ""
-
-#: glade2/meldapp.glade.h:11
-msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
-
-#: glade2/meldapp.glade.h:12
-msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Diff</span>"
-
-#: glade2/meldapp.glade.h:13
-msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">ਵੇਖਾਓ</span>"
-
-#: glade2/meldapp.glade.h:14
-msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">ਸੰਪਾਦਕ</span>"
-
-#: glade2/meldapp.glade.h:15
-msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">ਇੰਕੋਡਿੰਗ</span>"
-
-#: glade2/meldapp.glade.h:16
-msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">ਫਾਇਲ ਫਿਲਟਰ</span>"
-
-#: glade2/meldapp.glade.h:17
-msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">ਪਾਠ ਫਿਲਟਰ</span>"
-
-#: glade2/meldapp.glade.h:18
-msgid "CVS"
-msgstr "CVS"
-
-#: glade2/meldapp.glade.h:19
-msgid "CVS binary"
-msgstr "CVS ਬਾਈਨਰੀ"
-
-#: glade2/meldapp.glade.h:20
-msgid "Create missing directories (-d)"
-msgstr "ਗੁੰਮ ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ (-d)"
-
-#: glade2/meldapp.glade.h:21
-msgid "Custom command"
-msgstr "ਪਸੰਦੀਦਾ ਕਮਾਂਡ"
-
-#: glade2/meldapp.glade.h:22
-msgid "Display"
-msgstr "ਝਲਕ"
-
-#: glade2/meldapp.glade.h:23
-msgid "Edit menu popup invokes"
-msgstr ""
-
-#: glade2/meldapp.glade.h:24
-msgid "Editor"
-msgstr "ਸੰਪਾਦਕ"
-
-#: glade2/meldapp.glade.h:25
-msgid "Encoding"
-msgstr "ਇੰਕੋਡਿੰਗ"
-
-#: glade2/meldapp.glade.h:26
-msgid "File Filters"
-msgstr "ਫਾਇਲ ਫਿਲਟਰ"
-
-#: glade2/meldapp.glade.h:27
-msgid "Gnome default editor"
-msgstr "ਗਨੋਮ ਮੂਲ ਸੰਪਾਦਕ"
-
-#: glade2/meldapp.glade.h:28
-msgid "Ignore .cvsrc (-f)"
-msgstr "ਅਣਡਿੱਠ .cvsrc (-f)"
-
-#: glade2/meldapp.glade.h:29
-msgid "Ignore changes in amount of white space"
-msgstr ""
-
-#: glade2/meldapp.glade.h:30
-msgid "Ignore changes in case; consider upper and lower-case letters equivalent"
-msgstr ""
-
-#: glade2/meldapp.glade.h:31
-msgid "Ignore changes that just insert or delete blank lines"
-msgstr ""
-
-#: glade2/meldapp.glade.h:32
-msgid "Ignore changes which insert or delete blank lines"
-msgstr ""
-
-#: glade2/meldapp.glade.h:33
-msgid "Internal editor"
-msgstr "ਅੰਦਰੂਨੀ ਸੰਪਾਦਕ"
-
-#: glade2/meldapp.glade.h:34
-msgid "Line numbers"
-msgstr "ਸਤਰ ਨੰਬਰ"
-
-#: glade2/meldapp.glade.h:35
-msgid "Line wrapping"
-msgstr "ਸਤਰ ਸਮੇਟੋ"
-
-#: glade2/meldapp.glade.h:36
+#: ../data/meld.desktop.in.h:1 ../data/meld.appdata.xml.in.h:1
+#: ../data/ui/meldapp.ui.h:1
 msgid "Meld"
 msgstr "Meld"
 
-#: glade2/meldapp.glade.h:37
-msgid "Override GNOME font"
+#: ../data/meld.desktop.in.h:2
+msgid "Diff Viewer"
 msgstr ""
 
-#: glade2/meldapp.glade.h:38
-msgid "Override GNOME toolbar style"
+#: ../data/meld.desktop.in.h:3
+msgid "Meld Diff Viewer"
 msgstr ""
 
-#: glade2/meldapp.glade.h:39
-msgid "Preferences : Meld"
-msgstr "ਮੇਰੀ ਪਸੰਦ : ਮੀਲਡ"
-
-#: glade2/meldapp.glade.h:40
-msgid "Prune empty directories (-P)"
+#: ../data/meld.desktop.in.h:4 ../data/meld.appdata.xml.in.h:2
+msgid "Compare and merge your files"
 msgstr ""
 
-#: glade2/meldapp.glade.h:41
-msgid "Quiet mode (-q)"
+#. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: ../data/meld.desktop.in.h:6
+msgid "diff;merge;"
 msgstr ""
 
-#: glade2/meldapp.glade.h:42
-msgid "Save in UTF-8 encoding"
-msgstr "UTF-8 ਇੰਕੋਡਿੰਗ 'ਚ ਸੰਭਾਲੋ"
-
-#: glade2/meldapp.glade.h:43
-msgid "Save in the files original encoding"
+#: ../data/meld.appdata.xml.in.h:3
+msgid ""
+"Meld is a visual diff and merge tool targeted at developers. Meld helps you "
+"compare files, directories, and version controlled projects. It provides "
+"two- and three-way comparison of both files and directories, and supports "
+"many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
 
-#: glade2/meldapp.glade.h:44
-msgid "Spaces per tab"
-msgstr "ਪ੍ਰਤੀ ਟੈਬ ਖਾਲੀ ਥਾਂ"
-
-#: glade2/meldapp.glade.h:45
-msgid "Supply missing newline at end of file"
+#: ../data/meld.appdata.xml.in.h:4
+msgid ""
+"Meld helps you review code changes, understand patches, and makes enormous "
+"merge conflicts slightly less painful."
 msgstr ""
 
-#: glade2/meldapp.glade.h:46
-msgid "Syntax highlighting"
-msgstr "ਸੰਟੈਕਸ ਉਘਾੜੋ"
+#: ../data/meld.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr ""
 
-#: glade2/meldapp.glade.h:47
-msgid "Text Filters"
+#: ../data/mime/meld.xml.in.h:1
+msgid "Meld comparison description"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:1
+msgid "Default window width"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:2
+msgid "Default window height"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:3
+msgid "Default window maximised state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:4
+msgid "Default window fullscreen state"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:5
+#, fuzzy
+msgid "Show toolbar"
+msgstr "ਸੰਦ-ਪੱਟੀ ਵੇਖਾਓ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:6
+msgid "If true, the window toolbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:7
+#, fuzzy
+msgid "Show statusbar"
+msgstr "ਸਥਿਤੀ ਪੱਟੀ ਵੇਖਾਓ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:8
+msgid "If true, the window statusbar is visible."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:9
+msgid "Additional automatically detected text encodings"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:10
+msgid ""
+"Meld will use these text encodings to try to decode loaded text files before "
+"trying any other encodings. In addition to the encodings in this list, UTF-8 "
+"and the current locale-default encoding will always be used; other encodings "
+"may also be tried, depending on the user's locale."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Width of an indentation step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "The number of spaces to use for a single indent step"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:13
+msgid "Whether to indent using spaces or tabs"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:14
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:15
+#, fuzzy
+msgid "Show line numbers"
+msgstr "ਸਤਰ ਨੰਬਰ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:16
+msgid "If true, line numbers will be shown in the gutter of file comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:17
+msgid "Highlight syntax"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:18
+msgid ""
+"Whether to highlight syntax in comparisons. Because of Meld's own color "
+"highlighting, this is off by default."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:19
+msgid "Color scheme to use for syntax highlighting"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:20
+msgid "Used by GtkSourceView to determine colors for syntax highlighting"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:21
+msgid "Displayed whitespace"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:22
+msgid ""
+"Selector for individual whitespace character types to be shown. Possible "
+"values are 'space', 'tab', 'newline' and 'nbsp'."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:23
+#, fuzzy
+msgid "Wrap mode"
+msgstr "ਪਾਸਿਉ ਸਮੇਟੋ(_W)"
+
+#: ../data/org.gnome.meld.gschema.xml.h:24
+msgid ""
+"Lines in file comparisons will be wrapped according to this setting, either "
+"not at all ('none'), at any character ('char') or only at the end of words "
+"('word')."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:25
+msgid "Highlight current line"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:26
+msgid ""
+"If true, the line containing the cursor will be highlighted in file "
+"comparisons."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:27
+msgid "Use the system default monospace font"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:28
+msgid ""
+"If false, custom-font will be used instead of the system monospace font."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:29
+#, fuzzy
+msgid "Custom font"
+msgstr "ਪਸੰਦੀਦਾ ਕਮਾਂਡ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:30
+msgid ""
+"The custom font to use, stored as a string and parsed as a Pango font "
+"description."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:31
+msgid "Ignore blank lines when comparing files"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:32
+msgid ""
+"If true, blank lines will be trimmed when highlighting changes between files."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:33
+#, fuzzy
+msgid "Use the system default editor"
+msgstr "ਗਨੋਮ ਮੂਲ ਸੰਪਾਦਕ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:34
+msgid ""
+"If false, custom-editor-command will be used instead of the system editor "
+"when opening files externally."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:35
+msgid "The custom editor launch command"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:36
+msgid ""
+"The command used to launch a custom editor. Some limited templating is "
+"supported here; at the moment '{file}' and '{line}' are recognised tokens."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:37
+msgid "Columns to display"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:38
+msgid ""
+"List of column names in folder comparison and whether they should be "
+"displayed."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
+msgid "Ignore symbolic links"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:40
+msgid ""
+"If true, folder comparisons do not follow symbolic links when traversing the "
+"folder tree."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:41
+#, fuzzy
+msgid "Use shallow comparison"
+msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:42
+msgid ""
+"If true, folder comparisons compare files based solely on size and mtime, "
+"considering files to be identical if their size and mtime match, and "
+"different otherwise."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:43
+msgid "File timestamp resolution"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:44
+msgid ""
+"When comparing based on mtime, this is the minimum difference in nanoseconds "
+"between two files before they're considered to have different mtimes. This "
+"is useful when comparing files between filesystems with different timestamp "
+"resolution."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
+msgid "Apply text filters during folder comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:46
+msgid ""
+"If true, folder comparisons that compare file contents also apply active "
+"text filters and the blank line trimming option, and ignore newline "
+"differences."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:47
+#, fuzzy
+msgid "File status filters"
+msgstr "ਫਾਇਲ ਫਿਲਟਰ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:48
+msgid "List of statuses used to filter visible files in folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:49
+msgid "Show the version control console output"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:50
+msgid ""
+"If true, a console output section will be shown in version control views, "
+"showing the commands run for version control operations."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:51
+msgid "Version control pane position"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:52
+msgid ""
+"This is the height of the main version control tree when the console pane is "
+"shown."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:53
+msgid "Present version comparisons as left-local/right-remote"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:54
+msgid ""
+"If true, version control comparisons will use a left-is-local, right-is-"
+"remote scheme to determine what order to present files in panes. Otherwise, "
+"a left-is-theirs, right-is-mine scheme is used."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:55
+msgid "Order for files in three-way version control merge comparisons"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:56
+msgid ""
+"Choices for file order are remote/merged/local and local/merged/remote. This "
+"preference only affects three-way comparisons launched from the version "
+"control view, so is used solely for merges/conflict resolution within Meld."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:57
+msgid "Show margin in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:58
+msgid ""
+"If true, a guide will be displayed to show what column the margin is at in "
+"the version control commit message editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:59
+msgid "Margin column in commit message editor"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:60
+msgid ""
+"The column at which to show the margin in the version control commit message "
+"editor."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:61
+msgid "Automatically hard-wrap commit messages"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:62
+msgid ""
+"If true, the version control commit message editor will hard-wrap (i.e., "
+"insert line breaks) at the commit margin before commit."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:63
+msgid "Version control status filters"
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:64
+msgid ""
+"List of statuses used to filter visible files in version control comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:65
+#, fuzzy
+msgid "Filename-based filters"
+msgstr "ਫਾਇਲ ਫਿਲਟਰ"
+
+#: ../data/org.gnome.meld.gschema.xml.h:66
+msgid ""
+"List of predefined filename-based filters that, if active, will remove "
+"matching files from a folder comparison."
+msgstr ""
+
+#: ../data/org.gnome.meld.gschema.xml.h:67
+#, fuzzy
+msgid "Text-based filters"
 msgstr "ਪਾਠ ਫਿਲਟਰ"
 
-#: glade2/meldapp.glade.h:48
-msgid "Use Compression (-z)"
-msgstr "ਨਪੀੜਨ ਵਰਤੋਂ (-z)"
-
-#: glade2/meldapp.glade.h:49
-msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+#: ../data/org.gnome.meld.gschema.xml.h:68
+msgid ""
+"List of predefined text-based regex filters that, if active, will remove "
+"text from being used in a file comparison. The text will still be displayed, "
+"but won't contribute to the comparison itself."
 msgstr ""
 
-#: glade2/meldapp.glade.h:50
+#: ../data/styles/meld-base.xml.h:1
+msgid "Meld base scheme"
+msgstr ""
+
+#: ../data/styles/meld-base.xml.h:2
+msgid "Base color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:1
+msgid "Meld dark scheme"
+msgstr ""
+
+#: ../data/styles/meld-dark.xml.h:2
+msgid "Dark color scheme for Meld highlighting"
+msgstr ""
+
+#: ../data/ui/application.ui.h:1
+msgid "About Meld"
+msgstr ""
+
+#: ../data/ui/application.ui.h:2
+msgid ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
+msgstr ""
+
+#: ../data/ui/application.ui.h:4
+msgid "Website"
+msgstr ""
+
+#: ../data/ui/application.ui.h:5
+msgid "translator-credits"
+msgstr ""
+
+#: ../data/ui/application.ui.h:6
+#, fuzzy
+msgid "_Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ : ਮੀਲਡ"
+
+#: ../data/ui/application.ui.h:7
+msgid "_Help"
+msgstr "ਸਹਾਇਤਾ(_H)"
+
+#: ../data/ui/application.ui.h:8
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/ui/application.ui.h:9
+msgid "_About"
+msgstr ""
+
+#: ../data/ui/application.ui.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
+msgid "_Compare"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
+msgid "Compare selected files"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:3
+#, fuzzy
+msgid "Copy to _Left"
+msgstr "ਖੱਬੇ ਨਕਲ"
+
+#: ../data/ui/dirdiff.ui.h:4
+#, fuzzy
+msgid "Copy to left"
+msgstr "ਖੱਬੇ ਨਕਲ"
+
+#: ../data/ui/dirdiff.ui.h:5
+#, fuzzy
+msgid "Copy to _Right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/dirdiff.ui.h:6
+#, fuzzy
+msgid "Copy to right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/dirdiff.ui.h:7
+msgid "Delete selected"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:861 ../meld/filediff.py:1362
+msgid "Hide"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:9
+msgid "Hide selected"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:10
+#, fuzzy
+msgid "Ignore Filename Case"
+msgstr "ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ"
+
+#: ../data/ui/dirdiff.ui.h:11
+msgid ""
+"Consider differently-cased filenames that are otherwise-identical to be the "
+"same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:12
+msgid "Same"
+msgstr ""
+
+#: ../data/ui/dirdiff.ui.h:13
+#, fuzzy
+msgid "Show identical"
+msgstr "ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ"
+
+#: ../data/ui/dirdiff.ui.h:14
+#, fuzzy
+msgid "New"
+msgstr "ਨਵਾਂ(_N)"
+
+#: ../data/ui/dirdiff.ui.h:15
+#, fuzzy
+msgid "Show new"
+msgstr "ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ"
+
+#: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
+#, fuzzy
+msgid "Modified"
+msgstr "ਸੋਧਿਆ(_M)"
+
+#: ../data/ui/dirdiff.ui.h:17
+#, fuzzy
+msgid "Show modified"
+msgstr "ਸੋਧਿਆ(_M)"
+
+#: ../data/ui/dirdiff.ui.h:18
+#, fuzzy
+msgid "Filters"
+msgstr "ਫਾਇਲ ਫਿਲਟਰ"
+
+#: ../data/ui/dirdiff.ui.h:19
+#, fuzzy
+msgid "Set active filters"
+msgstr "ਸਭ ਫਾਇਲਾਂ ਸੰਭਾਲੋ"
+
+#: ../data/ui/EditableList.ui.h:1
+msgid "Editable List"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:2
+msgid "Active"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:3
+msgid "Column Name"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
+msgid "_Add"
+msgstr "ਸ਼ਾਮਲ(_A)"
+
+#: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+#: ../meld/vcview.py:644
+msgid "_Remove"
+msgstr "ਹਟਾਓ(_R)"
+
+#: ../data/ui/EditableList.ui.h:6
+msgid "Move item up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:7
+msgid "Move _Up"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:8
+msgid "Move item down"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:9
+#, fuzzy
+msgid "Move _Down"
+msgstr "ਹੇਠਾਂ(_D)"
+
+#. Create icon and filename CellRenderer
+#: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
+#: ../meld/dirdiff.py:376
+msgid "Name"
+msgstr "ਨਾਂ"
+
+#: ../data/ui/EditableList.ui.h:11
+msgid "Pattern"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:12
+msgid "Add new filter"
+msgstr ""
+
+#: ../data/ui/EditableList.ui.h:13
+msgid "Remove selected filter"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:1
+msgid "Format as Patch..."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:2
+msgid "Create a patch using differences between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:3
+#, fuzzy
+msgid "Save A_ll"
+msgstr "ਸਭ ਸੰਭਾਲੋ(_S)"
+
+#: ../data/ui/filediff.ui.h:4
+msgid "Save all files in the current comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:5
+msgid "Revert files to their saved versions"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:6
+msgid "Add Synchronization Point"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:7
+msgid "Add a synchronization point for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:8
+msgid "Clear Synchronization Points"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:9
+msgid "Clear sychronization points for changes between files"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:10
+#, fuzzy
+msgid "Previous Conflict"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../data/ui/filediff.ui.h:11
+msgid "Go to the previous conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:12
+msgid "Next Conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:13
+msgid "Go to the next conflict"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:14
+msgid "Push to Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:15
+msgid "Push current change to the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:16
+#, fuzzy
+msgid "Push to Right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/filediff.ui.h:17
+msgid "Push current change to the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:18
+msgid "Pull from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:19
+msgid "Pull change from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:20
+msgid "Pull from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:21
+msgid "Pull change from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:22
+#, fuzzy
+msgid "Copy Above Left"
+msgstr "ਖੱਬੇ ਨਕਲ"
+
+#: ../data/ui/filediff.ui.h:23
+msgid "Copy change above the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:24
+#, fuzzy
+msgid "Copy Below Left"
+msgstr "ਖੱਬੇ ਨਕਲ"
+
+#: ../data/ui/filediff.ui.h:25
+msgid "Copy change below the left chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:26
+#, fuzzy
+msgid "Copy Above Right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/filediff.ui.h:27
+msgid "Copy change above the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:28
+#, fuzzy
+msgid "Copy Below Right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/filediff.ui.h:29
+msgid "Copy change below the right chunk"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:30
+#, fuzzy
+msgid "Delete"
+msgstr "ਹਟਾਓ(_D)"
+
+#: ../data/ui/filediff.ui.h:31
+#, fuzzy
+msgid "Delete change"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../data/ui/filediff.ui.h:32
+msgid "Merge All from Left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:33
+msgid "Merge all non-conflicting changes from the left"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:34
+msgid "Merge All from Right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:35
+msgid "Merge all non-conflicting changes from the right"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:36
+msgid "Merge All"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:37
+msgid "Merge all non-conflicting changes from left and right panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:38
+#, fuzzy
+msgid "Previous Pane"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../data/ui/filediff.ui.h:39
+msgid "Move keyboard focus to the previous document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:40
+#, fuzzy
+msgid "Next Pane"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../data/ui/filediff.ui.h:41
+msgid "Move keyboard focus to the next document in this comparison"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:42
+msgid "Lock Scrolling"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:43
+msgid "Lock scrolling of all panes"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:44
+msgid "Save changes to documents before closing?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:45
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:46
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:943 ../meld/filediff.py:1428
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:48
+#, fuzzy
+msgid "_Save"
+msgstr "ਸਭ ਸੰਭਾਲੋ(_S)"
+
+#: ../data/ui/filediff.ui.h:49
+msgid ""
+"This file can not be written to. You may click here to unlock this file and "
+"make changes anyway, but these changes must be saved to a new file."
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:50
+#, fuzzy
+msgid "File 3"
+msgstr "ਫਾਇਲ(_F)"
+
+#: ../data/ui/filediff.ui.h:51
+#, fuzzy
+msgid "File 2"
+msgstr "ਫਾਇਲ(_F)"
+
+#: ../data/ui/filediff.ui.h:52
+#, fuzzy
+msgid "File 1"
+msgstr "ਫਾਇਲ(_F)"
+
+#: ../data/ui/filediff.ui.h:53
+msgid "Revert unsaved changes to documents?"
+msgstr ""
+
+#: ../data/ui/filediff.ui.h:54
+msgid "Changes made to the following documents will be permanently lost:\n"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:944 ../meld/filediff.py:1429
+msgid "_Replace"
+msgstr "ਤਬਦੀਲ(_R)"
+
+#: ../data/ui/findbar.ui.h:2
+msgid "Replace _All"
+msgstr "ਸਭ ਤਬਦੀਲ(_A)"
+
+#: ../data/ui/findbar.ui.h:3
+#, fuzzy
+msgid "_Previous"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../data/ui/findbar.ui.h:4
+msgid "_Next"
+msgstr "ਅੱਗੇ(_N)"
+
+#: ../data/ui/findbar.ui.h:5
+#, fuzzy
+msgid "Find:"
+msgstr "_ਖੋਜ"
+
+#: ../data/ui/findbar.ui.h:6
+#, fuzzy
+msgid "Replace _with:"
+msgstr "ਤਬਦੀਲ(_R):"
+
+#: ../data/ui/findbar.ui.h:7
+msgid "_Match case"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:8
+msgid "Who_le word"
+msgstr ""
+
+#: ../data/ui/findbar.ui.h:9
+msgid "Regular e_xpression"
+msgstr "ਨਿਯਮਤ ਸਮੀਕਰਨ(_x)"
+
+#: ../data/ui/findbar.ui.h:10
+msgid "Wrapped"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:1
+msgid "Format as Patch"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:2
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:154
+msgid "Save Patch"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:4
+#, fuzzy
+msgid "Use differences between:"
+msgstr "ਕੋਈ ਅੰਤਰ ਨਹੀਂ ਮਿਲਿਆ ਹੈ।"
+
+#: ../data/ui/patch-dialog.ui.h:5
+msgid "Left and middle panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:6
+msgid "Middle and right panes"
+msgstr ""
+
+#: ../data/ui/patch-dialog.ui.h:7
+msgid "_Reverse patch direction"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:1
+#, fuzzy
+msgid "Meld Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ : ਮੀਲਡ"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:4
+#, fuzzy
+msgid "_Editor font:"
+msgstr "ਸੰਪਾਦਕ"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Display"
+msgstr "ਝਲਕ"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "_Tab width:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:7
+msgid "_Insert spaces instead of tabs"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:8
+#, fuzzy
+msgid "Enable text _wrapping"
+msgstr "ਸਤਰ ਸਮੇਟੋ"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Do not _split words over two lines"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Highlight _current line"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:11
+#, fuzzy
+msgid "Show _line numbers"
+msgstr "ਸਤਰ ਨੰਬਰ"
+
+#: ../data/ui/preferences.ui.h:12
+#, fuzzy
+msgid "Show w_hitespace"
+msgstr "ਫਾਇਲ ਨਾਂ ਵੇਖਾਓ"
+
+#: ../data/ui/preferences.ui.h:13
+#, fuzzy
+msgid "Use s_yntax highlighting"
+msgstr "ਸੰਟੈਕਸ ਉਘਾੜੋ"
+
+#: ../data/ui/preferences.ui.h:14
+#, fuzzy
+msgid "Syntax highlighting color scheme:"
+msgstr "ਸੰਟੈਕਸ ਉਘਾੜੋ"
+
+#: ../data/ui/preferences.ui.h:15
+#, fuzzy
+msgid "External Editor"
+msgstr "ਅੰਦਰੂਨੀ ਸੰਪਾਦਕ"
+
+#: ../data/ui/preferences.ui.h:16
+#, fuzzy
+msgid "Use _default system editor"
+msgstr "ਗਨੋਮ ਮੂਲ ਸੰਪਾਦਕ"
+
+#: ../data/ui/preferences.ui.h:17
+#, fuzzy
+msgid "Edito_r command:"
+msgstr "ਪਸੰਦੀਦਾ ਕਮਾਂਡ"
+
+#: ../data/ui/preferences.ui.h:18
+msgid "Editor"
+msgstr "ਸੰਪਾਦਕ"
+
+#: ../data/ui/preferences.ui.h:19
+#, fuzzy
+msgid "Shallow Comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/preferences.ui.h:20
+msgid "C_ompare files based only on size and timestamp"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:21
+msgid "_Timestamp resolution:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:23
+msgid "Note: enabling text filters may make comparing large files much slower"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:24
+msgid "Symbolic Links"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:26
+msgid "Visible Columns"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:27
+#, fuzzy
+msgid "Folder Comparisons"
+msgstr "ਫੋਲਡਰ ਤੁਲਨਾ"
+
+#: ../data/ui/preferences.ui.h:28
+#, fuzzy
+msgid "Version Comparisons"
+msgstr "ਫੋਲਡਰ ਤੁਲਨਾ"
+
+#: ../data/ui/preferences.ui.h:29
+msgid "_Order when comparing file revisions:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:30
+msgid "Order when _merging files:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:31
+#, fuzzy
+msgid "Commit Messages"
+msgstr "ਤਬਦੀਲੀਆਂ ਕਮਿਟ"
+
+#: ../data/ui/preferences.ui.h:32
+msgid "Show _right margin at:"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:33
+msgid "Automatically _break lines at right margin on commit"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:34
+#, fuzzy
+msgid "Version Control"
+msgstr "ਵਰਜਨ(_V)"
+
+#: ../data/ui/preferences.ui.h:35
+#, fuzzy
+msgid "Filename filters"
+msgstr "ਫਾਇਲ ਫਿਲਟਰ"
+
+#: ../data/ui/preferences.ui.h:36
 msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
 "separated by spaces."
 msgstr ""
 
-#: glade2/meldapp.glade.h:51
+#: ../data/ui/preferences.ui.h:37 ../meld/meldwindow.py:107
+msgid "File Filters"
+msgstr "ਫਾਇਲ ਫਿਲਟਰ"
+
+#: ../data/ui/preferences.ui.h:38
+msgid "Change trimming"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:39
+msgid "Trim blank line differences from the start and end of changes"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:40
+#, fuzzy
+msgid "Text filters"
+msgstr "ਪਾਠ ਫਿਲਟਰ"
+
+#: ../data/ui/preferences.ui.h:41
 msgid ""
 "When performing file comparisons, you may ignore certain types of changes. "
-"Each pattern here is a python regular expression which will be applied in "
-"turn to each line of the input text."
+"Each pattern here is a python regular expression which replaces matching "
+"text with the empty string before comparison is performed. If the expression "
+"contains groups, only the groups are replaced. See the user manual for more "
+"details."
 msgstr ""
 
-#: glade2/meldapp.glade.h:52
-msgid "Whitespace is significant"
+#: ../data/ui/preferences.ui.h:42 ../meld/meldwindow.py:108
+msgid "Text Filters"
+msgstr "ਪਾਠ ਫਿਲਟਰ"
+
+#: ../data/ui/preferences.ui.h:43
+msgid "Left is remote, right is local"
 msgstr ""
 
-#: glade2/meldapp.glade.h:54
-msgid "_Logo"
-msgstr "ਲੋਗੋ(_L)"
-
-#: glade2/meldapp.glade.h:55
-msgid ""
-"icons\n"
-"text\n"
-"both\n"
-"both-horiz"
-msgstr ""
-"ਆਈਕਾਨ\n"
-"ਪਾਠ\n"
-"ਦੋਵੇਂ\n"
-"ਦੋਵੇਂ-ਖਿਤਿਜੀ"
-
-#: glade2/meldapp.glade.h:59
-msgid ""
-"none\n"
-"char\n"
-"word"
+#: ../data/ui/preferences.ui.h:44
+msgid "Left is local, right is remote"
 msgstr ""
 
-#: glade2/meldapp.glade.h:62
-msgid "utf8 iso8859"
-msgstr "utf8 iso8859"
+#: ../data/ui/preferences.ui.h:45
+#, fuzzy
+msgid "Remote, merge, local"
+msgstr "ਲੋਕਲ ਹਟਾਓ"
 
-#: glade2/wocoview.glade.h:1
-msgid "*"
-msgstr "*"
+#: ../data/ui/preferences.ui.h:46
+msgid "Local, merge, remote"
+msgstr ""
 
-#: glade2/wocoview.glade.h:2
-msgid "..."
-msgstr "..."
+#: ../data/ui/preferences.ui.h:47
+msgid "1ns (ext4)"
+msgstr ""
 
-#: glade2/wocoview.glade.h:3
-msgid "CVS Log"
-msgstr "CVS ਲਾਗ"
+#: ../data/ui/preferences.ui.h:48
+msgid "100ns (NTFS)"
+msgstr ""
 
-#: glade2/wocoview.glade.h:4
-msgid "Choose Directory - Meld"
-msgstr "ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ -ਮੀਲਡ"
+#: ../data/ui/preferences.ui.h:49
+msgid "1s (ext2/ext3)"
+msgstr ""
 
-#: glade2/wocoview.glade.h:5
+#: ../data/ui/preferences.ui.h:50
+msgid "2s (VFAT)"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:1
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:2
+#, fuzzy
+msgctxt "shortcut window"
+msgid "New comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/shortcuts.ui.h:3
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Close a comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/shortcuts.ui.h:4
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Quit Meld"
+msgstr "Meld"
+
+#: ../data/ui/shortcuts.ui.h:5
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Stop the current action"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../data/ui/shortcuts.ui.h:6
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Refresh comparison"
+msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
+
+#: ../data/ui/shortcuts.ui.h:7
+msgctxt "shortcut window"
+msgid "Fullscreen"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:8
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:9
+msgctxt "shortcut window"
+msgid "Go to previous tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:10
+msgctxt "shortcut window"
+msgid "Go to next tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:11
+msgctxt "shortcut window"
+msgid "Switch to tab"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:12
+msgctxt "shortcut window"
+msgid "Move tab left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:13
+msgctxt "shortcut window"
+msgid "Move tab right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Changes"
+msgstr "ਤਬਦੀਲੀਆਂ ਕਮਿਟ"
+
+#: ../data/ui/shortcuts.ui.h:15
+msgctxt "shortcut window"
+msgid "Go to previous change"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:16
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Go to next change"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../data/ui/shortcuts.ui.h:17
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Editing"
+msgstr "ਸੋਧ"
+
+#: ../data/ui/shortcuts.ui.h:18
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr "ਵਾਪਸ(_U)"
+
+#: ../data/ui/shortcuts.ui.h:19
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr "ਮੁੜ ਵਾਪਸ(_R)"
+
+#: ../data/ui/shortcuts.ui.h:20
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Cut"
+msgstr "ਕੱਟੋ(_t)"
+
+#: ../data/ui/shortcuts.ui.h:21
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "ਨਕਲ(_C)"
+
+#: ../data/ui/shortcuts.ui.h:22
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr "ਚੇਪੋ(_P)"
+
+#: ../data/ui/shortcuts.ui.h:23
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "_ਖੋਜ"
+
+#: ../data/ui/shortcuts.ui.h:24
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Next"
+msgstr "ਅੱਗੇ ਖੋਜ(_F)"
+
+#: ../data/ui/shortcuts.ui.h:25
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Find Previous"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../data/ui/shortcuts.ui.h:26
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Replace"
+msgstr "ਤਬਦੀਲ(_R)"
+
+#: ../data/ui/shortcuts.ui.h:27
+#, fuzzy
+msgctxt "shortcut window"
+msgid "File comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/shortcuts.ui.h:28
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../data/ui/shortcuts.ui.h:29
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save current file to new path"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../data/ui/shortcuts.ui.h:30
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Save all files in comparison"
+msgstr "ਸਭ ਫਾਇਲਾਂ ਸੰਭਾਲੋ"
+
+#: ../data/ui/shortcuts.ui.h:31
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous conflict"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../data/ui/shortcuts.ui.h:32
+msgctxt "shortcut window"
+msgid "Next conflict"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:33
+msgctxt "shortcut window"
+msgid "Push change to left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:34
+msgctxt "shortcut window"
+msgid "Push change to right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:35
+msgctxt "shortcut window"
+msgid "Pull change from left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:36
+msgctxt "shortcut window"
+msgid "Pull change from right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:37
+msgctxt "shortcut window"
+msgid "Copy change above left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:38
+msgctxt "shortcut window"
+msgid "Copy change below left"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:39
+msgctxt "shortcut window"
+msgid "Copy change above right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:40
+msgctxt "shortcut window"
+msgid "Copy change below right"
+msgstr ""
+
+#: ../data/ui/shortcuts.ui.h:41
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Delete change"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../data/ui/shortcuts.ui.h:42
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Previous comparison pane"
+msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
+
+#: ../data/ui/shortcuts.ui.h:43
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Next comparison pane"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/shortcuts.ui.h:44
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Folder comparison"
+msgstr "ਫੋਲਡਰ ਤੁਲਨਾ"
+
+#: ../data/ui/shortcuts.ui.h:45
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to left"
+msgstr "ਖੱਬੇ ਨਕਲ"
+
+#: ../data/ui/shortcuts.ui.h:46
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Copy to right"
+msgstr "ਸੱਜੇ ਨਕਲ"
+
+#: ../data/ui/shortcuts.ui.h:47
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Version control comparison"
+msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
+
+#: ../data/ui/shortcuts.ui.h:48
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Commit to version control"
+msgstr "ਕੰਟਰੋਲ 'ਚੋਂ ਹਟਾਓ"
+
+#: ../data/ui/shortcuts.ui.h:49
+msgctxt "shortcut window"
+msgid "Show/hide console output"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:616
+#: ../meld/newdifftab.py:38
+#, fuzzy
+msgid "New comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/tab-placeholder.ui.h:2
+#, fuzzy
+msgid "File comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/tab-placeholder.ui.h:3
+#, fuzzy
+msgid "Directory comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/tab-placeholder.ui.h:4
+msgid "Version control view"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:5
+#, fuzzy
+msgid "_3-way comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/tab-placeholder.ui.h:6
+msgid "Select Third File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:7
+msgid "Select Second File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:8
+msgid "Select First File"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:9
+msgid "Select First Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:10
+msgid "Select Second Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:11
+msgid "Select Third Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:12
+msgid "Select A Version-Controlled Folder"
+msgstr ""
+
+#: ../data/ui/tab-placeholder.ui.h:13
+#, fuzzy
+msgid "_Blank comparison"
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../data/ui/tab-placeholder.ui.h:14
+msgid "C_ompare"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:3
+#, fuzzy
+msgid "Co_mmit..."
+msgstr "ਕਮਿਟ(_C)"
+
+#: ../data/ui/vcview.ui.h:4
+msgid "Commit changes to version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:5
+msgid "_Update"
+msgstr "ਅੱਪਡੇਟ(_U)"
+
+#: ../data/ui/vcview.ui.h:6
+msgid "Update working copy from version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:7
+msgid "_Push"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:8
+msgid "Push local changes to remote"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:10
+#, fuzzy
+msgid "Add to version control"
+msgstr "ਕੰਟਰੋਲ 'ਚ ਸ਼ਾਮਲ"
+
+#: ../data/ui/vcview.ui.h:12
+#, fuzzy
+msgid "Remove from version control"
+msgstr "ਕੰਟਰੋਲ 'ਚੋਂ ਹਟਾਓ"
+
+#: ../data/ui/vcview.ui.h:13
+msgid "Mar_k as Resolved"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:14
+msgid "Mark as resolved in version control"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:15
+msgid "Re_vert"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:16
+msgid "Revert working copy to original state"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:17
+msgid "Delete from working copy"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:18
+#, fuzzy
+msgid "Console"
+msgstr "ਕੰਨਸੋਲ(_C_"
+
+#: ../data/ui/vcview.ui.h:19
+msgid "Show or hide the version control console output pane"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:20
+msgid "_Flatten"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:21
+#, fuzzy
+msgid "Flatten directories"
+msgstr "ਗੁੰਮ ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ (-d)"
+
+#: ../data/ui/vcview.ui.h:22
+msgid "_Modified"
+msgstr "ਸੋਧਿਆ(_M)"
+
+#: ../data/ui/vcview.ui.h:23
+#, fuzzy
+msgid "Show modified files"
+msgstr "ਕੀ ਸੋਧੀਆਂ ਫਾਇਲਾਂ ਸੰਭਾਲਣੀਆਂ ਹਨ?"
+
+#: ../data/ui/vcview.ui.h:24
+msgid "_Normal"
+msgstr "ਸਧਾਰਨ(_N)"
+
+#: ../data/ui/vcview.ui.h:25
+#, fuzzy
+msgid "Show normal files"
+msgstr "ਸਭ ਫਾਇਲਾਂ ਸੰਭਾਲੋ"
+
+#: ../data/ui/vcview.ui.h:26
+#, fuzzy
+msgid "Un_versioned"
+msgstr "ਵਰਜਨ(_V)"
+
+#: ../data/ui/vcview.ui.h:27
+msgid "Show unversioned files"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:28 ../meld/vc/_vc.py:70
+#, fuzzy
+msgid "Ignored"
+msgstr "ਅਣਡਿੱਠਾ(_I)"
+
+#: ../data/ui/vcview.ui.h:29
+msgid "Show ignored files"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:30
+#, fuzzy
+msgid "Commit"
+msgstr "ਕਮਿਟ(_C)"
+
+#: ../data/ui/vcview.ui.h:31
 msgid "Commit Files"
 msgstr "ਫਾਇਲਾਂ ਕਮਿਟ"
 
-#: glade2/wocoview.glade.h:6
-msgid "Date"
-msgstr "ਮਿਤੀ"
-
-#: glade2/wocoview.glade.h:7
-msgid "Diff Options"
-msgstr "ਅੰਤਰ ਚੋਣ"
-
-#: glade2/wocoview.glade.h:8
-msgid "Local copy against other remote revision"
-msgstr ""
-
-#: glade2/wocoview.glade.h:9
-msgid "Local copy against same remote revision"
-msgstr ""
-
-#: glade2/wocoview.glade.h:10
+#: ../data/ui/vcview.ui.h:32
 msgid "Log Message"
 msgstr "ਲਾਗ ਸੁਨੇਹਾ"
 
-#: glade2/wocoview.glade.h:11
-msgid "Previous Logs"
+#: ../data/ui/vcview.ui.h:33
+#, fuzzy
+msgid "Previous logs:"
 msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
 
-#: glade2/wocoview.glade.h:12
-msgid "Remove _Locally"
-msgstr "ਲੋਕਲ ਹਟਾਓ(_L)"
+#: ../data/ui/vcview.ui.h:34
+#, fuzzy
+msgid "Co_mmit"
+msgstr "ਕਮਿਟ(_C)"
 
+#: ../data/ui/vcview.ui.h:36 ../meld/vcview.py:332
+msgid "Location"
+msgstr "ਟਿਕਾਣਾ"
+
+#: ../data/ui/vcview.ui.h:37
+msgid "Status"
+msgstr "ਸਥਿਤੀ"
+
+#: ../data/ui/vcview.ui.h:38
+msgid "Extra"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:39
+#, fuzzy
+msgid "Console output"
+msgstr "ਕੰਨਸੋਲ(_C_"
+
+#: ../data/ui/vcview.ui.h:40
+msgid "Push local commits to remote?"
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:41
+msgid "The commits to be pushed are determined by your version control system."
+msgstr ""
+
+#: ../data/ui/vcview.ui.h:42
+#, fuzzy
+msgid "_Push commits"
+msgstr "ਕਮਿਟ(_C)"
+
+#: ../meld/const.py:12
+msgid "UNIX (LF)"
+msgstr ""
+
+#: ../meld/const.py:13
+msgid "DOS/Windows (CR-LF)"
+msgstr ""
+
+#: ../meld/const.py:14
+msgid "Mac OS (CR)"
+msgstr ""
+
+#. Create file size CellRenderer
+#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+msgid "Size"
+msgstr ""
+
+#. Create date-time CellRenderer
+#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+msgid "Modification time"
+msgstr ""
+
+#. Create permissions CellRenderer
+#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+#, fuzzy
+msgid "Permissions"
+msgstr "ਵਰਜਨ(_V)"
+
+#: ../meld/dirdiff.py:540
+#, python-format
+msgid "Hide %s"
+msgstr ""
+
+#: ../meld/dirdiff.py:672 ../meld/dirdiff.py:696
+#, python-format
+msgid "[%s] Scanning %s"
+msgstr ""
+
+#: ../meld/dirdiff.py:828
+#, python-format
+msgid "[%s] Done"
+msgstr ""
+
+#: ../meld/dirdiff.py:836
+#, fuzzy
+msgid "Folders have no differences"
+msgstr "ਪਿੱਛੇ ਅੰਤਰ"
+
+#: ../meld/dirdiff.py:838
+msgid "Contents of scanned files in folders are identical."
+msgstr ""
+
+#: ../meld/dirdiff.py:840
+msgid ""
+"Scanned files in folders appear identical, but contents have not been "
+"scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:843
+msgid "File filters are in use, so not all files have been scanned."
+msgstr ""
+
+#: ../meld/dirdiff.py:845
+msgid "Text filters are in use and may be masking content differences."
+msgstr ""
+
+#: ../meld/dirdiff.py:863 ../meld/filediff.py:1364 ../meld/filediff.py:1394
+#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+msgid "Hi_de"
+msgstr ""
+
+#: ../meld/dirdiff.py:873
+msgid "Multiple errors occurred while scanning this folder"
+msgstr ""
+
+#: ../meld/dirdiff.py:874
+msgid "Files with invalid encodings found"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:876
+msgid "Some files were in an incorrect encoding. The names are something like:"
+msgstr ""
+
+#: ../meld/dirdiff.py:878
+msgid "Files hidden by case insensitive comparison"
+msgstr ""
+
+#. TRANSLATORS: This is followed by a list of files
+#: ../meld/dirdiff.py:880
+msgid ""
+"You are running a case insensitive comparison on a case sensitive "
+"filesystem. The following files in this folder are hidden:"
+msgstr ""
+
+#: ../meld/dirdiff.py:891
+#, python-format
+msgid "'%s' hidden by '%s'"
+msgstr ""
+
+#: ../meld/dirdiff.py:947
+#, python-format
+msgid "Replace folder “%s”?"
+msgstr ""
+
+#: ../meld/dirdiff.py:949
+#, python-format
+msgid ""
+"Another folder with the same name already exists in “%s”.\n"
+"If you replace the existing folder, all files in it will be lost."
+msgstr ""
+
+#: ../meld/dirdiff.py:962
+msgid "Error copying file"
+msgstr ""
+
+#: ../meld/dirdiff.py:963
+#, python-format
+msgid ""
+"Couldn't copy %s\n"
+"to %s.\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../meld/dirdiff.py:986
+#, python-format
+msgid "Error deleting %s"
+msgstr ""
+
+#: ../meld/dirdiff.py:1499
+#, fuzzy
+msgid "No folder"
+msgstr "ਫੋਲਡਰ"
+
+#. Abbreviations for insert and overwrite that fit in the status bar
+#: ../meld/filediff.py:335
+msgid "INS"
+msgstr ""
+
+#: ../meld/filediff.py:335
+msgid "OVR"
+msgstr ""
+
+#. Abbreviation for line, column so that it will fit in the status bar
+#: ../meld/filediff.py:337
+#, fuzzy, python-format
+msgid "Ln %i, Col %i"
+msgstr "ਸਤਰ %i, ਕਾਲਮ %i"
+
+#: ../meld/filediff.py:762
+msgid "Comparison results will be inaccurate"
+msgstr ""
+
+#: ../meld/filediff.py:764
+msgid ""
+"A filter changed the number of lines in the file, which is unsupported. The "
+"comparison will not be accurate."
+msgstr ""
+
+#: ../meld/filediff.py:820
+msgid "Mark conflict as resolved?"
+msgstr ""
+
+#: ../meld/filediff.py:822
+msgid ""
+"If the conflict was resolved successfully, you may mark it as resolved now."
+msgstr ""
+
+#: ../meld/filediff.py:824
+msgid "Cancel"
+msgstr ""
+
+#: ../meld/filediff.py:825
+msgid "Mark _Resolved"
+msgstr ""
+
+#: ../meld/filediff.py:1076
+#, python-format
+msgid "There was a problem opening the file “%s”."
+msgstr ""
+
+#: ../meld/filediff.py:1084
+#, python-format
+msgid "File %s appears to be a binary file."
+msgstr ""
+
+#: ../meld/filediff.py:1086
+msgid "Do you want to open the file using the default application?"
+msgstr ""
+
+#: ../meld/filediff.py:1088
+msgid "Open"
+msgstr ""
+
+#: ../meld/filediff.py:1104
+#, python-format
+msgid "[%s] Computing differences"
+msgstr ""
+
+#: ../meld/filediff.py:1166
+#, python-format
+msgid "File %s has changed on disk"
+msgstr ""
+
+#: ../meld/filediff.py:1167
+msgid "Do you want to reload the file?"
+msgstr ""
+
+#: ../meld/filediff.py:1169
+msgid "_Reload"
+msgstr ""
+
+#: ../meld/filediff.py:1327
+msgid "Files are identical"
+msgstr ""
+
+#: ../meld/filediff.py:1340
+msgid ""
+"Text filters are being used, and may be masking differences between files. "
+"Would you like to compare the unfiltered files?"
+msgstr ""
+
+#: ../meld/filediff.py:1345
+msgid "Files differ in line endings only"
+msgstr ""
+
+#: ../meld/filediff.py:1347
+#, python-format
+msgid ""
+"Files are identical except for differing line endings:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1367
+msgid "Show without filters"
+msgstr ""
+
+#: ../meld/filediff.py:1389
+msgid "Change highlighting incomplete"
+msgstr ""
+
+#: ../meld/filediff.py:1390
+msgid ""
+"Some changes were not highlighted because they were too large. You can force "
+"Meld to take longer to highlight larger changes, though this may be slow."
+msgstr ""
+
+#: ../meld/filediff.py:1398
+#, fuzzy
+msgid "Keep highlighting"
+msgstr "ਸੰਟੈਕਸ ਉਘਾੜੋ"
+
+#: ../meld/filediff.py:1400
+#, fuzzy
+msgid "_Keep highlighting"
+msgstr "ਸੰਟੈਕਸ ਉਘਾੜੋ"
+
+#: ../meld/filediff.py:1432
+#, python-format
+msgid "Replace file “%s”?"
+msgstr ""
+
+#: ../meld/filediff.py:1434
+#, python-format
+msgid ""
+"A file with this name already exists in “%s”.\n"
+"If you replace the existing file, its contents will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1451
+msgid "Save Left Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1453
+msgid "Save Middle Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1455
+msgid "Save Right Pane As"
+msgstr ""
+
+#: ../meld/filediff.py:1469
+#, python-format
+msgid "File %s has changed on disk since it was opened"
+msgstr ""
+
+#: ../meld/filediff.py:1471
+msgid "If you save it, any external changes will be lost."
+msgstr ""
+
+#: ../meld/filediff.py:1474
+#, fuzzy
+msgid "Save Anyway"
+msgstr "ਸਭ ਸੰਭਾਲੋ(_S)"
+
+#: ../meld/filediff.py:1475
+msgid "Don't Save"
+msgstr ""
+
+#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#, python-format
+msgid "Could not save file %s."
+msgstr ""
+
+#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#, python-format
+msgid ""
+"Couldn't save file due to:\n"
+"%s"
+msgstr ""
+
+#: ../meld/filediff.py:1879
+msgid "Live comparison updating disabled"
+msgstr ""
+
+#: ../meld/filediff.py:1880
+msgid ""
+"Live updating of comparisons is disabled when synchronization points are "
+"active. You can still manually refresh the comparison, and live updates will "
+"resume when synchronization points are cleared."
+msgstr ""
+
+#: ../meld/filemerge.py:37
+#, fuzzy, python-format
+msgid "[%s] Merging files"
+msgstr "[%s] ਫਾਇਲਾਂ ਖੁੱਲੀਆਂ"
+
+#: ../meld/gutterrendererchunk.py:210
+#, fuzzy
+msgid "Copy _up"
+msgstr "ਨਕਲ(_C)"
+
+#: ../meld/gutterrendererchunk.py:211
+msgid "Copy _down"
+msgstr ""
+
+#: ../meld/meldapp.py:175
+msgid "wrong number of arguments supplied to --diff"
+msgstr ""
+
+#: ../meld/meldapp.py:180
+msgid "Start with an empty window"
+msgstr ""
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:183
+msgid "file"
+msgstr "ਫਾਇਲ"
+
+#: ../meld/meldapp.py:181 ../meld/meldapp.py:185
+msgid "folder"
+msgstr "ਫੋਲਡਰ"
+
+#: ../meld/meldapp.py:182
+msgid "Start a version control comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:184
+msgid "Start a 2- or 3-way file comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:186
+msgid "Start a 2- or 3-way folder comparison"
+msgstr ""
+
+#: ../meld/meldapp.py:229
+#, fuzzy, python-format
+msgid "Error: %s\n"
+msgstr "Regex ਗਲਤੀ: %s"
+
+#: ../meld/meldapp.py:236
+msgid "Meld is a file and directory comparison tool."
+msgstr ""
+
+#: ../meld/meldapp.py:240
+msgid "Set label to use instead of file name"
+msgstr ""
+
+#: ../meld/meldapp.py:243
+msgid "Open a new tab in an already running instance"
+msgstr ""
+
+#: ../meld/meldapp.py:246
+msgid "Automatically compare all differing files on startup"
+msgstr ""
+
+#: ../meld/meldapp.py:249
+msgid "Ignored for compatibility"
+msgstr ""
+
+#: ../meld/meldapp.py:253
+msgid "Set the target file for saving a merge result"
+msgstr ""
+
+#: ../meld/meldapp.py:256
+msgid "Automatically merge files"
+msgstr ""
+
+#: ../meld/meldapp.py:260
+msgid "Load a saved comparison from a Meld comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:264
+msgid "Create a diff tab for the supplied files or folders"
+msgstr ""
+
+#: ../meld/meldapp.py:284
+#, python-format
+msgid "too many arguments (wanted 0-3, got %d)"
+msgstr ""
+
+#: ../meld/meldapp.py:287
+msgid "can't auto-merge less than 3 files"
+msgstr ""
+
+#: ../meld/meldapp.py:289
+msgid "can't auto-merge directories"
+msgstr ""
+
+#: ../meld/meldapp.py:303
+msgid "Error reading saved comparison file"
+msgstr ""
+
+#: ../meld/meldapp.py:330
+#, python-format
+msgid "invalid path or URI \"%s\""
+msgstr ""
+
+#. TRANSLATORS: This is the label of a new, currently-unnamed file.
+#: ../meld/meldbuffer.py:131
+msgid "<unnamed>"
+msgstr ""
+
+#: ../meld/melddoc.py:64
+msgid "untitled"
+msgstr "ਬਿਨਾਂ ਸਿਰਲੇਖ"
+
+#: ../meld/meldwindow.py:52
+msgid "_File"
+msgstr "ਫਾਇਲ(_F)"
+
+#: ../meld/meldwindow.py:53
+#, fuzzy
+msgid "_New Comparison..."
+msgstr "ਫਾਇਲ ਤੁਲਨਾ"
+
+#: ../meld/meldwindow.py:54
+#, fuzzy
+msgid "Start a new comparison"
+msgstr "ਇਹ ਅੰਤਰ ਛਾਪੋ"
+
+#: ../meld/meldwindow.py:57
+msgid "Save the current file"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../meld/meldwindow.py:59
+#, fuzzy
+msgid "Save As..."
+msgstr "ਏਦਾਂ ਸੰਭਾਲੋ(_A)..."
+
+#: ../meld/meldwindow.py:60
+#, fuzzy
+msgid "Save the current file with a different name"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../meld/meldwindow.py:63
+#, fuzzy
+msgid "Close the current file"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../meld/meldwindow.py:66
+msgid "_Edit"
+msgstr "ਸੋਧ(_E)"
+
+#: ../meld/meldwindow.py:68
+msgid "Undo the last action"
+msgstr ""
+
+#: ../meld/meldwindow.py:71
+msgid "Redo the last undone action"
+msgstr ""
+
+#: ../meld/meldwindow.py:73
+msgid "Cut the selection"
+msgstr ""
+
+#: ../meld/meldwindow.py:75
+msgid "Copy the selection"
+msgstr ""
+
+#: ../meld/meldwindow.py:77
+msgid "Paste the clipboard"
+msgstr ""
+
+#: ../meld/meldwindow.py:79
+#, fuzzy
+msgid "Find..."
+msgstr "_ਖੋਜ"
+
+#: ../meld/meldwindow.py:79
+msgid "Search for text"
+msgstr ""
+
+#: ../meld/meldwindow.py:81
+#, fuzzy
+msgid "Find Ne_xt"
+msgstr "ਅੱਗੇ ਖੋਜ(_F)"
+
+#: ../meld/meldwindow.py:82
+msgid "Search forwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:84
+msgid "Find _Previous"
+msgstr ""
+
+#: ../meld/meldwindow.py:85
+msgid "Search backwards for the same text"
+msgstr ""
+
+#: ../meld/meldwindow.py:88
+msgid "_Replace..."
+msgstr "ਤਬਦੀਲ(_R)..."
+
+#: ../meld/meldwindow.py:89
+msgid "Find and replace text"
+msgstr "ਪਾਠ ਖੋਜ ਅਤੇ ਤਬਦੀਲ"
+
+#: ../meld/meldwindow.py:92
+#, fuzzy
+msgid "_Changes"
+msgstr "ਤਬਦੀਲੀਆਂ ਕਮਿਟ"
+
+#: ../meld/meldwindow.py:93
+#, fuzzy
+msgid "Next Change"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../meld/meldwindow.py:94
+#, fuzzy
+msgid "Go to the next change"
+msgstr "ਅੱਗੇ ਤਬਦੀਲ"
+
+#: ../meld/meldwindow.py:96
+#, fuzzy
+msgid "Previous Change"
+msgstr "ਪੁਰਾਣੇ ਸੁਨੇਹੇ"
+
+#: ../meld/meldwindow.py:97
+msgid "Go to the previous change"
+msgstr ""
+
+#: ../meld/meldwindow.py:99
+msgid "Open Externally"
+msgstr ""
+
+#: ../meld/meldwindow.py:100
+msgid "Open selected file or directory in the default external application"
+msgstr ""
+
+#: ../meld/meldwindow.py:104
+msgid "_View"
+msgstr "ਵੇਖੋ(_V)"
+
+#: ../meld/meldwindow.py:105
+#, fuzzy
+msgid "File Status"
+msgstr "ਸਥਿਤੀ"
+
+#: ../meld/meldwindow.py:106
+#, fuzzy
+msgid "Version Status"
+msgstr "ਵਰਜਨ(_V)"
+
+#: ../meld/meldwindow.py:110
+#, fuzzy
+msgid "Stop the current action"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../meld/meldwindow.py:113
+msgid "Refresh the view"
+msgstr ""
+
+#: ../meld/meldwindow.py:117
+msgid "Fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:118
+msgid "View the comparison in fullscreen"
+msgstr ""
+
+#: ../meld/meldwindow.py:120
+#, fuzzy
+msgid "_Toolbar"
+msgstr "ਸੰਦ-ਪੱਟੀ ਵੇਖਾਓ"
+
+#: ../meld/meldwindow.py:121
+#, fuzzy
+msgid "Show or hide the toolbar"
+msgstr "ਸੰਦ-ਪੱਟੀ ਵੇਖਾਓ"
+
+#: ../meld/meldwindow.py:131
+msgid "Open Recent"
+msgstr ""
+
+#: ../meld/meldwindow.py:132
+#, fuzzy
+msgid "Open recent files"
+msgstr "ਮੌਜੂਦਾ ਫਾਇਲ ਸੰਭਾਲੋ"
+
+#: ../meld/meldwindow.py:152
+#, fuzzy
+msgid "_Meld"
+msgstr "Meld"
+
+#: ../meld/meldwindow.py:153
+msgid "Quit the program"
+msgstr ""
+
+#: ../meld/meldwindow.py:155
+#, fuzzy
+msgid "Prefere_nces"
+msgstr "ਮੇਰੀ ਪਸੰਦ : ਮੀਲਡ"
+
+#: ../meld/meldwindow.py:156
+msgid "Configure the application"
+msgstr ""
+
+#: ../meld/meldwindow.py:158
+msgid "_Contents"
+msgstr ""
+
+#: ../meld/meldwindow.py:159
+msgid "Open the Meld manual"
+msgstr ""
+
+#: ../meld/meldwindow.py:161
+msgid "About this application"
+msgstr ""
+
+#: ../meld/meldwindow.py:650
+#, python-format
+msgid "Need three files to auto-merge, got: %r"
+msgstr ""
+
+#: ../meld/meldwindow.py:664
+msgid "Cannot compare a mixture of files and directories"
+msgstr ""
+
+#: ../meld/misc.py:205
+#, python-format
+msgid "Couldn't find colour scheme details for %s-%s; this is a bad install"
+msgstr ""
+
+#. no common path. empty names get changed to "[None]"
+#: ../meld/misc.py:259
+msgid "[None]"
+msgstr "[ਕੋਈ ਨਹੀਂ]"
+
+#: ../meld/preferences.py:33
+msgid "label"
+msgstr ""
+
+#: ../meld/preferences.py:33
+msgid "pattern"
+msgstr ""
+
+#: ../meld/recent.py:114
+#, fuzzy
+msgid "Version control:"
+msgstr "ਕੰਟਰੋਲ 'ਚੋਂ ਹਟਾਓ"
+
+#: ../meld/ui/notebooklabel.py:63
+#, fuzzy
+msgid "Close tab"
+msgstr "ਇਹ ਟੈਬ ਬੰਦ ਕਰੋ"
+
+#: ../meld/ui/vcdialogs.py:48
+msgid "No files will be committed"
+msgstr ""
+
+#. Translators: First %s is replaced by translated "%d unpushed
+#. commits", second %s is replaced by translated "%d branches"
+#: ../meld/vc/git.py:94
+#, python-format
+msgid "%s in %s"
+msgstr ""
+
+#. Translators: These messages cover the case where there is
+#. only one branch, and are not part of another message.
+#: ../meld/vc/git.py:95 ../meld/vc/git.py:102
+#, python-format
+msgid "%d unpushed commit"
+msgid_plural "%d unpushed commits"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:97
+#, python-format
+msgid "%d branch"
+msgid_plural "%d branches"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../meld/vc/git.py:336
+#, python-format
+msgid "Mode changed from %s to %s"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Partially staged"
+msgstr ""
+
+#: ../meld/vc/git.py:344
+msgid "Staged"
+msgstr ""
+
+#. Translators: This is the displayed name of a version control system
+#. when no version control system is actually found.
+#: ../meld/vc/_null.py:38
+#, fuzzy
+msgid "None"
+msgstr "[ਕੋਈ ਨਹੀਂ]"
+
+#: ../meld/vc/svn.py:204
+#, python-format
+msgid "Rev %s"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Merged"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+msgid "Base"
+msgstr ""
+
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Local"
+msgstr "ਟਿਕਾਣਾ"
+
+#: ../meld/vc/_vc.py:55
+#, fuzzy
+msgid "Remote"
+msgstr "ਹਟਾਓ(_R)"
+
+#: ../meld/vc/_vc.py:71
+#, fuzzy
+msgid "Unversioned"
+msgstr "ਵਰਜਨ(_V)"
+
+#: ../meld/vc/_vc.py:74
+msgid "Error"
+msgstr ""
+
+#: ../meld/vc/_vc.py:76
+msgid "Newly added"
+msgstr ""
+
+#: ../meld/vc/_vc.py:78
+msgid "Renamed"
+msgstr ""
+
+#: ../meld/vc/_vc.py:79
+msgid "Conflict"
+msgstr ""
+
+#: ../meld/vc/_vc.py:80
+#, fuzzy
+msgid "Removed"
+msgstr "ਹਟਾਓ(_R)"
+
+#: ../meld/vc/_vc.py:81
+msgid "Missing"
+msgstr ""
+
+#: ../meld/vc/_vc.py:82
+msgid "Not present"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. control binary isn't installed.
+#: ../meld/vcview.py:251
+#, python-format
+msgid "%(name)s (%(cmd)s not installed)"
+msgstr ""
+
+#. Translators: This error message is shown when a version
+#. controlled repository is invalid.
+#: ../meld/vcview.py:255
+#, python-format
+msgid "%(name)s (Invalid repository)"
+msgstr ""
+
+#: ../meld/vcview.py:276
+msgid "No valid version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:278
+msgid "Only one version control system found in this folder"
+msgstr ""
+
+#: ../meld/vcview.py:280
+msgid "Choose which version control system to use"
+msgstr ""
+
+#. TRANSLATORS: This is the location of the directory being viewed
+#: ../meld/vcview.py:332
+#, python-format
+msgid "%s: %s"
+msgstr ""
+
+#: ../meld/vcview.py:352
+#, python-format
+msgid "Scanning %s"
+msgstr ""
+
+#: ../meld/vcview.py:391
+msgid "(Empty)"
+msgstr "(ਖਾਲੀ)"
+
+#: ../meld/vcview.py:435
+#, python-format
+msgid "%s — local"
+msgstr ""
+
+#: ../meld/vcview.py:436
+#, python-format
+msgid "%s — remote"
+msgstr ""
+
+#: ../meld/vcview.py:444
+#, python-format
+msgid "%s (local, merge, remote)"
+msgstr ""
+
+#: ../meld/vcview.py:449
+#, python-format
+msgid "%s (remote, merge, local)"
+msgstr ""
+
+#: ../meld/vcview.py:460
+#, python-format
+msgid "%s — repository"
+msgstr ""
+
+#: ../meld/vcview.py:466
+#, python-format
+msgid "%s (working, repository)"
+msgstr ""
+
+#: ../meld/vcview.py:470
+#, python-format
+msgid "%s (repository, working)"
+msgstr ""
+
+#: ../meld/vcview.py:638
+msgid "Remove folder and all its files?"
+msgstr ""
+
+#: ../meld/vcview.py:640
+msgid ""
+"This will remove all selected files and folders, and all files within any "
+"selected folders, from version control."
+msgstr ""
+
+#: ../meld/vcview.py:665
+#, python-format
+msgid "Error removing %s"
+msgstr ""
+
+#: ../meld/vcview.py:746
+msgid "Clear"
+msgstr ""
+
+#~ msgid "_Diff"
+#~ msgstr "ਅੰਤਰ(_Diff)"
+
+#~ msgid "One Pane"
+#~ msgstr "ਇੱਕ ਬਾਹੀ"
+
+#~ msgid "Two Panes"
+#~ msgstr "ਦੋ ਬਾਹੀਆਂ"
+
+#~ msgid "Three Panes"
+#~ msgstr "ਤਿੰਨ ਬਾਹੀਆਂ"
+
+#~ msgid "Horizontal View"
+#~ msgstr "ਖਿਤਿਜੀ ਝਲਕ"
+
+#~ msgid "Pane 1"
+#~ msgstr "ਬਾਹੀ 1"
+
+#~ msgid "Pane 2"
+#~ msgstr "ਬਾਹੀ 2"
+
+#~ msgid "Pane 3"
+#~ msgstr "ਬਾਹੀ 3"
+
+#~ msgid "_Print..."
+#~ msgstr "ਛਾਪੋ(_P)..."
+
+#~ msgid "_Close"
+#~ msgstr "ਬੰਦ(_C)"
+
+#~ msgid "Search the document"
+#~ msgstr "ਦਸਤਾਵੇਜ਼ ਖੋਜ"
+
+#~ msgid "Refres_h"
+#~ msgstr "ਤਾਜ਼ਾ(_h)"
+
+#~ msgid "Recompute differences"
+#~ msgstr "ਅੰਤਰ ਮੁੜ ਕੱਢੋ"
+
+#~ msgid "Next difference"
+#~ msgstr "ਅੱਗੇ ਅੰਤਰ"
+
+#~ msgid "Pr_ev"
+#~ msgstr "ਪਿੱਛੇ(_e)"
+
+#~ msgid "Insert,Overwrite"
+#~ msgstr "ਸ਼ਾਮਲ, ਉੱਪਰ ਲਿਖੋ"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Print... %s"
+#~ msgstr "ਛਾਪੋ... %s"
+
+#~ msgid "Print Preview"
+#~ msgstr "ਛਾਪਾਈ ਝਲਕ"
+
+#~ msgid "_Settings"
+#~ msgstr "ਸੈਟਿੰਗ(_S)"
+
+#~ msgid "_Report Bug"
+#~ msgstr "ਬੱਗ ਜਾਣਕਾਰੀ(_R)"
+
+#~ msgid "Run meld --help for help"
+#~ msgstr "ਸਹਾਇਤਾ ਲਈ ਚਲਾਓ meld --help"
+
+#~ msgid "Usage: meld [options] [arguments]"
+#~ msgstr "ਵਰਤੋਂ: meld [options] [arguments]"
+
+#~ msgid "Use an existing instance"
+#~ msgstr "ਮੌਜੂਦਾ ਹੀ ਵਰਤੋਂ"
+
+#~ msgid "Rev"
+#~ msgstr "ਰੀਵਿਜ਼ਨ"
+
+#~ msgid "Tag"
+#~ msgstr "ਟੈਗ"
+
+#~ msgid "Options"
+#~ msgstr "ਚੋਣ"
+
+#~ msgid "Select some files first."
+#~ msgstr "ਪਹਿਲਾਂ ਕੁਝ ਫਾਇਲਾਂ ਦੀ ਚੋਣ ਕਰੋ।"
+
+#~ msgid "Update the local copy"
+#~ msgstr "ਲੋਕਲ ਨਕਲ ਅੱਪਡੇਟ"
+
+#~ msgid "_Up"
+#~ msgstr "ਉਪਰ(_U)"
+
+#~ msgid "Un_known"
+#~ msgstr "ਅਣਜਾਣ(_k)"
+
+#~ msgid "Search:"
+#~ msgstr "ਖੋਜ:"
+
+#~ msgid "(gnome-default-editor)"
+#~ msgstr "(ਗਨੋਮ-ਮੂਲ-ਸੰਪਾਦਕ)"
+
+#~ msgid "<b>Edit Menu</b>"
+#~ msgstr "<b>ਮੇਨੂ ਸੋਧ</b>"
+
+#~ msgid "<b>Font</b>"
+#~ msgstr "<b>ਫੋਂਟ</b>"
+
+#~ msgid "<b>Global options</b>"
+#~ msgstr "<b>ਵਿਆਪਕ ਚੋਣ</b>"
+
+#~ msgid "<b>Loading</b>"
+#~ msgstr "<b>ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ</b>"
+
+#~ msgid "<b>Misc</b>"
+#~ msgstr "<b>ਫੁਟਕਲ</b>"
+
+#~ msgid "<b>Saving</b>"
+#~ msgstr "<b>ਸੰਭਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ</b>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">ਵੇਖਾਓ</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">ਸੰਪਾਦਕ</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">ਇੰਕੋਡਿੰਗ</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">ਫਾਇਲ ਫਿਲਟਰ</span>"
+
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">ਪਾਠ ਫਿਲਟਰ</span>"
+
+#~ msgid "CVS"
+#~ msgstr "CVS"
+
+#~ msgid "CVS binary"
+#~ msgstr "CVS ਬਾਈਨਰੀ"
+
+#~ msgid "Encoding"
+#~ msgstr "ਇੰਕੋਡਿੰਗ"
+
+#~ msgid "Ignore .cvsrc (-f)"
+#~ msgstr "ਅਣਡਿੱਠ .cvsrc (-f)"
+
+#~ msgid "Save in UTF-8 encoding"
+#~ msgstr "UTF-8 ਇੰਕੋਡਿੰਗ 'ਚ ਸੰਭਾਲੋ"
+
+#~ msgid "Spaces per tab"
+#~ msgstr "ਪ੍ਰਤੀ ਟੈਬ ਖਾਲੀ ਥਾਂ"
+
+#~ msgid "Use Compression (-z)"
+#~ msgstr "ਨਪੀੜਨ ਵਰਤੋਂ (-z)"
+
+#~ msgid "_Logo"
+#~ msgstr "ਲੋਗੋ(_L)"
+
+#~ msgid ""
+#~ "icons\n"
+#~ "text\n"
+#~ "both\n"
+#~ "both-horiz"
+#~ msgstr ""
+#~ "ਆਈਕਾਨ\n"
+#~ "ਪਾਠ\n"
+#~ "ਦੋਵੇਂ\n"
+#~ "ਦੋਵੇਂ-ਖਿਤਿਜੀ"
+
+#~ msgid "utf8 iso8859"
+#~ msgstr "utf8 iso8859"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "CVS Log"
+#~ msgstr "CVS ਲਾਗ"
+
+#~ msgid "Choose Directory - Meld"
+#~ msgstr "ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ -ਮੀਲਡ"
+
+#~ msgid "Date"
+#~ msgstr "ਮਿਤੀ"
+
+#~ msgid "Diff Options"
+#~ msgstr "ਅੰਤਰ ਚੋਣ"
+
+#~ msgid "Remove _Locally"
+#~ msgstr "ਲੋਕਲ ਹਟਾਓ(_L)"
