@@ -105,6 +105,7 @@ class MeldWindow(gnomeglade.Component):
             ("FileStatus", None, _("File Status")),
             ("VcStatus", None, _("Version Status")),
             ("FileFilters", None, _("File Filters")),
+            ("TextFilters", None, _("Text Filters")),
             ("Stop", Gtk.STOCK_STOP, None, "Escape",
                 _("Stop the current action"),
                 self.on_toolbar_stop_clicked),
