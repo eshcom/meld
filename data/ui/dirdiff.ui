@@ -89,7 +89,7 @@
         <property name="label" translatable="yes">File filters</property>
         <property name="tooltip" translatable="yes">Set active file filters</property>
         <property name="is_important">True</property>
-        <signal name="toggled" handler="on_custom_filter_menu_toggled" swapped="no"/>
+        <signal name="toggled" handler="on_file_filter_menu_toggled" swapped="no"/>
       </object>
     </child>
   </object>

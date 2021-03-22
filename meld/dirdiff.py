@@ -477,7 +477,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
 
     # esh: handled on clicked file-filters menu-button in toolbar,
     #      filter_menu_button is the "/Toolbar/FilterActions/FileFilterMenu" widget
-    def on_custom_filter_menu_toggled(self, item):
+    def on_file_filter_menu_toggled(self, item):
         if item.get_active():
             self.custom_popup.connect("deactivate",
                                       lambda popup: item.set_active(False))
