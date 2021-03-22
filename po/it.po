@@ -2586,10 +2586,10 @@ msgstr "Azzera"
 #~ msgid "Move current tab to right"
 #~ msgstr "Sposta la scheda corrente a destra"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Copia a _sinistra"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Copia a _destra"
 
 #~ msgid "Ignore changes which insert or delete blank lines"

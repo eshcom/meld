@@ -2470,10 +2470,10 @@ msgstr "Počisti"
 #~ msgid "Automatically detected text encodings"
 #~ msgstr "Dovoli samodejno skrčenje besedila ob združevanju"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Kopiraj _levo"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Kopiraj _desno"
 
 #~ msgid ""

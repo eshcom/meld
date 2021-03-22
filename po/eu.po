@@ -515,7 +515,7 @@ msgid "Compare selected files"
 msgstr "Konparatu hautatutako fitxategiak"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Kopiatu e_zkerrean"
 
 #: ../data/ui/dirdiff.ui.h:4
@@ -523,7 +523,7 @@ msgid "Copy to left"
 msgstr "Ezkerrean kopiatzen du"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Kopiatu e_skuinean"
 
 #: ../data/ui/dirdiff.ui.h:6

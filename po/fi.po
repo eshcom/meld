@@ -1991,13 +1991,13 @@ msgstr "[%s] Yhdistetään tiedostoja"
 
 #: ../meld/gutterrendererchunk.py:159
 #, fuzzy
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _up"
 msgstr "Kopioi _vasemmalle"
 
 #: ../meld/gutterrendererchunk.py:160
 #, fuzzy
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _down"
 msgstr "Kopioi _vasemmalle"
 
@@ -2584,10 +2584,10 @@ msgstr "Tyhjennä"
 #~ msgstr ""
 #~ "'%s' sisältää erilaisia riviloppuja. Valitse käytettävä riviloppumuoto."
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Kopioi _vasemmalle"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Kopioi _oikealle"
 
 #~ msgid ""

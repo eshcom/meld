@@ -412,7 +412,7 @@ msgid "Compare selected files"
 msgstr "比较选中的文件"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "复制左侧(_L)"
 
 #: ../data/ui/dirdiff.ui.h:4
@@ -420,7 +420,7 @@ msgid "Copy to left"
 msgstr "复制到左侧"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "复制右侧(_R)"
 
 #: ../data/ui/dirdiff.ui.h:6
@@ -1500,12 +1500,12 @@ msgid "[%s] Merging files"
 msgstr "[%s] 合并文件"
 
 #: ../meld/gutterrendererchunk.py:92
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _up"
 msgstr "复制上面(_U)"
 
 #: ../meld/gutterrendererchunk.py:93
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _down"
 msgstr "复制下面(_D)"
 

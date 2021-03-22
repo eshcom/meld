@@ -395,7 +395,7 @@ msgstr "So sánh vùng chọn"
 
 #: ../meld/dirdiff.py:227
 #| msgid "Copy To Left"
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Chép sang _trái"
 
 #: ../meld/dirdiff.py:227
@@ -405,7 +405,7 @@ msgstr "Chép sang trái"
 
 #: ../meld/dirdiff.py:228
 #| msgid "Copy To Right"
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Chép sang _phải"
 
 #: ../meld/dirdiff.py:228

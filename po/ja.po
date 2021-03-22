@@ -374,7 +374,7 @@ msgid "Compare selected"
 msgstr "選択したファイルを比較します"
 
 #: ../meld/dirdiff.py:233
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "左へコピーする(_L)"
 
 #: ../meld/dirdiff.py:233
@@ -382,7 +382,7 @@ msgid "Copy to left"
 msgstr "左へコピーします"
 
 #: ../meld/dirdiff.py:234
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "右へコピーする(_R)"
 
 #: ../meld/dirdiff.py:234

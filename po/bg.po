@@ -376,7 +376,7 @@ msgid "Compare selected"
 msgstr "Сравняване на избраното"
 
 #: ../meld/dirdiff.py:233
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Копиране на_ляво"
 
 #: ../meld/dirdiff.py:233
@@ -384,7 +384,7 @@ msgid "Copy to left"
 msgstr "Копиране наляво"
 
 #: ../meld/dirdiff.py:234
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Копиране на_дясно"
 
 #: ../meld/dirdiff.py:234

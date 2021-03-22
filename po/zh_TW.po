@@ -2198,10 +2198,10 @@ msgstr "這將從版本控制中移除所有選中的文件及資料夾，及選
 msgid "Error removing %s"
 msgstr "移除 %s 時發生錯誤"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "複製到左側(_L)"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "複製到右側(_R)"
 
 #~ msgid ""

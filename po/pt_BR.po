@@ -2616,10 +2616,10 @@ msgstr "Limpar"
 #~ "\"%s\" contém uma mistura de fins de linha. Selecione o formato de fim de "
 #~ "linha que você gostaria de usar."
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Copiar para a _esquerda"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Copiar para a _direita"
 
 #~ msgid ""

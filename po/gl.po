@@ -62,7 +62,7 @@ msgid "Compare selected files"
 msgstr "Comparar ficheiros seleccionados"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Copiar á _esquerda"
 
 #: ../data/ui/dirdiff.ui.h:4
@@ -70,7 +70,7 @@ msgid "Copy to left"
 msgstr "Copiar á esquerda"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Copiar á _dereita"
 
 #: ../data/ui/dirdiff.ui.h:6
