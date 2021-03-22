@@ -37,7 +37,7 @@
       <toolitem action="ShowNew" />
       <toolitem action="ShowModified" />
       <separator/>
-      <toolitem action="CustomFilterMenu"/>
+      <toolitem action="FileFilterMenu"/>
       <placeholder name="FilterButtons" />
     </placeholder>
   </toolbar>
