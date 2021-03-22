@@ -475,6 +475,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                 last_column = current_column
             treeview.set_headers_visible(extra_cols)
 
+    # esh: handled on clicked file-filters menu-button in toolbar,
+    #      filter_menu_button is the "/Toolbar/FilterActions/CustomFilterMenu" widget
     def on_custom_filter_menu_toggled(self, item):
         if item.get_active():
             self.custom_popup.connect("deactivate",
@@ -505,20 +507,21 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
 
     def on_container_switch_in_event(self, ui):
         melddoc.MeldDoc.on_container_switch_in_event(self, ui)
-        self._create_filter_menu_button(ui)
+        self._create_filter_menu_button(ui) # esh: file-filters and text-filters
         self.ui_manager = ui
 
     def on_container_switch_out_event(self, ui):
-        self._cleanup_filter_menu_button(ui)
+        self._cleanup_filter_menu_button(ui) # esh: file-filters and text-filters
         melddoc.MeldDoc.on_container_switch_out_event(self, ui)
 
     def on_file_filters_changed(self, app):
-        self._cleanup_filter_menu_button(self.ui_manager)
+        self._cleanup_filter_menu_button(self.ui_manager) # esh: file-filters only
         relevant_change = self.create_name_filters()
-        self._create_filter_menu_button(self.ui_manager)
+        self._create_filter_menu_button(self.ui_manager) # esh: file-filters only
         if relevant_change:
             self.refresh()
 
+    # esh: name-filters - are file-filters
     def create_name_filters(self):
         # Ordering of name filters is irrelevant
         old_active = set([f.filter_string for f in self.name_filters
