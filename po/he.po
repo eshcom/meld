@@ -358,7 +358,7 @@ msgid "Compare selected files"
 msgstr "השוואת הקבצים הנבחרים"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "העתקה _שמאלה"
 
 #: ../data/ui/dirdiff.ui.h:4
@@ -366,7 +366,7 @@ msgid "Copy to left"
 msgstr "העתקה לחלונית השמאלית"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "העתקה _ימינה"
 
 #: ../data/ui/dirdiff.ui.h:6

@@ -460,7 +460,7 @@ msgid "Compare selected files"
 msgstr "Porovná vybrané súbory"
 
 #: ../data/ui/dirdiff.ui.h:3
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Kopírovať _vľavo"
 
 #: ../data/ui/dirdiff.ui.h:4
@@ -468,7 +468,7 @@ msgid "Copy to left"
 msgstr "Kopírovať vľavo"
 
 #: ../data/ui/dirdiff.ui.h:5
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Kopírovať vp_ravo"
 
 #: ../data/ui/dirdiff.ui.h:6

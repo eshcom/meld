@@ -383,7 +383,7 @@ msgstr "Compară obiectul selectat"
 #: ../meld/dirdiff.py:233
 #, fuzzy
 #| msgid "Copy To Left"
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr "Copiază la stânga"
 
 #: ../meld/dirdiff.py:233
@@ -395,7 +395,7 @@ msgstr "Copiază la stânga"
 #: ../meld/dirdiff.py:234
 #, fuzzy
 #| msgid "Copy To Right"
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr "Copiază la dreapta"
 
 #: ../meld/dirdiff.py:234

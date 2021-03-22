@@ -363,7 +363,7 @@ msgid "Compare selected"
 msgstr ""
 
 #: ../meld/dirdiff.py:233
-msgid "Copy _Left"
+msgid "Copy to _Left"
 msgstr ""
 
 #: ../meld/dirdiff.py:233
@@ -371,7 +371,7 @@ msgid "Copy to left"
 msgstr ""
 
 #: ../meld/dirdiff.py:234
-msgid "Copy _Right"
+msgid "Copy to _Right"
 msgstr ""
 
 #: ../meld/dirdiff.py:234

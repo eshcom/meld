@@ -2204,10 +2204,10 @@ msgstr ""
 msgid "Error removing %s"
 msgstr "Σφάλμα κατά την αφαίρεση του %s"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Αντιγραφή _αριστερά"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Αντιγραφή _δεξιά"
 
 #~ msgid "Regular expression error"

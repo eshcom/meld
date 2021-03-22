@@ -2633,7 +2633,7 @@ msgstr "Ryd"
 #~ msgstr "Versionsstyringslog"
 
 #, fuzzy
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Kopier til højre"
 
 #~ msgid "Case"

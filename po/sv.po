@@ -2597,10 +2597,10 @@ msgstr "Töm"
 #~ msgid "%s (%s)"
 #~ msgstr "%s (%s)"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Kopiera _vänster"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Kopiera _höger"
 
 #~ msgid ""

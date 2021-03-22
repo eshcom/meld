@@ -2012,12 +2012,12 @@ msgid "[%s] Merging files"
 msgstr "[%s] Fusion dels fichièrs"
 
 #: ../meld/gutterrendererchunk.py:159
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _up"
 msgstr "Copiar a_mont"
 
 #: ../meld/gutterrendererchunk.py:160
-#| msgid "Copy _Left"
+#| msgid "Copy to _Left"
 msgid "Copy _down"
 msgstr "Copiar a_val"
 
@@ -2656,7 +2656,7 @@ msgstr "Escafar"
 #~ msgid "VC Log"
 #~ msgstr "Jornal del gestionari de versions"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Copiar a _drecha"
 
 #~ msgid ""

@@ -2625,10 +2625,10 @@ msgstr "Очисти"
 #~ msgid "Cycle Through Documents"
 #~ msgstr "Кружи кроз документе"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Умножи _лево"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Умножи _десно"
 
 #~ msgid "Ignore changes which insert or delete blank lines"

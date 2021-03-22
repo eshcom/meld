@@ -2634,10 +2634,10 @@ msgstr "Limpiar"
 #~ msgid "%s (%s)"
 #~ msgstr "%s (%s)"
 
-#~ msgid "Copy _Left"
+#~ msgid "Copy to _Left"
 #~ msgstr "Copiar a _la izquierda"
 
-#~ msgid "Copy _Right"
+#~ msgid "Copy to _Right"
 #~ msgstr "Copiar a la de_recha"
 
 #~ msgid ""
