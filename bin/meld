@@ -276,12 +276,12 @@ def setup_logging():
         log.setLevel(logging.INFO)
     else:
         # esh: set INFO level
-        log.setLevel(logging.INFO)
         # ~ log.setLevel(logging.CRITICAL)
+        log.setLevel(logging.INFO)
     
     # esh: set log-file handler
-    handler = logging.FileHandler("/tmp/meld.log")
     # ~ handler = logging.StreamHandler()
+    handler = logging.FileHandler("/tmp/meld.log")
     
     formatter = logging.Formatter("%(asctime)s %(levelname)s "
                                   "%(name)s: %(message)s")
