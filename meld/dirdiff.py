@@ -1488,7 +1488,9 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         return different
 
     def popup_in_pane(self, pane, event):
-        for (treeview, inid, outid) in zip(self.treeview, self.focus_in_events, self.focus_out_events):
+        for (treeview, inid, outid) in zip(self.treeview,
+                                           self.focus_in_events,
+                                           self.focus_out_events):
             treeview.handler_block(inid)
             treeview.handler_block(outid)
         self.actiongroup.get_action("DirCopyLeft").set_sensitive(pane > 0)

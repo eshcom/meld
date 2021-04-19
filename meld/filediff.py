@@ -992,8 +992,8 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             #    Gdk.SELECTION_CLIPBOARD).wait_is_text_available()
             paste = widget.get_editable()
         if self.main_actiongroup:
-            for action, sens in zip(
-                    ("Cut", "Copy", "Paste"), (cut, copy, paste)):
+            for action, sens in zip(("Cut", "Copy", "Paste"),
+                                    (cut, copy, paste)):
                 self.main_actiongroup.get_action(action).set_sensitive(sens)
 
     @with_focused_pane
@@ -1045,7 +1045,9 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             v.disconnect(h)
             if v != view:
                 v.emit("toggle-overwrite")
-        self.textview_overwrite_handlers = [ t.connect("toggle-overwrite", self.on_textview_toggle_overwrite) for t in self.textview ]
+        self.textview_overwrite_handlers = [t.connect("toggle-overwrite",
+                                            self.on_textview_toggle_overwrite)
+                                                for t in self.textview ]
         self.on_cursor_position_changed(view.get_buffer(), None, True)
 
     def set_labels(self, labels):
@@ -1436,8 +1438,8 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
                         "endings:\n%s")
 
                     labels = [b.data.label for b in bufs]
-                    newline_types = [
-                        n if isinstance(n, tuple) else (n,) for n in newlines]
+                    newline_types = [n if isinstance(n, tuple)
+                                       else (n,) for n in newlines]
                     newline_strings = []
                     for label, nl_types in zip(labels, newline_types):
                         nl_string = ", ".join(NEWLINES[n][1] for n in nl_types)
