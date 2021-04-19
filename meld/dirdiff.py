@@ -368,11 +368,14 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.focus_in_events = []
         self.focus_out_events = []
         for treeview in self.treeview:
-            handler_id = treeview.connect("focus-in-event", self.on_treeview_focus_in_event)
+            handler_id = treeview.connect("focus-in-event",
+                                          self.on_treeview_focus_in_event)
             self.focus_in_events.append(handler_id)
-            handler_id = treeview.connect("focus-out-event", self.on_treeview_focus_out_event)
+            handler_id = treeview.connect("focus-out-event",
+                                          self.on_treeview_focus_out_event)
             self.focus_out_events.append(handler_id)
             treeview.set_search_equal_func(self.model.treeview_search_cb, None)
+        
         self.force_cursor_recalculate = False
         self.current_path, self.prev_path, self.next_path = None, None, None
         self.on_treeview_focus_out_event(None, None)
@@ -488,7 +491,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
 
     # esh: handled on clicked file-filters menu-button in toolbar,
     #      file_filter_popup, file_filter_menu_button is created
-    #           in the _create_filter_menu_button func
+    #       in the _create_filter_menu_button func
     def on_file_filter_menu_toggled(self, item):
         if item.get_active():
             self.file_filter_popup.connect("deactivate",
@@ -498,6 +501,9 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                                          self.file_filter_menu_button, 1,
                                          Gtk.get_current_event_time())
 
+    # esh: handled on clicked text-filters menu-button in toolbar;
+    #      text_filter_popup, text_filter_menu_button objects
+    #       is created in the _create_filter_menu_button func
     def on_text_filter_menu_toggled(self, item):
         if item.get_active():
             self.text_filter_popup.connect("deactivate",
@@ -528,8 +534,10 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             self.popup_menu.disconnect(self.popup_deactivate_id)
             self.popup_deactivate_id = None
 
-    # esh: file_filter_ui, file_filter_actiongroup is created in the create_file_filters func
-    # esh: text_filter_ui, text_filter_actiongroup is created in the create_text_filters func
+    # esh: file_filter_ui, file_filter_actiongroup objects
+    #       is created in the create_file_filters func
+    # esh: text_filter_ui, text_filter_actiongroup objects
+    #       is created in the create_text_filters func
     def _create_filter_menu_button(self, ui, filter_type):
         if filter_type in (FilterType.ALL_FILTERS, FilterType.FILE_FILTERS):
             ui.insert_action_group(self.file_filter_actiongroup, -1)
@@ -589,7 +597,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         for i, f in enumerate(self.file_filters):
             name = "HideFileFilter%d" % i
             callback = lambda b, i=i: self._update_file_filter(b, i)
-            actions.append((name, None, f.label, None, _("Hide %s") % f.label, callback, f.active))
+            actions.append((name, None, f.label, None,
+                            _("Hide %s") % f.label, callback, f.active))
             self.file_filter_ui.append(["/FileFilterPopup" , name, name,
                                         Gtk.UIManagerItemType.MENUITEM, False])
             self.file_filter_ui.append(["/Menubar/ViewMenu/FileFilters", name, name,
@@ -621,14 +630,16 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         
         self.text_filters = [copy.copy(f) for f in meldsettings.text_filters]
         
-        # esh: added ui text filters (by analogy with file filters)
+        # esh: added ui text filters in toolbar (by analogy
+        #       with create_file_filters func, see above)
         actions = []
         disabled_actions = []
         self.text_filter_ui = []
         for i, f in enumerate(self.text_filters):
             name = "HideTextFilter%d" % i
             callback = lambda b, i=i: self._update_text_filter(b, i)
-            actions.append((name, None, f.label, None, _("Hide %s") % f.label, callback, f.active))
+            actions.append((name, None, f.label, None,
+                            _("Hide %s") % f.label, callback, f.active))
             self.text_filter_ui.append(["/TextFilterPopup" , name, name,
                                         Gtk.UIManagerItemType.MENUITEM, False])
             self.text_filter_ui.append(["/Menubar/ViewMenu/TextFilters", name, name,
@@ -1250,7 +1261,9 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self._update_diffmaps()
 
     def on_popup_deactivate_event(self, popup):
-        for (treeview, inid, outid) in zip(self.treeview, self.focus_in_events, self.focus_out_events):
+        for (treeview, inid, outid) in zip(self.treeview,
+                                           self.focus_in_events,
+                                           self.focus_out_events):
             treeview.handler_unblock(inid)
             treeview.handler_unblock(outid)
 
