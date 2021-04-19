@@ -5,6 +5,9 @@
       <toolitem action="Undo"/>
       <toolitem action="Redo"/>
     </placeholder>
+    <placeholder name="FilterActions">
+      <toolitem action="TextFilterMenu"/>
+    </placeholder>
   </toolbar>
 
   <menubar name="Menubar">
@@ -73,5 +76,6 @@
     <menuitem action="SaveAs" />
   </popup>
 
+  <popup name="TextFilterPopup"></popup>
 </ui>
 

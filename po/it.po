@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 18:38+0300\n"
+"POT-Creation-Date: 2021-04-19 16:02+0300\n"
 "PO-Revision-Date: 2017-03-14 09:57+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -561,7 +561,7 @@ msgstr "Copia a destra"
 msgid "Delete selected"
 msgstr "Elimina selezione"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:949 ../meld/filediff.py:1450
 msgid "Hide"
 msgstr "Nascondi"
 
@@ -614,12 +614,12 @@ msgstr "Filtri"
 msgid "Set active file filters"
 msgstr "Imposta i filtri attivi"
 
-#: ../data/ui/dirdiff.ui.h:20
+#: ../data/ui/dirdiff.ui.h:20 ../data/ui/filediff.ui.h:44
 #, fuzzy
 msgid "Text filters"
 msgstr "Filtri di testo"
 
-#: ../data/ui/dirdiff.ui.h:21
+#: ../data/ui/dirdiff.ui.h:21 ../data/ui/filediff.ui.h:45
 #, fuzzy
 msgid "Set active text filters"
 msgstr "Imposta i filtri attivi"
@@ -663,7 +663,7 @@ msgstr "Sposta _giù"
 
 #. Create icon and filename CellRenderer
 #: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
-#: ../meld/dirdiff.py:376
+#: ../meld/dirdiff.py:390
 msgid "Name"
 msgstr "Nome"
 
@@ -854,27 +854,27 @@ msgstr "Blocca scorrimento"
 msgid "Lock scrolling of all panes"
 msgstr "Blocca lo scorrimento di tutti i riquadri"
 
-#: ../data/ui/filediff.ui.h:44
+#: ../data/ui/filediff.ui.h:46
 msgid "Save changes to documents before closing?"
 msgstr "Salvare le modifiche ai documenti prima di chiudere?"
 
-#: ../data/ui/filediff.ui.h:45
+#: ../data/ui/filediff.ui.h:47
 msgid "If you don't save, changes will be permanently lost."
 msgstr "Se non si salva, tutte le modifiche andranno perse per sempre."
 
-#: ../data/ui/filediff.ui.h:46
+#: ../data/ui/filediff.ui.h:48
 msgid "Close _without Saving"
 msgstr "Chiudi senza sal_vare"
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:49 ../meld/dirdiff.py:1031 ../meld/filediff.py:1516
 msgid "_Cancel"
 msgstr "A_nnulla"
 
-#: ../data/ui/filediff.ui.h:48
+#: ../data/ui/filediff.ui.h:50
 msgid "_Save"
 msgstr "_Salva"
 
-#: ../data/ui/filediff.ui.h:49
+#: ../data/ui/filediff.ui.h:51
 msgid ""
 "This file can not be written to. You may click here to unlock this file and "
 "make changes anyway, but these changes must be saved to a new file."
@@ -883,29 +883,29 @@ msgstr ""
 "sbloccarlo e apportare le modifiche: tali modifiche devono però essere "
 "salvata su un nuovo file."
 
-#: ../data/ui/filediff.ui.h:50
+#: ../data/ui/filediff.ui.h:52
 msgid "File 3"
 msgstr "File 3"
 
-#: ../data/ui/filediff.ui.h:51
+#: ../data/ui/filediff.ui.h:53
 msgid "File 2"
 msgstr "File 2"
 
-#: ../data/ui/filediff.ui.h:52
+#: ../data/ui/filediff.ui.h:54
 msgid "File 1"
 msgstr "File 1"
 
 # (ndt) l'azione annulla effettivamente le modifiche che non sono state salvate.
-#: ../data/ui/filediff.ui.h:53
+#: ../data/ui/filediff.ui.h:55
 msgid "Revert unsaved changes to documents?"
 msgstr "Annullare le modifiche non salvate dei documenti?"
 
-#: ../data/ui/filediff.ui.h:54
+#: ../data/ui/filediff.ui.h:56
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr ""
 "Le modifiche apportate ai seguenti documenti andranno perse per sempre:\n"
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:1032 ../meld/filediff.py:1517
 msgid "_Replace"
 msgstr "Sostit_uisci"
 
@@ -1652,44 +1652,44 @@ msgid "Mac OS (CR)"
 msgstr "Mac OS (CR)"
 
 #. Create file size CellRenderer
-#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+#: ../meld/dirdiff.py:408 ../meld/preferences.py:82
 msgid "Size"
 msgstr "Dimensione"
 
 #. Create date-time CellRenderer
-#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+#: ../meld/dirdiff.py:416 ../meld/preferences.py:83
 msgid "Modification time"
 msgstr "Data e ora di modifica"
 
 #. Create permissions CellRenderer
-#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+#: ../meld/dirdiff.py:424 ../meld/preferences.py:84
 msgid "Permissions"
 msgstr "Permessi"
 
-#: ../meld/dirdiff.py:550
+#: ../meld/dirdiff.py:601 ../meld/dirdiff.py:642 ../meld/filediff.py:383
 #, python-format
 msgid "Hide %s"
 msgstr "Nascondi %s"
 
-#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
+#: ../meld/dirdiff.py:760 ../meld/dirdiff.py:784
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] Analisi di %s"
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:916
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] Fatto"
 
-#: ../meld/dirdiff.py:848
+#: ../meld/dirdiff.py:924
 msgid "Folders have no differences"
 msgstr "Le cartelle non presentano alcuna differenza"
 
-#: ../meld/dirdiff.py:850
+#: ../meld/dirdiff.py:926
 msgid "Contents of scanned files in folders are identical."
 msgstr "Il contenuto dei file analizzati nelle cartelle è identico."
 
-#: ../meld/dirdiff.py:852
+#: ../meld/dirdiff.py:928
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
@@ -1697,41 +1697,41 @@ msgstr ""
 "I file analizzati nelle cartelle sembrerebbero identici, ma il loro "
 "contenuto non è stato analizzato."
 
-#: ../meld/dirdiff.py:855
+#: ../meld/dirdiff.py:931
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 "Sono in uso dei filtri sui file: non tutti i file sono stati analizzati."
 
-#: ../meld/dirdiff.py:857
+#: ../meld/dirdiff.py:933
 msgid "Text filters are in use and may be masking content differences."
 msgstr ""
 "Sono in uso filtri sul testo e potrebbero nascondere differenze tra i file."
 
-#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
-#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+#: ../meld/dirdiff.py:951 ../meld/filediff.py:1452 ../meld/filediff.py:1482
+#: ../meld/filediff.py:1484 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr "Nascon_di"
 
-#: ../meld/dirdiff.py:885
+#: ../meld/dirdiff.py:961
 msgid "Multiple errors occurred while scanning this folder"
 msgstr ""
 "Si sono verificati molteplici errore durante l'analisi di questa cartella"
 
-#: ../meld/dirdiff.py:886
+#: ../meld/dirdiff.py:962
 msgid "Files with invalid encodings found"
 msgstr "Trovati file con codifiche non valide"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:888
+#: ../meld/dirdiff.py:964
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr "Alcuni file presentano delle codifiche non corrette. I nomi sono:"
 
-#: ../meld/dirdiff.py:890
+#: ../meld/dirdiff.py:966
 msgid "Files hidden by case insensitive comparison"
 msgstr "File nascosti dal confronto senza distinzione maiuscole/minuscole"
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:892
+#: ../meld/dirdiff.py:968
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
 "filesystem. The following files in this folder are hidden:"
@@ -1739,17 +1739,17 @@ msgstr ""
 "Confronto eseguito senza distinzione tra maiuscole/minuscole su un file "
 "system che applica tale distinzione. Alcuni file sono nascosti:"
 
-#: ../meld/dirdiff.py:903
+#: ../meld/dirdiff.py:979
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "«%s» è nascosto da «%s»"
 
-#: ../meld/dirdiff.py:959
+#: ../meld/dirdiff.py:1035
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr "Sostituire la cartella «%s»?"
 
-#: ../meld/dirdiff.py:961
+#: ../meld/dirdiff.py:1037
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
@@ -1759,11 +1759,11 @@ msgstr ""
 "Sostituendo la cartella esistente, tutti i file in essa contenuti saranno "
 "persi."
 
-#: ../meld/dirdiff.py:974
+#: ../meld/dirdiff.py:1050
 msgid "Error copying file"
 msgstr "Errore nel copiare il file"
 
-#: ../meld/dirdiff.py:975
+#: ../meld/dirdiff.py:1051
 #, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1776,35 +1776,35 @@ msgstr ""
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:998
+#: ../meld/dirdiff.py:1074
 #, python-format
 msgid "Error deleting %s"
 msgstr "Errore nell'eliminare %s"
 
-#: ../meld/dirdiff.py:1511
+#: ../meld/dirdiff.py:1593
 msgid "No folder"
 msgstr "Nessuna cartella"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
-#: ../meld/filediff.py:335
+#: ../meld/filediff.py:423
 msgid "INS"
 msgstr "INS"
 
-#: ../meld/filediff.py:335
+#: ../meld/filediff.py:423
 msgid "OVR"
 msgstr "SSC"
 
 #. Abbreviation for line, column so that it will fit in the status bar
-#: ../meld/filediff.py:337
+#: ../meld/filediff.py:425
 #, python-format
 msgid "Ln %i, Col %i"
 msgstr "Rg %i, Col %d"
 
-#: ../meld/filediff.py:762
+#: ../meld/filediff.py:850
 msgid "Comparison results will be inaccurate"
 msgstr "I risultati del confronto non saranno precisi"
 
-#: ../meld/filediff.py:764
+#: ../meld/filediff.py:852
 msgid ""
 "A filter changed the number of lines in the file, which is unsupported. The "
 "comparison will not be accurate."
@@ -1812,65 +1812,65 @@ msgstr ""
 "Un filtro ha modificato il numero di righe nel file: ciò non è supportato. "
 "Il confronto non sarà corretto."
 
-#: ../meld/filediff.py:820
+#: ../meld/filediff.py:908
 msgid "Mark conflict as resolved?"
 msgstr "Marcare il conflitto come risolto?"
 
-#: ../meld/filediff.py:822
+#: ../meld/filediff.py:910
 msgid ""
 "If the conflict was resolved successfully, you may mark it as resolved now."
 msgstr ""
 "Se il conflitto è stato risolto con successo, è possibile indicarlo ora."
 
-#: ../meld/filediff.py:824
+#: ../meld/filediff.py:912
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ../meld/filediff.py:825
+#: ../meld/filediff.py:913
 msgid "Mark _Resolved"
 msgstr "Marca _risolto"
 
-#: ../meld/filediff.py:1076
+#: ../meld/filediff.py:1164
 #, python-format
 msgid "There was a problem opening the file “%s”."
 msgstr "Si è verificato un problema nell'aprire il file «%s»."
 
-#: ../meld/filediff.py:1084
+#: ../meld/filediff.py:1172
 #, python-format
 msgid "File %s appears to be a binary file."
 msgstr "Il file «%s» sembra essere un file binario."
 
-#: ../meld/filediff.py:1086
+#: ../meld/filediff.py:1174
 msgid "Do you want to open the file using the default application?"
 msgstr "Aprire il file utilizzando l'applicazione predefinita?"
 
-#: ../meld/filediff.py:1088
+#: ../meld/filediff.py:1176
 msgid "Open"
 msgstr "Apri"
 
-#: ../meld/filediff.py:1104
+#: ../meld/filediff.py:1192
 #, python-format
 msgid "[%s] Computing differences"
 msgstr "[%s] Calcolo delle differenze"
 
-#: ../meld/filediff.py:1166
+#: ../meld/filediff.py:1254
 #, python-format
 msgid "File %s has changed on disk"
 msgstr "Il file «%s» è stato modificato"
 
-#: ../meld/filediff.py:1167
+#: ../meld/filediff.py:1255
 msgid "Do you want to reload the file?"
 msgstr "Ricaricare il file?"
 
-#: ../meld/filediff.py:1169
+#: ../meld/filediff.py:1257
 msgid "_Reload"
 msgstr "_Ricarica"
 
-#: ../meld/filediff.py:1327
+#: ../meld/filediff.py:1415
 msgid "Files are identical"
 msgstr "I file sono identici"
 
-#: ../meld/filediff.py:1340
+#: ../meld/filediff.py:1428
 msgid ""
 "Text filters are being used, and may be masking differences between files. "
 "Would you like to compare the unfiltered files?"
@@ -1878,11 +1878,11 @@ msgstr ""
 "Sono in uso filtri sul testo e potrebbero nascondere differenze tra i file. "
 "Confrontare i file senza i filtri?"
 
-#: ../meld/filediff.py:1345
+#: ../meld/filediff.py:1433
 msgid "Files differ in line endings only"
 msgstr "I file differiscono solo nelle terminazioni di riga"
 
-#: ../meld/filediff.py:1347
+#: ../meld/filediff.py:1435
 #, python-format
 msgid ""
 "Files are identical except for differing line endings:\n"
@@ -1891,16 +1891,16 @@ msgstr ""
 "I file sono identici, ma differiscono sono nelle terminazioni di riga:\n"
 "%s"
 
-#: ../meld/filediff.py:1367
+#: ../meld/filediff.py:1455
 msgid "Show without filters"
 msgstr "Mostra senza filtri"
 
-#: ../meld/filediff.py:1389
+#: ../meld/filediff.py:1477
 msgid "Change highlighting incomplete"
 msgstr "Evidenziazione modifica incompleta"
 
 # (ndt) un po’ libera…
-#: ../meld/filediff.py:1390
+#: ../meld/filediff.py:1478
 msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
@@ -1909,20 +1909,20 @@ msgstr ""
 "possibile fare in modo che anche le modifiche di grandi dimensioni vengano "
 "evidenziate, ma potrebbe rallentare il programma."
 
-#: ../meld/filediff.py:1398
+#: ../meld/filediff.py:1486
 msgid "Keep highlighting"
 msgstr "Continua a evidenziare"
 
-#: ../meld/filediff.py:1400
+#: ../meld/filediff.py:1488
 msgid "_Keep highlighting"
 msgstr "Continua _evidenziazione"
 
-#: ../meld/filediff.py:1432
+#: ../meld/filediff.py:1520
 #, python-format
 msgid "Replace file “%s”?"
 msgstr "Sostituire il file «%s»?"
 
-#: ../meld/filediff.py:1434
+#: ../meld/filediff.py:1522
 #, python-format
 msgid ""
 "A file with this name already exists in “%s”.\n"
@@ -1931,41 +1931,41 @@ msgstr ""
 "Un file con lo stesso nome esiste già in «%s».\n"
 "Sostituendo il file esistente, tutto il suo contenuto sarà perso."
 
-#: ../meld/filediff.py:1451
+#: ../meld/filediff.py:1539
 msgid "Save Left Pane As"
 msgstr "Salva riquadro sinistro come"
 
-#: ../meld/filediff.py:1453
+#: ../meld/filediff.py:1541
 msgid "Save Middle Pane As"
 msgstr "Salva riquadro centrale come"
 
-#: ../meld/filediff.py:1455
+#: ../meld/filediff.py:1543
 msgid "Save Right Pane As"
 msgstr "Salva riquadro destro come"
 
-#: ../meld/filediff.py:1469
+#: ../meld/filediff.py:1557
 #, python-format
 msgid "File %s has changed on disk since it was opened"
 msgstr "Il file «%s» è stato modificato"
 
-#: ../meld/filediff.py:1471
+#: ../meld/filediff.py:1559
 msgid "If you save it, any external changes will be lost."
 msgstr "Salvare il file può comportare la perdita delle modifiche esterne."
 
-#: ../meld/filediff.py:1474
+#: ../meld/filediff.py:1562
 msgid "Save Anyway"
 msgstr "Salva comunque"
 
-#: ../meld/filediff.py:1475
+#: ../meld/filediff.py:1563
 msgid "Don't Save"
 msgstr "Non salvare"
 
-#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#: ../meld/filediff.py:1602 ../meld/patchdialog.py:130
 #, python-format
 msgid "Could not save file %s."
 msgstr "Impossibile salvare il file %s."
 
-#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#: ../meld/filediff.py:1603 ../meld/patchdialog.py:131
 #, python-format
 msgid ""
 "Couldn't save file due to:\n"
@@ -1974,11 +1974,11 @@ msgstr ""
 "Impossibile salvare il file a causa di:\n"
 "%s"
 
-#: ../meld/filediff.py:1879
+#: ../meld/filediff.py:1967
 msgid "Live comparison updating disabled"
 msgstr "Aggiornamento automatico dei confronti disabilitato"
 
-#: ../meld/filediff.py:1880
+#: ../meld/filediff.py:1968
 msgid ""
 "Live updating of comparisons is disabled when synchronization points are "
 "active. You can still manually refresh the comparison, and live updates will "
