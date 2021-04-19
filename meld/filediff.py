@@ -131,10 +131,10 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         """Start up an filediff with num_panes empty contents.
         """
         melddoc.MeldDoc.__init__(self)
-        gnomeglade.Component.__init__(
-            self, "filediff.ui", "filediff", ["FilediffActions"])
+        gnomeglade.Component.__init__(self, "filediff.ui", "filediff",
+                                      ["FilediffActions"])
         bind_settings(self)
-
+        
         widget_lists = [
             "diffmap", "file_save_button", "file_toolbar", "fileentry",
             "linkmap", "msgarea_mgr", "readonlytoggle",
@@ -143,24 +143,30 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             "fileentry_toolitem", "dummy_toolbar_diffmap"
         ]
         self.map_widgets_into_lists(widget_lists)
-
+        
         # This SizeGroup isn't actually necessary for FileDiff; it's for
         # handling non-homogenous selectors in FileComp. It's also fragile.
         column_sizes = Gtk.SizeGroup(mode=Gtk.SizeGroupMode.HORIZONTAL)
         column_sizes.set_ignore_hidden(True)
         for widget in self.selector_hbox:
             column_sizes.add_widget(widget)
-
+        
         self.warned_bad_comparison = False
         self._keymask = 0
         self.meta = {}
         self.lines_removed = 0
         self.textview_overwrite = 0
         self.focus_pane = None
-        self.textview_overwrite_handlers = [ t.connect("toggle-overwrite", self.on_textview_toggle_overwrite) for t in self.textview ]
+        self.textview_overwrite_handlers = [t.connect("toggle-overwrite",
+                                            self.on_textview_toggle_overwrite)
+                                                for t in self.textview]
         self.textbuffer = [v.get_buffer() for v in self.textview]
         self.buffer_texts = [meldbuffer.BufferLines(b) for b in self.textbuffer]
         self.undosequence = undo.UndoSequence()
+        
+        self.popup_deactivate_id = None
+        self.text_filter_merge_id = None
+        
         self.text_filters = []
         self.create_text_filters()
         self.settings_handlers = [
@@ -217,7 +223,8 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
 
         # Prototype implementation
 
-        from meld.gutterrendererchunk import GutterRendererChunkAction, GutterRendererChunkLines
+        from meld.gutterrendererchunk import GutterRendererChunkAction, \
+                                             GutterRendererChunkLines
 
         for pane, t in enumerate(self.textview):
             # FIXME: set_num_panes will break this good
@@ -295,21 +302,102 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
     def on_focus_change(self):
         self.keymask = 0
 
+    # esh: handled on clicked text-filters menu-button in toolbar;
+    #      text_filter_popup, text_filter_menu_button objects
+    #       is created in the _create_filter_menu_button func
+    def on_text_filter_menu_toggled(self, item):
+        if item.get_active():
+            self.text_filter_popup.connect("deactivate",
+                                           lambda popup: item.set_active(False))
+            self.text_filter_popup.popup(None, None,
+                                         misc.position_menu_under_widget,
+                                         self.text_filter_menu_button, 1,
+                                         Gtk.get_current_event_time())
+
+    def _cleanup_filter_menu_button(self, ui):
+        if self.text_filter_merge_id:
+            ui.remove_ui(self.text_filter_merge_id)
+            self.text_filter_merge_id = None
+        if self.text_filter_actiongroup in ui.get_action_groups():
+            ui.remove_action_group(self.text_filter_actiongroup)
+        
+        if self.popup_deactivate_id:
+            self.popup_menu.disconnect(self.popup_deactivate_id)
+            self.popup_deactivate_id = None
+
+    # esh: text_filter_ui, text_filter_actiongroup objects
+    #       is created in the create_text_filters func
+    def _create_filter_menu_button(self, ui):
+        ui.insert_action_group(self.text_filter_actiongroup, -1)
+        self.text_filter_merge_id = ui.new_merge_id()
+        for x in self.text_filter_ui:
+            ui.add_ui(self.text_filter_merge_id, *x)
+        
+        self.text_filter_popup = ui.get_widget("/TextFilterPopup")
+        self.text_filter_menu_button = ui.get_widget("/Toolbar/FilterActions/TextFilterMenu")
+        label = misc.make_tool_button_widget(self.text_filter_menu_button.props.label)
+        self.text_filter_menu_button.set_label_widget(label)
+        
+        if self.popup_deactivate_id is None:
+            self.popup_deactivate_id = self.popup_menu.connect("deactivate",
+                                            self.on_popup_deactivate_event)
+
+    def on_popup_deactivate_event(self, popup):
+        pass
+
+    def on_container_switch_in_event(self, ui):
+        melddoc.MeldDoc.on_container_switch_in_event(self, ui)
+        self._create_filter_menu_button(ui)
+        self.ui_manager = ui
+
+    def on_container_switch_out_event(self, ui):
+        self._cleanup_filter_menu_button(ui)
+        melddoc.MeldDoc.on_container_switch_out_event(self, ui)
+
     def on_text_filters_changed(self, app):
+        self._cleanup_filter_menu_button(self.ui_manager)
         relevant_change = self.create_text_filters()
+        self._create_filter_menu_button(self.ui_manager)
         if relevant_change:
             self.refresh_comparison()
 
     def create_text_filters(self):
         # In contrast to file filters, ordering of text filters can matter
-        old_active = [f.filter_string for f in self.text_filters if f.active]
-        new_active = [f.filter_string for f in meldsettings.text_filters
-                      if f.active]
+        old_active = set([f.filter_string for f in self.text_filters
+                          if f.active])
+        new_active = set([f.filter_string for f in meldsettings.text_filters
+                          if f.active])
         active_filters_changed = old_active != new_active
-
+        
         self.text_filters = [copy.copy(f) for f in meldsettings.text_filters]
-
+        
+        # esh: added ui text filters in toolbar (by analogy
+        #       with create_text_filters func in dirdiff.py)
+        actions = []
+        disabled_actions = []
+        self.text_filter_ui = []
+        for i, f in enumerate(self.text_filters):
+            name = "HideTextFilter%d" % i
+            callback = lambda b, i=i: self._update_text_filter(b, i)
+            actions.append((name, None, f.label, None,
+                            _("Hide %s") % f.label, callback, f.active))
+            self.text_filter_ui.append(["/TextFilterPopup" , name, name,
+                                        Gtk.UIManagerItemType.MENUITEM, False])
+            self.text_filter_ui.append(["/Menubar/ViewMenu/TextFilters", name, name,
+                                        Gtk.UIManagerItemType.MENUITEM, False])
+            if f.filter is None:
+                disabled_actions.append(name)
+        
+        self.text_filter_actiongroup = Gtk.ActionGroup(name="TextFilterActions")
+        self.text_filter_actiongroup.add_toggle_actions(actions)
+        for name in disabled_actions:
+            self.text_filter_actiongroup.get_action(name).set_sensitive(False)
+        
         return active_filters_changed
+
+    def _update_text_filter(self, button, idx):
+        self.text_filters[idx].active = button.get_active()
+        self.refresh_comparison()
 
     def _disconnect_buffer_handlers(self):
         for textview in self.textview:
