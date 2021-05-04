@@ -583,7 +583,7 @@ msgstr ""
 
 #: ../data/ui/dirdiff.ui.h:12
 msgid "Same"
-msgstr "Одинак."
+msgstr "Same"
 
 #: ../data/ui/dirdiff.ui.h:13
 msgid "Show identical"
@@ -591,7 +591,7 @@ msgstr "Показывать одинаковые"
 
 #: ../data/ui/dirdiff.ui.h:14
 msgid "New"
-msgstr "Новые"
+msgstr "New"
 
 #: ../data/ui/dirdiff.ui.h:15
 msgid "Show new"
@@ -599,7 +599,7 @@ msgstr "Показывать новые"
 
 #: ../data/ui/dirdiff.ui.h:16 ../meld/vc/_vc.py:77
 msgid "Modified"
-msgstr "Изменён."
+msgstr "Modif."
 
 #: ../data/ui/dirdiff.ui.h:17
 msgid "Show modified"
@@ -607,7 +607,7 @@ msgstr "Показывать изменённые"
 
 #: ../data/ui/dirdiff.ui.h:18
 msgid "File filters"
-msgstr "Файл.фильтры"
+msgstr "File filters"
 
 #: ../data/ui/dirdiff.ui.h:19
 msgid "Set active file filters"
@@ -615,7 +615,7 @@ msgstr "Установить файловые фильтры"
 
 #: ../data/ui/dirdiff.ui.h:20 ../data/ui/filediff.ui.h:44
 msgid "Text filters"
-msgstr "Текст.фильтры"
+msgstr "Text filters"
 
 #: ../data/ui/dirdiff.ui.h:21 ../data/ui/filediff.ui.h:45
 msgid "Set active text filters"
