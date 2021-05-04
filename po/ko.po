@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meld 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 18:38+0300\n"
+"POT-Creation-Date: 2021-04-19 16:02+0300\n"
 "PO-Revision-Date: 2007-11-26 16:54+0900\n"
 "Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
 "Language-Team: GNOME Korean <Gnome-kr-hackers@lists.kldp.net>\n"
@@ -510,7 +510,7 @@ msgstr "오른쪽 복사"
 msgid "Delete selected"
 msgstr "선택된 것 지우기"
 
-#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:873 ../meld/filediff.py:1362
+#: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:949 ../meld/filediff.py:1450
 #, fuzzy
 msgid "Hide"
 msgstr "%s 숨김"
@@ -563,12 +563,12 @@ msgstr "파일 필터"
 msgid "Set active file filters"
 msgstr "파일 필터"
 
-#: ../data/ui/dirdiff.ui.h:20
+#: ../data/ui/dirdiff.ui.h:20 ../data/ui/filediff.ui.h:44
 #, fuzzy
 msgid "Text filters"
 msgstr "텍스트 필터"
 
-#: ../data/ui/dirdiff.ui.h:21
+#: ../data/ui/dirdiff.ui.h:21 ../data/ui/filediff.ui.h:45
 #, fuzzy
 msgid "Set active text filters"
 msgstr "파일 필터"
@@ -614,7 +614,7 @@ msgstr "아래로(_D)"
 
 #. Create icon and filename CellRenderer
 #: ../data/ui/EditableList.ui.h:10 ../data/ui/vcview.ui.h:35
-#: ../meld/dirdiff.py:376
+#: ../meld/dirdiff.py:390
 msgid "Name"
 msgstr "이름"
 
@@ -816,56 +816,56 @@ msgstr ""
 msgid "Lock scrolling of all panes"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:44
+#: ../data/ui/filediff.ui.h:46
 msgid "Save changes to documents before closing?"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:45
+#: ../data/ui/filediff.ui.h:47
 msgid "If you don't save, changes will be permanently lost."
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:46
+#: ../data/ui/filediff.ui.h:48
 msgid "Close _without Saving"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:955 ../meld/filediff.py:1428
+#: ../data/ui/filediff.ui.h:49 ../meld/dirdiff.py:1031 ../meld/filediff.py:1516
 msgid "_Cancel"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:48
+#: ../data/ui/filediff.ui.h:50
 msgid "_Save"
 msgstr "저장(_S)"
 
-#: ../data/ui/filediff.ui.h:49
+#: ../data/ui/filediff.ui.h:51
 msgid ""
 "This file can not be written to. You may click here to unlock this file and "
 "make changes anyway, but these changes must be saved to a new file."
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:50
+#: ../data/ui/filediff.ui.h:52
 #, fuzzy
 msgid "File 3"
 msgstr "작업본 파일"
 
-#: ../data/ui/filediff.ui.h:51
+#: ../data/ui/filediff.ui.h:53
 #, fuzzy
 msgid "File 2"
 msgstr "작업본 파일"
 
-#: ../data/ui/filediff.ui.h:52
+#: ../data/ui/filediff.ui.h:54
 #, fuzzy
 msgid "File 1"
 msgstr "작업본 파일"
 
-#: ../data/ui/filediff.ui.h:53
+#: ../data/ui/filediff.ui.h:55
 msgid "Revert unsaved changes to documents?"
 msgstr ""
 
-#: ../data/ui/filediff.ui.h:54
+#: ../data/ui/filediff.ui.h:56
 msgid "Changes made to the following documents will be permanently lost:\n"
 msgstr ""
 
-#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:956 ../meld/filediff.py:1429
+#: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:1032 ../meld/filediff.py:1517
 msgid "_Replace"
 msgstr ""
 
@@ -1660,82 +1660,82 @@ msgid "Mac OS (CR)"
 msgstr ""
 
 #. Create file size CellRenderer
-#: ../meld/dirdiff.py:394 ../meld/preferences.py:82
+#: ../meld/dirdiff.py:408 ../meld/preferences.py:82
 msgid "Size"
 msgstr ""
 
 #. Create date-time CellRenderer
-#: ../meld/dirdiff.py:402 ../meld/preferences.py:83
+#: ../meld/dirdiff.py:416 ../meld/preferences.py:83
 msgid "Modification time"
 msgstr ""
 
 #. Create permissions CellRenderer
-#: ../meld/dirdiff.py:410 ../meld/preferences.py:84
+#: ../meld/dirdiff.py:424 ../meld/preferences.py:84
 msgid "Permissions"
 msgstr ""
 
-#: ../meld/dirdiff.py:550
+#: ../meld/dirdiff.py:601 ../meld/dirdiff.py:642 ../meld/filediff.py:383
 #, python-format
 msgid "Hide %s"
 msgstr "%s 숨김"
 
-#: ../meld/dirdiff.py:684 ../meld/dirdiff.py:708
+#: ../meld/dirdiff.py:760 ../meld/dirdiff.py:784
 #, python-format
 msgid "[%s] Scanning %s"
 msgstr "[%s] 탐색 중 %s"
 
-#: ../meld/dirdiff.py:840
+#: ../meld/dirdiff.py:916
 #, python-format
 msgid "[%s] Done"
 msgstr "[%s] 완료"
 
-#: ../meld/dirdiff.py:848
+#: ../meld/dirdiff.py:924
 #, fuzzy
 msgid "Folders have no differences"
 msgstr "[%s] 차이점 추출 중"
 
-#: ../meld/dirdiff.py:850
+#: ../meld/dirdiff.py:926
 msgid "Contents of scanned files in folders are identical."
 msgstr ""
 
-#: ../meld/dirdiff.py:852
+#: ../meld/dirdiff.py:928
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:855
+#: ../meld/dirdiff.py:931
 msgid "File filters are in use, so not all files have been scanned."
 msgstr ""
 
-#: ../meld/dirdiff.py:857
+#: ../meld/dirdiff.py:933
 msgid "Text filters are in use and may be masking content differences."
 msgstr ""
 
-#: ../meld/dirdiff.py:875 ../meld/filediff.py:1364 ../meld/filediff.py:1394
-#: ../meld/filediff.py:1396 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
+#: ../meld/dirdiff.py:951 ../meld/filediff.py:1452 ../meld/filediff.py:1482
+#: ../meld/filediff.py:1484 ../meld/ui/msgarea.py:105 ../meld/ui/msgarea.py:118
 msgid "Hi_de"
 msgstr ""
 
-#: ../meld/dirdiff.py:885
+#: ../meld/dirdiff.py:961
 msgid "Multiple errors occurred while scanning this folder"
 msgstr ""
 
-#: ../meld/dirdiff.py:886
+#: ../meld/dirdiff.py:962
 msgid "Files with invalid encodings found"
 msgstr ""
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:888
+#: ../meld/dirdiff.py:964
 msgid "Some files were in an incorrect encoding. The names are something like:"
 msgstr ""
 
-#: ../meld/dirdiff.py:890
+#: ../meld/dirdiff.py:966
 msgid "Files hidden by case insensitive comparison"
 msgstr ""
 
 #. TRANSLATORS: This is followed by a list of files
-#: ../meld/dirdiff.py:892
+#: ../meld/dirdiff.py:968
 #, fuzzy
 msgid ""
 "You are running a case insensitive comparison on a case sensitive "
@@ -1745,28 +1745,28 @@ msgstr ""
 "부 파일들은 볼 수 없습니다:\n"
 "%s"
 
-#: ../meld/dirdiff.py:903
+#: ../meld/dirdiff.py:979
 #, python-format
 msgid "'%s' hidden by '%s'"
 msgstr "'%s'이(가) '%s'에 의해 숨겨짐"
 
-#: ../meld/dirdiff.py:959
+#: ../meld/dirdiff.py:1035
 #, python-format
 msgid "Replace folder “%s”?"
 msgstr ""
 
-#: ../meld/dirdiff.py:961
+#: ../meld/dirdiff.py:1037
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
 
-#: ../meld/dirdiff.py:974
+#: ../meld/dirdiff.py:1050
 msgid "Error copying file"
 msgstr ""
 
-#: ../meld/dirdiff.py:975
+#: ../meld/dirdiff.py:1051
 #, fuzzy, python-format
 msgid ""
 "Couldn't copy %s\n"
@@ -1778,7 +1778,7 @@ msgstr ""
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:998
+#: ../meld/dirdiff.py:1074
 #, fuzzy, python-format
 msgid "Error deleting %s"
 msgstr ""
@@ -1786,198 +1786,198 @@ msgstr ""
 "\n"
 "%s."
 
-#: ../meld/dirdiff.py:1511
+#: ../meld/dirdiff.py:1593
 #, fuzzy
 msgid "No folder"
 msgstr "폴더"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
-#: ../meld/filediff.py:335
+#: ../meld/filediff.py:423
 #, fuzzy
 msgid "INS"
 msgstr "삽입,수정"
 
-#: ../meld/filediff.py:335
+#: ../meld/filediff.py:423
 #, fuzzy
 msgid "OVR"
 msgstr "삽입,수정"
 
 #. Abbreviation for line, column so that it will fit in the status bar
-#: ../meld/filediff.py:337
+#: ../meld/filediff.py:425
 #, python-format
 msgid "Ln %i, Col %i"
 msgstr "줄 %i, 칸 %i"
 
-#: ../meld/filediff.py:762
+#: ../meld/filediff.py:850
 msgid "Comparison results will be inaccurate"
 msgstr ""
 
-#: ../meld/filediff.py:764
+#: ../meld/filediff.py:852
 msgid ""
 "A filter changed the number of lines in the file, which is unsupported. The "
 "comparison will not be accurate."
 msgstr ""
 
-#: ../meld/filediff.py:820
+#: ../meld/filediff.py:908
 msgid "Mark conflict as resolved?"
 msgstr ""
 
-#: ../meld/filediff.py:822
+#: ../meld/filediff.py:910
 msgid ""
 "If the conflict was resolved successfully, you may mark it as resolved now."
 msgstr ""
 
-#: ../meld/filediff.py:824
+#: ../meld/filediff.py:912
 msgid "Cancel"
 msgstr ""
 
-#: ../meld/filediff.py:825
+#: ../meld/filediff.py:913
 msgid "Mark _Resolved"
 msgstr ""
 
-#: ../meld/filediff.py:1076
+#: ../meld/filediff.py:1164
 #, python-format
 msgid "There was a problem opening the file “%s”."
 msgstr ""
 
-#: ../meld/filediff.py:1084
+#: ../meld/filediff.py:1172
 #, python-format
 msgid "File %s appears to be a binary file."
 msgstr ""
 
-#: ../meld/filediff.py:1086
+#: ../meld/filediff.py:1174
 msgid "Do you want to open the file using the default application?"
 msgstr ""
 
-#: ../meld/filediff.py:1088
+#: ../meld/filediff.py:1176
 msgid "Open"
 msgstr ""
 
-#: ../meld/filediff.py:1104
+#: ../meld/filediff.py:1192
 #, python-format
 msgid "[%s] Computing differences"
 msgstr "[%s] 차이점 계산 중"
 
-#: ../meld/filediff.py:1166
+#: ../meld/filediff.py:1254
 #, python-format
 msgid "File %s has changed on disk"
 msgstr ""
 
-#: ../meld/filediff.py:1167
+#: ../meld/filediff.py:1255
 msgid "Do you want to reload the file?"
 msgstr ""
 
-#: ../meld/filediff.py:1169
+#: ../meld/filediff.py:1257
 #, fuzzy
 msgid "_Reload"
 msgstr "다시 읽기"
 
-#: ../meld/filediff.py:1327
+#: ../meld/filediff.py:1415
 #, fuzzy
 msgid "Files are identical"
 msgstr "동일한 것 표시"
 
-#: ../meld/filediff.py:1340
+#: ../meld/filediff.py:1428
 msgid ""
 "Text filters are being used, and may be masking differences between files. "
 "Would you like to compare the unfiltered files?"
 msgstr ""
 
-#: ../meld/filediff.py:1345
+#: ../meld/filediff.py:1433
 msgid "Files differ in line endings only"
 msgstr ""
 
-#: ../meld/filediff.py:1347
+#: ../meld/filediff.py:1435
 #, python-format
 msgid ""
 "Files are identical except for differing line endings:\n"
 "%s"
 msgstr ""
 
-#: ../meld/filediff.py:1367
+#: ../meld/filediff.py:1455
 #, fuzzy
 msgid "Show without filters"
 msgstr "무시된 파일 표시"
 
-#: ../meld/filediff.py:1389
+#: ../meld/filediff.py:1477
 msgid "Change highlighting incomplete"
 msgstr ""
 
-#: ../meld/filediff.py:1390
+#: ../meld/filediff.py:1478
 msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
 msgstr ""
 
-#: ../meld/filediff.py:1398
+#: ../meld/filediff.py:1486
 #, fuzzy
 msgid "Keep highlighting"
 msgstr "문법 강조 사용"
 
-#: ../meld/filediff.py:1400
+#: ../meld/filediff.py:1488
 #, fuzzy
 msgid "_Keep highlighting"
 msgstr "문법 강조 사용"
 
-#: ../meld/filediff.py:1432
+#: ../meld/filediff.py:1520
 #, python-format
 msgid "Replace file “%s”?"
 msgstr ""
 
-#: ../meld/filediff.py:1434
+#: ../meld/filediff.py:1522
 #, python-format
 msgid ""
 "A file with this name already exists in “%s”.\n"
 "If you replace the existing file, its contents will be lost."
 msgstr ""
 
-#: ../meld/filediff.py:1451
+#: ../meld/filediff.py:1539
 msgid "Save Left Pane As"
 msgstr ""
 
-#: ../meld/filediff.py:1453
+#: ../meld/filediff.py:1541
 msgid "Save Middle Pane As"
 msgstr ""
 
-#: ../meld/filediff.py:1455
+#: ../meld/filediff.py:1543
 msgid "Save Right Pane As"
 msgstr ""
 
-#: ../meld/filediff.py:1469
+#: ../meld/filediff.py:1557
 #, python-format
 msgid "File %s has changed on disk since it was opened"
 msgstr ""
 
-#: ../meld/filediff.py:1471
+#: ../meld/filediff.py:1559
 msgid "If you save it, any external changes will be lost."
 msgstr ""
 
-#: ../meld/filediff.py:1474
+#: ../meld/filediff.py:1562
 #, fuzzy
 msgid "Save Anyway"
 msgstr "다른 이름으로 저장(_A)"
 
-#: ../meld/filediff.py:1475
+#: ../meld/filediff.py:1563
 msgid "Don't Save"
 msgstr ""
 
-#: ../meld/filediff.py:1514 ../meld/patchdialog.py:130
+#: ../meld/filediff.py:1602 ../meld/patchdialog.py:130
 #, fuzzy, python-format
 msgid "Could not save file %s."
 msgstr "'%s'(으)로 부터 읽을 수 없습니다."
 
-#: ../meld/filediff.py:1515 ../meld/patchdialog.py:131
+#: ../meld/filediff.py:1603 ../meld/patchdialog.py:131
 #, python-format
 msgid ""
 "Couldn't save file due to:\n"
 "%s"
 msgstr ""
 
-#: ../meld/filediff.py:1879
+#: ../meld/filediff.py:1967
 msgid "Live comparison updating disabled"
 msgstr ""
 
-#: ../meld/filediff.py:1880
+#: ../meld/filediff.py:1968
 msgid ""
 "Live updating of comparisons is disabled when synchronization points are "
 "active. You can still manually refresh the comparison, and live updates will "

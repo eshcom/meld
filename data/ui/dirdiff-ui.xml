@@ -39,7 +39,6 @@
       <separator/>
       <toolitem action="FileFilterMenu"/>
       <toolitem action="TextFilterMenu"/>
-      <placeholder name="FilterButtons" />
     </placeholder>
   </toolbar>
 
