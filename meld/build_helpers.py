@@ -373,12 +373,18 @@ class build_py(distutils.command.build_py.build_py):
 class install(distutils.command.install.install):
 
     def finalize_options(self):
-        special_cases = ('debian', 'ubuntu', 'linuxmint')
-        if (platform.system() == 'Linux' and
-                platform.linux_distribution()[0].lower() in special_cases):
-            # Maintain an explicit install-layout, but use deb by default
-            specified_layout = getattr(self, 'install_layout', None)
-            self.install_layout = specified_layout or 'deb'
+        if platform.system() == 'Linux':
+            if sys.version_info[:2] < (3, 8):
+                distrib_name = platform.linux_distribution()[0].lower()
+            else:
+                import distro
+                distrib_name = distro.linux_distribution()[0].lower()
+            
+            special_cases = ('debian', 'ubuntu', 'linuxmint')
+            if distrib_name in special_cases:
+                # Maintain an explicit install-layout, but use deb by default
+                specified_layout = getattr(self, 'install_layout', None)
+                self.install_layout = specified_layout or 'deb'
 
         distutils.command.install.install.finalize_options(self)
 
