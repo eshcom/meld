@@ -181,7 +181,10 @@ class DiffTreeStore(Gtk.TreeStore):
                                 it = next
                                 break
                         else:
-                            raise StopIteration()
+                            # esh: take from master (commit: bdf1591)
+                            # info: Don't raise StopIteration for Python 3.7 compat (#217)
+                            # ~ raise StopIteration()
+                            return
             yield it
 
     def inorder_search_up(self, it):
@@ -201,7 +204,10 @@ class DiffTreeStore(Gtk.TreeStore):
                 if up:
                     it = up
                 else:
-                    raise StopIteration()
+                    # esh: take from master (commit: bdf1591)
+                    # info: Don't raise StopIteration for Python 3.7 compat (#217)
+                    # ~ raise StopIteration()
+                    return
             yield it
 
     def _find_next_prev_diff(self, start_path):
