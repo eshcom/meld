@@ -279,7 +279,8 @@ def setup_logging():
         # ~ log.setLevel(logging.CRITICAL)
         log.setLevel(logging.INFO)
     
-    # esh: set log-file handler
+    # esh: use FileHandler instead of StreamHandler
+    # esh: StreamHandler will log into the ~/.cache/upstart/unity7.log (ubuntu 16)
     # ~ handler = logging.StreamHandler()
     handler = logging.FileHandler("/tmp/meld.log")
     
