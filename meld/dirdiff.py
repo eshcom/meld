@@ -636,7 +636,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         disabled_actions = []
         self.text_filter_ui = []
         for i, f in enumerate(self.text_filters):
-            name = "HideTextFilter%d" % i
+            name = "DirdiffHideTextFilter%d" % i
             callback = lambda b, i=i: self._update_text_filter(b, i)
             actions.append((name, None, f.label, None,
                             _("Hide %s") % f.label, callback, f.active))
@@ -647,7 +647,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             if f.filter is None:
                 disabled_actions.append(name)
         
-        self.text_filter_actiongroup = Gtk.ActionGroup(name="TextFilterActions")
+        self.text_filter_actiongroup = Gtk.ActionGroup(name="DirdiffTextFilterActions")
         self.text_filter_actiongroup.add_toggle_actions(actions)
         for name in disabled_actions:
             self.text_filter_actiongroup.get_action(name).set_sensitive(False)
